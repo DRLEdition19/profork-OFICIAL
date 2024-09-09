@@ -18,7 +18,7 @@
 APPNAME=youtubetv 
 #APPLINK=$(curl -s https://api.github.com/repos/mattruzzi/Nativefier-YouTube-on-TV-for-Desktop/releases | grep linux-x64 | grep "browser_download_url" | head -n 1 | sed 's,^.*https://,https://,g' | cut -d \" -f1)
 #APPHOME="github.com/mattruzzi/Nativefier-YouTube-on-TV-for-Desktop" 
-APPLINK=https://github.com/trashbus99/profork/raw/main/youtubetv/extra/YouTubeonTV-linux-x64.zip
+APPLINK=https://github.com/trashbus99/profork/releases/download/r1/YouTubeonTV-linux-x64.zip
 APPHOME=github.com/uureel/batocera.pro
 #---------------------------------------------------------------------
 #       DEFINE LAUNCHER COMMAND >>
