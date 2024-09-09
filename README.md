@@ -6,6 +6,7 @@
 <b>This repo is mainly for personal use and anyone who wants to use it.</b><br>
 <br><br>However, it is AS-IS--No support is  provided.  <br><br>
 
+<b><i>Credits and thanks to uureel, kron4ek, and other contributors.</i></b><br>
 
 <b><i>Unofficial Apps for Batocera x86_64 (AMD/Intel)</i></b><br>
 <br>
@@ -25,4 +26,5 @@ The full Arch Container applist can be viewed in it's menu:<br>
 <i>This is a small hobby repository in no way <br>
 shape or form affiliated with Batocera </i><br>
 <br><br><br><br>
+
 
