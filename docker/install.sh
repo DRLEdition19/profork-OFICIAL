@@ -13,7 +13,7 @@ echo ""
 
 # Define the directory and the URL for the file
 directory="$HOME/batocera-containers"
-url="https://batocera.pro/app/batocera-containers"
+url="https://github.com/trashbus99/profork/releases/download/r1/batocera-containers"
 filename="batocera-containers" # Explicitly set the filename
 
 # Create the directory if it doesn't exist
