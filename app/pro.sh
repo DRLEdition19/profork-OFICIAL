@@ -1,12 +1,9 @@
 #!/bin/bash
 
-clear
-dialog --msgbox "Note: Batocera.Pro is deprecated and going archived. Support is not longer available." 20 70
-clear
 
 # Function to display animated title with colors
 animate_title() {
-    local text="BATOCERA PRO APP INSTALLER"
+    local text="PROFORK Add-ON Installer (h/t UUREEL)"
     local delay=0.03
     local length=${#text}
 
@@ -33,7 +30,7 @@ animate_border() {
 # Function to display controls
 display_controls() {
     echo -e "\e[1;32m"  # Set color to green
-    echo "Controls:"
+    echo "K/B Controls + Gamepad Controls when launched from ports:"
     echo "  Navigate with up-down-left-right"
     echo "  Select app with A/B/SPACE and execute with Start/X/Y/ENTER"
     echo -e "\e[0m"  # Reset color
