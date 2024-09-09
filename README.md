@@ -1,12 +1,16 @@
 # Profork
 <br><br><br><br>
 <b>My Continued Repo of uureel's discontinued batocera.pro</b><br>
-<br><br><br><br>
 
-<b>This repo is mainly for personal use and anyone who wants to use it.</b><br>
-<br><br>However, it is AS-IS--No support is  provided.  <br><br>
+<b><i>Unofficial Apps for Batocera x86_64 (AMD/Intel)</i></b><br><b>This repo is mainly for personal use and anyone who wants to use it.</b><br>
+
+<br>However, it is AS-IS--No support is  provided. <br>
+Note: BATOCERA developers will not support these apps nor any system these apps are installed on if discovered.
+
 
 <b><i>Credits and thanks to uureel, kron4ek, and other contributors.</i></b><br>
+
+
 
 <b><i>Unofficial Apps for Batocera x86_64 (AMD/Intel)</i></b><br>
 <br>
