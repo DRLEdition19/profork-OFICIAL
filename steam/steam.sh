@@ -1,8 +1,5 @@
 #!/bin/bash
 
-## Part 1: Display initial message
-dialog --msgbox "Note: Batocera.Pro is deprecated and going archived. Support is not longer available and no more updates will issued for the container" 20 70
-
 
 # Part 1: Display initial message
 dialog --msgbox "Note for Steam: the official flatpak version of Steam is now working on v40.  Data is stored in /userdata/saves/flatpak/data/.var/app/com.valvesoftware.Steam/data/Steam \n\nRegular Proton builds have been verified working and the flatpak build is a smaller install.\n\nThe Arch container build supports xdg and launching Heroic, Lutris, and other games via Steam plus tools like protontricks and protonup-qt are included. \n\nthe Arch container stores steam data in ~/.local/share/Steam and the container size is around 5GB." 20 70
