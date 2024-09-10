@@ -486,7 +486,7 @@ response=$?
 
 if [ $response -eq 0 ]; then
     # User selected "Yes"
-    curl -L java.batocera.pro | bash
+    curl -L https://github.com/trashbus99/profork/raw/master/java/java.sh
 else
     # User selected "No" or pressed "Cancel"
     echo "Installation aborted."
