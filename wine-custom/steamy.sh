@@ -6,8 +6,37 @@ curl -L aria2c.batocera.pro | bash
 # Create /userdata/system/wine/exe directory if it doesn't exist
 mkdir -p /userdata/system/wine/exe
 
-# Download steamy.exe with aria2c using 5 connections directly into /userdata/roms/wine/exe
-./aria2c -x 5 -s 5 -d /userdata/system/wine/exe https://batocera.pro/app/steamy.exe
+echo "Downloading STEAMY-AiO.exe with curl using 5 connections..."
+
+# Function to download the file with multiple connections using curl
+download_steamy_with_retry() {
+    local url="$1"
+    local output_dir="$2"
+    local output_file="$3"
+    local retries=0
+
+    until [ $retries -ge $RETRIES ]
+    do
+        # Download using 5 parallel connections (mimicking aria2c functionality)
+        curl -L --progress-bar --retry 3 --retry-delay 5 --retry-max-time 30 \
+             --output "${output_dir}/${output_file}" "${url}" --fail --parallel --parallel-max 5
+             
+        if [ $? -eq 0 ]; then
+            echo "Downloaded ${output_file} successfully."
+            return 0
+        else
+            retries=$((retries+1))
+            echo "Retrying... (${retries}/${RETRIES})"
+        fi
+    done
+
+    echo "Failed to download ${output_file} after ${RETRIES} attempts. Exiting."
+    exit 1
+}
+
+# Download STEAMY-AiO.exe to the target directory
+download_steamy_with_retry "https://github.com/trashbus99/profork/releases/download/r1/STEAMY-AiO.exe" "/userdata/system/wine/exe" "STEAMY-AiO.exe"
+
 
 # Check if the file was downloaded
 if [ -f "/userdata/system/wine/exe/steamy.exe" ]; then
