@@ -253,7 +253,7 @@ clear
 echo "Launching container builder script -- This will take a while"
 sleep 5
 
-curl -Ls https://github.com/trashbus99/profork/raw/main/steam/build.sh | bash
+curl -Ls  https://github.com/trashbus99/profork/raw/master/steam/build.sh | bash 
 
 MSG="Install Done.  You should see a new system in EmulationStation called Linux or Arch Container depending on theme\nNVIDIA Users: Drivers will download on First app start-up & can take a while."
 dialog --title "Arch Container Setup Complete" --msgbox "$MSG" 20 70
