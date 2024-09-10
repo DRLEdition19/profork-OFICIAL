@@ -1,15 +1,10 @@
 #!/bin/bash
 
-echo "Batocera.PRO CasaOS installer..."
+echo "Profork CasaOS installer..."
 echo "This can take a while... please wait....."
 
 sleep 5
-clear
-echo "Fetching Aria2c..."
-sleep 3
-curl -L https://github.com/trashbus99/profork/raw/master/.dep/.scripts/aria2c.sh | bash
-sleep 2
-clear
+
 
 # Define the home directory
 HOME_DIR=/userdata/system
@@ -27,17 +22,32 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Download the split zip files with aria2c
-echo "Downloading split zip files using aria2c..."
-./aria2c -x 10 "${ZIP_PART_1}" -o "batocera-casaos.tar.zip.001"
-./aria2c -x 10 "${ZIP_PART_2}" -o "batocera-casaos.tar.zip.002"
-./aria2c -x 10 "${ZIP_PART_3}" -o "batocera-casaos.tar.zip.003"
-./aria2c -x 10 "${ZIP_PART_4}" -o "batocera-casaos.tar.zip.004"
-
+# Download the split zip files with wget (with progress indicator)
+echo "Downloading split zip files using wget..."
+wget "${ZIP_PART_1}" -O "batocera-casaos.tar.zip.001"
 if [ $? -ne 0 ]; then
-    echo "Failed to download one or more parts of the split zip file. Exiting."
+    echo "Failed to download part 1 of the split zip file. Exiting."
     exit 1
 fi
+
+wget "${ZIP_PART_2}" -O "batocera-casaos.tar.zip.002"
+if [ $? -ne 0 ]; then
+    echo "Failed to download part 2 of the split zip file. Exiting."
+    exit 1
+fi
+
+wget "${ZIP_PART_3}" -O "batocera-casaos.tar.zip.003"
+if [ $? -ne 0 ]; then
+    echo "Failed to download part 3 of the split zip file. Exiting."
+    exit 1
+fi
+
+wget "${ZIP_PART_4}" -O "batocera-casaos.tar.zip.004"
+if [ $? -ne 0 ]; then
+    echo "Failed to download part 4 of the split zip file. Exiting."
+    exit 1
+fi
+
 
 # Combine the zip files
 echo "Combining split zip files..."
