@@ -68,7 +68,7 @@ clear
 echo
 echo
 echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo
 echo
 echo
