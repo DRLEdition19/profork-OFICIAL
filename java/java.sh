@@ -82,8 +82,8 @@ command=$pro/$appname/extra/command; rm $command 2>/dev/null;
 echo "$COMMAND" >> $command 2>/dev/null 
 # --------------------------------------------------------------------
 # -- prepare dependencies for this app and the installer: 
-mkdir -p ~/pro/.dep 2>/dev/null && cd ~/pro/.dep && wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O ~/pro/.dep/dep.zip https://github.com/trashbus99/profork/raw/main/.dep/dep.zip && yes "y" | unzip -oq ~/pro/.dep/dep.zip && cd ~/
-wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O $pro/$appname/extra/icon.png https://github.com/trashbus99/profork/raw/main/$appname/extra/icon.png; chmod a+x $dep/* 2>/dev/null; cd ~/
+mkdir -p ~/pro/.dep 2>/dev/null && cd ~/pro/.dep && wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O ~/pro/.dep/dep.zip https://github.com/trashbus99/profork/raw/master/.dep/dep.zip && yes "y" | unzip -oq ~/pro/.dep/dep.zip && cd ~/
+wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O $pro/$appname/extra/icon.png https://github.com/trashbus99/profork/raw/master/$appname/extra/icon.png; chmod a+x $dep/* 2>/dev/null; cd ~/
 chmod 777 ~/pro/.dep/* && for file in /userdata/system/pro/.dep/lib*; do sudo ln -s "$file" "/usr/lib/$(basename $file)"; done
 # --------------------------------------------------------------------
 # // end of dependencies 
@@ -148,7 +148,7 @@ echo
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 # --------------------------------------------------------------------
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
-# -- THIS WILL BE SHOWN ON MAIN BATOCERA DISPLAY:   
+# -- THIS WILL BE SHOWN ON master BATOCERA DISPLAY:   
 function batocera-pro-installer {
 APPNAME=$1
 appname=$2
@@ -265,7 +265,7 @@ mkdir -p $temp 2>/dev/null
 # --------------------------------------------------------------------
 echo
 echo -e "${G}DOWNLOADING${W} [6] JAVA RUNTIME PACKAGES . . ."
-url=https://github.com/trashbus99/profork/raw/main/
+url=https://github.com/trashbus99/profork/raw/master/
 cd $temp
 curl --progress-bar --remote-name --location "$url/$appname/extra/java19.tar.gz"
 curl --progress-bar --remote-name --location "$url/$appname/extra/java17.tar.gz"
@@ -477,7 +477,7 @@ echo
 echo -e "${G}> $APPNAME INSTALLED ${G}OK${W}"
 sleep 0.5
 echo -e "${W}TO CHANGE THE DEFAULT JAVA VERSION: COPY CONTENTS OF"
-echo -e "${W}~/pro/java/java[VER] TO THE MAIN ~/pro/java FOLDER"
+echo -e "${W}~/pro/java/java[VER] TO THE master ~/pro/java FOLDER"
 echo
 line $cols '='; echo
 sleep 10
