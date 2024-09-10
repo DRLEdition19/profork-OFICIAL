@@ -10,7 +10,7 @@ if [[ ! -f "$conty_path" ]]; then
     response=$?
     if [[ $response -eq 0 ]]; then
         # User chose to install
-        if curl -L steam.batocera.pro | bash; then
+        if curl -L https://github.com/trashbus99/profork/raw/master/steam/steam.sh; then
             # Check if the installation was successful
             if [[ ! -f "$conty_path" ]]; then
                 dialog --msgbox "Installation failed. conty.sh still not found. Exiting script." 5 50
