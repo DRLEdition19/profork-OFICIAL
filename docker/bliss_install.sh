@@ -27,7 +27,7 @@ is_port_in_use() {
 if ! command -v docker &> /dev/null; then
     dialog --title "Docker Installation" --infobox "Docker could not be found. Installing Docker..." 10 50
     sleep 2 # Gives user time to read the message
-    curl -L https://github.com/trashbus99/profork/raw/main/docker/install.sh | bash
+    curl -L https://github.com/trashbus99/profork/raw/master/docker/install.sh | bash
     # Check if Docker was successfully installed
     if ! command -v docker &> /dev/null; then
         dialog --title "Docker Installation Error" --msgbox "Docker installation failed. Please install Docker manually." 10 50
