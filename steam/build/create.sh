@@ -7,7 +7,7 @@
 # prepare batocera patched files
 thisdir="$(dirname "$(readlink -f "${0}")")"
 cd $thisdir
-wget -q --tries=10 -O $thisdir/utils_dwarfs.tar.gz https://github.com/trashbus99/profork/raw/main/steam/build/utils_dwarfs.tar.gz
+wget -q --tries=10 -O $thisdir/utils_dwarfs.tar.gz https://github.com/trashbus99/profork/raw/master/steam/build/utils_dwarfs.tar.gz
 tar xf $thisdir/utils_dwarfs.tar.gz
 ########################################################################
 
@@ -584,7 +584,7 @@ echo "Entering chroot"
 # REBUILD LIBC WITH DT_HASH PATCH + ADDITIONAL FIXES
 chroot "${bootstrap}" \
 /usr/bin/env LANG=en_US.UTF-8 TERM=xterm PATH="/bin:/sbin:/usr/bin:/usr/sbin" /bin/bash -c \
-"curl -Ls https://github.com/trashbus99/profork/raw/main/main/steam/build/patch.sh | bash && exit"
+"curl -Ls https://github.com/trashbus99/profork/raw/master/steam/build/patch.sh | bash && exit"
 # ------------------------------------------------------------------------------------------
 
 echo "Exiting chroot"
