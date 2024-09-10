@@ -82,7 +82,7 @@ prefix="$(cat /tmp/batocera.pro-config | grep "prefix=" | cut -d "=" -f2)"
 clear
 echo
 echo
-echo -e "${A}██${X}  ${H}batocera.pro "$app" installer ${X}"
+echo -e "${A}██${X}  ${H}profork "$app" installer ${X}"
 sleep 2
 }
 export -f say-hi
