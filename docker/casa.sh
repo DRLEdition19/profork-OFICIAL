@@ -22,31 +22,39 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Download the split zip files with wget (with progress indicator)
 echo "Downloading split zip files using wget..."
-wget "${ZIP_PART_1}" -O "batocera-casaos.tar.zip.001"
+
+# Number of retry attempts
+RETRIES=5
+
+# Download part 1 with retry
+wget --tries="${RETRIES}" --retry-connrefused "${ZIP_PART_1}" -O "batocera-casaos.tar.zip.001"
 if [ $? -ne 0 ]; then
-    echo "Failed to download part 1 of the split zip file. Exiting."
+    echo "Failed to download part 1 of the split zip file after ${RETRIES} attempts. Exiting."
     exit 1
 fi
 
-wget "${ZIP_PART_2}" -O "batocera-casaos.tar.zip.002"
+# Download part 2 with retry
+wget --tries="${RETRIES}" --retry-connrefused "${ZIP_PART_2}" -O "batocera-casaos.tar.zip.002"
 if [ $? -ne 0 ]; then
-    echo "Failed to download part 2 of the split zip file. Exiting."
+    echo "Failed to download part 2 of the split zip file after ${RETRIES} attempts. Exiting."
     exit 1
 fi
 
-wget "${ZIP_PART_3}" -O "batocera-casaos.tar.zip.003"
+# Download part 3 with retry
+wget --tries="${RETRIES}" --retry-connrefused "${ZIP_PART_3}" -O "batocera-casaos.tar.zip.003"
 if [ $? -ne 0 ]; then
-    echo "Failed to download part 3 of the split zip file. Exiting."
+    echo "Failed to download part 3 of the split zip file after ${RETRIES} attempts. Exiting."
     exit 1
 fi
 
-wget "${ZIP_PART_4}" -O "batocera-casaos.tar.zip.004"
+# Download part 4 with retry
+wget --tries="${RETRIES}" --retry-connrefused "${ZIP_PART_4}" -O "batocera-casaos.tar.zip.004"
 if [ $? -ne 0 ]; then
-    echo "Failed to download part 4 of the split zip file. Exiting."
+    echo "Failed to download part 4 of the split zip file after ${RETRIES} attempts. Exiting."
     exit 1
 fi
+
 
 
 # Combine the zip files
@@ -79,7 +87,7 @@ rm batocera-casaos.tar.gz
 
 # Download the executable using aria2c
 echo "Downloading the executable file..."
-wget -O "casaos/batocera-casaos" "https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos"
+wget --tries="${RETRIES}" --retry-connrefused -O "casaos/batocera-casaos" "https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos"
 
 
 if [ $? -ne 0 ]; then
