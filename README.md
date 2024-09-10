@@ -10,9 +10,8 @@ Note: the main distro developers will not support these apps nor any system thes
 
 <b><i>Credits and thanks to uureel, kron4ek, and other contributors.</i></b><br>
 
-<br>
-<br>
-<br>
+<b> APP INSTALL MENU  = curl -L bit.ly/profork | bash</b>
+
 <br>
 <br>
 <br>
