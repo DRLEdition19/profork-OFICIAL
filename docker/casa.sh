@@ -5,7 +5,6 @@ echo "This can take a while... please wait....."
 
 sleep 5
 
-rm -f batocera-casaos.tar.zip.001 && rm -f batocera-casaos.tar.zip.002 && rm -f batocera-casaos.tar.zip.003 && rm -f batocera-casaos.tar.zip.004
 
 
 # Define the home directory
@@ -23,6 +22,9 @@ if [ $? -ne 0 ]; then
     echo "Failed to change to home directory. Exiting."
     exit 1
 fi
+
+rm -f batocera-casaos.tar.zip.001 && rm -f batocera-casaos.tar.zip.002 && rm -f batocera-casaos.tar.zip.003 && rm -f batocera-casaos.tar.zip.004
+
 
 echo "Downloading split zip files using wget..."
 
