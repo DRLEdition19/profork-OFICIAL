@@ -9,7 +9,7 @@ APPNAME=CPUX # for installer info
 appname=cpux # directory name in /userdata/system/pro/...
 AppName=$appname # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
-APPLINK=http://batocera.pro/app/cpux.AppImage
+APPLINK=https://github.com/trashbus99/profork/blob/master/cpux/cpux.AppImage
 ORIGIN="github.com/TheTumultuousUnicornOfDarkness/CPU-X" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
