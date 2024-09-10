@@ -5,8 +5,6 @@ echo "This can take a while... please wait....."
 
 sleep 5
 
-
-
 # Define the home directory
 HOME_DIR=/userdata/system
 
@@ -23,41 +21,42 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-rm -f batocera-casaos.tar.zip.001 && rm -f batocera-casaos.tar.zip.002 && rm -f batocera-casaos.tar.zip.003 && rm -f batocera-casaos.tar.zip.004
+# Remove any existing files
+rm -f batocera-casaos.tar.zip.001 batocera-casaos.tar.zip.002 batocera-casaos.tar.zip.003 batocera-casaos.tar.zip.004
 
-
-echo "Downloading split zip files using wget..."
-
-# Number of retry attempts
+# Retry count
 RETRIES=5
 
-# Download part 1 with retry
-wget --tries="${RETRIES}" --retry-connrefused "${ZIP_PART_1}" -O "batocera-casaos.tar.zip.001"
-if [ $? -ne 0 ]; then
-    echo "Failed to download part 1 of the split zip file after ${RETRIES} attempts. Exiting."
-    exit 1
-fi
+# Function to download file with progress and retry logic
+download_with_retry() {
+    local url="$1"
+    local output="$2"
+    local retries=0
 
-# Download part 2 with retry
-wget --tries="${RETRIES}" --retry-connrefused "${ZIP_PART_2}" -O "batocera-casaos.tar.zip.002"
-if [ $? -ne 0 ]; then
-    echo "Failed to download part 2 of the split zip file after ${RETRIES} attempts. Exiting."
-    exit 1
-fi
+    until [ $retries -ge $RETRIES ]
+    do
+        curl -L --progress-bar --retry 3 --retry-delay 5 --retry-max-time 30 -o "${output}" "${url}"
+        if [ $? -eq 0 ]; then
+            echo "Downloaded ${output} successfully."
+            return 0
+        else
+            retries=$((retries+1))
+            echo "Retrying... (${retries}/${RETRIES})"
+        fi
+    done
 
-# Download part 3 with retry
-wget --tries="${RETRIES}" --retry-connrefused "${ZIP_PART_3}" -O "batocera-casaos.tar.zip.003"
-if [ $? -ne 0 ]; then
-    echo "Failed to download part 3 of the split zip file after ${RETRIES} attempts. Exiting."
+    echo "Failed to download ${output} after ${RETRIES} attempts. Exiting."
     exit 1
-fi
+}
 
-# Download part 4 with retry
-wget --tries="${RETRIES}" --retry-connrefused "${ZIP_PART_4}" -O "batocera-casaos.tar.zip.004"
-if [ $? -ne 0 ]; then
-    echo "Failed to download part 4 of the split zip file after ${RETRIES} attempts. Exiting."
-    exit 1
-fi
+# Download the files
+echo "Downloading split zip files using curl..."
+
+download_with_retry "${ZIP_PART_1}" "batocera-casaos.tar.zip.001"
+download_with_retry "${ZIP_PART_2}" "batocera-casaos.tar.zip.002"
+download_with_retry "${ZIP_PART_3}" "batocera-casaos.tar.zip.003"
+download_with_retry "${ZIP_PART_4}" "batocera-casaos.tar.zip.004"
+
 
 
 
