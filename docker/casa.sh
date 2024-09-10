@@ -50,7 +50,7 @@ download_with_retry() {
 }
 
 # Download the files
-echo "Downloading split zip files using curl..."
+echo "Downloading  4-part split zip file..."
 
 download_with_retry "${ZIP_PART_1}" "batocera-casaos.tar.zip.001"
 download_with_retry "${ZIP_PART_2}" "batocera-casaos.tar.zip.002"
@@ -90,13 +90,33 @@ rm batocera-casaos.tar.gz
 
 # Download the executable using aria2c
 echo "Downloading the executable file..."
-wget --tries="${RETRIES}" --retry-connrefused -O "casaos/batocera-casaos" "https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos"
 
+# Function to download the executable file with retry and progress bar
+download_executable_with_retry() {
+    local url="$1"
+    local output="$2"
+    local retries=0
 
-if [ $? -ne 0 ]; then
-    echo "Failed to download executable. Exiting."
+    until [ $retries -ge $RETRIES ]
+    do
+        curl -L --progress-bar --retry 3 --retry-delay 5 --retry-max-time 30 -o "${output}" "${url}"
+        if [ $? -eq 0 ]; then
+            echo "Downloaded ${output} successfully."
+            return 0
+        else
+            retries=$((retries+1))
+            echo "Retrying... (${retries}/${RETRIES})"
+        fi
+    done
+
+    echo "Failed to download ${output} after ${RETRIES} attempts. Exiting."
     exit 1
-fi
+}
+
+# Download the executable file
+download_executable_with_retry "https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos" "casaos/batocera-casaos"
+
+
 
 # Make the executable runnable
 chmod +x "/userdata/system/casaos/batocera-casaos"
