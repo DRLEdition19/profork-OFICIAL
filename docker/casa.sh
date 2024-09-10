@@ -5,6 +5,8 @@ echo "This can take a while... please wait....."
 
 sleep 5
 
+rm -f batocera-casaos.tar.zip.001 && rm -f batocera-casaos.tar.zip.002 && rm -f batocera-casaos.tar.zip.003 && rm -f batocera-casaos.tar.zip.004
+
 
 # Define the home directory
 HOME_DIR=/userdata/system
