@@ -18,9 +18,9 @@ fi
 
 # Define the array of URLs to download the scripts
 declare -a urls=(
-    "https://github.com/trashbus99/profork/raw/main/appimage/aip.sh"
-    "https://github.com/trashbus99/profork/raw/main/appimage/aiparser.sh"
-    "https://github.com/trashbus99/profork/raw/main/appimage/caip.sh"
+    "https://github.com/trashbus99/profork/raw/master/appimage/aip.sh"
+    "https://github.com/trashbus99/profork/raw/master/appimage/aiparser.sh"
+    "https://github.com/trashbus99/profork/raw/master/appimage/caip.sh"
 )
 
 # Download each script and make it executable
@@ -31,7 +31,7 @@ for url in "${urls[@]}"; do
 done
 
 # Download the AppImage Parser script to /userdata/roms/ports and make it executable
-wget -O "/userdata/roms/ports/AppImage Parser.sh" "https://github.com/trashbus99/profork/raw/main/appimage/AppImage%20Parser.sh"
+wget -O "/userdata/roms/ports/AppImage Parser.sh" "https://github.com/trashbus99/profork/raw/master/appimage/AppImage%20Parser.sh"
 chmod +x "/userdata/roms/ports/AppImage Parser.sh"
 
 clear 
