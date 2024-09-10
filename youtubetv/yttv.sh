@@ -1,5 +1,5 @@
 #!/usr/bin/env bash 
-# BATOCERA.PRO INSTALLER
+# PROFORK INSTALLER
 ######################################################################
 ######################################################################
 ######################################################################
@@ -19,7 +19,7 @@ APPNAME=youtubetv
 #APPLINK=$(curl -s https://api.github.com/repos/mattruzzi/Nativefier-YouTube-on-TV-for-Desktop/releases | grep linux-x64 | grep "browser_download_url" | head -n 1 | sed 's,^.*https://,https://,g' | cut -d \" -f1)
 #APPHOME="github.com/mattruzzi/Nativefier-YouTube-on-TV-for-Desktop" 
 APPLINK=https://github.com/trashbus99/profork/releases/download/r1/YouTubeonTV-linux-x64.zip
-APPHOME=github.com/uureel/batocera.pro
+APPHOME=github.com/uureel/PROFORK
 #---------------------------------------------------------------------
 #       DEFINE LAUNCHER COMMAND >>
 COMMAND='sed -i "s,!appArgs.disableOldBuildWarning,1 == 0,g" /userdata/system/pro/youtubetv/resources/app/lib/main.js 2>/dev/null && mkdir /userdata/system/pro/'$APPNAME'/home 2>/dev/null; mkdir /userdata/system/pro/'$APPNAME'/config 2>/dev/null; mkdir /userdata/system/pro/'$APPNAME'/roms 2>/dev/null; LD_LIBRARY_PATH="/userdata/system/pro/.dep:${LD_LIBRARY_PATH}" HOME=/userdata/system/pro/'$APPNAME'/home XDG_CONFIG_HOME=/userdata/system/pro/'$APPNAME'/config QT_SCALE_FACTOR="1" GDK_SCALE="1" XDG_DATA_HOME=/userdata/system/pro/'$APPNAME'/home DISPLAY=:0.0 /userdata/system/pro/'$APPNAME'/YouTubeonTV --no-sandbox --test-type "${@}"'
@@ -84,8 +84,8 @@ command=$pro/$appname/extra/command; rm $command 2>/dev/null;
 echo "$COMMAND" >> $command 2>/dev/null 
 # --------------------------------------------------------------------
 # -- prepare dependencies for this app and the installer: 
-mkdir -p ~/pro/.dep 2>/dev/null && cd ~/pro/.dep && wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O ~/pro/.dep/dep.zip https://github.com/trashbus99/profork/raw/main/.dep/dep.zip && yes "y" | unzip -oq ~/pro/.dep/dep.zip && cd ~/
-wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O $pro/$appname/extra/icon.png https://github.com/trashbus99/profork/raw/main/$appname/extra/icon.png; chmod a+x $dep/* 2>/dev/null; cd ~/
+mkdir -p ~/pro/.dep 2>/dev/null && cd ~/pro/.dep && wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O ~/pro/.dep/dep.zip https://github.com/trashbus99/profork/raw/master/.dep/dep.zip && yes "y" | unzip -oq ~/pro/.dep/dep.zip && cd ~/
+wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O $pro/$appname/extra/icon.png https://github.com/trashbus99/profork/raw/master/$appname/extra/icon.png; chmod a+x $dep/* 2>/dev/null; cd ~/
 chmod 777 ~/pro/.dep/* && for file in /userdata/system/pro/.dep/lib*; do sudo ln -s "$file" "/usr/lib/$(basename $file)"; done
 # --------------------------------------------------------------------
 # // end of dependencies 
@@ -104,7 +104,7 @@ clear
 echo
 echo
 echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo
 echo
 echo
@@ -114,7 +114,7 @@ clear
 echo
 echo
 echo -e "${W}- - - - - - -"
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo -e "${W}- - - - - - -"
 echo
 echo
@@ -124,7 +124,7 @@ clear
 echo
 echo -e "${W}- - - - - - -"
 line $cols ' '; echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 line $cols ' '; echo
 echo -e "${W}- - - - - - -"
 echo
@@ -134,7 +134,7 @@ clear
 line $cols '\'; echo
 line $cols '/'; echo
 line $cols ' '; echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 line $cols ' '; echo
 line $cols '/'; echo
 line $cols '\'; echo
@@ -195,7 +195,7 @@ clear
 echo
 echo
 echo
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo
 echo
 echo
@@ -205,7 +205,7 @@ clear
 echo
 echo
 echo
-echo -e "${W}BATOCERA.PRO/${W}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${W}$APPNAME${W} INSTALLER ${W}"
 echo
 echo
 echo
@@ -215,7 +215,7 @@ clear
 echo
 echo
 echo -e "${W}- - - - - - -"
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo -e "${W}- - - - - - -"
 echo
 echo
@@ -225,7 +225,7 @@ clear
 echo
 echo -e "${W}- - - - - - -"
 echo; #echo -e "${W}- - -"
-echo -e "${W}BATOCERA.PRO/${W}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${W}$APPNAME${W} INSTALLER ${W}"
 echo; #echo -e "${W}- - -"
 echo -e "${W}- - - - - - -"
 echo
@@ -235,7 +235,7 @@ clear
 echo -e "${W}- - - - - - -"
 echo; #echo -e "${W}- - -"
 echo; #echo -e "${W}- - -"
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo; #echo -e "${W}- - -"
 echo; #echo -e "${W}- - -"
 echo -e "${W}- - - - - - -"
@@ -246,7 +246,7 @@ clear
 echo;
 echo; #echo -e "${W}- - -"
 echo; #echo -e "${W}- - -"
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo; #echo -e "${W}- - -"
 echo; #echo -e "${W}- - -"
 echo;
@@ -280,7 +280,7 @@ mkdir -p $temp 2>/dev/null
 # --------------------------------------------------------------------
 echo
 echo -e "${G}DOWNLOADING${W}"
-url=https://github.com/trashbus99/profork/raw/main/
+url=https://github.com/trashbus99/profork/raw/master/
 cd $temp
 curl --progress-bar --remote-name --location "$APPLINK"
 SIZE=$(du -sh $temp | awk '{print $1}') 2>/dev/null
@@ -343,7 +343,7 @@ chmod a+x $port
 # --------------------------------------------------------------------
 # -- get padtokey profile
 rm "/userdata/roms/ports/YoutubeTV.sh.keys" 
-wget -q -O "/userdata/roms/ports/YoutubeTV.sh.keys" "https://github.com/trashbus99/profork/raw/main/main/youtubetv/extra/YoutubeTV.sh.keys"
+wget -q -O "/userdata/roms/ports/YoutubeTV.sh.keys" "https://github.com/trashbus99/profork/raw/master/youtubetv/extra/YoutubeTV.sh.keys"
 # --------------------------------------------------------------------
 # -- prepare prelauncher to avoid overlay,
 pre=/userdata/system/pro/$appname/extra/startup
@@ -382,7 +382,7 @@ export -f batocera-pro-installer 2>/dev/null
 # |
   batocera-pro-installer "$APPNAME" "$appname" "$AppName" "$APPPATH" "$APPLINK" "$ORIGIN"
 # --------------------------------------------------------------------
-# BATOCERA.PRO INSTALLER //
+# PROFORK INSTALLER //
 ##########################
 function autostart() {
   csh="/userdata/system/custom.sh"
