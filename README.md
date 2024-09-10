@@ -1,11 +1,11 @@
 # Profork
 <br>
-<b>My Continued Repo of uureel's discontinued batocera.pro</b><br>
+<b>My Continued Repo of uureel's discontinued b.pro</b><br>
 
-<b><i>Unofficial Apps for Batocera x86_64 (AMD/Intel)</i></b><br><b>This repo is mainly for personal use and anyone who wants to use it.</b><br>
+<b>This repo is mainly for personal use and anyone who wants to use it.</b><br>
 
 <br>However, it is AS-IS--No support is  provided. <br>
-Note: BATOCERA developers will not support these apps nor any system these apps are installed on if discovered.
+Note: the main developers  will not support these apps nor any system these apps are installed on if discovered.
 
 
 <b><i>Credits and thanks to uureel, kron4ek, and other contributors.</i></b><br>
@@ -29,7 +29,7 @@ The full Arch Container applist can be viewed in it's menu:<br>
 
 
 <i>This is a small hobby repository in no way <br>
-shape or form affiliated with Batocera </i><br>
+shape or form affiliated with the original distro</i><br>
 <br><br><br><br>
 
 
