@@ -5,7 +5,7 @@
 <b>This repo is mainly for personal use and anyone who wants to use it.</b><br>
 
 <br>However, it is AS-IS--No support is  provided. <br>
-Note: the main developers  will not support these apps nor any system these apps are installed on if discovered.
+Note: the main distro developers will not support these apps nor any system these apps are installed on if discovered.
 
 
 <b><i>Credits and thanks to uureel, kron4ek, and other contributors.</i></b><br>
