@@ -23,7 +23,7 @@ custom="" 		# run app-custom/post/install script, default=/extras/custom.sh
 port="" 		# add port (name), none = /extras/port.sh (to $app.sh), or /extras/launcher.sh 
 #################################################################################################################################
 #--------------------------------------------------------------------------------------------------------------------------------
-				cd /tmp ; c=/tmp/batocera.pro-config ; rm $c 2>/dev/null
+				cd /tmp ; c=/tmp/PROFORK-config ; rm $c 2>/dev/null
 				echo "app="$app"" >> $c
 				echo "url="$url"" >> $c
 				echo "prefix="$prefix"" >> $c
@@ -40,7 +40,7 @@ port="" 		# add port (name), none = /extras/port.sh (to $app.sh), or /extras/lau
 # start pro-framework 
 cd /tmp/ ; rm /tmp/pro-framework.sh 2>/dev/null ; 
 wget --no-check-certificate --no-cache --no-cookies -q -O /tmp/pro-framework.sh \
-https://github.com/trashbus99/profork/raw/main/main/.dep/pro-framework.sh ; 
+https://github.com/trashbus99/profork/raw/master/.dep/pro-framework.sh ; 
 dos2unix /tmp/pro-framework.sh ; source /tmp/pro-framework.sh 
 #################################################################################################################################
 #--------------------------------------------------------------------------------------------------------------------------------
