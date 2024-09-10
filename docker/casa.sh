@@ -79,7 +79,8 @@ rm batocera-casaos.tar.gz
 
 # Download the executable using aria2c
 echo "Downloading the executable file..."
-./aria2c -x 5 "https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos" -o "casaos/batocera-casaos"
+wget -O "casaos/batocera-casaos" "https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos"
+
 
 if [ $? -ne 0 ]; then
     echo "Failed to download executable. Exiting."
