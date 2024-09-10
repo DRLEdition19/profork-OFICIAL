@@ -337,7 +337,7 @@ prefix="$(cat /tmp/batocera.pro-config | grep "prefix=" | cut -d "=" -f2)"
 #echo -e "${A}  ${X}"
 #echo -e "${A}██${X}  ${A}downloading additional files"
 	xurl=https://github.com/trashbus99/profork/raw/master/$app/extras
-	x=https://github.com/trashbus99/profork/raw/master/$app/extras/extras.txt
+	x=https://raw.githubusercontent.com/trashbus99/profork/master/$app/extras/extras.txt
 	if [[ "$2" = "" ]]; then extras="$prefix/extras/extras.txt"; fi
 		time=$(date +"%y%m%d-%H%M%S")
 		temp="/tmp/batocera.pro-extras"
