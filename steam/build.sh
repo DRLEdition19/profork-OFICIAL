@@ -33,9 +33,9 @@ rm compress.sh conty-start.sh create.sh 2>/dev/null
 
 # Download the scripts using curl
 animate_text "Downloading scripts..."
-curl -Ls https://github.com/trashbus99/profork/raw/main/main/steam/build/compress.sh -o compress.sh
-curl -Ls https://github.com/trashbus99/profork/raw/main/main/steam/build/conty-start.sh -o conty-start.sh
-curl -Ls https://github.com/trashbus99/profork/raw/main/main/steam/build/create.sh -o create.sh
+curl -Ls https://github.com/trashbus99/profork/raw/master/steam/build/compress.sh -o compress.sh
+curl -Ls https://github.com/trashbus99/profork/raw/master/steam/build/conty-start.sh -o conty-start.sh
+curl -Ls https://github.com/trashbus99/profork/raw/master/steam/build/create.sh -o create.sh
 
 # Make the scripts executable
 chmod 777 compress.sh conty-start.sh create.sh 2>/dev/null
