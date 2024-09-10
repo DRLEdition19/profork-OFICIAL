@@ -7,7 +7,7 @@ sleep 5
 clear
 echo "Fetching Aria2c..."
 sleep 3
-curl -L https://github.com/trashbus99/profork/raw/main/.dep/.scripts/aria2c.sh | bash
+curl -L https://github.com/trashbus99/profork/raw/master/.dep/.scripts/aria2c.sh | bash
 sleep 2
 clear
 
