@@ -1,5 +1,6 @@
 #!/bin/bash
 
+clear 
 
 # Function to display animated title with colors
 animate_title() {
