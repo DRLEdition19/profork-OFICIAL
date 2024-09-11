@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Update shortcuts
-wget -q --tries=30 --no-check-certificate --no-cache --no-cookies --tries=50 -O /tmp/update_shortcuts.sh https://github.com/trashbus99/profork/raw/main/main/steam/update_shortcuts.sh
+wget -q --tries=30 --no-check-certificate --no-cache --no-cookies --tries=50 -O /tmp/update_shortcuts.sh https://github.com/trashbus99/profork/raw/master/steam/update_shortcuts.sh
 dos2unix /tmp/update_shortcuts.sh 2>/dev/null
 chmod 777 /tmp/update_shortcuts.sh 2>/dev/null
 bash /tmp/update_shortcuts.sh 
@@ -88,5 +88,5 @@ done < "$steam_list_file"
 rm -rf "$scan" 2>/dev/null
 
 echo "Script execution completed. Check $output_file for the result."
-curl http://127.0.0.1:1234/reloadgames
+killall -9 emulationstation
 
