@@ -33,8 +33,8 @@ function progress_bar {
 
   while [[ $current_step -le $total_steps ]]; do
     local num_hashes=$((current_step * bar_length / total_steps))
-    local bar=$(printf "%-${bar_length}s" "#" | cut -c1-$num_hashes)
-    local spaces=$(printf "%-${bar_length}s" " ")
+    local bar=$(printf '#%.0s' $(seq 1 $num_hashes))
+    local spaces=$(printf ' %.0s' $(seq 1 $((bar_length - num_hashes))))
     
     echo -ne "${color}[${bar}${spaces}] (${current_step}/${total_steps})${reset}\r"
     sleep 0.1
