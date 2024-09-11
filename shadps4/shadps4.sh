@@ -7,7 +7,7 @@ appname=shadps4   # directory name in /userdata/system/pro/...
 AppName=Shadps4-qt   # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$AppName.AppImage
 # Static link to the specific version of the ShadPS4 AppImage zip file
-APPLINK=https://github.com/shadps4-emu/shadPS4/releases/download/v.0.2.0/shadps4-linux-qt.zip
+APPLINK=APPLINK=$(curl -Ls https://api.github.com/repos/shadps4-emu/shadPS4/releases/latest | grep "browser_download_url.*shadps4-linux-qt.zip" | awk -F '"' '{print $4}')
 ORIGIN="shadps4-emu/shadPS4" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
