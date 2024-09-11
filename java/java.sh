@@ -149,7 +149,7 @@ echo
 # --------------------------------------------------------------------
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 # -- THIS WILL BE SHOWN ON master BATOCERA DISPLAY:   
-function batocera-pro-installer {
+function PROFORK-installer {
 APPNAME=$1
 appname=$2
 AppName=$3
@@ -482,11 +482,11 @@ echo
 line $cols '='; echo
 sleep 10
 }
-export -f batocera-pro-installer 2>/dev/null
+export -f PROFORK-installer 2>/dev/null
 # --------------------------------------------------------------------
 # RUN:
 # |
-  batocera-pro-installer "$APPNAME" "$appname" "$AppName" "$APPPATH" "$APPLINK" "$ORIGIN"
+  PROFORK-installer "$APPNAME" "$appname" "$AppName" "$APPPATH" "$APPLINK" "$ORIGIN"
 # --------------------------------------------------------------------
 # BATOCERA.PRO INSTALLER //
 ##########################
