@@ -63,7 +63,7 @@ microsoft-edge-stable-bin qdirstat peazip jq steam-rom-manager-git google-chrome
 screenfetch glances konsole mullvad-browser-bin discord pcem jre8-openjdk gcc13 python-pip xfce4 xfce4-goodies lua53"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="shadps4-git geforcenow-electron protonup-qt freefilesync-bin sgdboop-bin winegui-bin umu-launcher"
+export aur_packagelist="geforcenow-electron protonup-qt freefilesync-bin sgdboop-bin winegui-bin"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
