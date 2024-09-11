@@ -8,7 +8,7 @@ AppName=Shadps4-qt   # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$AppName.AppImage
 # Static link to the specific version of the ShadPS4 AppImage zip file
 APPLINK=https://github.com/shadps4-emu/shadPS4/releases/download/v.0.2.0/shadps4-linux-qt.zip
-ORIGIN="PROFORK/app" # credit & info
+ORIGIN="shadps4-emu/shadPS4" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 # show console/ssh info: 
