@@ -82,7 +82,6 @@ for file in *.sh; do
 done
 
 rm -rf "$scan" 2>/dev/null
-
-curl http://127.0.0.1:1234/reloadgames
+killall -9 emulationstation
 echo "Script execution completed."
 
