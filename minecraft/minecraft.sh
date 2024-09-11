@@ -1,6 +1,6 @@
 #!/usr/bin/env bash 
 ######################################################################
-# BATOCERA.PRO INSTALLER
+# PROFORK INSTALLER
 ######################################################################
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
@@ -9,7 +9,7 @@ APPNAME=MINECRAFT # for installer info
 appname=minecraft # directory name in /userdata/system/pro/...
 AppName=Minecraft # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$AppName
-APPLINK=https://github.com/trashbus99/profork/raw/main/minecraft/extra/Minecraft
+APPLINK=https://github.com/trashbus99/profork/raw/master/minecraft/extra/Minecraft
 ORIGIN="OFFICIAL MINECRAFT.NET LAUNCHER" # credit & info 
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
@@ -54,8 +54,8 @@ mkdir $pro/$appname 2>/dev/null
 mkdir $pro/$appname/extra 2>/dev/null
 # --------------------------------------------------------------------
 # -- prepare dependencies for this app and the installer: 
-mkdir -p ~/pro/.dep 2>/dev/null && cd ~/pro/.dep && wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O ~/pro/.dep/dep.zip https://github.com/trashbus99/profork/raw/main/.dep/dep.zip && yes "y" | unzip -oq ~/pro/.dep/dep.zip && cd ~/
-wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O $pro/$appname/extra/icon.png https://github.com/trashbus99/profork/raw/main/$appname/extra/icon.png; chmod a+x $dep/* 2>/dev/null; cd ~/
+mkdir -p ~/pro/.dep 2>/dev/null && cd ~/pro/.dep && wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O ~/pro/.dep/dep.zip https://github.com/trashbus99/profork/raw/master/.dep/dep.zip && yes "y" | unzip -oq ~/pro/.dep/dep.zip && cd ~/
+wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O $pro/$appname/extra/icon.png https://github.com/trashbus99/profork/raw/master/$appname/extra/icon.png; chmod a+x $dep/* 2>/dev/null; cd ~/
 chmod 777 ~/pro/.dep/* && for file in /userdata/system/pro/.dep/lib*; do sudo ln -s "$file" "/usr/lib/$(basename $file)"; done
 # --------------------------------------------------------------------
 # // end of dependencies 
@@ -71,7 +71,7 @@ clear
 echo
 echo
 echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo
 echo
 echo
@@ -83,7 +83,7 @@ clear
 echo
 echo
 echo -e "${X}--------------------------------------------------------"
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo -e "${X}--------------------------------------------------------"
 echo
 echo
@@ -95,7 +95,7 @@ clear
 echo
 echo -e "${X}--------------------------------------------------------"
 echo -e "${X}--------------------------------------------------------"
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo -e "${X}--------------------------------------------------------"
 echo -e "${X}--------------------------------------------------------"
 echo
@@ -107,7 +107,7 @@ clear
 echo -e "${X}--------------------------------------------------------"
 echo -e "${X}--------------------------------------------------------"
 echo -e "${X}--------------------------------------------------------"
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo -e "${X}--------------------------------------------------------"
 echo -e "${X}--------------------------------------------------------"
 echo -e "${X}--------------------------------------------------------"
@@ -166,7 +166,7 @@ clear
 echo
 echo
 echo
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo
 echo
 echo
@@ -178,7 +178,7 @@ clear
 echo
 echo
 echo
-echo -e "${W}BATOCERA.PRO/${W}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${W}$APPNAME${W} INSTALLER ${W}"
 echo
 echo
 echo
@@ -190,7 +190,7 @@ clear
 echo
 echo
 echo -e "${L}-----------------------------------------------------------------------"
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo -e "${L}-----------------------------------------------------------------------"
 echo
 echo
@@ -202,7 +202,7 @@ clear
 echo
 echo -e "${L}-----------------------------------------------------------------------"
 echo -e "${L}-----------------------------------------------------------------------"
-echo -e "${W}BATOCERA.PRO/${W}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${W}$APPNAME${W} INSTALLER ${W}"
 echo -e "${L}-----------------------------------------------------------------------"
 echo -e "${L}-----------------------------------------------------------------------"
 echo
@@ -214,7 +214,7 @@ clear
 echo -e "${L}-----------------------------------------------------------------------"
 echo -e "${L}-----------------------------------------------------------------------"
 echo -e "${L}-----------------------------------------------------------------------"
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo -e "${L}-----------------------------------------------------------------------"
 echo -e "${L}-----------------------------------------------------------------------"
 echo -e "${L}-----------------------------------------------------------------------"
@@ -258,20 +258,20 @@ d1=liblauncher.so
  p1=liblauncher.tar.bz2.partaa
  p2=liblauncher.tar.bz2.partab
  p3=liblauncher.tar.bz2.partac
-curl --progress-bar --remote-name --location "https://github.com/trashbus99/profork/raw/main/$appname/extra/$p1"
-curl --progress-bar --remote-name --location "https://github.com/trashbus99/profork/raw/main/$appname/extra/$p2"
-curl --progress-bar --remote-name --location "https://github.com/trashbus99/profork/raw/main/$appname/extra/$p3"
+curl --progress-bar --remote-name --location "https://github.com/trashbus99/profork/raw/master/$appname/extra/$p1"
+curl --progress-bar --remote-name --location "https://github.com/trashbus99/profork/raw/master/$appname/extra/$p2"
+curl --progress-bar --remote-name --location "https://github.com/trashbus99/profork/raw/master/$appname/extra/$p3"
 # libselinux.so.1
 d2=libselinux.so.1
-wget -q -O /userdata/system/pro/minecraft/extra/$d2 https://github.com/trashbus99/profork/raw/main/$appname/extra/$d2
+wget -q -O /userdata/system/pro/minecraft/extra/$d2 https://github.com/trashbus99/profork/raw/master/$appname/extra/$d2
 ln -s /userdata/system/pro/minecraft/extra/$d2 /lib/$d2 2>/dev/null
 # tar
 d3=tar
-wget -q -O /userdata/system/pro/minecraft/extra/$d3 https://github.com/trashbus99/profork/raw/main/$appname/extra/$d3
+wget -q -O /userdata/system/pro/minecraft/extra/$d3 https://github.com/trashbus99/profork/raw/master/$appname/extra/$d3
 chmod a+x $d3 
 #
 d4=libsecret-1.so.0
-wget -q -O /userdata/system/pro/minecraft/extra/$d4 https://github.com/trashbus99/profork/raw/main/$appname/extra/$d4
+wget -q -O /userdata/system/pro/minecraft/extra/$d4 https://github.com/trashbus99/profork/raw/master/$appname/extra/$d4
 # --- join liblauncher
 cat /userdata/system/pro/minecraft/extra/liblauncher.tar.bz2.parta* >/userdata/system/pro/minecraft/extra/liblauncher.tar.gz
 pro=/userdata/system/pro; chmod a+x $pro/.dep/tar; $pro/.dep/tar -xf /userdata/system/pro/minecraft/extra/liblauncher.tar.gz
@@ -331,7 +331,7 @@ chmod a+x $launcher
 # //
 # -- get icon for shortcut,
 icon=/userdata/system/pro/minecraft/extra/icon.png
-wget -q -O $icon https://github.com/trashbus99/profork/raw/main/$appname/extra/icon.png
+wget -q -O $icon https://github.com/trashbus99/profork/raw/master/$appname/extra/icon.png
 # //
 # -- prepare f1 - applications - app shortcut, 
 shortcut=/userdata/system/pro/minecraft/extra/minecraft-launcher.desktop
@@ -352,7 +352,7 @@ cp $shortcut $f1shortcut 2>/dev/null
 rm /userdata/roms/ports/Minecraft.sh 2>/dev/null
 cp $pro/$appname/Launcher /userdata/roms/ports/Minecraft.sh
 rm /userdata/roms/ports/Minecraft.sh.keys 2>/dev/null
-wget -q -O "/userdata/roms/ports/Minecraft.sh.keys" "https://github.com/trashbus99/profork/raw/main/main/minecraft/extra/Darknior-Minecraft.sh.keys" 
+wget -q -O "/userdata/roms/ports/Minecraft.sh.keys" "https://github.com/trashbus99/profork/raw/master/minecraft/extra/Darknior-Minecraft.sh.keys" 
 dos2unix /userdata/roms/ports/Minecraft.sh.keys 2>/dev/null 
 #
 # -- prepare prelauncher to avoid overlay,
