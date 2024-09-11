@@ -1,5 +1,5 @@
 #!/usr/bin/env bash 
-# BATOCERA.PRO INSTALLER
+# PROFORK INSTALLER
 ######################################################################
 ######################################################################
 ######################################################################
@@ -77,13 +77,13 @@ rm -rf $pro/$appname 2>/dev/null
 mkdir $pro/$appname 2>/dev/null
 mkdir $pro/$appname/extra 2>/dev/null
 # --------------------------------------------------------------------
-# -- pass launcher command as cookie for main function: 
+# -- pass launcher command as cookie for master function: 
 command=$pro/$appname/extra/command; rm $command 2>/dev/null;
 echo "$COMMAND" >> $command 2>/dev/null 
 # --------------------------------------------------------------------
 # -- prepare dependencies for this app and the installer: 
-mkdir -p ~/pro/.dep 2>/dev/null && cd ~/pro/.dep && wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O ~/pro/.dep/dep.zip https://github.com/trashbus99/profork/raw/main/.dep/dep.zip && yes "y" | unzip -oq ~/pro/.dep/dep.zip && cd ~/
-wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O $pro/$appname/extra/icon.png https://github.com/trashbus99/profork/raw/main/$appname/extra/icon.png; chmod a+x $dep/* 2>/dev/null; cd ~/
+mkdir -p ~/pro/.dep 2>/dev/null && cd ~/pro/.dep && wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O ~/pro/.dep/dep.zip https://github.com/trashbus99/profork/raw/master/.dep/dep.zip && yes "y" | unzip -oq ~/pro/.dep/dep.zip && cd ~/
+wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O $pro/$appname/extra/icon.png https://github.com/trashbus99/profork/raw/master/$appname/extra/icon.png; chmod a+x $dep/* 2>/dev/null; cd ~/
 chmod 777 ~/pro/.dep/* && for file in /userdata/system/pro/.dep/lib*; do sudo ln -s "$file" "/usr/lib/$(basename $file)"; done
 # --------------------------------------------------------------------
 # // end of dependencies 
@@ -102,7 +102,7 @@ clear
 echo
 echo
 echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo
 echo
 echo
@@ -112,7 +112,7 @@ clear
 echo
 echo
 echo -e "${W}- - - - - - -"
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo -e "${W}- - - - - - -"
 echo
 echo
@@ -122,7 +122,7 @@ clear
 echo
 echo -e "${W}- - - - - - -"
 line $cols ' '; echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 line $cols ' '; echo
 echo -e "${W}- - - - - - -"
 echo
@@ -132,7 +132,7 @@ clear
 line $cols '\'; echo
 line $cols '/'; echo
 line $cols ' '; echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 line $cols ' '; echo
 line $cols '/'; echo
 line $cols '\'; echo
@@ -193,7 +193,7 @@ clear
 echo
 echo
 echo
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo
 echo
 echo
@@ -203,7 +203,7 @@ clear
 echo
 echo
 echo
-echo -e "${W}BATOCERA.PRO/${W}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${W}$APPNAME${W} INSTALLER ${W}"
 echo
 echo
 echo
@@ -213,7 +213,7 @@ clear
 echo
 echo
 echo -e "${W}- - - - - - -"
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo -e "${W}- - - - - - -"
 echo
 echo
@@ -223,7 +223,7 @@ clear
 echo
 echo -e "${W}- - - - - - -"
 echo; #echo -e "${W}- - -"
-echo -e "${W}BATOCERA.PRO/${W}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${W}$APPNAME${W} INSTALLER ${W}"
 echo; #echo -e "${W}- - -"
 echo -e "${W}- - - - - - -"
 echo
@@ -233,7 +233,7 @@ clear
 echo -e "${W}- - - - - - -"
 echo; #echo -e "${W}- - -"
 echo; #echo -e "${W}- - -"
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo; #echo -e "${W}- - -"
 echo; #echo -e "${W}- - -"
 echo -e "${W}- - - - - - -"
@@ -244,7 +244,7 @@ clear
 echo;
 echo; #echo -e "${W}- - -"
 echo; #echo -e "${W}- - -"
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo; #echo -e "${W}- - -"
 echo; #echo -e "${W}- - -"
 echo;
@@ -278,7 +278,7 @@ mkdir -p $temp 2>/dev/null
 # --------------------------------------------------------------------
 echo
 echo -e "${G}DOWNLOADING${W}"
-url=https://github.com/trashbus99/profork/raw/main/
+url=https://github.com/trashbus99/profork/raw//
 cd $temp
 curl --progress-bar --remote-name --location "$APPLINK"
 SIZE=$(du -sh $temp | awk '{print $1}') 2>/dev/null
@@ -340,7 +340,7 @@ chmod a+x $port
 # --------------------------------------------------------------------
 # -- get padtokey profile
 rm "/userdata/roms/ports/ludusavi.sh.keys" 
-wget -q -O "/userdata/roms/ports/ludusavi.sh.keys" "https://github.com/trashbus99/profork/raw/main/main/ludusavi/extra/ludusavi.sh.keys"
+wget -q -O "/userdata/roms/ports/ludusavi.sh.keys" "https://github.com/trashbus99/profork/raw/master/ludusavi/extra/ludusavi.sh.keys"
 # --------------------------------------------------------------------
 # -- prepare prelauncher to avoid overlay,
 pre=/userdata/system/pro/$appname/extra/startup
@@ -379,7 +379,7 @@ export -f batocera-pro-installer 2>/dev/null
 # |
   batocera-pro-installer "$APPNAME" "$appname" "$AppName" "$APPPATH" "$APPLINK" "$ORIGIN"
 # --------------------------------------------------------------------
-# BATOCERA.PRO INSTALLER //
+# PROFORK INSTALLER //
 ##########################
 function autostart() {
   csh="/userdata/system/custom.sh"
