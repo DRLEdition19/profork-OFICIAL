@@ -1,5 +1,5 @@
 #!/usr/bin/env bash 
-# BATOCERA.PRO INSTALLER
+# PROFORK INSTALLER
 ######################################################################
 ######################################################################
 ######################################################################
@@ -14,7 +14,7 @@
 # --------------------------------------------------------------------
 # DEFINE APP INFO: /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ 
 APPNAME=photocollage 
-APPLINK=http://batocera.pro/app/photocollage.AppImage 
+APPLINK=http://PROFORK/app/photocollage.AppImage 
 APPHOME=apprepo.de/appimage/photocollage 
 # /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 # --------------------------------------------------------------------
@@ -104,7 +104,7 @@ clear
 echo
 echo
 echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo
 echo
 echo
@@ -114,7 +114,7 @@ clear
 echo
 echo
 line $cols '-'; echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 line $cols '-'; echo
 echo
 echo
@@ -124,7 +124,7 @@ clear
 echo
 line $cols '-'; echo
 line $cols ' '; echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 line $cols ' '; echo
 line $cols '-'; echo
 echo
@@ -134,7 +134,7 @@ clear
 line $cols '\'; echo
 line $cols '/'; echo
 line $cols ' '; echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 line $cols ' '; echo
 line $cols '/'; echo
 line $cols '\'; echo
@@ -194,7 +194,7 @@ clear
 echo
 echo
 echo
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo
 echo
 echo
@@ -204,7 +204,7 @@ clear
 echo
 echo
 echo
-echo -e "${W}BATOCERA.PRO/${W}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${W}$APPNAME${W} INSTALLER ${W}"
 echo
 echo
 echo
@@ -214,7 +214,7 @@ clear
 echo
 echo
 line $cols '-'; echo
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 line $cols '-'; echo
 echo
 echo
@@ -224,7 +224,7 @@ clear
 echo
 line $cols '-'; echo
 echo; #line $cols '-'; echo
-echo -e "${W}BATOCERA.PRO/${W}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${W}$APPNAME${W} INSTALLER ${W}"
 echo; #line $cols '-'; echo
 line $cols '-'; echo
 echo
@@ -234,7 +234,7 @@ clear
 line $cols '='; echo
 echo; #line $cols '-'; echo
 echo; #line $cols '-'; echo
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo; #line $cols '-'; echo
 echo; #line $cols '-'; echo
 line $cols '='; echo
@@ -346,7 +346,7 @@ export -f batocera-pro-installer 2>/dev/null
 # |
   batocera-pro-installer "$APPNAME" "$appname" "$AppName" "$APPPATH" "$APPLINK" "$ORIGIN"
 # --------------------------------------------------------------------
-# BATOCERA.PRO INSTALLER //
+# PROFORK INSTALLER //
 ##########################
 function autostart() {
   csh="/userdata/system/custom.sh"
