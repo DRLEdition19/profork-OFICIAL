@@ -36,7 +36,7 @@ curl -L bit.ly/profork | bash
 - **GeforceNow**: NVIDIA’s cloud gaming platform, which allows users to play PC games remotely from a cloud server.
 - **Gimp**: A free, open-source image editing software, often considered an alternative to Adobe Photoshop for graphic design.
 - **GIT and Dev Tools**: A collection of development tools including Git, used for version control and managing code repositories.
-- **Greenlight**: An open-source video conferencing solution built on BigBlueButton for online meetings and presentations.
+- **Greenlight**: XBOX Remote play and XCLOUD Streaming client.
 - **Handbrake**: A free, open-source video transcoder that allows users to convert video from nearly any format to a variety of codecs.
 - **Heroic Game Launcher**: An open-source game launcher designed for managing games from the Epic Games Store and GOG on Linux.
 - **Inkscape**: A free and open-source vector graphics editor for creating and editing scalable vector images, ideal for graphic design.
