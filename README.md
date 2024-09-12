@@ -168,7 +168,7 @@ More apps can be added via pacman
 - WPS-OFFICE
 - YARG/YARC-LAUNCHER
 - YOUTUBE-MUSIC
-- YOUTUBE-TV
+- YOUTUBE (TV UI)
 
 ---
 
