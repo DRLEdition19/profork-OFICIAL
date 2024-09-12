@@ -138,9 +138,9 @@ More apps can be added via pacman
 - **POKEMMO**: A fan-made multiplayer version of Pokémon games.
 - **PORTAINER/DOCKER**: A management UI for Docker containers.
 - **PROTONUP-QT**: A tool to install and manage Proton-GE for Steam Play.
-- **PS2-MINUS**: Older 1.6 build of the PS2 emulator .
-- **PS2-PLUS**: Latest build of the PS2 emulator with QT support.
-- **PS3-PLUS**: Latest version of the PS3 emulator.
+- **PS2-MINUS**: Older 1.6 build of the PCSX2.
+- **PS2-PLUS**: Latest build of the PCSX2 emulator with QT support.
+- **PS3-PLUS**: Latest version of the RPCS3 emulator.
 - **QBITTORRENT**: A lightweight open-source BitTorrent client.
 - **QDIRSTAT**: A disk usage analyzer with a visual interface.
 - **RHYTHMBOX**: A music player and organizer for GNOME.
@@ -165,7 +165,7 @@ More apps can be added via pacman
 - **WIIU-PLUS**: An updated version of the Wii U emulator.
 - **XARCHIVER**: A lightweight archive manager.
 - **XCLOUD**: Microsoft’s cloud gaming service.
-- **WII U UPDATER**: A tool for updating Wii U games and system software.
+- **WII U UPDATER**: A tool for updating  to latest version of CEMU.
 - **WINDOWS-VMS/DOCKER**: Run Windows virtual machines inside Docker.
 - **WINE-CUSTOM-DOWNLOADER/v40+**: A custom WINE downloader for running Windows apps on Linux.
 - **WPS-OFFICE**: A powerful office suite fully compatible with Microsoft Office.
