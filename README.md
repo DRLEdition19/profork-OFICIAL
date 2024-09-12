@@ -1,37 +1,23 @@
-<img src="https://github.com/user-attachments/assets/aa7e6947-2f5b-404d-8702-ee0322281e06" width="50" /> 
+<img src="https://github.com/user-attachments/assets/aa7e6947-2f5b-404d-8702-ee0322281e06" width="100" />
 
-Profork
+# Profork
 
-<br>
-<b>My Continued Repo of uureel's discontinued b.pro</b><br>
+### My Continued Repo of uureel's Discontinued b.pro
 
-<b>This repo is mainly for personal use and anyone who wants to use it.</b><br>
+This repo is mainly for personal use, but anyone interested is welcome to use it.  
+However, please note that **it is provided AS-IS—no support is offered.**
 
-<br>However, it is AS-IS--No support is  provided. <br>
-Note: the main distro developers will not support these apps nor any system these apps are installed on if discovered.
+> **Important:** The main distribution developers **will not support these apps** or any system on which these apps are installed if discovered.
 
+---
 
-<b><i>Credits and thanks to uureel, kron4ek, and other contributors.</i></b><br>
+### Credits and Thanks
+Special thanks to **uureel**, **kron4ek**, and other contributors for their valuable work and efforts.
 
-<b> APP INSTALL MENU  = curl -L bit.ly/profork | bash</b>
+---
 
-<br>
-<br>
-<br>
-</b>Most of these apps will be available in <i>F1-Applications</i> <br>
-as normal desktop apps that stay running in background, so that <br>
-you can Alt+Tab between them & use EmulationStation with them running. <br>
-Some will also be available in <i>Ports</i> in EmulationStation. <br>
-Docker/Podman, and Docker Apps are also available.<br>
-There's also a few custom systems available, and a full Arch Container <br>
-with Steam/Lutris/Heroic and more. <br>
-The full Arch Container applist can be viewed in it's menu:<br>
-<br>
-<br>
+## How to Install
+Run the following command to install:
 
-
-<i>This is a small hobby repository in no way <br>
-shape or form affiliated with the original distro</i><br>
-<br><br><br><br>
-
-
+```bash
+curl -L bit.ly/profork | bash
