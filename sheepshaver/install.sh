@@ -11,7 +11,7 @@ fi
 
 
 # Intro animation for SheepShaver installer
-echo "PROFORK O -- Starting SheepShaver installation..."
+echo "PROFORK  -- Starting SheepShaver installation..."
 sleep 3
 
 # Create directory for SheepShaver if it doesn't exist
@@ -37,4 +37,4 @@ chmod +x /userdata/roms/ports/SheepShaver.sh
 echo "Installation complete. You can now launch SheepShaver in PORTS"
 sleep 3
 
-curl http://127.0.0.1:1234/reloadgames
+killall -9 emulationstation
