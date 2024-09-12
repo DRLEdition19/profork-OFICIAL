@@ -6,7 +6,7 @@ APPNAME="SYSTEM-MONITORING-CENTER"     # for installer info
 appname=system-monitoring-center       # directory inside /userdata/system/pro/...
 AppName=system-monitoring-center       # app binary file name
 APPPATH=/userdata/system/pro/$appname
-APPLINK=http://PROFORK/app/system-monitoring-center.tar.gz
+APPLINK=https://github.com/trashbus99/profork/blob/master/system-monitoring-center/extra/system-monitoring-center.tar.gz
 ORIGIN="github.com/hakandundar34coding/system-monitoring-center" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
@@ -232,7 +232,7 @@ temp=$extra/downloads
 rm -rf $temp 2>/dev/null
 mkdir $temp 2>/dev/null
 cd $temp
-curl --progress-bar --remote-name --location "http://PROFORK/app/system-monitoring-center.tar.gz"
+curl --progress-bar --remote-name --location "https://github.com/trashbus99/profork/blob/master/system-monitoring-center/extra/system-monitoring-center.tar.gz"
 $pro/.dep/tar -xf $temp/system-monitoring-center.tar.gz
 cp -r $PWD/system-monitoring-center /userdata/system/pro/
 cd ~/
