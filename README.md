@@ -28,7 +28,6 @@ curl -L bit.ly/profork | bash
 - **Boilr**: A ROM manager for managing game libraries from different platforms and systems.
 - **Bottles**: A tool that simplifies running and managing Windows applications on Linux using Wine.
 - **Brave**: A privacy-focused web browser with built-in ad-blocking, tracker blocking, and fast performance.
-- **CasaOS**: A lightweight and user-friendly operating system designed for home servers, making it easy to manage containers and services.
 - **Chiaki**: An open-source remote play client for PlayStation consoles, allowing users to stream games from their PS4/PS5.
 - **Chrome**: Google’s popular web browser known for its speed, extension support, and Google service integration.
 - **Edge**: Microsoft’s Chromium-based web browser, designed for speed, security, and seamless integration with Microsoft services.
