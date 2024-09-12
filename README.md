@@ -37,6 +37,9 @@ curl -L bit.ly/profork | bash
 - Shotcut
 - Terminals (Kitty, LxTerminal, Tabby, Terminator)
 - Thunderbird
+- KDENlive
+- Peazip
+- Inkscape
 - WineGUI
 - Zoom
 - Handbrake
