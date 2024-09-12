@@ -11,7 +11,7 @@ fi
 
 
 # Intro animation for SheepShaver installer
-echo "Batocera PRO -- Starting SheepShaver installation..."
+echo "PROFORK O -- Starting SheepShaver installation..."
 sleep 3
 
 # Create directory for SheepShaver if it doesn't exist
@@ -19,7 +19,7 @@ mkdir -p ~/pro/sheepshaver
 
 # Download SheepShaver AppImage
 echo "Downloading SheepShaver AppImage to /userdata/system/pro/sheepshaver..."
-wget https://github.com/trashbus99/profork/raw/main/sheepshaver/SheepShaver-x86_64.AppImage -O ~/pro/sheepshaver/SheepShaver-x86_64.AppImage
+wget https://github.com/trashbus99/profork/raw/master/sheepshaver/SheepShaver-x86_64.AppImage -O ~/pro/sheepshaver/SheepShaver-x86_64.AppImage
 echo "Download complete."
 
 # Make the AppImage executable
