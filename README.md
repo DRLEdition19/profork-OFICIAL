@@ -22,10 +22,47 @@ Run the following command to install:
 ```bash
 curl -L bit.ly/profork | bash
 ```
+## Many Apps are included in the Arch Container such as:
 
-## Available Apps
 
-- ARCH-CONTAINER
+- Steam
+- Heroic Game Launcher
+- Lutris
+- OBS Studio
+- GIT and Dev Tools
+- Play on Linux 4
+- Blender
+- Gimp
+- Libreoffice
+- Shotcut
+- Terminals (Kitty, LxTerminal, Tabby, Terminator)
+- Thunderbird
+- WineGUI
+- Zoom
+- Handbrake
+- Audacity
+- Emudeck
+- Chrome
+- Firefox
+- Edge
+- Brave
+- Greenlight
+- Chiaki
+- GeforceNow
+- Inkscape
+- Qdirstat
+- Boilr
+- Steam Rom Manager
+- Protonup-Qt
+- Bottles
+- Moonlight
+- SMPLAY
+- VLC
+- Kodi
+
+  
+## More Available Apps below Available as AppImages or Docker Apps & Servers
+
 - 7ZIP
 - 86BOX
 - ALTUS
@@ -47,12 +84,10 @@ curl -L bit.ly/profork | bash
 - DOCKER
 - DOUBLE-COMMANDER
 - EDGE
-- EMUDECK/CONTAINER
 - EMBY/DOCKER
 - FERDIUM
 - FILEZILLA
 - FIREFOX
-- FIGHTCADE-2
 - FOOBAR2000
 - GAME-MANAGER
 - GEFORCENOW
@@ -60,7 +95,6 @@ curl -L bit.ly/profork | bash
 - GREENLIGHT
 - GTHUMB
 - HARD-INFO
-- HEROIC-LAUNCHER/CONTAINER
 - HYPER
 - ITCH
 - JAVA-RUNTIME
@@ -73,7 +107,6 @@ curl -L bit.ly/profork | bash
 - LINUX-DESKTOPS-RDP/DOCKER
 - LINUX-VMS-ON-QEMU/DOCKER
 - LUDUSAVI
-- LUTRIS/CONTAINER
 - MEDIAELCH
 - MINECRAFT-BEDROCK-EDITION
 - MINECRAFT-JAVA-EDITION
@@ -85,7 +118,6 @@ curl -L bit.ly/profork | bash
 - NEXTCLOUD/DOCKER
 - NVTOP
 - NOMACS
-- OBS-STUDIO/CONTAINER
 - ODIO
 - OLIVE
 - OPERA
@@ -108,7 +140,6 @@ curl -L bit.ly/profork | bash
 - SHADPS4
 - SHEEPSHAVER
 - SMPLAYER
-- STEAM/CONTAINER
 - STRAWBERRY
 - SUBLIME-TEXT
 - SUNSHINE
