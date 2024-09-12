@@ -23,46 +23,49 @@ Run the following command to install:
 curl -L bit.ly/profork | bash
 ```
 ## Many Apps are included in the Arch Container such as:
+- **Audacity**: A free, open-source, cross-platform audio editing software for recording and manipulating audio files.
+- **Blender**: A powerful open-source 3D modeling and animation software used for creating films, visual effects, art, and games.
+- **Boilr**: A ROM manager for managing game libraries from different platforms and systems.
+- **Bottles**: A tool that simplifies running and managing Windows applications on Linux using Wine.
+- **Brave**: A privacy-focused web browser with built-in ad-blocking, tracker blocking, and fast performance.
+- **CasaOS**: A lightweight and user-friendly operating system designed for home servers, making it easy to manage containers and services.
+- **Chiaki**: An open-source remote play client for PlayStation consoles, allowing users to stream games from their PS4/PS5.
+- **Chrome**: Google’s popular web browser known for its speed, extension support, and Google service integration.
+- **Edge**: Microsoft’s Chromium-based web browser, designed for speed, security, and seamless integration with Microsoft services.
+- **Emudeck**: A comprehensive tool that installs and configures emulators and game systems on Linux or Steam Deck for retro gaming.
+- **Firefox**: Mozilla’s open-source web browser that emphasizes privacy and customizability.
+- **GeforceNow**: NVIDIA’s cloud gaming platform, which allows users to play PC games remotely from a cloud server.
+- **Gimp**: A free, open-source image editing software, often considered an alternative to Adobe Photoshop for graphic design.
+- **GIT and Dev Tools**: A collection of development tools including Git, used for version control and managing code repositories.
+- **Greenlight**: An open-source video conferencing solution built on BigBlueButton for online meetings and presentations.
+- **Handbrake**: A free, open-source video transcoder that allows users to convert video from nearly any format to a variety of codecs.
+- **Heroic Game Launcher**: An open-source game launcher designed for managing games from the Epic Games Store and GOG on Linux.
+- **Inkscape**: A free and open-source vector graphics editor for creating and editing scalable vector images, ideal for graphic design.
+- **KDENlive**: A free, open-source video editing software that provides powerful tools for creating and editing professional-quality videos.
+- **Kodi**: An open-source media player and entertainment hub, designed for playing media on various devices and streaming online content
+- **LibreOffice**: A powerful, free office suite fully compatible with Microsoft Office, including tools for word processing, spreadsheets, and presentations.
+- **Lutris**: A game management platform that allows users to install, configure, and manage video games on Linux, including native and emulated games.
+- **Moonlight**: An open-source implementation of NVIDIA GameStream, allowing users to stream their PC games to various devices.
+- **OBS Studio**: A free and open-source software for live streaming and video recording, popular among streamers and content creators.
+- **PCem**: An emulator for older computer hardware, allowing users to run retro operating systems and applications.
+- **Peazip**: A free, open-source file archiver utility with support for multiple file formats for compressing and extracting files.
+- **Play on Linux 4**: A graphical frontend for Wine, making it easier to install and manage Windows applications on Linux.
+- **Protontricks**: A tool that helps manage and configure compatibility layers for running Windows games and apps in Steam Proton.
+- **Protonup-Qt**: A tool that simplifies the installation and management of Proton-GE versions, improving game compatibility on Steam Play.
+- **Qdirstat**: A disk usage analyzer with a graphical interface to visualize and manage storage usage on Linux.
+- **Shotcut**: A free, open-source video editor that supports a wide range of formats and offers numerous professional editing features.
+- **SMPlayer**: A free media player with built-in codecs that supports a wide range of video and audio formats.
+- **Steam**: The largest digital distribution platform for PC gaming, offering a wide variety of games, community features, and game management.
+- **Steam Rom Manager**: A tool for managing and organizing ROMs and emulators within Steam, making them easier to launch.
+- **Tabby**: A modern terminal app built on web technologies, offering a highly customizable experience with support for SSH and more.
+- **Terminals (Kitty, LxTerminal, Tabby, Terminator)**: Various terminal emulators offering different features like speed, lightweight performance, and customization for developers and users.
+- **Thunderbird**: A free, open-source email client developed by Mozilla, with support for multiple email protocols and advanced customization.
+- **VLC**: A free and open-source multimedia player that can play almost any media file format, as well as stream media over networks.
+- **WineGUI**: A graphical frontend for Wine, making it easier to configure and manage Windows applications on Linux.
+- **Zoom**: A popular video conferencing tool for online meetings, webinars, and remote collaboration, offering features like screen sharing and chat.
 
 
-- Steam
-- Heroic Game Launcher
-- Lutris
-- OBS Studio
-- GIT and Dev Tools
-- Play on Linux 4
-- Blender
-- Gimp
-- Libreoffice
-- Shotcut
-- PCem
-- Terminals (Kitty, LxTerminal, Tabby, Terminator)
-- Thunderbird
-- KDENlive
-- Peazip
-- Inkscape
-- WineGUI
-- Zoom
-- Handbrake
-- Audacity
-- Emudeck
-- Chrome
-- Firefox
-- Edge
-- Brave
-- Greenlight
-- Chiaki
-- GeforceNow
-- Inkscape
-- Qdirstat
-- Boilr
-- Steam Rom Manager
-- Protonup-Qt
-- Bottles
-- Moonlight
-- SMPLAY
-- VLC
-- Kodi
+
 
 For A Full list, see the arch container manager menu in the installer.
 More apps can be added via pacman
@@ -157,7 +160,7 @@ More apps can be added via pacman
 - **TOTAL-COMMANDER**: A file manager with a two-panel interface.
 - **TRANSMISSION**: A fast and easy BitTorrent client.
 - **VIRTUALBOX**: A cross-platform virtualization software.
-- **VIVALDI**: A highly customizable web browser.
+- **VIVALDI**: A highly customizable web browser.and
 - **VLC**: A free and open-source multimedia player.
 - **WHATSAPP**: A cross-platform messaging app.
 - **WIIU-PLUS**: An updated version of the Wii U emulator.
