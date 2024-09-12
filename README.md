@@ -19,6 +19,7 @@ Special thanks to **uureel**, **kron4ek**, and other contributors for their valu
 ## How to Install
 Run the following command to install:
 
+
 ```bash
 curl -L bit.ly/profork | bash
 ```
@@ -173,6 +174,23 @@ More apps can be added via pacman
 - **YOUTUBE-MUSIC**: A desktop client for YouTube Music.
 - **YOUTUBE (TV UI)**: A desktop client with a TV-optimized interface for YouTube.
 
+---
+
+## HOW TO REMOVE AN APPIMAGE APP:
+Remove the app folder in /userdata/system/pro/ and the launcher in ports if present;
+the icon in the F1-applications menu will disappear after restart.
+
+## HOW TO REMOVE THE ARCH CONTAINER:
+Launch the Arch Container menu and selct Uninstall option
+
+## HOW TO REMOVE DOCKER APPS:
+Use PORTAINER https/port 9443 or DOCKER CLI and delete any custom folders (e.g. ~/jellyfin)
+
+## HOW TO REMOVE DOCKER:  
+Edit ~/custom.sh, delete batocera-containers line, then after rebooting delete ~/batcera-container ~/container folders/apps
+
+## HOW TO REMOVE CASAOS
+Edit ~/custom.sh, delete batoera-casaos line, then after removing delete ~/batocera-casaos folder
 
 ---
 
