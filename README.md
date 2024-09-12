@@ -16,6 +16,13 @@ Special thanks to **uureel**, **kron4ek**, and other contributors for their valu
 
 ---
 
+## How to Install
+Run the following command to install:
+
+```bash
+curl -L bit.ly/profork | bash
+```
+
 ## Available Apps
 
 - ARCH-CONTAINER
