@@ -2,7 +2,7 @@
 
 # Profork
 
-### My Continued Repo of uureel's Discontinued batocera.pro
+### My Continued Repo of uureel's Discontinued b.pro 
 
 This repo is mainly for personal use, but anyone interested is welcome to use it.  
 However, please note that **it is provided AS-IS—no support is offered.**
