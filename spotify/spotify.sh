@@ -1,6 +1,6 @@
 #!/usr/bin/env bash 
 ######################################################################
-# BATOCERA.PRO INSTALLER
+# PROFORK INSTALLER
 ######################################################################
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
@@ -10,7 +10,7 @@ appname=spotify # directory name in /userdata/system/pro/...
 AppName=spotify # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$AppName.AppImage
 #APPLINK=$(curl -s https://api.github.com/repos/ivan-hc/Spotify-appimage/releases | grep AppImage | grep continuous | grep "browser_download_url" | awk '{print $2}' | sed 's,",,g')
-#APPLINK=http://batocera.pro/app/spotify.AppImage
+#APPLINK=http://PROFORK/app/spotify.AppImage
 APPLINK="$(curl -s https://api.github.com/repos/ivan-hc/Chrome-appimage/releases/latest | jq -r ".assets[] | select(.name | endswith(\".AppImage\")) | .browser_download_url" | grep eta)"
 ORIGIN="github.com/ivan-hc/chrome-appimage" # credit & info 
 # --------------------------------------------------------------------
@@ -73,7 +73,7 @@ clear
 echo
 echo
 echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo
 echo
 echo
@@ -85,7 +85,7 @@ clear
 echo
 echo
 echo -e "${X}--------------------------------------------------------"
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo -e "${X}--------------------------------------------------------"
 echo
 echo
@@ -97,7 +97,7 @@ clear
 echo
 echo -e "${X}--------------------------------------------------------"
 echo -e "${X}--------------------------------------------------------"
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo -e "${X}--------------------------------------------------------"
 echo -e "${X}--------------------------------------------------------"
 echo
@@ -109,7 +109,7 @@ clear
 echo -e "${X}--------------------------------------------------------"
 echo -e "${X}--------------------------------------------------------"
 echo -e "${X}--------------------------------------------------------"
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo -e "${X}--------------------------------------------------------"
 echo -e "${X}--------------------------------------------------------"
 echo -e "${X}--------------------------------------------------------"
@@ -163,7 +163,7 @@ clear
 echo
 echo
 echo
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo
 echo
 echo
@@ -175,7 +175,7 @@ clear
 echo
 echo
 echo
-echo -e "${W}BATOCERA.PRO/${W}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${W}$APPNAME${W} INSTALLER ${W}"
 echo
 echo
 echo
@@ -187,7 +187,7 @@ clear
 echo
 echo
 echo -e "${L}-----------------------------------------------------------------------"
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo -e "${L}-----------------------------------------------------------------------"
 echo
 echo
@@ -199,7 +199,7 @@ clear
 echo
 echo -e "${L}-----------------------------------------------------------------------"
 echo -e "${L}-----------------------------------------------------------------------"
-echo -e "${W}BATOCERA.PRO/${W}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${W}$APPNAME${W} INSTALLER ${W}"
 echo -e "${L}-----------------------------------------------------------------------"
 echo -e "${L}-----------------------------------------------------------------------"
 echo
@@ -211,7 +211,7 @@ clear
 echo -e "${L}-----------------------------------------------------------------------"
 echo -e "${L}-----------------------------------------------------------------------"
 echo -e "${L}-----------------------------------------------------------------------"
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo -e "${L}-----------------------------------------------------------------------"
 echo -e "${L}-----------------------------------------------------------------------"
 echo -e "${L}-----------------------------------------------------------------------"
