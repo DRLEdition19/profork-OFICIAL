@@ -63,7 +63,11 @@ curl -L bit.ly/profork | bash
 - VLC
 - Kodi
 
-  
+For A Full list, see the arch container manager menu in the installer.
+More apps can be added via pacman
+
+
+
 ## More Available Apps below Available as AppImages or Docker Apps & Servers
 
 - 7ZIP
