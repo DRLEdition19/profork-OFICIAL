@@ -6,7 +6,7 @@
 
 
 app=plexamp
-url=https://github.com/trashbus99/profork/raw/main/plexamp/extras/plexamp.AppImage
+url=https://github.com/trashbus99/profork/raw/master/plexamp/extras/plexamp.AppImage
 
 
 
@@ -41,7 +41,7 @@ port="" 		# add port (name), none = /extras/port.sh (to $app.sh), or /extras/lau
 #################################################################################################################################
 # start pro-framework 
 cd /tmp/ ; rm /tmp/pro-framework.sh 2>/dev/null ; 
-wget --no-cache -q -O /tmp/pro-framework.sh https://github.com/trashbus99/profork/raw/main/main/.dep/pro-framework.sh ; 
+wget --no-cache -q -O /tmp/pro-framework.sh https://github.com/trashbus99/profork/raw/master/.dep/pro-framework.sh ; 
 dos2unix /tmp/pro-framework.sh ; source /tmp/pro-framework.sh 
 #################################################################################################################################
 #--------------------------------------------------------------------------------------------------------------------------------
