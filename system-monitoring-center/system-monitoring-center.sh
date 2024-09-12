@@ -1,12 +1,12 @@
 #!/usr/bin/env bash 
 ######################################################################
-# BATOCERA.PRO/COCKATRICE INSTALLER
+# PROFORK/COCKATRICE INSTALLER
 ######################################################################
 APPNAME="SYSTEM-MONITORING-CENTER"     # for installer info
 appname=system-monitoring-center       # directory inside /userdata/system/pro/...
 AppName=system-monitoring-center       # app binary file name
 APPPATH=/userdata/system/pro/$appname
-APPLINK=http://batocera.pro/app/system-monitoring-center.tar.gz
+APPLINK=http://PROFORK/app/system-monitoring-center.tar.gz
 ORIGIN="github.com/hakandundar34coding/system-monitoring-center" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
@@ -67,7 +67,7 @@ clear
 echo
 echo
 echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 echo
 echo
 echo
@@ -77,7 +77,7 @@ clear
 echo
 echo
 line $cols '-'; echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 line $cols '-'; echo
 echo
 echo
@@ -87,7 +87,7 @@ clear
 echo
 line $cols '-'; echo
 line $cols ' '; echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 line $cols ' '; echo
 line $cols '-'; echo
 echo
@@ -97,7 +97,7 @@ clear
 line $cols '\'; echo
 line $cols '/'; echo
 line $cols ' '; echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}PROFORK/$APPNAME INSTALLER${X}"
 line $cols ' '; echo
 line $cols '/'; echo
 line $cols '\'; echo
@@ -153,7 +153,7 @@ clear
 echo
 echo
 echo
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 echo
 echo
 echo
@@ -163,7 +163,7 @@ clear
 echo
 echo
 echo
-echo -e "${W}BATOCERA.PRO/${W}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${W}$APPNAME${W} INSTALLER ${W}"
 echo
 echo
 echo
@@ -173,7 +173,7 @@ clear
 echo
 echo
 line $cols '-'; echo
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 line $cols '-'; echo
 echo
 echo
@@ -183,7 +183,7 @@ clear
 echo
 line $cols '-'; echo
 line $cols '-'; echo
-echo -e "${W}BATOCERA.PRO/${W}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${W}$APPNAME${W} INSTALLER ${W}"
 line $cols '-'; echo
 line $cols '-'; echo
 echo
@@ -193,7 +193,7 @@ clear
 line $cols '='; echo
 line $cols '-'; echo
 line $cols '-'; echo
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}PROFORK/${G}$APPNAME${W} INSTALLER ${W}"
 line $cols '-'; echo
 line $cols '-'; echo
 line $cols '='; echo
@@ -232,7 +232,7 @@ temp=$extra/downloads
 rm -rf $temp 2>/dev/null
 mkdir $temp 2>/dev/null
 cd $temp
-curl --progress-bar --remote-name --location "http://batocera.pro/app/system-monitoring-center.tar.gz"
+curl --progress-bar --remote-name --location "http://PROFORK/app/system-monitoring-center.tar.gz"
 $pro/.dep/tar -xf $temp/system-monitoring-center.tar.gz
 cp -r $PWD/system-monitoring-center /userdata/system/pro/
 cd ~/
@@ -330,7 +330,7 @@ export -f batocera-pro-installer 2>/dev/null
 # |
   batocera-pro-installer "$APPNAME" "$appname" "$AppName" "$APPPATH" "$APPLINK" "$ORIGIN"
 # --------------------------------------------------------------------
-# BATOCERA.PRO/COCKATRICE INSTALLER //
+# PROFORK/COCKATRICE INSTALLER //
 #####################################
 function autostart() {
   csh="/userdata/system/custom.sh"
