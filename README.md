@@ -187,7 +187,7 @@ Launch the Arch Container menu manager via the installer and select Uninstall op
 Use PORTAINER https/port 9443 or DOCKER CLI and delete any custom folders (e.g. ~/jellyfin)
 
 ## HOW TO REMOVE DOCKER:  
-Edit ~/custom.sh, delete batocera-containers line, then after rebooting delete ~/batcera-container ~/container folders/apps
+Edit ~/custom.sh, delete batocera-containers line, then after rebooting delete ~/batocera-container & ~/container folders/apps
 
 ## HOW TO REMOVE CASAOS:
 Edit ~/custom.sh, delete batoera-casaos line, then after rebooting delete ~/casaos folder
