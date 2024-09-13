@@ -181,7 +181,7 @@ Remove the app folder in /userdata/system/pro/ and the launcher in ports if pres
 the icon in the F1-applications menu will disappear after restart.
 
 ## HOW TO REMOVE THE ARCH CONTAINER:
-Launch the Arch Container menu and selct Uninstall option
+Launch the Arch Container menu manager via the installer and select Uninstall option
 
 ## HOW TO REMOVE DOCKER APPS:
 Use PORTAINER https/port 9443 or DOCKER CLI and delete any custom folders (e.g. ~/jellyfin)
