@@ -9,6 +9,8 @@ if [ "$architecture" != "x86_64" ]; then
     exit 1
 fi
 
+#!/bin/bash
+
 # Function to check if a port is in use
 is_port_in_use() {
     if lsof -i:$1 > /dev/null; then
