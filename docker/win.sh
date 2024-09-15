@@ -114,6 +114,11 @@ VERSION=$(dialog --stdout --backtitle "$BACKTITLE" --title "Windows Version" --m
 "core11" "Tiny 11 Core -- archive.org = slow download" \
 "tiny11" "Tiny 11 -- archive.org = slow download" \
 "tiny10" "Tiny 10 -- archive.org = slow download")
+# Check if the user pressed Cancel
+if [ $? -ne 0 ]; then
+    echo "User canceled the selection."
+    exit 1
+fi
 clear
 
 # RAM size
@@ -122,6 +127,11 @@ RAM_SIZE=$(dialog --stdout --backtitle "$BACKTITLE" --title "RAM Size" --menu "S
 "8G" "8 GB" \
 "16G" "16 GB" \
 "32G" "32 GB")
+# Check if the user pressed Cancel
+if [ $? -ne 0 ]; then
+    echo "User canceled the selection."
+    exit 1
+fi
 clear
 
 # Disk size
@@ -132,6 +142,11 @@ DISK_SIZE=$(dialog --stdout --backtitle "$BACKTITLE" --title "Disk Size" --menu 
 "256G" "256 GB" \
 "512G" "512 GB" \
 "1024G" "1 TB")
+# Check if the user pressed Cancel
+if [ $? -ne 0 ]; then
+    echo "User canceled the selection."
+    exit 1
+fi
 clear
 
 # CPU Cores
@@ -140,6 +155,11 @@ CPU_CORES=$(dialog --stdout --backtitle "$BACKTITLE" --title "CPU Cores" --menu 
 "4" "4 Cores" \
 "6" "6 Cores" \
 "8" "8 Cores")
+# Check if the user pressed Cancel
+if [ $? -ne 0 ]; then
+    echo "User canceled the selection."
+    exit 1
+fi
 clear
 
 # Summary and confirmation, including ports in the message
@@ -164,7 +184,13 @@ if [ $response -eq 0 ]; then
       --restart on-failure \
       -v "$windows_dir:/storage" \
       dockurr/windows
+# Check if the user pressed Cancel
+if [ $? -ne 0 ]; then
+    echo "User canceled the selection."
+    exit 1
+fi
 clear
+
     # Success message for both RDP and VNC
     if [ $? -eq 0 ]; then
         echo "Access http://batoceraipaddress>:VNC_PORT via your web browser"
