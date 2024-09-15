@@ -495,7 +495,7 @@ fi
 fi
 sleep 4
 # reaload for ports file
-curl http://127.0.0.1:1234/reloadgames
+killall -9 emulation station
 }
 export -f batocera-pro-installer 2>/dev/null
 # --------------------------------------------------------------------
