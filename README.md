@@ -146,7 +146,7 @@ More apps can be added via pacman
 - **QDIRSTAT**: A disk usage analyzer with a visual interface.
 - **RHYTHMBOX**: A music player and organizer for GNOME.
 - **SABNZBD/DOCKER**: A lightweight Usenet downloader in a Docker container.
-- **SAK**:  Swiss Army knife.
+- **SAK**:  Switch Army knife.
 - **SAYONARA**: A small, fast, and lightweight music player.
 - **SHADPS4**: Ps4 Emulator
 - **SHEEPSHAVER**: An emulator for classic Mac OS.
