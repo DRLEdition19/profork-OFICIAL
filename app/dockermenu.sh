@@ -119,6 +119,6 @@ for choice in $choices; do
 done
 
 # Reload ES after installations
-curl http://127.0.0.1:1234/reloadgames
+killall -9 emulationstation
 
 echo "Exiting."
