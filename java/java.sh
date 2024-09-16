@@ -1,5 +1,5 @@
 #!/usr/bin/env bash 
-# BATOCERA.PRO INSTALLER
+# profork INSTALLER
 ######################################################################
 ######################################################################
 ######################################################################
@@ -102,7 +102,7 @@ clear
 echo
 echo
 echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}profork/$APPNAME INSTALLER${X}"
 echo
 echo
 echo
@@ -112,7 +112,7 @@ clear
 echo
 echo
 line $cols '-'; echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}profork/$APPNAME INSTALLER${X}"
 line $cols '-'; echo
 echo
 echo
@@ -122,7 +122,7 @@ clear
 echo
 line $cols '-'; echo
 line $cols ' '; echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}profork/$APPNAME INSTALLER${X}"
 line $cols ' '; echo
 line $cols '-'; echo
 echo
@@ -132,7 +132,7 @@ clear
 line $cols '\'; echo
 line $cols '/'; echo
 line $cols ' '; echo
-echo -e "${X}BATOCERA.PRO/$APPNAME INSTALLER${X}"
+echo -e "${X}profork/$APPNAME INSTALLER${X}"
 line $cols ' '; echo
 line $cols '/'; echo
 line $cols '\'; echo
@@ -189,7 +189,7 @@ clear
 echo
 echo
 echo
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}profork/${G}$APPNAME${W} INSTALLER ${W}"
 echo
 echo
 echo
@@ -199,7 +199,7 @@ clear
 echo
 echo
 echo
-echo -e "${W}BATOCERA.PRO/${W}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}profork/${W}$APPNAME${W} INSTALLER ${W}"
 echo
 echo
 echo
@@ -209,7 +209,7 @@ clear
 echo
 echo
 line $cols '-'; echo
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}profork/${G}$APPNAME${W} INSTALLER ${W}"
 line $cols '-'; echo
 echo
 echo
@@ -219,7 +219,7 @@ clear
 echo
 line $cols '-'; echo
 echo; #line $cols '-'; echo
-echo -e "${W}BATOCERA.PRO/${W}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}profork/${W}$APPNAME${W} INSTALLER ${W}"
 echo; #line $cols '-'; echo
 line $cols '-'; echo
 echo
@@ -229,7 +229,7 @@ clear
 line $cols '='; echo
 echo; #line $cols '-'; echo
 echo; #line $cols '-'; echo
-echo -e "${W}BATOCERA.PRO/${G}$APPNAME${W} INSTALLER ${W}"
+echo -e "${W}profork/${G}$APPNAME${W} INSTALLER ${W}"
 echo; #line $cols '-'; echo
 echo; #line $cols '-'; echo
 line $cols '='; echo
@@ -488,7 +488,7 @@ export -f PROFORK-installer 2>/dev/null
 # |
   PROFORK-installer "$APPNAME" "$appname" "$AppName" "$APPPATH" "$APPLINK" "$ORIGIN"
 # --------------------------------------------------------------------
-# BATOCERA.PRO INSTALLER //
+# profork INSTALLER //
 ##########################
 clear
 if [[ -e "/userdata/pro/java/java19/bin/java" ]] && [[ -e "/userdata/pro/java/java17/bin/java" ]] && [[ -e "/userdata/pro/java/java15/bin/java" ]] && [[ -e "/userdata/pro/java/java13/bin/java" ]] && [[ -e "/userdata/pro/java/java11/bin/java" ]] && [[ -e "/userdata/pro/java/java8/bin/java" ]]; then
