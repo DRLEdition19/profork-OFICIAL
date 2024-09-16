@@ -16,7 +16,7 @@ fi
 
 
 # Define the options
-OPTIONS=("1" "Arch Container"
+OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
          "2" "Standalone Apps (mostly appimages)"
          "3" "Docker and Docker Container"
          "4" "Tools"
@@ -35,29 +35,49 @@ clear
 # Act based on the user choice
 case $CHOICE in
     1)
-        echo "Installing emudeck..."
+        echo "Arch Container..."
         rm /tmp/runner 2>/dev/null
-        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/emudeck/download.sh
+        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/app/menu.sh
         dos2unix /tmp/runner 2>/dev/null 
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-      2)
-        echo "Uninstall Emudeck..."
+    2)
+        echo "Apps Menu"
         rm /tmp/runner 2>/dev/null
-        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/emudeck/uninstall.sh
+        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/app/appmenu.sh
         dos2unix /tmp/runner 2>/dev/null 
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
     3)
-        echo "Parser Fix..."
+        echo "Docker Menu..."
         rm /tmp/runner 2>/dev/null
-        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/emudeck/srmparser.sh
+        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/app/dockermenu.sh
         dos2unix /tmp/runner 2>/dev/null 
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
+    4)
+        echo "Tools Menu..."
+        rm /tmp/runner 2>/dev/null
+        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runnerhttps://github.com/trashbus99/profork/raw/master/app/tools.sh
+        chmod 777 /tmp/runner 2>/dev/null
+        bash /tmp/runner
+        ;;
+    5)
+        echo "Ports Installer..."
+        rm /tmp/runner 2>/dev/null
+        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/app/install.sh
+        chmod 777 /tmp/runner 2>/dev/null
+        bash /tmp/runner
+        ;;
+
+    6)
+        echo "Exiting..."
+           exit
+        ;;
+    
     *)
         echo "No valid option selected or cancelled. Exiting."
         ;;
