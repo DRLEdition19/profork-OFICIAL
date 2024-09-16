@@ -78,13 +78,13 @@ mkdir $pro/extra 2>/dev/null
 mkdir $pro/$appname 2>/dev/null
 mkdir $pro/$appname/extra 2>/dev/null
 # --------------------------------------------------------------------
-# -- pass launcher command as cookie for master function: 
+# -- pass launcher command as cookie for main function: 
 command=$pro/$appname/extra/command; rm $command 2>/dev/null;
 echo "$COMMAND" >> $command 2>/dev/null 
 # --------------------------------------------------------------------
 # -- prepare dependencies for this app and the installer: 
-mkdir -p ~/pro/.dep 2>/dev/null && cd ~/pro/.dep && wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O ~/pro/.dep/dep.zip https://github.com/trashbus99/profork/raw/master/.dep/dep.zip && yes "y" | unzip -oq ~/pro/.dep/dep.zip && cd ~/
-wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O $pro/$appname/extra/icon.png https://github.com/trashbus99/profork/raw/master/$appname/extra/icon.png; chmod a+x $dep/* 2>/dev/null; cd ~/
+mkdir -p ~/pro/.dep 2>/dev/null && cd ~/pro/.dep && wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O ~/pro/.dep/dep.zip https://github.com/trashbus99/PROFORK/raw/master/.dep/dep.zip && yes "y" | unzip -oq ~/pro/.dep/dep.zip && cd ~/
+wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O $pro/$appname/extra/icon.png https://github.com/trashbus99/PROFORK/raw/master/$appname/extra/icon.png; chmod a+x $dep/* 2>/dev/null; cd ~/
 chmod 777 ~/pro/.dep/* && for file in /userdata/system/pro/.dep/lib*; do sudo ln -s "$file" "/usr/lib/$(basename $file)"; done
 # --------------------------------------------------------------------
 # // end of dependencies 
@@ -171,7 +171,7 @@ echo
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 # --------------------------------------------------------------------
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
-# -- THIS WILL BE SHOWN ON master BATOCERA DISPLAY:   
+# -- THIS WILL BE SHOWN ON MAIN BATOCERA DISPLAY:   
 function batocera-pro-installer {
 APPNAME="$1"
 appname="$2"
@@ -306,7 +306,7 @@ cd ~/
 SIZE=$(($(wc -c $temp/mmc-stable-lin64.tar.gz | awk '{print $1}')/1048576)) 2>/dev/null
 echo -e "${T}mmc-stable-lin64.tar.gz   ${T}$SIZE( )MB   ${G}OK${W}  " | sed 's/( )//g'
 #
-wget -q -O $pro/.dep/tar https://github.com/trashbus99/profork/raw/master/.dep/tar
+wget -q -O $pro/.dep/tar https://github.com/trashbus99/PROFORK/raw/master/.dep/tar
 chmod a+x $pro/.dep/tar
 cd $temp
 ~/pro/.dep/tar -xf $temp/mmc-stable-lin64.tar.gz
@@ -321,7 +321,7 @@ rm -rf $temp 2>/dev/null
 mkdir $temp 2>/dev/null
 echo -e "${G}DOWNLOADING${W} MULTIMC-LIBS"
 sleep 1
-APPLINK2=https://github.com/trashbus99/profork/raw/master/multimc/extra/libmultimc.zip
+APPLINK2=https://github.com/trashbuss/PROFORK/raw/master/multimc/extra/libmultimc.zip
 echo -e "${T}$APPLINK2" | sed 's,https://,> ,g' | sed 's,http://,> ,g' 2>/dev/null
 cd $temp
 script -q -c "curl --progress-bar --remote-name --location "$APPLINK2"" /dev/null
@@ -341,7 +341,7 @@ rm -rf $temp 2>/dev/null
 mkdir $temp 2>/dev/null
 echo -e "${G}DOWNLOADING${W} QT5-FRAMEWORK-LIBS"
 sleep 1
-APPLINK3=https://github.com/trashbus99/profork/raw/master/multimc/extra/qt5.zip
+APPLINK3=https://github.com/trashbus99/PROFORK/raw/master/multimc/extra/qt5.zip
 echo -e "${T}$APPLINK3" | sed 's,https://,> ,g' | sed 's,http://,> ,g' 2>/dev/null
 cd $temp
 script -q -c "curl --progress-bar --remote-name --location "$APPLINK3"" /dev/null
@@ -361,7 +361,7 @@ rm -rf $temp 2>/dev/null
 mkdir $temp 2>/dev/null
 echo -e "${G}DOWNLOADING${W} QT5-LIBS+" 
 sleep 1
-APPLINK4=https://github.com/trashbus99/profork/raw/master/multimc/extra/qt5lib.zip
+APPLINK4=https://github.com/trashbus99/PROFORK/raw/master/multimc/extra/qt5lib.zip
 echo -e "${T}$APPLINK4" | sed 's,https://,> ,g' | sed 's,http://,> ,g' 2>/dev/null
 cd $temp
 script -q -c "curl --progress-bar --remote-name --location "$APPLINK4"" /dev/null
@@ -486,7 +486,7 @@ response=$?
 
 if [ $response -eq 0 ]; then
     # User selected "Yes"
-    curl -L https://github.com/trashbus99/profork/raw/master/java/java.sh
+    curl -L https://github.com/trashbus99/profork/raw/master/java/java.sh bash
 else
     # User selected "No" or pressed "Cancel"
     echo "Installation aborted."
@@ -495,7 +495,7 @@ fi
 fi
 sleep 4
 # reaload for ports file
-killall -9 emulation station
+curl http://127.0.0.1:1234/reloadgames
 }
 export -f batocera-pro-installer 2>/dev/null
 # --------------------------------------------------------------------
