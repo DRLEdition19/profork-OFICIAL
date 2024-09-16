@@ -57,7 +57,7 @@ case $CHOICE in
     4)
         echo "Tools Menu..."
         rm /tmp/runner 2>/dev/null
-        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runnerhttps://github.com/trashbus99/profork/raw/master/app/tools.sh
+        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/app/tools.sh
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
