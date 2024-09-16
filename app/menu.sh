@@ -36,11 +36,7 @@ clear
 case $CHOICE in
     1)
         echo "Arch Container..."
-        rm /tmp/runner 2>/dev/null
-        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/app/menu.sh
-        dos2unix /tmp/runner 2>/dev/null 
-        chmod 777 /tmp/runner 2>/dev/null
-        bash /tmp/runner
+        curl -Ls https://github.com/trashbus99/profork/raw/master/steam/steam.sh | bash
         ;;
     2)
         echo "Apps Menu"
