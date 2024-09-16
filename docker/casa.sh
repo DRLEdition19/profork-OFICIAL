@@ -2,7 +2,7 @@
 
 echo "Profork CasaOS installer..."
 echo "This can take a while... please wait....."
-
+echo "Note: Github file hosting can be slow/unreliable - Try again if download fails"
 sleep 5
 
 # Define the home directory
