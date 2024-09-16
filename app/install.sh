@@ -49,7 +49,7 @@ fi
 curl -L https://github.com/trashbus99/profork/raw/master/app/Profork.sh -o /userdata/roms/ports/Profork.sh
 
 # Download BatoceraPRO.sh.keys to /userdata/roms/ports
-wget  https://github.com/trashbus99/profork/raw/main/app/bkeys.txt -P /userdata/roms/ports/
+wget  https://github.com/trashbus99/profork/raw/master/app/bkeys.txt -P /userdata/roms/ports/
 
 # Set execute permissions for the downloaded scripts
 chmod +x /userdata/roms/ports/Profork.sh
