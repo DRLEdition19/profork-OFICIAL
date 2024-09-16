@@ -190,7 +190,7 @@ Use PORTAINER https/port 9443 or DOCKER CLI and delete any custom folders (e.g. 
 Edit ~/custom.sh, delete batocera-containers line, then after rebooting delete ~/batocera-container & ~/container folders/apps
 
 ## HOW TO REMOVE CASAOS:
-Edit ~/custom.sh, delete batoera-casaos line, then after rebooting delete ~/casaos folder
+Edit ~/custom.sh, delete batocera-casaos line, then after rebooting delete ~/casaos folder
 
 ---
 
