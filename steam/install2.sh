@@ -39,10 +39,6 @@ fi
 # Clear the screen after the dialog is closed
 clear
 
-echo "FOR A BETTER STEAM+EMULATOR EXPERIENCE, WE RECOMMEND RETROBAT"
-sleep 10
-clear
-
 
 echo "Starting Steam Installer Script..."
 
@@ -146,4 +142,4 @@ dialog --title "Arch Container Setup Complete" --msgbox "$MSG" 20 70
 
 ###############
 
-curl http://127.0.0.1:1234/reloadgames
+killall -9 emulationstation
