@@ -374,7 +374,7 @@ echo -e "${W}> $APPNAME INSTALLED ${G}OK${W}"
 #echo -e "${W}- - -"
 sleep 3
 # reaload for ports file
-killall -9 emulationstation
+
 }
 export -f batocera-pro-installer 2>/dev/null
 # --------------------------------------------------------------------
