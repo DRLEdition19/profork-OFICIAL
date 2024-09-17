@@ -2,6 +2,7 @@
 
 # URL of the file to download
 url="https://github.com/trashbus99/profork/blob/master/.dep/aria2c"
+
 # Target file name
 filename="aria2c"
 
