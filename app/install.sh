@@ -62,4 +62,4 @@ sleep 1
 mv /userdata/roms/ports/bkeys.txt /userdata/roms/ports/Profork.sh.keys
 
 
-echo "Finished.  You should see Proforks in Ports"
+echo "Finished.  You should see Profork in Ports"
