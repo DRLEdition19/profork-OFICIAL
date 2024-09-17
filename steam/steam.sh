@@ -16,12 +16,11 @@ fi
 
 
 # Define the options
-OPTIONS=("1" "Install BLEEDING EDGE: Build from scratch (ARCH MIRRORS CAN FAIL!)"
+OPTIONS=("1" "Install/Update Build from scratch (ARCH MIRRORS CAN FAIL!)"
          "2" "Install Flatpak Steam" 
          "3" "List all Packages in Container"
          "4" "Uninstall Arch Container"
          "5" "Update ES Launcher shortcuts for Arch container"
-         "6" "Update to BLEEDING EDGE (MIRRORS CAN FAIL/~45-90min/30GB free space needed)"
          "7" "Addon: XFCE/MATE/LXDE DESKTOP Mode (Experimental)"
          "8" "Addon: Add/Update Lutris Menu & Shortcuts to Emulationstation"
          "9" "Addon: Add/Update Heroic Menu & Shortcuts to Emulationstation"
