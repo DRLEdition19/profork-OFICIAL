@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # URL of the file to download
-url="https://github.com/trashbus99/profork/raw/master/.dep/aria2c"
+url="https://github.com/trashbus99/profork/blob/master/.dep/aria2c"
 # Target file name
 filename="aria2c"
 
