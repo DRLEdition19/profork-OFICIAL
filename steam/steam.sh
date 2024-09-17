@@ -16,7 +16,7 @@ fi
 
 
 # Define the options
-OPTIONS=("1" "Install/Update Build from scratch (ARCH MIRRORS CAN FAIL!)"
+OPTIONS=("1" "Install/Update Rolling Arch release/Build from scratch "
          "2" "Install Flatpak Steam" 
          "3" "List all Packages in Container"
          "4" "Uninstall Arch Container"
