@@ -160,7 +160,6 @@ More apps can be added via pacman
 - **TOTAL-COMMANDER**: A file manager with a two-panel interface.
 - **TRANSMISSION**: A fast and easy BitTorrent client.
 - **VIRTUALBOX**: A cross-platform virtualization software.
-- **VIVALDI**: A highly customizable web browser.and
 - **VLC**: A free and open-source multimedia player.
 - **WHATSAPP**: A cross-platform messaging app.
 - **WIIU-PLUS**: An updated version of the Wii U emulator.
