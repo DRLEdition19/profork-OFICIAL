@@ -47,10 +47,10 @@ steam-native-runtime gamemode brave lib32-gamemode jre-openjdk lxterminal \
 mangohud shotcut thunderbird gimp audacity thunderbird lib32-mangohud kodi \
 qt5-wayland xorg-server-xephyr inkscape openbox obs-studio gamehub binutils \
 xdotool xbindkeys gparted vlc smplayer mpv fish zsh xmlstarlet nvtop duf exa \
-minigalaxy legendary gamescope yt-dlp playonlinux minizip flatpak libreoffice \
+minigalaxy legendary gamescope playonlinux minizip flatpak libreoffice \
 ripgrep i7z sd bandwhich tre zoxide p7zip atop iftop sysstat totem feh krename \
 bottles bauh flatseal rebuild-detector ccache axel breeze xorg-xdpyinfo dua-cli \
-handbrake tigervnc remmina yt-dlp kitty terminator xorg-xkill media-downloader file  \
+handbrake tigervnc remmina  kitty terminator xorg-xkill media-downloader file  \
 docker docker-compose portainer-bin unzip gthumb doublecmd-qt6 dolphin nmon thunar nemo \
 gdk-pixbuf-xlib gdk-pixbuf2 xarchiver mc vifm fd krusader mcpelauncher-linux-git krename \
 steam-boilr-gui btrfs-assistant protontricks-git lib32-sdl12-compat sdl12-compat appimagepool-appimage \
@@ -60,7 +60,7 @@ btrfs-heatmap meld lynx yq xorg xorg-server-xvfb nodejs npm cairo-dock imagemagi
 tint2 plank lxde mate mate-extra dialog xterm compsize antimicrox qdirstat lutris-git chiaki procs sdl2_ttf \
 protontricks-git chiaki sublime-text-4 fuse2 heroic-games-launcher-bin moonlight-qt zoom ventoy-bin 7-zip crun runc \
 microsoft-edge-stable-bin qdirstat peazip jq steam-rom-manager-git google-chrome steamtinkerlaunch xfwm4 xfwm4-themes \
-screenfetch glances konsole mullvad-browser-bin discord pcem jre8-openjdk gcc13 python-pip xfce4 xfce4-goodies lua53"
+screenfetch glances konsole discord pcem jre8-openjdk gcc13 python-pip xfce4 xfce4-goodies lua53"
 
 # If you want to install AUR packages, specify them in this variable
 export aur_packagelist="geforcenow-electron protonup-qt freefilesync-bin sgdboop-bin winegui-bin"
