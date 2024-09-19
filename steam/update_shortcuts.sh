@@ -44,7 +44,6 @@ sh_files=(
 "Microsoft-Edge.sh"
 "Minigalaxy.sh"
 "Moonlight.sh"
-"Mullvad-Browser.sh"
 "OBS Studio.sh"
 "PCem.sh"
 "Peazip.sh"
