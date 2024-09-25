@@ -84,7 +84,6 @@ More apps can be added via pacman
 - **APPLEWIN/WINE**: Emulator for the Apple II and integration with WINE for Windows compatibility.
 - **ATOM**: A hackable text editor for developers.
 - **BALENA-ETCHER**: A tool for flashing OS images to SD cards and USB drives.
-- **BLENDER**: A powerful open-source 3D modeling and animation software.
 - **BRAVE**: A privacy-focused web browser with built-in ad-blocking.
 - **CASAOS/CONTAINER/DEBIAN/XFCE**: A containerized operating system with XFCE desktop for running various homeserver services.
 - **CHIAKI**: Open-source remote play client for PlayStation consoles.
@@ -121,7 +120,6 @@ More apps can be added via pacman
 - **MEDIAELCH**: A media management tool to organize your media collection.
 - **MINECRAFT-BEDROCK-EDITION**: The Bedrock Edition of Minecraft, optimized for cross-platform play.
 - **MINECRAFT-JAVA-EDITION**: The original version of Minecraft, known for modding support.
-- **MOONLIGHT**: An open-source NVIDIA GameStream client for playing PC games on various devices.
 - **MPV**: A lightweight and highly customizable media player.
 - **MULTIMC-LAUNCHER**: A launcher for Minecraft with multiple instance management.
 - **MUSEEKS**: A simple and clean audio player.
