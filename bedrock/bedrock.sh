@@ -13,7 +13,7 @@ response=$?
 # Check the response
 if [ $response -eq 0 ]; then
     # User selected Yes, execute the curl command
-    curl -L https://github.com/trashbus99/profork/raw/main/master/bedrock/br.sh | bash
+    https://github.com/trashbus99/profork/raw/master/bedrock/br.sh
 else
     # User selected No, exit the script
     exit
