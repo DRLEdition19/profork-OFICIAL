@@ -52,7 +52,7 @@ ripgrep i7z sd bandwhich tre zoxide p7zip atop iftop sysstat totem feh krename \
 bottles bauh flatseal rebuild-detector ccache axel breeze xorg-xdpyinfo dua-cli \
 handbrake tigervnc remmina  kitty terminator xorg-xkill media-downloader file  \
 docker docker-compose portainer-bin unzip gthumb doublecmd-qt6 dolphin nmon thunar nemo \
-gdk-pixbuf-xlib gdk-pixbuf2 xarchiver mc vifm fd krusader mcpelauncher-linux-git krename \
+gdk-pixbuf-xlib gdk-pixbuf2 xarchiver mc vifm fd krusader  krename \
 steam-boilr-gui btrfs-assistant protontricks-git lib32-sdl12-compat sdl12-compat appimagepool-appimage \
 kate kmod pciutils xrdp x11vnc tigervnc onboard remmina vinagre freerdp sunshine btrfs-progs tre plasma kde-applications \
 podman distrobox cheese filezilla dos2unix wmctrl xorg-xprop fzf scc yarn sdl2 sdl2_image squashfs-tools \
@@ -63,7 +63,7 @@ microsoft-edge-stable-bin qdirstat peazip jq steam-rom-manager-git google-chrome
 screenfetch glances konsole discord pcem jre8-openjdk gcc13 python-pip xfce4 xfce4-goodies lua53"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="geforcenow-electron protonup-qt freefilesync-bin sgdboop-bin winegui-bin"
+export aur_packagelist="geforcenow-electron mcpelauncher-linux protonup-qt freefilesync-bin sgdboop-bin winegui-bin"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
