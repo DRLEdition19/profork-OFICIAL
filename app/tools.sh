@@ -71,7 +71,8 @@ apps=(
     ["DARK-MODE/F1"]="curl -Ls https://github.com/trashbus99/profork/raw/master/dark/dark.sh | bash"
     ["DARK-MODE/F1/CANCEL"]="curl -Ls https://github.com/trashbus99/profork/raw/master/dark/light.sh | bash"
     ["LIVECAPTIONS/SERVICE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/livecaptions/livecaptions.sh | bash"
-    ["NVTOP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/nvtop/nvtop.sh| bash"   
+    ["NVTOP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/nvtop/nvtop.sh | bash"   
+    ["PS3-PSN-PARSER/ADD-PSN-GAMES-TO-EMULUATION-STATION"]="curl -L https://github.com/trashbus99/profork/raw/master/scripts/rpcs3/install.sh | bash"   
     ["SUNSHINE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sunshine/installer.sh | bash"
     ["WINE-CUSTOM-DOWNLOADER/v40+"]="curl -Ls https://github.com/trashbus99/profork/raw/master/wine-custom/wine.sh | bash"
    
