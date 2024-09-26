@@ -40,8 +40,8 @@ yay_wrapper="$yay_dir/bin/yay"
 if [ ! -f "$yay_wrapper" ]; then
     cat <<EOF > "$yay_wrapper"
 #!/bin/bash
-export YAY_CONF="$yay_config"
-yay "\$@"
+# Ensure the wrapper calls the correct yay binary
+/usr/bin/yay "\$@"
 EOF
     chmod +x "$yay_wrapper"
 fi
