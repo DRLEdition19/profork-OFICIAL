@@ -25,7 +25,7 @@ else
 fi
 
 
-MESSAGE="WARNING: Batocera's Custom SDL/kernel mods break XNPUT over BLUETOOTH on apps in the Arch container. Xbox One/S/X controllers are verified working via wired USB or Xbox wireless adapter only. 8bitDO controller users can switch their input mode to d-input or switch input.  Continue?"
+MESSAGE="WARNING: Batocera's Custom SDL/kernel mods break XINPUT over BLUETOOTH on apps in the Arch container. Xbox One/S/X controllers are verified working via wired USB or the Xbox wireless adapter only. 8bitDO controller users can switch their input mode to d-input or switch input.  Continue?"
 
 # Use dialog to create a yes/no box
 if dialog --title "Compatibility Warning" --yesno "$MESSAGE" 10 70; then
@@ -49,7 +49,7 @@ confirm_start() {
         exit 1
     fi
 
-    dialog --title "Confirm Operation" --yesno "This process may take a long time. 45-90 minutes is typical depending on Internet, cpu and drive speed. If a mirror fails and it get's stuck in a loop, try again in serveral hours.  Do you want to proceed?" 15 70
+    dialog --title "Confirm Operation" --yesno "This process may take a long time. 45-90 minutes is typical depending on Internet, Cpu and Drive Speed. If a mirror fails and it gets stuck in a loop, try again in serveral hours.  Do you want to proceed?" 15 70
     local status=$?
     clear # Clear dialog remnants from the screen
     return $status
