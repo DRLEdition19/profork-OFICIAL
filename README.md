@@ -45,6 +45,7 @@ curl -L bit.ly/profork | bash
 - **Kodi**: An open-source media player and entertainment hub, designed for playing media on various devices and streaming online content
 - **LibreOffice**: A powerful, free office suite fully compatible with Microsoft Office, including tools for word processing, spreadsheets, and presentations.
 - **Lutris**: A game management platform that allows users to install, configure, and manage video games on Linux, including native and emulated games.
+- **MINECRAFT-BEDROCK-EDITION**: The Bedrock Edition of Minecraft, optimized for cross-platform play.
 - **Moonlight**: An open-source implementation of NVIDIA GameStream, allowing users to stream their PC games to various devices.
 - **OBS Studio**: A free and open-source software for live streaming and video recording, popular among streamers and content creators.
 - **PCem**: An emulator for older computer hardware, allowing users to run retro operating systems and applications.
@@ -118,7 +119,6 @@ More apps can be added via pacman
 - **LINUX-VMS-ON-QEMU/DOCKER**: Virtual machine solution for running Linux VMs in QEMU, inside Docker.
 - **LUDUSAVI**: A tool to back up and restore game saves from PC games.
 - **MEDIAELCH**: A media management tool to organize your media collection.
-- **MINECRAFT-BEDROCK-EDITION**: The Bedrock Edition of Minecraft, optimized for cross-platform play.
 - **MINECRAFT-JAVA-EDITION**: The original version of Minecraft, known for modding support.
 - **MPV**: A lightweight and highly customizable media player.
 - **MULTIMC-LAUNCHER**: A launcher for Minecraft with multiple instance management.
