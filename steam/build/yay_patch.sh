@@ -1,42 +1,14 @@
 #!/bin/bash
 
-# This script adds a fix specifically for yay without affecting the original pacman setup.
-# Incorporates pacman fixes and also adds yay setup.
+# This script fixes yay without requiring sudo and addresses systemd issues.
+# Assumes pacman is already fixed separately.
 
 ########################################################################
-# Original pacman setup (provided earlier)
-echo -e "\n\n\nAdding basic pacman support..."
-mkdir -p /opt/pacman/lib /opt/pacman/cache 2>/dev/null
-cp -r /etc/pacman* /opt/pacman/ 2>/dev/null
-cp -r /var/lib/pacman/* /opt/pacman/lib/ 2>/dev/null
-cp -r /var/cache/pacman/* /opt/pacman/cache/ 2>/dev/null  
-
-# Replace pacman with a wrapper script
-p=/usr/bin/pacman
-if [ -f "$(which pacman)" ]; then
-    mv "$(which pacman)" "/usr/bin/realpacman" 2>/dev/null
-fi
-
-cat <<EOF > $p
-#!/bin/bash
-if [[ "\$(echo "\${@}" | grep overwrite)" = "" ]]; then
-  realpacman "\${@}"
-else
-  realpacman "\${@}"
-fi
-exit 0
-EOF
-
-chmod +x $p
-echo "Pacman fix applied."
-########################################################################
-
-########################################################################
-# Start yay installation and setup
+# Step 1: Set up yay without sudo
 
 echo -e "\nSetting up yay without sudo in user-space...\n"
 
-# Step 1: Create user-space directories for yay's pacman and build files
+# Create user-space directories for yay's pacman and build files
 yay_dir="/opt/yay"
 mkdir -p "$yay_dir/lib" "$yay_dir/cache" "$yay_dir/tmp" "$yay_dir/bin"
 
@@ -51,7 +23,7 @@ else
     echo "Yay is already installed."
 fi
 
-# Step 3: Configure yay to work without sudo
+# Step 3: Configure yay to work without sudo and suppress root warnings
 yay_config="$yay_dir/config.json"
 
 # Check if yay config exists, if not create it
@@ -61,7 +33,8 @@ if [ ! -f "$yay_config" ]; then
 {
     "sudobin": "",
     "build_dir": "$yay_dir/tmp",
-    "pacman_cmd": "/usr/bin/pacman"
+    "pacman_cmd": "/usr/bin/pacman",
+    "disable_root_warn": true
 }
 EOF
 fi
@@ -84,11 +57,34 @@ if ! echo "$PATH" | grep -q "$yay_dir/bin"; then
     source ~/.bashrc
 fi
 
-# Step 6: Test yay without sudo
-echo -e "\nTesting yay without sudo...\n"
-"$yay_wrapper" -Syu --noconfirm
+########################################################################
+# Step 6: Modify PKGBUILD scripts to handle non-systemd environments
+
+# Function to patch PKGBUILD files and remove systemd-related commands
+patch_pkgbuild() {
+    pkgbuild="$1"
+    
+    # Remove systemctl calls and systemd dependencies
+    sed -i '/systemctl/d' "$pkgbuild"
+    sed -i '/depends.*systemd/d' "$pkgbuild"
+    sed -i '/makedepends.*systemd/d' "$pkgbuild"
+    
+    echo "Patched $pkgbuild to remove systemd dependencies."
+}
+
+# This will ensure that during the yay installation process, PKGBUILD files can be edited to remove systemd requirements
+# You can patch these files during the --editmenu step in yay
+
+# Step 7: Install packages using yay
+# You can use --editmenu to modify AUR PKGBUILD files manually, or you can automatically apply the patch
+
+yay --editmenu --nodiffmenu --removemake --nocleanmenu --builddir /opt/yay/tmp -S <package_name>
+
+# Inside the editmenu, you can patch the PKGBUILD to remove any systemd dependencies.
+# Use the following command while in the editmenu to patch:
+# patch_pkgbuild PKGBUILD
+
+########################################################################
 
 echo -e "\nYay setup complete! You can now run yay without sudo using the command:\n"
 echo "yay <command>"
-
-########################################################################
