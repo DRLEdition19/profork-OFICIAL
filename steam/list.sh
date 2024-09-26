@@ -4,7 +4,6 @@
 apps=(
 "Antimicrox"
 "Audacity"
-#"Balena-Etcher"
 "Blender"
 "Boilr"
 "Bottles"
@@ -29,16 +28,15 @@ apps=(
 "Greenlight"
 "Handbrake"
 "Heroic Game Launcher"
-"Hulu"
 "Inkscape"
 "Kdenlive"
 "Kodi"
 "Libreoffice"
 "Lutris"
 "Microsoft-Edge"
+"Minecraft Bedrock Launcher"
 "Minigalaxy"
 "Moonlight"
-"Netflix"
 "OBS Studio"
 "Peazip"
 "Play on Linux 4"
@@ -202,4 +200,4 @@ dialog --title "Container Apps Available via EmulationStation" --msgbox "$(print
 clear
 
 
-curl -Ls steam.batocera.pro | bash
+curl -Ls https://github.com/trashbus99/profork/raw/master/steam/steam.sh | bash
