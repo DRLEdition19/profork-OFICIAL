@@ -16,7 +16,7 @@ echo "The script has been downloaded and made executable."
 
 # Step 4: Inform the user about how to run the script
 clear
-echo "You can run ./batocera-rpcs3-sync in /userdata/system anytime after installing pkg files to parse PS3 PSN games."
+echo "You can run ./batocera-rpcs3-sync in /userdata/system anytime after installing pkg files in RPCS3 to parse PS3 PSN games."
 
 sleep 5
 exit
