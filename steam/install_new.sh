@@ -211,13 +211,13 @@ echo "Downloading ES Systems"
     wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/emulationstation/es_systems_steam2.cfg https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/es_systems_steam2.cfg &
     wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/emulationstation/es_features_steam2.cfg https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/es_features_steam2.cfg &
     #
-    wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/Arch.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/Arch.keys &
-    wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/Lutris.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/Lutris.keys &
-    wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/Lutris.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/lutris.keys &
-    wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/Heroic2.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/Heroic2.keys &
-    wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/Heroic2.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/heroic2.keys &
-    wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/steam2.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/steam2.keys &
-    wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/steam.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/steam.keys &
+   # wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/Arch.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/Arch.keys &
+   # wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/Lutris.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/Lutris.keys &
+   # wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/Lutris.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/lutris.keys &
+   # wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/Heroic2.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/Heroic2.keys &
+   # wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/Heroic2.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/heroic2.keys &
+   # wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/steam2.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/steam2.keys &
+   # wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/steam.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/steam.keys &
     #
     wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/pro/steam/batocera-conty-patcher.sh https://github.com/trashbus99/profork/raw/master/steam/build/batocera-conty-patcher.sh &
         wait
