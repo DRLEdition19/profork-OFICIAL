@@ -1,19 +1,5 @@
 #!/bin/bash
 
-# Define the file path
-filePath="$HOME/pro/steam/conty.sh"
-
-# Check if the file exists
-if [ -f "$filePath" ]; then
-    echo "File exists, continuing the script..."
-   
-else
-    echo "It appears the container is not installed. Please install the Arch Steam/lutris/heroic container first, then retry."
-    sleep 10
-    exit 1
-fi
-
-
 
 # Define the options
 OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
