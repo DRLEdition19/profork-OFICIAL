@@ -78,7 +78,6 @@ apps=(
     ["NEXTCLOUD/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/nextcloud.sh | bash" 
     ["PLEX/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/plex.sh | bash"
     ["DOCKER/PODMAN/PORTAINER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/install.sh | bash"
-    ["SABNZBD/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/sabnzbd.sh | bash"
     ["WINDOWS-VMS/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/win.sh | bash"
    
 
