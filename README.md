@@ -68,7 +68,7 @@ curl -L bit.ly/profork | bash
 
 
 For A Full list, see the arch container manager menu in the installer.
-Many apps can be accessed in Filemanger-PCMANFM and more can be added via pacman and flatpak.  
+Many apps can be accessed in Filemanager-PCMANFM and more can be added via pacman and flatpak.  
 
 
 
