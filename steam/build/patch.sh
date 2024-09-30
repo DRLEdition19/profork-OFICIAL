@@ -186,7 +186,52 @@ echo
 				echo 'fi' >> $p
 				echo 'exit 0' >> $p
 					dos2unix $p 2>/dev/null && chmod 777 $p 2>/dev/null
-#--------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------# --------------------------------------------------------------------------------------------
+# 1. Create a Custom Script to Handle "Switch to Desktop" (Exit Steam)
+echo -e "\n\n\nCreating custom Steam exit script..."
+
+# Create the script to handle the "Switch to Desktop" functionality
+cat << 'EOF' > /usr/bin/steam_exit.sh
+#!/bin/bash
+# Custom script to exit Steam when "Switch to Desktop" is triggered
+
+echo "Switching to Desktop - Exiting Steam..."
+
+# Send a signal to Steam to exit gracefully
+pkill -TERM steam
+
+# Wait a few seconds for Steam to exit
+sleep 5
+
+# If Steam is still running, forcefully kill it
+if pgrep -x "steam" > /dev/null; then
+    echo "Steam did not exit gracefully. Forcing exit..."
+    pkill -KILL steam
+fi
+
+echo "Steam has exited."
+EOF
+
+# Make the script executable
+chmod +x /usr/bin/steam_exit.sh
+
+# --------------------------------------------------------------------------------------------
+# 2. Modify Steam Environment to Use the Custom Exit Script
+# Instead of launching a desktop environment, this script just exits Steam
+
+# Optional: Modify Steam launch behavior to call this script on "Switch to Desktop"
+echo -e "\nSetting up Steam to use the custom exit script for 'Switch to Desktop'..."
+echo "alias switch_desktop='/usr/bin/steam_exit.sh'" >> /home/batocera/.bashrc
+
+# Set Steam to call `steam_exit.sh` during "Switch to Desktop"
+steam_config="/home/batocera/.steam/steam/config/config.vdf"
+if [ -f "$steam_config" ]; then
+    sed -i 's/"In-Home Streaming Desktop Game" ".\+"/"In-Home Streaming Desktop Game" "\/usr\/bin\/steam_exit.sh"/g' "$steam_config"
+fi
+
+echo "Custom Steam exit script configured successfully!"
+#------------------------
+
 # rootpatch makepkg
 	sed -i 's,EUID == 0,EUID == 8888,g' $(which makepkg) 2>/dev/null
 #--------------------------------------------------------------------------------------------
