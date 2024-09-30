@@ -70,6 +70,7 @@ apps=(
     ["APPIMAGE-PARSER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/appimage/install.sh | bash"
     ["DARK-MODE/F1"]="curl -Ls https://github.com/trashbus99/profork/raw/master/dark/dark.sh | bash"
     ["DARK-MODE/F1/CANCEL"]="curl -Ls https://github.com/trashbus99/profork/raw/master/dark/light.sh | bash"
+    ["DECKY/FOR-ARCH-&-FLATPAK-STEAM"]=["curl -Ls https://raw.githubusercontent.com/trashbus99/profork/refs/heads/master/scripts/decky.sh | bash"
     ["LIVECAPTIONS/SERVICE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/livecaptions/livecaptions.sh | bash"
     ["NVTOP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/nvtop/nvtop.sh | bash"   
     ["PS3-PSN-PARSER/ADD-PSN-GAMES-TO-EMULATION-STATION"]="curl -L https://github.com/trashbus99/profork/raw/master/scripts/rpcs3/install.sh | bash"   
