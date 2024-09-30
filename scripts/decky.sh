@@ -23,7 +23,7 @@ if [ -d "$(dirname "$FLATPAK_STEAM_DEBUG_FILE")" ]; then
     mkdir -p "$(dirname "$FLATPAK_STEAM_DEBUG_FILE")"
     touch "$FLATPAK_STEAM_DEBUG_FILE"
     DEBUGGING_SETUP=true
-elif [ -d "$(dirname "$ARCH_STEAM_DEBUG_FILE")" ]; then
+if [ -d "$(dirname "$ARCH_STEAM_DEBUG_FILE")" ]; then
     echo "Arch container Steam detected. Enabling CEF debugging in $ARCH_STEAM_DEBUG_FILE..."
     mkdir -p "$(dirname "$ARCH_STEAM_DEBUG_FILE")"
     touch "$ARCH_STEAM_DEBUG_FILE"
