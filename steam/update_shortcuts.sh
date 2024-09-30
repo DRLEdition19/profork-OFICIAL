@@ -98,7 +98,6 @@ old_sh_files=(
   "Peazip.sh"
   "Play on Linux 4.sh"
   "Protonup-Qt.sh"
-  "Qbittorrent.sh"
   "Qdirstat.sh"
   "Rustdesk.sh"
   "Smplayer.sh"
