@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "Profork"
+echo "Please Note: We do not endorse or support piracy or other illegal use." 
+sleep 3
 echo "Redirecting...."
 sleep 2
 curl -L https://raw.githubusercontent.com/trashbus99/profork/master/app/menu.sh | bash
