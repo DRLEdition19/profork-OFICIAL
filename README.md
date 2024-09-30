@@ -48,7 +48,6 @@ curl -L bit.ly/profork | bash
 - **MINECRAFT-BEDROCK-EDITION**: The Bedrock Edition of Minecraft, optimized for cross-platform play.
 - **Moonlight**: An open-source implementation of NVIDIA GameStream, allowing users to stream their PC games to various devices.
 - **OBS Studio**: A free and open-source software for live streaming and video recording, popular among streamers and content creators.
-- **PCem**: An emulator for older computer hardware, allowing users to run retro operating systems and applications.
 - **Peazip**: A free, open-source file archiver utility with support for multiple file formats for compressing and extracting files.
 - **Play on Linux 4**: A graphical frontend for Wine, making it easier to install and manage Windows applications on Linux.
 - **Protontricks**: A tool that helps manage and configure compatibility layers for running Windows games and apps in Steam Proton.
