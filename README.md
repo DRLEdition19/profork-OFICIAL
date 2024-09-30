@@ -69,7 +69,7 @@ curl -L bit.ly/profork | bash
 
 
 For A Full list, see the arch container manager menu in the installer.
-More apps can be added via pacman
+Many apps can be accessed in Filemanger-PCMANFM and more can be added via pacman and flatpak.  
 
 
 
@@ -140,10 +140,8 @@ More apps can be added via pacman
 - **PS2-MINUS**: Older 1.6 build of the PCSX2.
 - **PS2-PLUS**: Latest build of the PCSX2 emulator with QT support.
 - **PS3-PLUS**: Latest version of the RPCS3 emulator.
-- **QBITTORRENT**: A lightweight open-source BitTorrent client.
 - **QDIRSTAT**: A disk usage analyzer with a visual interface.
 - **RHYTHMBOX**: A music player and organizer for GNOME.
-- **SABNZBD/DOCKER**: A lightweight Usenet downloader in a Docker container.
 - **SAK**:  Switch Army knife.
 - **SAYONARA**: A small, fast, and lightweight music player.
 - **SHADPS4**: Ps4 Emulator
@@ -156,7 +154,6 @@ More apps can be added via pacman
 - **TABBY**: A terminal for a modern SSH experience.
 - **TELEGRAM**: A messaging app focused on speed and security.
 - **TOTAL-COMMANDER**: A file manager with a two-panel interface.
-- **TRANSMISSION**: A fast and easy BitTorrent client.
 - **VIRTUALBOX**: A cross-platform virtualization software.
 - **VLC**: A free and open-source multimedia player.
 - **WHATSAPP**: A cross-platform messaging app.
