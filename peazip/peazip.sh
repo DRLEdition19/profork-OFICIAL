@@ -14,7 +14,7 @@
 #--------------------------------------------------------------------- 
 
 APPNAME=peazip 
-APPLINK=http://PROFORK/app/${APPNAME}.AppImage
+APPLINK=https://github.com/trashbus99/profork/blob/master/peazip/extra/peazip.AppImage
 APPHOME="PROFORK/app"
 
 APPNAME="${APPNAME^^}"; ORIGIN="${APPHOME^^}"; appname=$(echo "$APPNAME" | awk '{print tolower($0)}'); 
