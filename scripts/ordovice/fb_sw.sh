@@ -15,10 +15,12 @@ if [ $response -eq 0 ]; then
     # User selected "Yes"
     echo "Patching launchers for version 40 or lower..."
     
-    # Create the necessary directories if they don't exist
+    # Create the necessary directories if they don't exist 
+    
     mkdir -p /userdata/system/switch/configgen
     mkdir -p /userdata/system/switch/configgen/generators/ryujinx
     mkdir -p /userdata/system/switch/configgen/generators/yuzu
+    #Delete current versions
     rm -f /userdata/system/switch/configgen/switchlauncher.py
     rm -f /userdata/system/switch/configgen/generators/ryujinx/ryujinxMainlineGenerator.py
     rm -f /userdata/system/switch/configgen/generators/yuzu/yuzuMainlineGenerator.py
