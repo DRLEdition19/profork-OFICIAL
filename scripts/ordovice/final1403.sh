@@ -558,9 +558,9 @@ function update_emulator {
 E=$1 && N=$2
 link_yuzu="https://archive.org/download/yuzu-emulator-latest-builds-4032024/yuzu-mainline-20240304-537296095.AppImage"
 link_yuzuea="https://archive.org/download/yuzu_emulator_builds/yuzu/pineapple-src%20EA-4176/Linux-Yuzu-EA-4176.AppImage"
-link_ryujinx="https://archive.org/download/ryujinx-1.1.1403_202410/ryujinx-1.1.1403-linux_x64.tar.gz"
+link_ryujinx="https://archive.org/download/yuzu1734/bato.swi/ryujinx1403.tar.gz"
 link_ryujinxldn="$7"
-link_ryujinxavalonia="https://archive.org/download/ryujinx-1.1.1403_202410/ryujinx-1.1.1403-linux_x64.tar.gz"
+link_ryujinxavalonia="https://archive.org/download/yuzu1734/bato.swi/ryujinx1403.tar.gz"
 # ---------------------------------------------------------------------------------- 
 # LOCKING UPDATES FOR RYUJINX AUTOCONTROLLER COMPATIBILITY: 
 #link_ryujinx=https://github.com/uureel/batocera.pro/raw/main/switch/extra/ryujinx-1.1.382-linux_x64.tar.gz
@@ -575,8 +575,8 @@ updates=$(cat /tmp/updater-settings | grep "updates=locked" | cut -d "=" -f2)
    if [[ "$(uname -a | awk '{print $3}')" > "6.2" ]]; then 
       locked=0
       release_ryujinx=$(curl -s --retry 5 --retry-delay 1 --retry-connrefused https://github.com/Ryujinx/release-channel-master | grep "/release-channel-master/releases/tag/" | sed 's,^.*/release-channel-master/releases/tag/,,g' | cut -d \" -f1)
-      link_ryujinx=https://archive.org/download/ryujinx-1.1.1403_202410/ryujinx-1.1.1403-linux_x64.tar.gz
-      link_ryujinxavalonia=https://archive.org/download/ryujinx-1.1.1403_202410/ryujinx-1.1.1403-linux_x64.tar.gz
+      link_ryujinx=https://archive.org/download/yuzu1734/bato.swi/ryujinx1403.tar.gz
+      link_ryujinxavalonia=https://archive.org/download/yuzu1734/bato.swi/ryujinx1403.tar.gz
    fi
    # unlock for v<=36 // use settings from config file 
    if [[ "$(uname -a | awk '{print $3}')" < "6.2" ]] || [[ "$(uname -a | awk '{print $3}')" = "6.2" ]]; then 
