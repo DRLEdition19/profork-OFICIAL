@@ -298,7 +298,6 @@ sed -i 's,MODE=DISPLAY,MODE=CONSOLE,g' /tmp/batocera-switch-updater.sh 2>/dev/nu
 dos2unix /tmp/batocera-switch-updater.sh 2>/dev/null 
 chmod a+x /tmp/batocera-switch-updater.sh 2>/dev/null 
 curl -L https://github.com/trashbus99/profork/raw/master/scripts/ordovice/final1382.sh | bash
-curl -L https://github.com/trashbus99/profork/raw/master/scripts/ordovice/dl_yz.sh | bash
 sleep 0.1 
 echo "OK" >> /userdata/system/switch/extra/installation
 sleep 0.1
@@ -318,6 +317,7 @@ X='\033[0m' # / resetcolor
 if [[ -e /userdata/system/switch/extra/installation ]]; then
 rm /userdata/system/switch/extra/installation 2>/dev/null
 clear
+curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/ordovice/dl_yz.sh | bash
 echo 
 echo 
 echo -e "   ${X}$APPNAME INSTALLED${X}" 
