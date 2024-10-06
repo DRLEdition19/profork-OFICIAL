@@ -4,6 +4,15 @@ echo "Final Yuzu/Ryujinx build puller for batocera"
 sleep 3
 echo "This pulls final yuzu/ryujinx 1382 builds from archive.org.  archive.org is slow. be patient"
 
+# Download Linux-Yuzu-EA-4176.AppImage and rename to yuzuEA.AppImage, then make it executable
+wget -O "/userdata/system/switch/yuzuEA.AppImage" https://archive.org/download/yuzu_emulator_builds/yuzu/pineapple-src%20EA-4176/Linux-Yuzu-EA-4176.AppImage
+chmod +x "/userdata/system/switch/yuzuEA.AppImage"
+
+# Download yuzu-mainline-20240304-537296095.AppImage and rename to yuzu.AppImage, then make it executable
+wget -O "/userdata/system/switch/yuzu.AppImage" https://archive.org/download/yuzu-emulator-latest-builds-4032024/yuzu-mainline-20240304-537296095.AppImage
+chmod +x "/userdata/system/switch/yuzu.AppImage"
+
+
 sleep 5
 
 
