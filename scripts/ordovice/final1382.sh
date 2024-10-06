@@ -2760,11 +2760,7 @@ echo -e "${GREEN}❯❯❯ ${F}DONE ${T}"
 sleep 2
 
 }
-sleep 3
-echo "Repulling Yuzu..."
-sleep 2
-echo ""
-echo ""
+
 
 export -f post-install
 #
