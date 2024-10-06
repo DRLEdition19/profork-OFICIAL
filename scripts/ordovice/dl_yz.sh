@@ -3,7 +3,7 @@
 
 
 sleep 3
-echo "pulling Yuzu..."
+echo "pulling Yuzu again to fix lib error..."
 sleep 2
 echo ""
 echo ""
