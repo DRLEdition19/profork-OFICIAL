@@ -19,11 +19,13 @@ if [ $response -eq 0 ]; then
     mkdir -p /userdata/system/switch/configgen
     mkdir -p /userdata/system/switch/configgen/generators/ryujinx
     mkdir -p /userdata/system/switch/configgen/generators/yuzu
-
+    rm -f /userdata/system/switch/configgen/switchlauncher.py
+    rm -f /userdata/system/switch/configgen/generators/ryujinx/ryujinxMainlineGenerator.py
+    rm -f /userdata/system/switch/configgen/generators/yuzu/yuzuMainlineGenerator.py
     # Download the files to the specified directories
-    curl -L https://github.com/trashbus99/profork/blob/master/scripts/ordovice/configgen/switchlauncher.py -o /userdata/system/switch/configgen/switchlauncher.py
-    curl -L https://github.com/trashbus99/profork/blob/master/scripts/ordovice/configgen/generators/ryujinx/ryujinxMainlineGenerator.py -o /userdata/system/switch/configgen/generators/ryujinx/ryujinxMainlineGenerator.py
-    curl -L https://github.com/trashbus99/profork/blob/master/scripts/ordovice/configgen/generators/yuzu/yuzuMainlineGenerator.py -o /userdata/system/switch/configgen/generators/yuzu/yuzuMainlineGenerator.py
+    curl -L https://raw.githubusercontent.com/trashbus99/profork/refs/heads/master/scripts/ordovice/configgen/switchlauncher.py -o /userdata/system/switch/configgen/switchlauncher.py
+    curl -L https://raw.githubusercontent.com/trashbus99/profork/refs/heads/master/scripts/ordovice/configgen/generators/ryujinx/ryujinxMainlineGenerator.py -o /userdata/system/switch/configgen/generators/ryujinx/ryujinxMainlineGenerator.py
+    curl -L https://raw.githubusercontent.com/trashbus99/profork/refs/heads/master/scripts/ordovice/configgen/generators/yuzu/yuzuMainlineGenerator.py -o /userdata/system/switch/configgen/generators/yuzu/yuzuMainlineGenerator.py
 
     echo "Files downloaded and patched successfully!"
 else
