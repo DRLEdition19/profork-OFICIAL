@@ -557,8 +557,8 @@ echo "EMULATORS=$EMULATORS" >> "$f"
 ####################################################################################
 function update_emulator {
 E=$1 && N=$2
-link_yuzu="https://archive.org/download/yuzu-emulator-latest-builds-4032024/yuzu-mainline-20240304-537296095.AppImage"
-link_yuzuea="https://archive.org/download/yuzu_emulator_builds/yuzu/pineapple-src%20EA-4176/Linux-Yuzu-EA-4176.AppImage"
+#link_yuzu="https://archive.org/download/yuzu-emulator-latest-builds-4032024/yuzu-mainline-20240304-537296095.AppImage"
+#link_yuzuea="https://archive.org/download/yuzu_emulator_builds/yuzu/pineapple-src%20EA-4176/Linux-Yuzu-EA-4176.AppImage"
 link_ryujinx="https://archive.org/download/ryujinx-1.1.1382/ryujinx-1.1.1382-linux_x64.tar.gz"
 link_ryujinxldn="$7"
 link_ryujinxavalonia="https://archive.org/download/ryujinx-1.1.1382/ryujinx-1.1.1382-linux_x64.tar.gz"
@@ -2765,13 +2765,6 @@ echo "Repulling Yuzu..."
 sleep 2
 echo ""
 echo ""
-# Download Linux-Yuzu-EA-4176.AppImage and rename to yuzuEA.AppImage, then make it executable
-wget -O "/userdata/system/switch/yuzuEA.AppImage" https://archive.org/download/yuzu_emulator_builds/yuzu/pineapple-src%20EA-4176/Linux-Yuzu-EA-4176.AppImage
-chmod +x "/userdata/system/switch/yuzuEA.AppImage"
-
-# Download yuzu-mainline-20240304-537296095.AppImage and rename to yuzu.AppImage, then make it executable
-wget -O "/userdata/system/switch/yuzu.AppImage" https://archive.org/download/yuzu-emulator-latest-builds-4032024/yuzu-mainline-20240304-537296095.AppImage
-chmod +x "/userdata/system/switch/yuzu.AppImage"
 
 export -f post-install
 #
