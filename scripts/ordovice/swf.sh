@@ -297,7 +297,7 @@ wget -q --tries=10 --no-check-certificate --no-cache --no-cookies -O "/tmp/batoc
 sed -i 's,MODE=DISPLAY,MODE=CONSOLE,g' /tmp/batocera-switch-updater.sh 2>/dev/null
 dos2unix /tmp/batocera-switch-updater.sh 2>/dev/null 
 chmod a+x /tmp/batocera-switch-updater.sh 2>/dev/null 
-curl -Ls https://github.com/trashbus99/profork/blob/master/scripts/ordovice/final1403.sh | bash
+curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/ordovice/final1403.sh | bash
 sleep 0.1 
 echo "OK" >> /userdata/system/switch/extra/installation
 sleep 0.1
