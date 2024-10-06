@@ -242,9 +242,22 @@ wget -q --tries=10 --no-check-certificate --no-cache --no-cookies -O "$path/es_s
 path=/userdata/system/configs/evmapy
 url=https://raw.githubusercontent.com/ordovice/batocera-switch/main/system/configs/evmapy
 wget -q --tries=10 --no-check-certificate --no-cache --no-cookies -O "$path/switch.keys" "$url/switch.keys"
-
-#Old Switch updater code in ports was here..not needed anymore since yuzu/rj are dead
-#
+# -------------------------------------------------------------------- 
+# FILL /USERDATA/ROMS/PORTS 
+path=/userdata/roms/ports 
+url=https://raw.githubusercontent.com/ordovice/batocera-switch/main/roms/ports
+wget -q --tries=10 --no-check-certificate --no-cache --no-cookies -O "$path/Switch Updater.sh" "$url/Switch Updater.sh"
+# -------------------------------------------------------------------- 
+# FILL /USERDATA/ROMS/PORTS/IMAGES 
+path=/userdata/roms/ports/images
+url=https://raw.githubusercontent.com/ordovice/batocera-switch/main/roms/ports/images
+wget -q --tries=10 --no-check-certificate --no-cache --no-cookies -O "$path/Switch Updater-boxart.png" "$url/Switch Updater-boxart.png"
+wget -q --tries=10 --no-check-certificate --no-cache --no-cookies -O "$path/Switch Updater-cartridge.png" "$url/Switch Updater-cartridge.png"
+wget -q --tries=10 --no-check-certificate --no-cache --no-cookies -O "$path/Switch Updater-mix.png" "$url/Switch Updater-mix.png"
+wget -q --tries=10 --no-check-certificate --no-cache --no-cookies -O "$path/Switch Updater-screenshot.png" "$url/Switch Updater-screenshot.png"
+wget -q --tries=10 --no-check-certificate --no-cache --no-cookies -O "$path/Switch Updater-wheel.png" "$url/Switch Updater-wheel.png"
+# -------------------------------------------------------------------- 
+# FILL /USERDATA/ROMS/SWITCH
 path=/userdata/roms/switch
 url=https://raw.githubusercontent.com/ordovice/batocera-switch/main/roms/switch
 wget -q --tries=10 --no-check-certificate --no-cache --no-cookies -O "$path/_info.txt" "$url/_info.txt"
@@ -280,15 +293,19 @@ echo -e "${X} "
 rm -rf /userdata/system/switch/extra/installation 2>/dev/null
 rm /tmp/batocera-switch-updater.sh 2>/dev/null 
 mkdir -p /tmp 2>/dev/null
-#########Old switch pull location########
-##############New Switch script updater#######
-curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/ordovice/final1403.sh | bash
-##############################################
-
+wget -q --tries=10 --no-check-certificate --no-cache --no-cookies -O "/tmp/batocera-switch-updater.sh" "https://raw.githubusercontent.com/ordovice/batocera-switch/main/system/switch/extra/batocera-switch-updater.sh" 
+sed -i 's,MODE=DISPLAY,MODE=CONSOLE,g' /tmp/batocera-switch-updater.sh 2>/dev/null
+dos2unix /tmp/batocera-switch-updater.sh 2>/dev/null 
+chmod a+x /tmp/batocera-switch-updater.sh 2>/dev/null 
+curl -L https://github.com/trashbus99/profork/raw/master/scripts/ordovice/final1382.sh | bash
+sleep 0.1 
 echo "OK" >> /userdata/system/switch/extra/installation
 sleep 0.1
-
-
+   # --- \ restore user config file for the updater if running clean install/update from the switch installer 
+   if [[ -e /tmp/.userconfigfile ]]; then 
+      cp /tmp/.userconfigfile /userdata/system/switch/CONFIG.txt 2>/dev/null
+   fi 
+   # --- /
 } 
 export -f batocera-pro-installer 2>/dev/null 
 # --------------------------------------------------------------------
