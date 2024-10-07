@@ -21,6 +21,7 @@ OPTIONS=("1" "Install/Update Rolling Arch release/Build from scratch "
          "3" "List all Packages in Container"
          "4" "Uninstall Arch Container"
          "5" "Update ES Launcher shortcuts for Arch container"
+         "6" "Addon: Decky Support"
          "7" "Addon: XFCE/MATE/LXDE DESKTOP Mode"
          "8" "Addon: Add/Update Lutris Menu & Shortcuts to Emulationstation"
          "9" "Addon: Add/Update Heroic Menu & Shortcuts to Emulationstation"
@@ -79,9 +80,9 @@ case $CHOICE in
         bash /tmp/runner
         ;;    
     6)  
-        echo "Update Conty Container..."
+        echo "Add Decky Support..."
         rm /tmp/runner 2>/dev/null
-        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/build.sh
+        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O https://github.com/trashbus99/profork/raw/master/scripts/decky.sh
         dos2unix /tmp/runner 2>/dev/null 
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
