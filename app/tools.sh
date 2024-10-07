@@ -68,6 +68,7 @@ declare -A apps
 apps=(
     # ... (populate with your apps as shown before)
     ["APPIMAGE-PARSER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/appimage/install.sh | bash"
+    ["BATOCERA-CLI/RUN-TO-SEE-ENCLOSED-TOOLS"]=["curl -Ls https://github.com/trashbus99/profork/raw/master/docker/cli_install.sh | bash"
     ["DARK-MODE/F1"]="curl -Ls https://github.com/trashbus99/profork/raw/master/dark/dark.sh | bash"
     ["DARK-MODE/F1/CANCEL"]="curl -Ls https://github.com/trashbus99/profork/raw/master/dark/light.sh | bash"
     ["DECKY/FOR-ARCH-&-FLATPAK-STEAM"]=["curl -Ls https://raw.githubusercontent.com/trashbus99/profork/refs/heads/master/scripts/decky.sh | bash"
