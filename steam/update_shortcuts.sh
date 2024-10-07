@@ -31,6 +31,7 @@ sh_files=(
 "Moonlight.sh"
 "Minecraft-Bedrock.sh"
 "OBS Studio.sh"
+"Parsec.sh"
 "Peazip.sh"
 "Play on Linux 4.sh"
 "Protonup-Qt.sh"
