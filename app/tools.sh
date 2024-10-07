@@ -76,8 +76,8 @@ apps=(
     ["PS3-PSN-PARSER/ADD-PSN-GAMES-TO-EMULATION-STATION"]="curl -L https://github.com/trashbus99/profork/raw/master/scripts/rpcs3/install.sh | bash"   
     ["SUNSHINE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sunshine/installer.sh | bash"
     ["WINE-CUSTOM-DOWNLOADER/v40+"]="curl -Ls https://github.com/trashbus99/profork/raw/master/wine-custom/wine.sh | bash"
-    ["ADD-EMULATOR-CONFIGS-TO-EMULATIONSTATION"]="curl -L https://github.com/trashbus99/profork/raw/master/scripts/emgen/emgen.sh | bash"
-   
+    ["ADD-EMULATOR-CONFIGS-TO-EMULATIONSTATION"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/emgen/emgen.sh | bash"
+    ["SYSTEM-SPLASH-VIDEOS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/logos.sh | bash"
     # Add other apps here
 )
 
