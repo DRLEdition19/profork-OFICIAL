@@ -12,12 +12,13 @@ APPLINK=$(curl -Ls $APILINK | grep "browser_download_url.*shadps4-linux-qt.zip" 
 VERSION=$(curl -Ls $APILINK | grep -m 1 '"tag_name"' | awk -F '"' '{print $4}')
 ORIGIN="shadps4-emu/shadPS4" # credit & info
 # --------------------------------------------------------------------
-# show console/ssh info:
+# --------------------------------------------------------------------
+# show console/ssh info: 
 clear
 echo
 echo
 echo
-echo -e "PREPARING $APPNAME INSTALLER, PLEASE WAIT . . ."
+echo -e "${X}PREPARING $APPNAME INSTALLER, PLEASE WAIT . . . ${X}"
 echo
 echo
 echo
@@ -25,26 +26,29 @@ echo
 # --------------------------------------------------------------------
 # -- output colors:
 ###########################
-X='\033[0m'                # Reset color
-W='\033[1;37m'             # White
-RED='\033[1;31m'           # Red
-BLUE='\033[1;34m'          # Blue
-GREEN='\033[1;32m'         # Green
-PURPLE='\033[1;35m'        # Purple
-DARKRED='\033[0;31m'       # Dark Red
-DARKBLUE='\033[0;34m'      # Dark Blue
-DARKGREEN='\033[0;32m'     # Dark Green
-DARKPURPLE='\033[0;35m'    # Dark Purple
+X='\033[0m'               # 
+W='\033[0m'               # 
+#-------------------------#
+RED='\033[0m'             # 
+BLUE='\033[0m'            # 
+GREEN='\033[0m'           # 
+PURPLE='\033[0m'          # 
+DARKRED='\033[0m'         # 
+DARKBLUE='\033[0m'        # 
+DARKGREEN='\033[0m'       # 
+DARKPURPLE='\033[0m'      # 
 ###########################
 # -- console theme
 L=$X
 R=$X
 # --------------------------------------------------------------------
-# -- prepare paths and files for installation:
+# -- prepare paths and files for installation: 
 cd ~/
 pro=/userdata/system/pro
-mkdir -p $pro/extra 2>/dev/null
-mkdir -p $pro/$appname/extra 2>/dev/null
+mkdir $pro 2>/dev/null
+mkdir $pro/extra 2>/dev/null
+mkdir $pro/$appname 2>/dev/null
+mkdir $pro/$appname/extra 2>/dev/null
 
 # Announce the version and pause for 7 seconds
 echo -e "${GREEN}Downloading $APPNAME version ${VERSION}. Please wait...${X}"
@@ -68,11 +72,11 @@ line() {
   printf '%*s\n' "$cols" '' | tr ' ' "$1"
 }
 
-cols=$(tput cols)
+cols=$($dep/tput cols)
 rm -rf /userdata/system/pro/$appname/extra/cols
 echo $cols >> /userdata/system/pro/$appname/extra/cols
 
-# -- show console/ssh info:
+# -- show console/ssh info: 
 clear
 echo
 echo
@@ -100,20 +104,20 @@ echo -e "${X}USING $ORIGIN"
 echo
 echo -e "${X}$APPNAME WILL BE AVAILABLE IN F1->APPLICATIONS "
 echo -e "${X}AND INSTALLED IN /USERDATA/SYSTEM/PRO/$APPNAME"
-echo ""
+echo"
 echo
-echo -e "${X}. . .${X}"
+echo -e "${X}. . .${X}" 
 
 # -- prepare launcher
 launcher=/userdata/system/pro/$appname/Launcher
 rm -rf $launcher
-echo '#!/bin/bash' >> $launcher
+echo '#!/bin/bash ' >> $launcher
 echo 'unclutter-remote -s' >> $launcher
-echo "LD_LIBRARY_PATH=\"/userdata/system/pro/.dep:\${LD_LIBRARY_PATH}\" DISPLAY=:0.0 /userdata/system/pro/$appname/$AppName.AppImage" >> $launcher
+echo 'LD_LIBRARY_PATH="/userdata/system/pro/.dep:${LD_LIBRARY_PATH}" DISPLAY=:0.0 /userdata/system/pro/'$appname'/'$AppName'.AppImage' >> $launcher
 dos2unix $launcher
 chmod a+x $launcher
 
-# -- prepare F1 - applications - app shortcut
+# -- prepare f1 - applications - app shortcut
 shortcut=/userdata/system/pro/$appname/extra/$appname.desktop
 rm -rf $shortcut 2>/dev/null
 echo "[Desktop Entry]" >> $shortcut
@@ -139,24 +143,24 @@ chmod a+x $pre
 
 # -- add prelauncher to custom.sh to run @ reboot
 csh=/userdata/system/custom.sh
-if [[ -e $csh ]] && [[ "$(grep "/userdata/system/pro/$appname/extra/startup" $csh)" = "" ]]; then
-  echo -e "\n/userdata/system/pro/$appname/extra/startup" >> $csh
+if [[ -e $csh ]] && [[ "$(cat $csh | grep "/userdata/system/pro/$appname/extra/startup")" = "" ]]; then
+echo -e "\n/userdata/system/pro/$appname/extra/startup" >> $csh
 fi
-if [[ -e $csh ]] && [[ "$(grep "/userdata/system/pro/$appname/extra/startup" $csh | grep "#")" != "" ]]; then
-  echo -e "\n/userdata/system/pro/$appname/extra/startup" >> $csh
+if [[ -e $csh ]] && [[ "$(cat $csh | grep "/userdata/system/pro/$appname/extra/startup" | grep "#")" != "" ]]; then
+echo -e "\n/userdata/system/pro/$appname/extra/startup" >> $csh
 fi
-if [[ ! -e $csh ]]; then
-  echo -e "\n/userdata/system/pro/$appname/extra/startup" >> $csh
+if [[ -e $csh ]]; then :; else
+echo -e "\n/userdata/system/pro/$appname/extra/startup" >> $csh
 fi
 dos2unix $csh
 
 # -- done
 sleep 1
-echo -e "${GREEN}> ${W}DONE${X}"
+echo -e "${G}> ${W}DONE${W}"
 echo
 sleep 1
 line '='
-echo -e "${W}> $APPNAME INSTALLED ${GREEN}OK${X}"
+echo -e "${W}> $APPNAME INSTALLED ${G}OK${W}"
 line '='
 echo "1" >> /userdata/system/pro/$appname/extra/status 2>/dev/null
 sleep 3
