@@ -147,7 +147,6 @@ apps=(
     ["SABNZBD/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/sabnzbd.sh | bash"
     ["SAK"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sak/sak.sh | bash"
     ["SAYONARA"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sayonara/sayonara.sh | bash"
-    ["SHADPS4"]="curl -Ls https://github.com/trashbus99/profork/raw/master/shadps4/shadps4.sh | bash"
     ["SHEEPSHAVER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sheepshaver/install.sh | bash"
     ["SMPLAYER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/smplayer/smplayer.sh | bash"
     ["STEAM/CONTAINER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/steam/steam.sh | bash"
