@@ -41,6 +41,7 @@ sh_files=(
 "Steam Diagnostic.sh"
 "Steam.sh"
 "SteamTinker Launch (settings).sh"
+"Sudachi.sh"
 "Terminal-Tabby.sh"
 "TigerVNC.sh"
 "VLC.sh"
