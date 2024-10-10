@@ -42,12 +42,12 @@ devel_pkgs="base-devel git meson mingw-w64-gcc cmake"
 # packages from the Chaotic-AUR repo
 export packagelist="${audio_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} \
 nano ttf-dejavu ttf-liberation steam firefox mpv pcmanfm strace nnn bat \
-htop aria2 neofetch xorg-xwayland kdenlive gedit btop ranger \
+htop aria2 neofetch xorg-xwayland kdenlive gedit btop ranger jellyfin-media-player \
 steam-native-runtime gamemode brave lib32-gamemode jre-openjdk lxterminal \
 mangohud shotcut thunderbird gimp audacity thunderbird lib32-mangohud kodi \
 qt5-wayland xorg-server-xephyr inkscape openbox obs-studio binutils emby-theater \
 xdotool xbindkeys gparted vlc smplayer mpv fish zsh xmlstarlet nvtop duf exa \
-minigalaxy legendary gamescope playonlinux minizip flatpak libreoffice jellyfin-media-player\
+minigalaxy legendary gamescope playonlinux minizip flatpak libreoffice \
 ripgrep i7z sd bandwhich tre zoxide p7zip atop iftop sysstat totem feh krename \
 bottles bauh flatseal rebuild-detector ccache axel breeze xorg-xdpyinfo dua-cli \
 handbrake tigervnc remmina  kitty terminator xorg-xkill media-downloader file  \
