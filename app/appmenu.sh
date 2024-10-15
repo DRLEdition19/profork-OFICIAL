@@ -184,6 +184,7 @@ for choice in $choices; do
 done
 
 # Reload ES after installations
-killall -9 emulationstation
+echo "Update game list to see any apps installed"
+sleep 5
 
 echo "Exiting."
