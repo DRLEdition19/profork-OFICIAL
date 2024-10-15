@@ -274,7 +274,7 @@ line $cols '='; echo
 echo "1" >> /userdata/system/pro/$appname/extra/status 2>/dev/null
 sleep 3
 # reaload for ports file
-curl http://127.0.0.1:1234/reloadgames
+#curl http://127.0.0.1:1234/reloadgames
 }
 export -f batocera-pro-installer 2>/dev/null
 # --------------------------------------------------------------------
