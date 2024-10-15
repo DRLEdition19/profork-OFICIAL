@@ -4,7 +4,7 @@ clear
 
 # Function to display animated title with colors
 animate_title() {
-    local text="PROFORK Standalone App memu (h/t UUREEL)"
+    local text="PROFORK Standalone App menu (h/t UUREEL)"
     local delay=0.03
     local length=${#text}
 
