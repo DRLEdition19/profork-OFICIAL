@@ -1,6 +1,6 @@
 #!/bin/bash
 
-clear 
+clear
 
 # Function to display animated title with colors
 animate_title() {
@@ -56,51 +56,9 @@ loading_animation() {
     echo "Done!"
 }
 
-# Main script execution
-clear
-animate_border
-animate_title
-animate_border
-display_controls
-
-# Define an associative array for app names and their install commands
-declare -A apps
-apps=(
-    # ... (populate with your apps as shown before)
-    ["APPIMAGE-PARSER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/appimage/install.sh | bash"
-    ["BATOCERA-CLI/RUN-TO-SEE-ENCLOSED-TOOLS"]=["curl -Ls https://github.com/trashbus99/profork/raw/master/docker/cli_install.sh | bash"
-    ["DARK-MODE/F1"]="curl -Ls https://github.com/trashbus99/profork/raw/master/dark/dark.sh | bash"
-    ["DARK-MODE/F1/CANCEL"]="curl -Ls https://github.com/trashbus99/profork/raw/master/dark/light.sh | bash"
-    ["DECKY/FOR-ARCH-&-FLATPAK-STEAM"]=["curl -Ls https://raw.githubusercontent.com/trashbus99/profork/refs/heads/master/scripts/decky.sh | bash"
-    ["LIVECAPTIONS/SERVICE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/livecaptions/livecaptions.sh | bash"
-    ["NVTOP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/nvtop/nvtop.sh | bash"   
-    ["PS3-PSN-PARSER/ADD-PSN-GAMES-TO-EMULATION-STATION"]="curl -L https://github.com/trashbus99/profork/raw/master/scripts/rpcs3/install.sh | bash"   
-    ["SUNSHINE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sunshine/installer.sh | bash"
-    ["WINE-CUSTOM-DOWNLOADER/v40+"]="curl -Ls https://github.com/trashbus99/profork/raw/master/wine-custom/wine.sh | bash"
-    ["ADD-EMULATOR-CONFIGS-TO-EMULATIONSTATION"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/emgen/emgen.sh | bash"
-    ["SYSTEM-SPLASH-VIDEOS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/logos.sh | bash"
-    # Add other apps here
-)
-
-# Prepare array for dialog command, sorted by app name
-app_list=()
-for app in $(printf "%s\n" "${!apps[@]}" | sort); do
-    app_list+=("$app" "" OFF)
-done
-
-# Show dialog checklist
-cmd=(dialog --separate-output --checklist "Select applications to install or update:" 22 76 16)
-choices=$("${cmd[@]}" "${app_list[@]}" 2>&1 >/dev/tty)
-
-# Check if Cancel was pressed
-if [ $? -eq 1 ]; then
-    echo "Installation cancelled."
-    exit
-fi
-
-# Install selected apps
-for choice in $choices; do
-    applink="$(echo "${apps[$choice]}" | awk '{print $3}')"
+# Function to run app installation
+run_installation() {
+    applink="$(echo "${apps[$1]}" | awk '{print $3}')"
     rm /tmp/.app 2>/dev/null
     wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O "/tmp/.app" "$applink"
     if [[ -s "/tmp/.app" ]]; then 
@@ -109,13 +67,60 @@ for choice in $choices; do
         clear
         loading_animation
         sed 's,:1234,,g' /tmp/.app | bash
-        echo -e "\n\n$choice DONE.\n\n"
+        echo -e "\n\n$1 DONE.\n\n"
     else 
-        echo "Error: couldn't download installer for ${apps[$choice]}"
+        echo "Error: couldn't download installer for ${apps[$1]}"
+    fi
+}
+
+# Main loop to install apps one at a time
+while true; do
+    clear
+    animate_border
+    animate_title
+    animate_border
+    display_controls
+
+    # Define an associative array for app names and their install commands
+    declare -A apps
+    apps=(
+        ["APPIMAGE-PARSER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/appimage/install.sh | bash"
+        ["BATOCERA-CLI/RUN-TO-SEE-ENCLOSED-TOOLS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/cli_install.sh | bash"
+        ["DARK-MODE/F1"]="curl -Ls https://github.com/trashbus99/profork/raw/master/dark/dark.sh | bash"
+        ["DARK-MODE/F1/CANCEL"]="curl -Ls https://github.com/trashbus99/profork/raw/master/dark/light.sh | bash"
+        ["DECKY/FOR-ARCH-&-FLATPAK-STEAM"]="curl -Ls https://raw.githubusercontent.com/trashbus99/profork/refs/heads/master/scripts/decky.sh | bash"
+        ["LIVECAPTIONS/SERVICE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/livecaptions/livecaptions.sh | bash"
+        ["NVTOP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/nvtop/nvtop.sh | bash"
+        ["PS3-PSN-PARSER/ADD-PSN-GAMES-TO-EMULATION-STATION"]="curl -L https://github.com/trashbus99/profork/raw/master/scripts/rpcs3/install.sh | bash"
+        ["SUNSHINE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sunshine/installer.sh | bash"
+        ["WINE-CUSTOM-DOWNLOADER/v40+"]="curl -Ls https://github.com/trashbus99/profork/raw/master/wine-custom/wine.sh | bash"
+        ["ADD-EMULATOR-CONFIGS-TO-EMULATIONSTATION"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/emgen/emgen.sh | bash"
+        ["SYSTEM-SPLASH-VIDEOS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/logos.sh | bash"
+    )
+
+    # Prepare array for dialog command, sorted by app name
+    app_list=()
+    for app in $(printf "%s\n" "${!apps[@]}" | sort); do
+        app_list+=("$app" "")
+    done
+
+    # Show dialog menu
+    cmd=(dialog --menu "Select one application to install or update:" 22 76 16)
+    choice=$("${cmd[@]}" "${app_list[@]}" 2>&1 >/dev/tty)
+
+    # Check if Cancel was pressed
+    if [ $? -eq 1 ]; then
+        echo "Installation cancelled."
+        exit
+    fi
+
+    # Install the selected app
+    run_installation "$choice"
+
+    # Ask if the user wants to download another
+    dialog --yesno "Do you want to download another application?" 10 60
+    if [ $? -eq 1 ]; then
+        echo "Exiting."
+        exit
     fi
 done
-
-# Reload ES after installations
-killall -9 emulationstation 
-
-echo "Exiting."
