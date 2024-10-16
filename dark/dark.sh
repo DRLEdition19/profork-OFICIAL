@@ -24,8 +24,12 @@ echo -e "\n  preparing dark theme for f1/gtk/pcmanfm..."
 	elif [[ "$(cat /usr/bin/filemanagerlauncher | grep "GTK_THEME=Adwaita-dark" | grep "#")" != "" ]]; then
 		sed -i '/export XDG_CONFIG_DIRS=\/etc\/xdg/a export GTK_THEME=Adwaita-dark' /usr/bin/filemanagerlauncher 
 	fi 
+
 	
 	# cookie 
 	export GTK_THEME=Adwaita-dark
 
 echo -e "  done \n" 
+ echo "Done. Type batocera-save-overlay in the terminal to make persistent on reboot."  
+ echo "Caution: Saving overlay will save any other system modifications you made since last reboot as well."
+ sleep 8
