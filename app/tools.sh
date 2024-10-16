@@ -32,8 +32,8 @@ animate_border() {
 display_controls() {
     echo -e "\e[1;32m"  # Set color to green
     echo "K/B Controls + Gamepad Controls when launched from ports:"
-    echo "  Navigate with up-down-left-right"
-    echo "   Execute with Start/X/Y/ENTER"
+    echo " - Navigate with up-down-left-right"
+    echo " - Execute with Start/X/Y/ENTER"
     echo -e "\e[0m"  # Reset color
     sleep 4
 }
