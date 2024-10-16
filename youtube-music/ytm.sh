@@ -8,7 +8,7 @@ APPHOME="github.com/th-ch/youtube-music"
 #---------------------------------------------------------------------
 
 # Fetch latest release download URL from GitHub
-APPLINK=$(curl -s https://api.github.com/repos/th-ch/youtube-music/releases/latest | jq -r '.assets[] | select(.name | test(".AppImage$")) | .browser_download_url'
+APPLINK=https://github.com/th-ch/youtube-music/releases/download/v3.6.1/YouTube-Music-3.6.1.AppImage
 )
 
 # Validate if APPLINK was found
