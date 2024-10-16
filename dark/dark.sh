@@ -29,7 +29,6 @@ echo -e "\n  preparing dark theme for f1/gtk/pcmanfm..."
 	# cookie 
 	export GTK_THEME=Adwaita-dark
 
-echo -e "  done \n" 
  echo "Done. Type batocera-save-overlay in the terminal to make persistent on reboot."  
  echo "Caution: Saving overlay will save any other system modifications you made since last reboot as well."
  sleep 8
