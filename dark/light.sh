@@ -18,5 +18,7 @@ rm -rf /userdata/system/pro/dark
 # Revert to the default theme by unsetting GTK_THEME
 unset GTK_THEME
 
-echo -e "  done \n"
+ echo "Done. Type batocera-save-overlay in the terminal to make persistent on reboot."  
+ echo "Caution: Saving overlay will save any other system modifications you made since last reboot as well."
+ sleep 8
 
