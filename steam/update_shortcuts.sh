@@ -9,7 +9,6 @@ target_directory="/userdata/roms/conty/"
 # List of .sh files to download
 sh_files=(
 
-"Blender.sh"
 "Boilr.sh"
 "Bottles.sh"
 "Brave.sh"
@@ -46,7 +45,6 @@ sh_files=(
 "TigerVNC.sh"
 "VLC.sh"
 "WineGUI.sh"
-"Zoom.sh"
 )
 # List of .sh files to remove
 old_sh_files=(
