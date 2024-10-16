@@ -117,10 +117,4 @@ while true; do
     # Install the selected app
     run_installation "$choice"
 
-    # Ask if the user wants to download another
-    dialog --yesno "Do you want to download another application?" 10 60
-    if [ $? -eq 1 ]; then
-        echo "Exiting."
-        exit
-    fi
 done
