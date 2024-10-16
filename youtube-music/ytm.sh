@@ -7,9 +7,9 @@ APPNAME=youtube-music
 APPHOME="github.com/th-ch/youtube-music"
 #---------------------------------------------------------------------
 
-# Fetch latest release download URL from GitHub
+#Download URL from GitHub
 APPLINK=https://github.com/th-ch/youtube-music/releases/download/v3.6.1/YouTube-Music-3.6.1.AppImage
-)
+
 
 # Validate if APPLINK was found
 if [ -z "$APPLINK" ]; then
