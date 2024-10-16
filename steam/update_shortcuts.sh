@@ -23,7 +23,6 @@ sh_files=(
 "Google-Chrome.sh"
 "Gparted.sh"
 "Greenlight.sh"
-"Handbrake.sh"
 "Heroic Game Launcher.sh"
 "Lutris.sh"
 "Microsoft-Edge.sh"
