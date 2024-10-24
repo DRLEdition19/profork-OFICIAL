@@ -6,8 +6,9 @@ OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
          "2" "Standalone Apps (mostly appimages)"
          "3" "Docker & Containers"
          "4" "Tools"
-         "5" "Install this Menu to Ports")
-         "6" "Exit"
+         "5" "Install Portmaster"
+         "6" "Install This Menu to Ports"
+         "7" "Exit")
          
 # Display the dialog and get the user choice
 CHOICE=$(dialog --clear --backtitle "Profork Main Menu" \
@@ -54,12 +55,14 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
+    6)  echo "Portmaster Installer..."
+        curl -Ls https://github.com/trashbus99/profork/raw/master/portmaster/install.sh | bash
+        ;;
 
-    6)
+    7)
         echo "Exiting..."
            exit
         ;;
-    
     *)
         echo "No valid option selected or cancelled. Exiting."
         ;;
