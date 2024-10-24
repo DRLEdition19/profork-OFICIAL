@@ -10,7 +10,7 @@ echo "Disclaimer: Use for piracy or other illegal activities is not endorsed."
 echo "Please use responsibly and in accordance with the law."
 sleep 5
 clear
-echo "Do NOT ASK FOR SUPPORT ON THE MAIN BATOCERA DISCORD/REDDIT FORUMS FOR USING THESE APPS -- THEY WILL"
+echo "DO NOT ASK FOR SUPPORT ON THE MAIN BATOCERA DISCORD/REDDIT FORUMS FOR USING THESE APPS & TOOLS -- THEY WILL"
 echo "NOT HELP YOU WITH THEM"
 sleep 5
 echo "Redirecting...."
