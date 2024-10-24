@@ -6,8 +6,8 @@ OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
          "2" "Standalone Apps (mostly appimages)"
          "3" "Docker & Containers"
          "4" "Tools"
-         "5" "Install Portmaster"
-         "6" "Install This Menu to Ports"
+         "5" "Install This Menu to Ports"
+         "6" "Install Portmaster"
          "7" "Exit")
          
 # Display the dialog and get the user choice
