@@ -22,9 +22,7 @@ fi
 # Ensure the appimage is executable
 chmod +x "$SOH_DIR/$SOH_APPIMAGE"
 
-# Step 2: Copy the legally obtained ROM file to the Ship of Harkinian directory
-echo "Please place your legally obtained ROM file in $SOH_DIR before proceeding."
-echo "The ROM should have the correct CRC/SHA1 hash as outlined in the README."
+
 
 sleep 5
 # Step 3: Create the launch script with working directory set
@@ -42,5 +40,8 @@ chmod +x "$LAUNCH_SCRIPT"
 echo "Downloading the launch_soh.sh.keys file..."
 wget -O "/userdata/roms/ports/launch_soh.sh.keys" "$KEYS_URL"
 
+clear
 echo "Setup complete. You can now run Ship of Harkinian by executing the script in PORTS after refresh."
 echo "Launch the game via Batocera or the command: $LAUNCH_SCRIPT"
+echo "Please place your legally obtained ROM file in $SOH_DIR before proceeding."
+echo "The ROM should have the correct CRC/SHA1 hash as outlined in the README."
