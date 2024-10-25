@@ -45,3 +45,4 @@ echo "Setup complete. You can now run Ship of Harkinian by executing the script 
 echo "Launch the game via Batocera or the command: $LAUNCH_SCRIPT"
 echo "Please place your legally obtained ROM file in $SOH_DIR before proceeding."
 echo "The ROM should have the correct CRC/SHA1 hash as outlined in the README."
+sleep 10
