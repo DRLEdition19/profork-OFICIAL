@@ -73,7 +73,7 @@ apps=(
     ["Apotris"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/apotris.sh | bash"
     ["Maldita-Castilla"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/maldita_castilla.sh | bash"
     ["Spelunky-Classic"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/spelunky.sh | bash"
-    ["Donkey-Kong-Advanced]="https://github.com/trashbus99/profork/blob/master/windows/dka.sh | bash"
+    ["Donkey-Kong-Advanced"]="https://github.com/trashbus99/profork/blob/master/windows/dka.sh | bash"
 
     # Add other apps here
 )
