@@ -6,9 +6,9 @@ OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
          "2" "Standalone Apps (mostly appimages)"
          "3" "Docker & Containers"
          "4" "Tools"
-         "5" "Install This Menu to Ports"
+         "5" "Windows/Wine Freeware games"
          "6" "Install Portmaster"
-         "7" "Windows/Wine Freeware games"
+         "7" "Install This Menu to Ports"              
          "8" "Exit")
          
 # Display the dialog and get the user choice
@@ -49,18 +49,17 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    5)
-        echo "Ports Installer..."
+    5)  echo "Windows/Wine Freeware..."
+        curl -Ls https://github.com/trashbus99/profork/raw/master/app/wquashfs.sh | bash
+        ;;              
+    6)  echo "Portmaster Installer..."
+        curl -Ls https://github.com/trashbus99/profork/raw/master/portmaster/install.sh | bash
+        ;;
+    7)  echo "Ports Installer..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/app/install.sh
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
-        ;;
-    6)  echo "Portmaster Installer..."
-        curl -Ls https://github.com/trashbus99/profork/raw/master/portmaster/install.sh | bash
-        ;;
-    7)  echo "Windows/Wine Freeware..."
-        curl -Ls https://github.com/trashbus99/profork/raw/master/app/wquashfs.sh | bash
         ;;
     8)
         echo "Exiting..."
