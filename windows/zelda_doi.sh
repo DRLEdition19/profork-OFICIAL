@@ -1,10 +1,11 @@
 #!/bin/bash
 
 # Define your variables for easy customization
-URL="https://github.com/trashbus99/profork/releases/download/r1/Zelda-Dungeons_of_Infinity.wsqaushfs"
+URL="https://github.com/trashbus99/profork/releases/download/r1/Zelda-Dungeons_of_Infinity.wsquashfs
+"
 KEYS_URL=""  # Leave empty if no keys file is needed
 DEST_DIR="/userdata/roms/windows"
-MESSAGE="APOTRIS - Needs Enable DXVK in adv. settings before running"  # Leave empty if no message is needed
+MESSAGE=""  # Leave empty if no message is needed
 
 # Ensure destination directory exists
 mkdir -p "$DEST_DIR"
