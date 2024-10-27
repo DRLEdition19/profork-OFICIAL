@@ -4,7 +4,7 @@
 URL="https://github.com/trashbus99/profork/releases/download/r1/Celeste.wsquashfs"
 KEYS_URL=""  # Leave empty if no keys file is needed
 DEST_DIR="/userdata/roms/windows"
-MESSAGE="Please Enable DXVK in advanced settings."
+MESSAGE=""  # Leave empty if no message is needed
 
 # Ensure destination directory exists
 mkdir -p "$DEST_DIR"
@@ -25,8 +25,10 @@ if [[ -n "$KEYS_URL" ]]; then
   fi
 fi
 
-# Show message using dialog
-dialog --msgbox "$MESSAGE" 6 50
+# Show message using dialog if MESSAGE is set
+if [[ -n "$MESSAGE" ]]; then
+  dialog --msgbox "$MESSAGE" 6 50
+fi
 
 # Clear dialog box after execution
 clear
