@@ -4,7 +4,7 @@
 URL="https://github.com/trashbus99/profork/releases/download/r1/Apotris.wsquashfs"
 KEYS_URL=""  # Leave empty if no keys file is needed
 DEST_DIR="/userdata/roms/windows"
-MESSAGE="Enable DXVK in adv. settings before running"  # Leave empty if no message is needed
+MESSAGE="APOTRIS - Needs Enable DXVK in adv. settings before running"  # Leave empty if no message is needed
 
 # Ensure destination directory exists
 mkdir -p "$DEST_DIR"
