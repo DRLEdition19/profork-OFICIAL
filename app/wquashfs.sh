@@ -70,7 +70,7 @@ apps=(
     ["Zelda-2-enhanced-PC-remake"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/zelda2.sh | bash"
     ["Celeste-Classic"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/celeste.sh | bash" 
     ["Apotris"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/apotris.sh | bash"
-    ["Maldita-Castilla"]="https://github.com/trashbus99/profork/raw/master/windows/maldita_castilla.sh | bash"
+    ["Maldita-Castilla"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/maldita_castilla.sh | bash"
    
 
     # Add other apps here
