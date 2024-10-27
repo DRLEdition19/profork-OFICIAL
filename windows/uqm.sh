@@ -4,7 +4,7 @@
 URL="https://github.com/trashbus99/profork/releases/download/r1/ur-quan-masters.wsquashfs"
 KEYS_URL=""  # Leave empty if no keys file is needed
 DEST_DIR="/userdata/roms/windows"
-MESSAGE="Set Video mode to 1024x768x60 for best results"  # Leave empty if no message is needed
+MESSAGE="The Ur-Quan Masters -- Set Video mode to 1024x768x60 for best results"  # Leave empty if no message is needed
 
 # Ensure destination directory exists
 mkdir -p "$DEST_DIR"
