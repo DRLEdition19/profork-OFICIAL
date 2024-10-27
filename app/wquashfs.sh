@@ -74,7 +74,7 @@ apps=(
     ["Maldita-Castilla"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/maldita_castilla.sh | bash"
     ["Spelunky-Classic"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/spelunky.sh | bash"
     ["Donkey-Kong-Advanced"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/dka.sh | bash"
-
+    ["The-Ur-Quan-Masters"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/uqm.sh | bash"       
     # Add other apps here
 )
 
