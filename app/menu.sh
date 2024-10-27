@@ -8,7 +8,8 @@ OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
          "4" "Tools"
          "5" "Install This Menu to Ports"
          "6" "Install Portmaster"
-         "7" "Exit")
+         "7" "Windows/Wine Freeware games"
+         "8" "Exit")
          
 # Display the dialog and get the user choice
 CHOICE=$(dialog --clear --backtitle "Profork Main Menu" \
@@ -58,8 +59,10 @@ case $CHOICE in
     6)  echo "Portmaster Installer..."
         curl -Ls https://github.com/trashbus99/profork/raw/master/portmaster/install.sh | bash
         ;;
-
-    7)
+    7)  echo "Windows/Wine Freeware..."
+        curl -Ls https://github.com/trashbus99/profork/raw/master/app/wquashfs.sh | bash
+        ;;
+    8)
         echo "Exiting..."
            exit
         ;;
