@@ -67,8 +67,8 @@ display_controls
 declare -A apps
 apps=(
     # ... (populate with your apps as shown before)
-    ["Zelda 2 enhanced PC remake"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/zelda2.sh | bash"
-    ["Celeste Classic"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/celeste.sh | bash" 
+    ["Zelda-2-enhanced-PC-remake"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/zelda2.sh | bash"
+    ["Celeste-Classic"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/celeste.sh | bash" 
     ["Apotris"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/apotris.sh | bash"
    
    
