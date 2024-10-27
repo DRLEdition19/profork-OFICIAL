@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Define your variables for easy customization
-URL="https://github.com/trashbus99/profork/releases/download/r1/Zelda-Dungeons_of_Infinity.wsquashfs
-"
+URL="https://github.com/trashbus99/profork/releases/download/r1/Zelda2_Remake.wsquashfs"
 KEYS_URL=""  # Leave empty if no keys file is needed
 DEST_DIR="/userdata/roms/windows"
 MESSAGE=""  # Leave empty if no message is needed
