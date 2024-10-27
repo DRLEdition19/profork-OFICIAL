@@ -4,7 +4,7 @@
 URL="https://github.com/trashbus99/profork/releases/download/r1/Zelda2_Remake.wsquashfs"
 KEYS_URL=""  # Leave empty if no keys file is needed
 DEST_DIR="/userdata/roms/windows"
-MESSAGE="Enable DXVK in Adv settings for game and change video mode resolution to 1280x720x60 for best results"  # Leave empty if no message is needed
+MESSAGE="Needs Enable DXVK in Adv settings for game and change video mode resolution to 1280x720x60 for best results"  # Leave empty if no message is needed
 
 # Ensure destination directory exists
 mkdir -p "$DEST_DIR"
