@@ -137,9 +137,9 @@ sleep 1
 
 ###############
 
-MSG="Install Done.  You should see a new system  in EmulationStation called Linux or Arch Container depending on theme\nNVIDIA Users: Drivers will download in the background on First app start-up & can take a while."
+MSG="Install Done. \nRefresh ES to see new system. \nYou should see a new system  in EmulationStation called Linux or Arch Container depending on theme\nNVIDIA Users: Drivers will download in the background on First app start-up & can take a while."
 dialog --title "Arch Container Setup Complete" --msgbox "$MSG" 20 70
 
 ###############
 
-killall -9 emulationstation
+
