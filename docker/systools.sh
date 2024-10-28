@@ -84,10 +84,10 @@ docker run -d \
 # Final message with dialog
 MSG="Docker containers have been set up for Glances, Wetty, and File Browser.\n\n
 - Glances: http://<your-ip>:$GLANCES_PORT\n
-- Wetty (web-based terminal): http://<your-ip>:$WETTY_PORT\n/wetty\n
-- Wetty with autologin: http://<your-ip>:$WETTY_PORT\n/wetty/ssh/root?pass=linux/\n
+- Wetty (web-based terminal): http://<your-ip>:$WETTY_PORT/wetty\n
+- Wetty with autologin: http://<your-ip>:$WETTY_PORT/wetty/ssh/root?pass=linux\n
 - File Browser: http://<your-ip>:$FILEBROWSER_PORT\n\n
-File Browser data is stored in: "$base_dir/filebrowser_data"
-dialog --title "Setup Complete" --msgbox "$MSG" 20 80
+File Browser data is stored in: $base_dir/filebrowser_data"
+
 
 clear
