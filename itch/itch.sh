@@ -16,7 +16,7 @@
 #--------------------------------------------------------------------- 
 #       DEFINE APP INFO >> 
 APPNAME=itch
-APPLINK=https://itch.io/app/download?platform=linux
+APPLINK=https://github.com/trashbus99/profork/blob/master/itch/itch-setup
 APPHOME='itch.io/ official linux app'
 #---------------------------------------------------------------------
 #       DEFINE LAUNCHER COMMAND >>
