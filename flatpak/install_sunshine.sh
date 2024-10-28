@@ -39,7 +39,7 @@ case "$1" in
         ;;
     stop)
         # Kill the Sunshine process
-        pkill -f "flatpak run dev.lizardbyte.app.Sunshine"
+        killall -9 sunshine"
         ;;
     restart)
         $0 stop
