@@ -47,14 +47,17 @@ done
 # Run the Glances container
 docker run -d \
     --name glances \
+    --pid host \
     --network host \
+    --privileged=true \
     -p $GLANCES_PORT:61208 \
-    -v /var/run/docker.sock:/var/run/docker.sock \
-    -v /run/user/1000/podman/podman.sock:/run/user/1000/podman/podman.sock \
+    -v /var/run/docker.sock:/var/run/docker.sock:ro \
+    -v /run/user/1000/podman/podman.sock:/run/user/1000/podman/podman.sock:ro \
+    -v /etc/os-release:/etc/os-release:ro \
     --restart unless-stopped \
     nicolargo/glances:latest \
-    glances -w
-
+    glances -w 
+    
 # Run the Wetty container
 docker run -d \
     --name wetty \
@@ -85,8 +88,8 @@ docker run -d \
 # Final message with dialog
 MSG="Docker containers have been set up for Glances, Wetty, and File Browser.\n\n
 - Glances: http://<your-ip>:$GLANCES_PORT\n
-- Wetty (web-based terminal): http://<your-ip>:$WETTY_PORT/wetty\n
-- Wetty with autologin: http://<your-ip>:$WETTY_PORT/wetty/ssh/root?pass=linux\n
+- Wetty (web-based terminal): http://<your-ip>:$WETTY_PORT\n/wetty\n
+- Wetty with autologin: http://<your-ip>:$WETTY_PORT\n/wetty/ssh/root?pass=linux/\n
 - File Browser: http://<your-ip>:$FILEBROWSER_PORT\n\n
 File Browser data is stored in: $base_dir/filebrowser_data"
 dialog --title "Setup Complete" --msgbox "$MSG" 20 80
