@@ -66,5 +66,7 @@ case "$1" in
 esac
 EOF
 
-echo "Dark theme setup complete. Enable the 'darktheme' service from the Services menu in Batocera's System Settings."
-sleep 5
+# Display final message with dialog
+dialog --title "Dark Theme Setup Complete" --msgbox "Dark theme setup is complete. Enable the 'darktheme' service from the Services menu in Batocera's System Settings." 10 50
+
+clear
