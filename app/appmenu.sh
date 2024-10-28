@@ -94,7 +94,7 @@ apps=(
     ["GTHUMB"]="curl -Ls https://github.com/trashbus99/profork/raw/master/gthumb/gthumb.sh | bash | bash"
     ["HARD-INFO"]="curl -Ls https://github.com/trashbus99/profork/raw/master/hardinfo/hardinfo.sh | bash"
     ["HYPER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/hyper/hyper.sh | bash"
-    ["ITCH"]="curl -Ls https://github.com/trashbus99/profork/raw/master/itch/itch.sh | bash "
+   
     ["JAVA-RUNTIME"]="curl -Ls https://github.com/trashbus99/profork/raw/master/java/java.sh | bash"
     ["KDENLIVE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/kdenlive/kdenlive.sh |bash"
     ["KITTY"]="curl -Ls https://github.com/trashbus99/profork/raw/master/kitty/kitty.sh | bash"
