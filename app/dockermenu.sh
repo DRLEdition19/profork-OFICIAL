@@ -79,7 +79,7 @@ apps=(
     ["PLEX/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/plex.sh | bash"
     ["DOCKER/PODMAN/PORTAINER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/install.sh | bash"
     ["WINDOWS-VMS/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/win.sh | bash"
-   
+    ["SYSTEMTOOLS-WETTY-GLANCES-FILEMANAGER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/systools.sh | bash"
 
     # Add other apps here
 )
