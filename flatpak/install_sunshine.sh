@@ -39,7 +39,7 @@ case "$1" in
         ;;
     stop)
         # Kill the Sunshine process
-        killall -9 sunshine"
+        killall -9 sunshine
         ;;
     restart)
         $0 stop
