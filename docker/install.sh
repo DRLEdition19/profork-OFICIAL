@@ -74,8 +74,10 @@ if [[ -f "$custom_sh" ]]; then
     echo "Removed old Docker startup commands from custom.sh."
 fi
 
-# Start the Docker service
-"$service_file" start
+# Start Docker directly to prepare for Portainer installation
+echo "Starting Docker as a background process..."
+/userdata/system/batocera-containers/batocera-containers &
+sleep 5  # Ensure Docker starts up before proceeding
 
 # Install Portainer
 echo "Installing Portainer..."
