@@ -42,7 +42,7 @@ devel_pkgs="base-devel git meson mingw-w64-gcc cmake"
 # packages from the Chaotic-AUR repo
 export packagelist="${audio_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} \
 nano ttf-dejavu ttf-liberation steam firefox mpv pcmanfm strace nnn bat \
-htop aria2 neofetch xorg-xwayland kdenlive gedit btop ranger \
+htop aria2 neofetch xorg-xwayland kdenlive gedit btop ranger python-pyqt6-webengine\
 steam-native-runtime gamemode brave lib32-gamemode jre-openjdk lxterminal \
 mangohud shotcut thunderbird gimp audacity thunderbird lib32-mangohud kodi \
 qt5-wayland xorg-server-xephyr inkscape openbox obs-studio binutils emby-theater \
