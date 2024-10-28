@@ -43,23 +43,35 @@ zoxide"
 
 dialog --title "Batocera-CLI Available Tools" --msgbox "The following CLI apps are available in Batocera-CLI:\n\n$cli_apps" 20 70
 
-# Announce Batocera-CLI Downloader
-dialog --title "Batocera-CLI Downloader" --msgbox "Batocera-CLI Downloader is starting. This will download and set up the Batocera-CLI package for you." 8 60
+# Ask if the user wants to continue with the installation
+dialog --title "Continue Installation?" --yesno "Would you like to proceed with installing the Batocera-CLI package?" 8 60
 
-# Download and extract the Batocera-CLI package
-wget -O ~/cli.tar.gz https://github.com/trashbus99/profork/releases/download/r1/cli.tar.gz
+# Capture the user's response
+response=$?
 
-# Check if the download was successful
-if [[ $? -ne 0 ]]; then
-    dialog --title "Error" --msgbox "Failed to download the Batocera-CLI package. Please check your network and try again." 8 60
+if [ $response -eq 0 ]; then
+    # User selected "Yes"
+    dialog --title "Batocera-CLI Downloader" --msgbox "Batocera-CLI Downloader is starting. This will download and set up the Batocera-CLI package for you." 8 60
+    
+    # Download and extract the Batocera-CLI package
+    wget -O ~/cli.tar.gz https://github.com/trashbus99/profork/releases/download/r1/cli.tar.gz
+    
+    # Check if the download was successful
+    if [[ $? -ne 0 ]]; then
+        dialog --title "Error" --msgbox "Failed to download the Batocera-CLI package. Please check your network and try again." 8 60
+        exit 1
+    fi
+    
+    # Extract the package
+    tar -xf ~/cli.tar.gz -C ~/
+    
+    # Inform the user about the setup completion
+    dialog --title "Installation Complete" --msgbox "Batocera-CLI setup is complete. Run '~/cli/run' to start. You can edit '~/cli/run' to set which services start up." 10 70
+    
+    # Cleanup
+    rm ~/cli.tar.gz
+else
+    # User selected "No"
+    dialog --title "Installation Canceled" --msgbox "The installation has been canceled." 8 60
     exit 1
 fi
-
-# Extract the package
-tar -xf ~/cli.tar.gz -C ~/
-
-# Inform the user about the setup completion
-dialog --title "Installation Complete" --msgbox "Batocera-CLI setup is complete. Run '~/cli/run' to start. You can edit '~/cli/run' to set which services start up." 10 70
-
-# Cleanup
-rm ~/cli.tar.gz
