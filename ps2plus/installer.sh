@@ -21,8 +21,8 @@ bash "/tmp/$app.sh"
 echo "patch -- downloading es_configs..."
 sleep 4
 # Define URLs and destination directory
-url1="https://github.com/trashbus99/profork/raw/master/ps2plus/extras/es_features_ps2plus.cfg"
-url2="https://github.com/trashbus99/profork/raw/master/ps2plus/extras/es_system_ps2plus.cfg"
+url1="https://github.com/trashbus99/profork/blob/master/ps2plus/extras/es_features_ps2plus.cfg"
+url2="https://github.com/trashbus99/profork/blob/master/ps2plus/extras/es_system_ps2plus.cfg"
 destination="/userdata/system/configs/emulationstation"
 
 # Create the destination directory if it doesn't exist
