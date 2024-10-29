@@ -18,6 +18,7 @@ wget --no-check-certificate --no-cache --no-cookies -q -O "/tmp/$app.sh" "https:
 dos2unix /tmp/pro-framework.sh ; dos2unix "/tmp/$app.sh" ;  
 source /tmp/pro-framework.sh  
 bash "/tmp/$app.sh"
+#Fix missing cfg files
 echo "patch -- downloading es_configs..."
 sleep 4
 # Define URLs and destination directory
