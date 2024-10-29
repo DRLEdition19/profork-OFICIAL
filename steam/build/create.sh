@@ -59,9 +59,9 @@ btrfs-heatmap meld lynx yq xorg xorg-server-xvfb nodejs npm cairo-dock imagemagi
 tint2 plank lxde mate mate-extra dialog xterm compsize antimicrox qdirstat lutris-git chiaki procs sdl2_ttf \
 protontricks-git chiaki sublime-text-4 fuse2 heroic-games-launcher-bin moonlight-qt zoom ventoy-bin 7-zip crun runc \
 microsoft-edge-stable-bin qdirstat peazip jq steam-rom-manager-git google-chrome steamtinkerlaunch xfwm4 xfwm4-themes \
-screenfetch glances discord jre8-openjdk gcc13 python-pip xfce4 xfce4-goodies lua53"
+screenfetch glances discord jre8-openjdk gcc13 python-pip xfce4 xfce4-goodies obs-studio-git lua53"
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="geforcenow-electron obs-studio-git sudachi-bin mcpelauncher-appimage parsec-bin protonup-qt freefilesync-bin sgdboop-bin winegui-bin"
+export aur_packagelist="geforcenow-electron  sudachi-bin mcpelauncher-appimage parsec-bin protonup-qt freefilesync-bin sgdboop-bin winegui-bin"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
