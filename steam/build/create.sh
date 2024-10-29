@@ -45,7 +45,7 @@ nano ttf-dejavu ttf-liberation steam firefox mpv pcmanfm strace nnn bat \
 htop aria2 neofetch xorg-xwayland kdenlive gedit btop ranger python-pyqt6-webengine\
 steam-native-runtime gamemode brave lib32-gamemode jre-openjdk lxterminal \
 mangohud shotcut thunderbird gimp audacity thunderbird lib32-mangohud kodi ksysguard ark kate okular breeze breeze-gtk  \
-qt5-wayland xorg-server-xephyr inkscape openbox obs-studio binutils emby-theater plasma-nm plasma-pa spectacle \
+qt5-wayland xorg-server-xephyr inkscape openbox binutils emby-theater plasma-nm plasma-pa spectacle \
 xdotool xbindkeys gparted vlc smplayer mpv fish zsh xmlstarlet nvtop duf exa systemsettings dolphin konsole kdeconnect kde-cli-tools \
 minigalaxy legendary gamescope playonlinux minizip flatpak libreoffice gnome gnome-extra gnome-tweaks gnome-control-center \
 ripgrep i7z sd bandwhich tre zoxide p7zip atop iftop sysstat totem feh krename gnome-terminal gnome-system-monitor nautilus \
@@ -61,7 +61,7 @@ protontricks-git chiaki sublime-text-4 fuse2 heroic-games-launcher-bin moonlight
 microsoft-edge-stable-bin qdirstat peazip jq steam-rom-manager-git google-chrome steamtinkerlaunch xfwm4 xfwm4-themes \
 screenfetch glances discord jre8-openjdk gcc13 python-pip xfce4 xfce4-goodies lua53"
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="geforcenow-electron obs-studio-tytan652 sudachi-bin mcpelauncher-appimage parsec-bin protonup-qt freefilesync-bin sgdboop-bin winegui-bin"
+export aur_packagelist="geforcenow-electron obs-studio-git sudachi-bin mcpelauncher-appimage parsec-bin protonup-qt freefilesync-bin sgdboop-bin winegui-bin"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
