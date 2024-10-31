@@ -58,7 +58,7 @@ docker run -it --rm \
 
 # Final dialog message with instructions
 IP=$(hostname -I | awk '{print $1}')
-MSG="Umbrel Docker container has been set up.\n\nAccess Umbrel Web UI at http://$IP:$port\nData is stored in: $umbrel_data_dir\n\nYou can manage the container via Docker CLI or other Docker management tools."
+MSG="Umbrel Docker container has been set up.\n\nAccess Umbrel Web UI at http://$IP:$port\nData is stored in: $umbrel_data_dir\n\nYou can manage the container via Docker CLI or Portainer."
 dialog --title "Umbrel Setup Complete" --msgbox "$MSG" 20 70
 
 clear
