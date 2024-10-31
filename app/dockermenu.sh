@@ -73,6 +73,7 @@ apps=(
     ["EMBY/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/emby.sh | bash"
     ["JELLYFIN/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/jellyfin.sh | bash"
     ["LINUX-DESKTOPS-RDP/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/rdesktop.sh | bash | bash"
+    ["UMBREL"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/umbrel.sh | bash"
     ["LINUX-VMS-ON-QEMU/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/qemu.sh | bash | bash"
     ["NETBOOT-XYZ/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/netboot.sh | bash"
     ["NEXTCLOUD/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/nextcloud.sh | bash" 
