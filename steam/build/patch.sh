@@ -81,50 +81,50 @@ echo
 		fi
 #--------------------------------------------------------------------------------------------
 # add fightcade2
-	echo -e "\n\n\nadding fightcade2"
-	pacman -R fightcade2 2>/dev/null
-		link="https://www.fightcade.com/download/linux"
-		p=/opt/fightcade2
-		t=/tmp/fc2
-		f="$t/file"
-			rm -rf $p $t 2>/dev/null
-			mkdir -p $p $t 2>/dev/null
-			cd $t
-			wget -q --show-progress --tries=30 -O "$f" "$link"
-			tar -xf "$f"
-			cd ${PWD}/*/
-			cp -r ${PWD}/* $p/
-			cd $p 
-			rm -rf $t
-				if [[ -f "${p}"/Fightcade2.sh ]]; 
-					then
-					ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade 2>/dev/null
-					ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade2 2>/dev/null
-					echo "added fightcade2 latest realease"
-				fi
+#	echo -e "\n\n\nadding fightcade2"
+#	pacman -R fightcade2 2>/dev/null
+#		link="https://www.fightcade.com/download/linux"
+#		p=/opt/fightcade2
+#		t=/tmp/fc2
+#		f="$t/file"
+#			rm -rf $p $t 2>/dev/null
+#			mkdir -p $p $t 2>/dev/null
+#			cd $t
+#			wget -q --show-progress --tries=30 -O "$f" "$link"
+#			tar -xf "$f"
+#			cd ${PWD}/*/
+#			cp -r ${PWD}/* $p/
+#			cd $p 
+#			rm -rf $t
+#				if [[ -f "${p}"/Fightcade2.sh ]]; 
+#					then
+#					ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade 2>/dev/null
+#					ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade2 2>/dev/null
+#					echo "added fightcade2 latest realease"
+#				fi
 #--------------------------------------------------------------------------------------------
 # add blender
-	echo -e "\n\n\nadding blender"
-	pacman -R blender blender-bin 2>/dev/null
-		link="https://ftp.nluug.nl/pub/graphics/blender/release/Blender4.1/blender-4.1.1-linux-x64.tar.xz"
-		p=/opt/blender
-		t=/tmp/blender
-		f="$t/file"
-			rm -rf $p $t 2>/dev/null
-			mkdir -p $p $t 2>/dev/null
-			cd $t
-			wget -q --show-progress --tries=30 -O "$f" "$link"
-			tar -xf "$f"
-			cd ${PWD}/*/
-			cp -r ${PWD}/* $p/
-			cd $p 
-			rm /usr/bin/blender 2>/dev/null
-			rm -rf $t
-				if [[ -f "${p}"/blender ]]; 
-					then
-					ln -sf "${p}"/blender /usr/bin/blender 2>/dev/null
-					echo "added blender 4.1.1"
-				fi
+#	echo -e "\n\n\nadding blender"
+#	pacman -R blender blender-bin 2>/dev/null
+#		link="https://ftp.nluug.nl/pub/graphics/blender/release/Blender4.1/blender-4.1.1-linux-x64.tar.xz"
+#		p=/opt/blender
+#		t=/tmp/blender
+#		f="$t/file"
+#			rm -rf $p $t 2>/dev/null
+#			mkdir -p $p $t 2>/dev/null
+#			cd $t
+#			wget -q --show-progress --tries=30 -O "$f" "$link"
+#			tar -xf "$f"
+#			cd ${PWD}/*/
+#			cp -r ${PWD}/* $p/
+#			cd $p 
+#			rm /usr/bin/blender 2>/dev/null
+#			rm -rf $t
+#				if [[ -f "${p}"/blender ]]; 
+#					then
+#					ln -sf "${p}"/blender /usr/bin/blender 2>/dev/null
+#					echo "added blender 4.1.1"
+#				fi
 #--------------------------------------------------------------------------------------------
 # run additional rootpatches/fixes
 	echo -e "\n\n\nfixing root apps"
