@@ -11,7 +11,6 @@ sh_files=(
 
 "Boilr.sh"
 "Bottles.sh"
-"Chiaki.sh"
 "FileManager-PCManFM.sh"
 "Filezilla.sh"
 "Firefox.sh"
