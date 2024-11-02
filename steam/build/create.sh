@@ -41,27 +41,27 @@ devel_pkgs="base-devel git meson mingw-w64-gcc cmake"
 # Apart from packages from the official Arch repos, you can also specify
 # packages from the Chaotic-AUR repo
 export packagelist="${audio_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} \
-nano ttf-dejavu ttf-liberation steam firefox mpv pcmanfm strace nnn bat \
+nano ttf-dejavu ttf-liberation steam mpv pcmanfm strace nnn bat \
 htop aria2 neofetch xorg-xwayland kdenlive gedit btop ranger python-pyqt6-webengine\
-steam-native-runtime gamemode brave lib32-gamemode jre-openjdk lxterminal \
-mangohud shotcut thunderbird gimp audacity thunderbird lib32-mangohud kodi ksysguard ark kate okular breeze breeze-gtk  \
-qt5-wayland xorg-server-xephyr inkscape openbox binutils emby-theater plasma-nm plasma-pa spectacle \
-xdotool xbindkeys gparted vlc smplayer mpv fish zsh xmlstarlet nvtop duf exa systemsettings dolphin konsole kdeconnect kde-cli-tools \
-minigalaxy legendary gamescope playonlinux minizip flatpak libreoffice gnome gnome-extra gnome-tweaks gnome-control-center \
-ripgrep i7z sd bandwhich tre zoxide p7zip atop iftop sysstat totem feh krename gnome-terminal gnome-system-monitor nautilus \
-bottles bauh flatseal rebuild-detector ccache axel breeze xorg-xdpyinfo dua-cli  ghome-shell-extensions dash-to-dock gnome-screenshot \
+steam-native-runtime gamemode  lib32-gamemode jre-openjdk lxterminal \
+mangohud thunderbird gimp audacity lib32-mangohud kodi ksysguard ark kate okular breeze breeze-gtk  \
+qt5-wayland xorg-server-xephyr openbox binutils emby-theater \
+xdotool xbindkeys gparted vlc smplayer mpv fish zsh xmlstarlet nvtop duf exa systemsettings dolphin  \
+legendary gamescope  minizip flatpak libreoffice \
+ripgrep i7z sd bandwhich tre zoxide p7zip atop iftop sysstat totem feh krename  \
+bottles bauh flatseal rebuild-detector ccache axel breeze xorg-xdpyinfo dua-cli  \
 handbrake tigervnc remmina  kitty terminator xorg-xkill media-downloader file  noto-fonts ttf-ubuntu-font-family ttf-droid \
-docker docker-compose portainer-bin unzip gthumb nmon thunar nemo umu-launcher gtk-engines gtk-engine-murrine papirus-icon-theme gnome-icon-them \
-gdk-pixbuf-xlib gdk-pixbuf2 xarchiver mc vifm fd deckctl steam-tweaks deck-pref-gui  plasma-meta plasma-desktop kde-applications-meta kwin  \
+docker docker-compose portainer-bin unzip gthumb nmon thunar nemo umu-launcher gtk-engines gtk-engine-murrine  \
+gdk-pixbuf-xlib gdk-pixbuf2 xarchiver mc vifm fd deckctl steam-tweaks deck-pref-gui   \
 steam-boilr-gui btrfs-assistant protontricks-git lib32-sdl12-compat sdl12-compat appimagepool-appimage  kmod pciutils xrdp x11vnc tigervnc onboard remmina vinagre freerdp sunshine btrfs-progs tre \
 podman distrobox cheese filezilla dos2unix wmctrl xorg-xprop fzf scc yarn sdl2 sdl2_image squashfs-tools \
 btrfs-heatmap meld lynx yq xorg xorg-server-xvfb nodejs npm cairo-dock imagemagick strace sdl2_mixer python-pysdl2 \
-tint2 plank lxde mate mate-extra dialog xterm compsize antimicrox qdirstat lutris-git chiaki procs sdl2_ttf \
-protontricks-git chiaki sublime-text-4 fuse2 heroic-games-launcher-bin moonlight-qt zoom ventoy-bin 7-zip crun runc \
+tint2 plank lxde mate mate-extra dialog xterm compsize antimicrox lutris-git chiaki procs sdl2_ttf \
+protontricks-git sublime-text-4 fuse2 heroic-games-launcher-bin moonlight-qt ventoy-bin 7-zip crun runc \
 microsoft-edge-stable-bin qdirstat peazip jq steam-rom-manager-git google-chrome steamtinkerlaunch xfwm4 xfwm4-themes \
 screenfetch glances discord jre8-openjdk gcc13 python-pip xfce4 xfce4-goodies obs-studio-git lua53"
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="geforcenow-electron  sudachi-bin mcpelauncher-appimage parsec-bin protonup-qt freefilesync-bin sgdboop-bin winegui-bin"
+export aur_packagelist="geforcenow-electron  mcpelauncher-appimage parsec-bin protonup-qt  sgdboop-bin winegui-bin"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
