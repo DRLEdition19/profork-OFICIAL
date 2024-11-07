@@ -72,7 +72,6 @@ rm -rf ~/pro/steam/build
 echo "DONE"
 sleep 5
 
-curl http://127.0.0.1:1234/reloadgames
 
 else
     echo "conty.sh was not created."
