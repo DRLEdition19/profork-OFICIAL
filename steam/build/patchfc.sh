@@ -13,7 +13,8 @@ echo
 				dos2unix /usr/bin/prepare 2>/dev/null 
 				chmod 777 /usr/bin/prepare 2>/dev/null
 					cp /usr/bin/prepare /usr/bin/preload 2>/dev/null
-
+#--------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 # add ~/.bashrc&profile env
 	echo -e "\n\n\nfixing .bashrc and .profile"
 		rm ~/.bashrc
@@ -51,29 +52,29 @@ echo
 					wget -q --show-progress --tries=30 -O "$f" "$link"
 					yes "Y" | pacman -U "$f" --overwrite='*' && rm "$f"
 			cd ~/
-
+#--------------------------------------------------------------------------------------------
  add fightcade2
-echo -e "\n\n\nadding fightcade2"
+	echo -e "\n\n\nadding fightcade2"
 	pacman -R fightcade2 2>/dev/null
-link="https://www.fightcade.com/download/linux"
-p=/opt/fightcade2
-t=/tmp/fc2
-f="$t/file"
-rm -rf $p $t 2>/dev/null
-mkdir -p $p $t 2>/dev/null
-cd $t
-wget -q --show-progress --tries=30 -O "$f" "$link"
-		tar -xf "$f"
-		cd ${PWD}/*/
-		cp -r ${PWD}/* $p/
-		cd $p 
-		rm -rf $t
-			if [[ -f "${p}"/Fightcade2.sh ]]; 
-				then
-				ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade 2>/dev/null
-				ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade2 2>/dev/null
-				echo "added fightcade2 latest realease"
-		fi
+		link="https://www.fightcade.com/download/linux"
+		p=/opt/fightcade2
+		t=/tmp/fc2
+		f="$t/file"
+			rm -rf $p $t 2>/dev/null
+			mkdir -p $p $t 2>/dev/null
+			cd $t
+			wget -q --show-progress --tries=30 -O "$f" "$link"
+			tar -xf "$f"
+			cd ${PWD}/*/
+			cp -r ${PWD}/* $p/
+			cd $p 
+			rm -rf $t
+				if [[ -f "${p}"/Fightcade2.sh ]]; 
+					then
+					ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade 2>/dev/null
+					ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade2 2>/dev/null
+					echo "added fightcade2 latest realease"
+				fi
 #--------------------------------------------------------------------------------------------
 # add blender
 #	echo -e "\n\n\nadding blender"
@@ -97,13 +98,66 @@ wget -q --show-progress --tries=30 -O "$f" "$link"
 #					ln -sf "${p}"/blender /usr/bin/blender 2>/dev/null
 #					echo "added blender 4.1.1"
 #				fi
+#--------------------------------------------------------------------------------------------
+# run additional rootpatches/fixes
+	echo -e "\n\n\nfixing root apps"
+		sed -i 's,/opt/google/chrome/google-chrome,/opt/google/chrome/google-chrome --no-sandbox --test-type,g' /usr/bin/google-chrome-stable 2>/dev/null
+		sed -i 's,/opt/spotify/spotify,/opt/spotify/spotify --no-sandbox --test-type,g' /usr/bin/spotify 2>/dev/null
+		sed -i '/<description>.*<\/description>/d' /etc/fonts/fonts.conf 2>/dev/null
+		sed -i '/<description>.*<\/description>/d' /etc/fonts/conf.d/* 2>/dev/null
+			cd /usr/lib
+			rm $(find /usr/lib | grep nvidia) 2>/dev/null
+			cd /usr/lib32 
+			rm $(find /usr/lib32 | grep nvidia) 2>/dev/null
+			find . -path ./python\* -prune -o -type f -name \*nvidia\* -exec rm {} +
+   				yes "Y" | pacman -S libnvidia-container nvidia-container-toolkit --overwrite='*'
+					useradd -r -d /var/lib/libvirt -s /bin/false libvirt-qemu
+					usermod -a -G kvm libvirt-qemu
+#--------------------------------------------------------------------------------------------
+# fix samba collisions 
+	echo -e "\n\n\nfixing samba"
+		rm /usr/bin/samba* 2>/dev/null
+		rm /usr/bin/smb* 2>/dev/null
+		rm -rf ~/build 2>/dev/null
+#--------------------------------------------------------------------------------------------
+# purge baloo 
+	echo -e "\n\n\npurging baloo"
+		rm /bin/baloo* 2>/dev/null &
+		rm /usr/bin/baloo* 2>/dev/null &
+		rm /usr/lib/baloo* 2>/dev/null &
+		rm -rf  /usr/include/KF6/Baloo 2>/dev/null &
+		rm $(which baloo_file_extractor) 2>/dev/null &
+		rm -rf /etc/xdg/autostart/baloo* 2>/dev/null &
+		rm -rf /var/lib/pacman/local/baloo* 2>/dev/null &
+		rm -rf $(find /usr/lib | grep baloo) 2>/dev/null &
+		rm $(find /usr/share/doc | grep baloo) 2>/dev/null &
+		rm $(find /usr/share/locale | grep baloo) 2>/dev/null &
+		rm -rf /usr/share/qlogging-categories6/baloo* 2>/dev/null &
+		rm -rf /usr/share/dbus-1/interfaces/org.kde.baloo* 2>/dev/null &
+			wait
 
-#--------------------------------------------
+# add basic pacman support
+	echo -e "\n\n\nadding basic pacman support"
+		mkdir -p /opt/pacman/lib /opt/pacman/cache 2>/dev/null
+	 	cp -r /etc/pacman* /opt/pacman/ 2>/dev/null
+	 	cp -r /var/lib/pacman/* /opt/pacman/lib/ 2>/dev/null
+		cp -r /var/cache/pacman/* /opt/pacman/cache/ 2>/dev/null  
+			p=/usr/bin/pacman
+			mv "$(which pacman)" "/usr/bin/realpacman" 2>/dev/null
+				echo '#!/bin/bash' >> $p
+				echo 'if [[ "$(echo "${@}" | grep overwrite)" = "" ]]; then' >> $p
+				echo '  realpacman "${@}" ' >> $p
+				echo 'else' >> $p
+				echo '  realpacman "${@}" ' >> $p
+				echo 'fi' >> $p
+				echo 'exit 0' >> $p
+					dos2unix $p 2>/dev/null && chmod 777 $p 2>/dev/null
+#--------------------------------------------------------------------# --------------------------------------------------------------------------------------------
 
 #------------------------
 
 # rootpatch makepkg
-
+	sed -i 's,EUID == 0,EUID == 8888,g' $(which makepkg) 2>/dev/null
 #--------------------------------------------------------------------------------------------
 	rm $f 2>/dev/null
 	rm $h 2>/dev/null
