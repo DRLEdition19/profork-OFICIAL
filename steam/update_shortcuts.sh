@@ -13,12 +13,9 @@ sh_files=(
 "Bottles.sh"
 "FileManager-PCManFM.sh"
 "Filezilla.sh"
-"Fightcade.sh"
-"Firefox.sh"
 "Flatpak-Config.sh"
 "Geforce Now.sh"
 "Google-Chrome.sh"
-"Gparted.sh"
 "Greenlight.sh"
 "Heroic Game Launcher.sh"
 "Lutris.sh"
@@ -159,5 +156,3 @@ sleep 1
 echo "Done."
 sleep 1
 
-# Reload emulationstation
-curl http://127.0.0.1:1234/reloadgames
