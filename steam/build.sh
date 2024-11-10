@@ -35,15 +35,15 @@ rm compress.sh conty-start.sh create.sh 2>/dev/null
 animate_text "Downloading scripts..."
 curl -Ls https://github.com/trashbus99/profork/raw/master/steam/build/compress.sh -o compress.sh
 curl -Ls https://github.com/trashbus99/profork/raw/master/steam/build/conty-start.sh -o conty-start.sh
-curl -Ls https://github.com/trashbus99/profork/raw/master/steam/build/create.sh -o create.sh
+curl -Ls https://github.com/trashbus99/profork/raw/master/steam/build/create.sh -o createfc.sh
 
 # Make the scripts executable
 chmod 777 compress.sh conty-start.sh create.sh 2>/dev/null
 
 
 # Run scripts with animated messages
-animate_text "Running create.sh..."
-bash ./create.sh
+animate_text "Running createfc.sh..."
+bash ./createfc.sh
 
 animate_text "Running compress.sh..."
 bash ./compress.sh
@@ -53,7 +53,8 @@ if [ -f "conty.sh" ]; then
     chmod +x conty.sh
     # Move conty.sh to ~/pro/steam
     animate_text "moving: please wait..."
-    mv conty.sh /userdata/system/pro/steam/
+    mkdir -p /userdata/system/pro/fc/
+    mv conty.sh /userdata/system/pro/fc/
     animate_text "conty.sh creation and move successful!"
     sleep 3
     clear
