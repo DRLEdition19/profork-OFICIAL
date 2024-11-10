@@ -540,7 +540,12 @@ mkdir -p "${bootstrap}"/run/shm
 
 echo "Entering chroot"
 
-
+# ------------------------------------------------------------------------------------------
+# REBUILD LIBC WITH DT_HASH PATCH + ADDITIONAL FIXES
+chroot "${bootstrap}" \
+/usr/bin/env LANG=en_US.UTF-8 TERM=xterm PATH="/bin:/sbin:/usr/bin:/usr/sbin" /bin/bash -c \
+"curl -Ls https://github.com/trashbus99/profork/raw/master/steam/build/patchfc.sh | bash && exit"
+# ------------------------------------------------------------------------------------------
 echo "Exiting chroot"
 
 umount -l "${bootstrap}"
