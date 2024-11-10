@@ -35,10 +35,10 @@ rm compress.sh conty-start.sh create.sh 2>/dev/null
 animate_text "Downloading scripts..."
 curl -Ls https://github.com/trashbus99/profork/raw/master/steam/build/compress.sh -o compress.sh
 curl -Ls https://github.com/trashbus99/profork/raw/master/steam/build/conty-start.sh -o conty-start.sh
-curl -Ls https://github.com/trashbus99/profork/raw/master/steam/build/create.sh -o createfc.sh
+curl -Ls https://github.com/trashbus99/profork/raw/master/steam/build/createfc.sh -o createfc.sh
 
 # Make the scripts executable
-chmod 777 compress.sh conty-start.sh create.sh 2>/dev/null
+chmod 777 compress.sh conty-start.sh createfc.sh 2>/dev/null
 
 
 # Run scripts with animated messages
