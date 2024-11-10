@@ -163,7 +163,7 @@ clear
 echo "Launching container builder script -- This will take a while"
 sleep 5
 
-curl -Ls  https://github.com/trashbus99/profork/raw/master/steam/build.sh | bash 
+curl -Ls  https://github.com/trashbus99/profork/raw/master/steam/buildfc.sh | bash 
 
 MSG="Install Done. Update Gamelist.  You should see a Fightcade in Ports.\n\nNVIDIA Users: Drivers will download on First app start-up & can take a while.
 dialog --title "Arch Container Setup Complete" --msgbox "$MSG" 20 70
