@@ -13,6 +13,7 @@ sh_files=(
 "Bottles.sh"
 "FileManager-PCManFM.sh"
 "Filezilla.sh"
+"Fightcade.sh"
 "Firefox.sh"
 "Flatpak-Config.sh"
 "Geforce Now.sh"
