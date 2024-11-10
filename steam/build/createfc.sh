@@ -51,7 +51,7 @@ gamescope  \
 p7zip \
 \
 \
- unzip umu-launcher \
+unzip umu-launcher \
 \
 \
 \
