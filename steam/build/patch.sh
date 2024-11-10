@@ -80,28 +80,28 @@ echo
 			npm install -g nativefier
 		fi
 #--------------------------------------------------------------------------------------------
-# add fightcade2
-#	echo -e "\n\n\nadding fightcade2"
-#	pacman -R fightcade2 2>/dev/null
-#		link="https://www.fightcade.com/download/linux"
-#		p=/opt/fightcade2
-#		t=/tmp/fc2
-#		f="$t/file"
-#			rm -rf $p $t 2>/dev/null
-#			mkdir -p $p $t 2>/dev/null
-#			cd $t
-#			wget -q --show-progress --tries=30 -O "$f" "$link"
-#			tar -xf "$f"
-#			cd ${PWD}/*/
-#			cp -r ${PWD}/* $p/
-#			cd $p 
-#			rm -rf $t
-#				if [[ -f "${p}"/Fightcade2.sh ]]; 
-#					then
-#					ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade 2>/dev/null
-#					ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade2 2>/dev/null
-#					echo "added fightcade2 latest realease"
-#				fi
+ add fightcade2
+	echo -e "\n\n\nadding fightcade2..."
+	pacman -R fightcade2 2>/dev/null
+		link="https://www.fightcade.com/download/linux"
+		p=/opt/fightcade2
+		t=/tmp/fc2
+		f="$t/file"
+			rm -rf $p $t 2>/dev/null
+			mkdir -p $p $t 2>/dev/null
+			cd $t
+			wget -q --show-progress --tries=30 -O "$f" "$link"
+			tar -xf "$f"
+			cd ${PWD}/*/
+			cp -r ${PWD}/* $p/
+			cd $p 
+			rm -rf $t
+				if [[ -f "${p}"/Fightcade2.sh ]]; 
+					then
+					ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade 2>/dev/null
+					ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade2 2>/dev/null
+					echo "added fightcade2 latest realease"
+				fi
 #--------------------------------------------------------------------------------------------
 # add blender
 #	echo -e "\n\n\nadding blender"
