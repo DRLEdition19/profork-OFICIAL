@@ -77,7 +77,7 @@ FREE_SPACE_KB=$FREE_SPACE
 # Check if free space is less than the minimum required
 if [ $FREE_SPACE_KB -lt $MIN_FREE_SPACE ]; then
     # Warning message using dialog, asking if they want to proceed
-    dialog --title "Warning" --yesno "At least 30GB of temporary free space is recommended for building. The final container size is ~5-6gb. Proceed?" 10 50
+    dialog --title "Warning" --yesno "At least 5GB of temporary free space is recommended for building. The final container size is ~1gb. Proceed?" 10 50
     
     response=$?
     clear # Clear dialog artifacts from terminal
