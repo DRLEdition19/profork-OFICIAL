@@ -42,9 +42,9 @@ devel_pkgs=""
 # packages from the Chaotic-AUR repo
 export packagelist="${audio_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} \
 nano  pcmanfm  \
-htop  neofetch t btop ranger \
+htop  neofetch t btop  \
 lxterminal \
-mangohud  lib32-mangohud kodi \
+mangohud  lib32-mangohud \
 qt5-wayland xorg-server-xephyr \
 xdotool xbindkeys \
 gamescope  \
