@@ -26,8 +26,7 @@ OPTIONS=("1" "Install/Update Rolling Arch release/Build from scratch "
          "8" "Addon: Add/Update Lutris Menu & Shortcuts to Emulationstation"
          "9" "Addon: Add/Update Heroic Menu & Shortcuts to Emulationstation"
          "10" "Addon: Emudeck (experimental)"
-         "11" "Addon: Nativefier (turn websites into apps and add to ES Menu)"
-         "12" "Addon: NVIDIA CUDA Support")
+         "11" "Addon: Nativefier (turn websites into apps and add to ES Menu)")
 
 # Display the dialog and get the user choice
 CHOICE=$(dialog --clear --backtitle "Arch Container Management" \
