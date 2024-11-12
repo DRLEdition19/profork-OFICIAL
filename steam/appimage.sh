@@ -1,4 +1,4 @@
-#!/usr/bin/env bash 
+#!/usr/bin/env bash  
 # PROFORK INSTALLER FOR STEAM
 ######################################################################
 #--------------------------------------------------------------------- 
@@ -8,7 +8,7 @@ APPLINK=$(curl -Ls https://api.github.com/repos/ivan-hc/Steam-appimage/releases 
 APPHOME="github.com/ivan-hc/Steam-appimage"  
 #---------------------------------------------------------------------
 #       DEFINE LAUNCHER COMMAND >>
-COMMAND='mkdir -p /userdata/system/pro/'$APPNAME'/home /userdata/system/pro/'$APPNAME'/config /userdata/system/pro/'$APPNAME'/roms 2>/dev/null; HOME=/userdata/system/pro/'$APPNAME'/home XDG_CONFIG_HOME=/userdata/system/pro/'$APPNAME'/config XDG_DATA_HOME=/userdata/system/pro/'$APPNAME'/home DISPLAY=:0.0 /userdata/system/pro/'$APPNAME'/'$APPNAME'.AppImage "$1" "$2" "$3"
+COMMAND="mkdir -p /userdata/system/pro/$APPNAME/home /userdata/system/pro/$APPNAME/config /userdata/system/pro/$APPNAME/roms 2>/dev/null; HOME=/userdata/system/pro/$APPNAME/home XDG_CONFIG_HOME=/userdata/system/pro/$APPNAME/config XDG_DATA_HOME=/userdata/system/pro/$APPNAME/home DISPLAY=:0.0 /userdata/system/pro/$APPNAME/$APPNAME.AppImage \"\$1\" \"\$2\" \"\$3\" \"\$4\" \"\$5\" \"\$6\" \"\$7\" \"\$8\" \"\$9\""
 
 # Show installer information
 clear 
@@ -86,7 +86,7 @@ dos2unix $csh
 
 # Finish installation
 clear
-echo "Attention NVIDIA GPU users! Container downloads NVIDIA drivers to ~/local/.share/Conty on first startup and delays startup!
+echo "Attention NVIDIA GPU users! Container downloads NVIDIA drivers to ~/local/.share/Conty on first startup and delays startup!"
 sleep 10
 echo -e "${GREEN}> INSTALLATION COMPLETE. $APPNAME is available in PORTS and the F1->APPLICATIONS MENU.${X}"
 echo "REFRESH GAMELIST IN ES"
