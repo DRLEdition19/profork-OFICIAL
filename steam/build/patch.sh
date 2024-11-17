@@ -6,26 +6,25 @@ echo "-----------------------------------------"
 echo
 #--------------------------------------------------------------------------------------------
 # prepare/preload
-	echo -e "\n\n\nfixing nvidia ld.so.cache"
-		rm /usr/bin/prepare 2>/dev/null
-		rm /usr/bin/preload 2>/dev/null
-			wget -q --tries=30 -O /usr/bin/prepare "https://github.com/trashbus99/profork/raw/master/steam/build/prepare.sh"
-				dos2unix /usr/bin/prepare 2>/dev/null 
-				chmod 777 /usr/bin/prepare 2>/dev/null
-					cp /usr/bin/prepare /usr/bin/preload 2>/dev/null
+#	echo -e "\n\n\nfixing nvidia ld.so.cache"
+#		rm /usr/bin/prepare 2>/dev/null
+#		rm /usr/bin/preload 2>/dev/null
+#			wget -q --tries=30 -O /usr/bin/prepare "https://github.com/trashbus99/profork/raw/master/steam/build/prepare.sh"
+#				dos2unix /usr/bin/prepare 2>/dev/null 
+#					cp /usr/bin/prepare /usr/bin/preload 2>/dev/null
 #--------------------------------------------------------------------------------------------
 # fix for nvidia lutris
-	echo -e "\n\n\nfixing lutris"
-		mkdir -p /opt 2>/dev/null 
-		rm -rf /opt/lutris 2>/dev/null
-		cd /opt
-			git clone https://github.com/lutris/lutris
-			sed -i 's,os.geteuid() == 0,os.geteuid() == 888,g' /opt/lutris/lutris/gui/application.py 2>/dev/null
-			cp $(which lutris) /usr/bin/lutris-git 2>/dev/null
-			rm $(which lutris) 2>/dev/null
-			  wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /usr/bin/lutris https://github.com/trashbus99/profork/raw/master/steam/build/lutris.sh
-				  dos2unix /usr/bin/lutris 2>/dev/null
-				  chmod 777 /usr/bin/lutris 2>/dev/null
+#	echo -e "\n\n\nfixing lutris"
+#		mkdir -p /opt 2>/dev/null 
+#		rm -rf /opt/lutris 2>/dev/null
+#		cd /opt
+#			git clone https://github.com/lutris/lutris
+#			sed -i 's,os.geteuid() == 0,os.geteuid() == 888,g' /opt/lutris/lutris/gui/application.py 2>/dev/null
+#			cp $(which lutris) /usr/bin/lutris-git 2>/dev/null
+#			rm $(which lutris) 2>/dev/null
+#			  wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /usr/bin/lutris https://github.com/trashbus99/profork/raw/master/steam/build/lutris.sh
+#				  dos2unix /usr/bin/lutris 2>/dev/null
+#				  chmod 777 /usr/bin/lutris 2>/dev/null
 #--------------------------------------------------------------------------------------------
 # add ~/.bashrc&profile env
 	echo -e "\n\n\nfixing .bashrc and .profile"
@@ -80,28 +79,27 @@ echo
 			npm install -g nativefier
 		fi
 #--------------------------------------------------------------------------------------------
- add fightcade2
-	echo -e "\n\n\nadding fightcade2..."
-	pacman -R fightcade2 2>/dev/null
-		link="https://www.fightcade.com/download/linux"
-		p=/opt/fightcade2
-		t=/tmp/fc2
-		f="$t/file"
-			rm -rf $p $t 2>/dev/null
-			mkdir -p $p $t 2>/dev/null
-			cd $t
-			wget -q --show-progress --tries=30 -O "$f" "$link"
-			tar -xf "$f"
-			cd ${PWD}/*/
-			cp -r ${PWD}/* $p/
-			cd $p 
-			rm -rf $t
-				if [[ -f "${p}"/Fightcade2.sh ]]; 
-					then
-					ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade 2>/dev/null
-					ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade2 2>/dev/null
-					echo "added fightcade2 latest realease"
-				fi
+# add fightcade2
+#	echo -e "\n\n\nadding fightcade2..."
+#	pacman -R fightcade2 2>/dev/null
+#		link="https://www.fightcade.com/download/linux"
+#		p=/opt/fightcade2
+#		t=/tmp/fc2
+#		f="$t/file"
+#			rm -rf $p $t 2>/dev/null
+#			mkdir -p $p $t 2>/dev/null
+#			cd $t
+#			wget -q --show-progress --tries=30 -O "$f" "$link"
+#			tar -xf "$f"
+#			cd ${PWD}/*/
+#			cp -r ${PWD}/* $p/
+#			cd $p 
+#			rm -rf $t
+#				if [[ -f "${p}"/Fightcade2.sh ]]; 
+#					then
+#					ln -sf "${p}"/Fightcade2.sh /usr/bin/fightcade 2>/dev/null
+#					echo "added fightcade2 latest realease"
+#				fi
 #--------------------------------------------------------------------------------------------
 # add blender
 #	echo -e "\n\n\nadding blender"
