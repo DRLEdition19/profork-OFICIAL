@@ -16,7 +16,7 @@
 #--------------------------------------------------------------------- 
 #       DEFINE APP INFO >>
 APPNAME=opera 
-APPLINK=http://PROFORK/app/opera.AppImage
+APPLINK=https://github.com/ivan-hc/Opera-appimage/releases/download/continuous/Opera-Web-Browser-stable-115.0.5322.119-x86_64.AppImage
 APPHOME="apprepo.de/appimage/opera"
 #---------------------------------------------------------------------
 #       DEFINE LAUNCHER COMMAND >>
