@@ -9,8 +9,8 @@ APPNAME="ATOM" # for installer info
 appname=atom # directory name in /userdata/system/pro/...
 AppName=atom # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
-APPLINK=http://PROFORK/app/$appname.AppImage
-ORIGIN="APPREPO.DE/APPIMAGE/ATOM" # credit & info
+APPLINK=https://github.com/ferion11/atom_Appimage/releases/download/v1.63.1/atom-v1.63.1-x86_64.AppImage
+ORIGIN="github.com/ferion11/atom_AppImage" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
