@@ -9,7 +9,7 @@ APPNAME=RHYTHMBOX # for installer info
 appname=rhythmbox # directory name in /userdata/system/pro/...
 AppName=rhythmbox # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
-APPLINK=http://PROFORK/app/$appname.AppImage
+APPLINK=https://github.com/ivan-hc/Rhythmbox-appimage/releases/download/continuous/Rhythmbox_3.4.8-2-archimage3.4.4-2-x86_64.AppImage
 ORIGIN=PROFORK@https://wiki.gnome.org/Apps/Rhythmbox # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
