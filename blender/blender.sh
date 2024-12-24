@@ -9,8 +9,8 @@ APPNAME="BLENDER" # for installer info
 appname=blender # directory name in /userdata/system/pro/...
 AppName=blender # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$AppName.AppImage
-APPLINK=http://PROFORK/app/blender.AppImage
-ORIGIN="apprepo.de/appimage/blender" # credit & info
+APPLINK=https://github.com/erroreutopia/Blender-Appimage/releases/download/blender4.2.0/blender-4.2.0-linux-x64.Appimage
+ORIGIN="https://github.com/erroreutopia" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
