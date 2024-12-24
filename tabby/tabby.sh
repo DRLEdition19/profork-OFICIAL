@@ -9,7 +9,7 @@ APPNAME=TABBY # for installer info
 appname=tabby # directory name in /userdata/system/pro/...
 AppName=tabby # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
-APPLINK=http://PROFORKS/app/$appname.AppImage
+APPLINK=https://github.com/Eugeny/tabby/releases/download/v1.0.215/tabby-1.0.215-linux-x64.AppImage
 ORIGIN=PROFORKS@github.com/Eugeny/tabby # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
