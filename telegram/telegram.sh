@@ -9,7 +9,7 @@ APPNAME="TELEGRAM" # for installer info
 appname=telegram # directory name in /userdata/system/pro/...
 AppName=Telegram # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$AppName.AppImage
-APPLINK=http://PROFORK/app/telegram.AppImage
+APPLINK=https://github.com/srevinsaju/Telegram-AppImage/releases/download/continuous/Telegram_Desktop-x86_64.AppImagee
 ORIGIN="APPREPO.DE/APPIMAGE/TELEGRAM" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
