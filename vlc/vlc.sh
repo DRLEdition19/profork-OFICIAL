@@ -9,8 +9,8 @@ APPNAME=VLC # for installer info
 appname=vlc # directory name in /userdata/system/pro/...
 AppName=vlc # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
-APPLINK=http://PROFORK/app/$appname.AppImage
-ORIGIN=PROFORK/app # credit & info
+APPLINK=APPLINK=https://github.com/cmatomic/VLCplayer-AppImage/releases/download/3.0.11.1/VLC_media_player-3.0.11.1-x86_64.AppImage
+ORIGIN=github.com/cmatomic/VLCplaye # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
