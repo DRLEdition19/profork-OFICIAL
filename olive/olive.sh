@@ -6,7 +6,7 @@ APPNAME="OLIVE" # for installer info
 appname=olive   # directory name in /userdata/system/pro/...
 AppName=olie   # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
-APPLINK=http://PROFORK/app/olive.AppImage
+APPLINK=https://github.com/olive-editor/olive/releases/download/0.2.0-nightly/Olive-8ac191ce-Linux-x86_64.AppImage
 ORIGIN="APPREPO.DE/APPIMAGE/OLIVE" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
