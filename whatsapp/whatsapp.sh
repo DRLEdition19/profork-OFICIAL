@@ -9,7 +9,7 @@ APPNAME="WHATSAPP" # for installer info
 appname=whatsapp # directory name in /userdata/system/pro/...
 AppName=Whatsapp # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$AppName.AppImage
-APPLINK=http://PROFORK/app/whatsapp.AppImage
+APPLINK=https://github.com/WAClient/WALC/releases/download/v0.3.3/WALC-0.3.3.AppImage
 ORIGIN="APPREPO.DE/APPIMAGE/WHATSAPP" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
