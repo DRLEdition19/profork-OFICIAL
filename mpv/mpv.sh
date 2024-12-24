@@ -9,7 +9,7 @@ APPNAME=MPV # for installer info
 appname=mpv # directory name in /userdata/system/pro/...
 AppName=mpv # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
-APPLINK=http://PROFORK/app/$appname.AppImage
+APPLINK=https://github.com/ivan-hc/MPV-appimage/releases/download/continuous/MPV-Media-Player_0.39.0-4-archimage3.4.4-2.2-x86_64.AppImage
 ORIGIN=PROFORK@github.com/mpv-player/mpv # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
