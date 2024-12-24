@@ -9,7 +9,7 @@ APPNAME=DOUBLE-COMMANDER # for installer info
 appname=doublecmd # directory name /userdata/system/pro/...
 AppName=$appname # App.AppImage
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
-APPLINK=http://PROFORK/app/$appname.AppImage
+APPLINK=https://download.opensuse.org/repositories/home:/Alexx2000/AppImage/doublecmd-gtk-latest-x86_64.AppImagee
 ORIGIN=PROFORK # credit & info 
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
