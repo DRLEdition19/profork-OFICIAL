@@ -6,7 +6,7 @@ APPNAME="ODIO" # for installer info
 appname=odio   # directory name in /userdata/system/pro/...
 AppName=odio   # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
-APPLINK=http://PROFORK/app/odio.AppImage
+APPLINK=https://github.com/trashbus99/profork/releases/download/r1/odio-1.4.0-x86_64.AppImage
 ORIGIN="APPREPO.DE/APPIMAGE/ODIO" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
