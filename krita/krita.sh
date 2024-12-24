@@ -9,7 +9,7 @@ APPNAME=KRITA # for installer info
 appname=krita # directory name in /userdata/system/pro/...
 AppName=krita # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
-APPLINK=http://PROFORK/app/$appname.AppImage
+APPLINK=https://download.kde.org/stable/krita/5.2.6/krita-5.2.6-x86_64.appimage
 ORIGIN="PROFORK@krita.org_v5.1.5" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
