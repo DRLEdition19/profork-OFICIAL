@@ -1,4 +1,4 @@
-NU nano 7.2                                                                               co.sh                                                                                          #!/bin/bash
+#!/bin/bash                                                                           co.sh                                                                                          #!/bin/bash
 
 # Prompt user with a dialog box
 dialog --title "Install Compositor" --yesno "Would you like to Install a compositor to prevent window artifacting?" 7 60
