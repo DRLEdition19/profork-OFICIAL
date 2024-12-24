@@ -9,7 +9,7 @@ APPNAME=SUBLIME-TEXT # for installer info
 appname=sublime # directory name in /userdata/system/pro/...
 AppName=sublime # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
-APPLINK=http://PROFORK/app/$appname.AppImage
+APPLINK=https://github.com/gunir/SublimeText-AppImage/releases/tag/main
 ORIGIN=PROFORK@sublimetext.com # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
