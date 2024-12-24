@@ -16,7 +16,7 @@
 #--------------------------------------------------------------------- 
 #       DEFINE APP INFO >>
 APPNAME=vivaldi 
-APPLINK=http://PROFORK/app/vivaldi.AppImage
+APPLINK=https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.1.3554.3-1-x86_64.AppImage
 APPHOME="https://apprepo.de/appimage/vivaldi"
 #---------------------------------------------------------------------
 #       DEFINE LAUNCHER COMMAND >>
