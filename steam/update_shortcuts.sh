@@ -26,6 +26,7 @@ sh_files=(
 "Parsec.sh"
 "Peazip.sh"
 "Protonup-Qt.sh"
+"Shadps4.sh"
 "Smplayer.sh"
 "Spotify.sh"
 "Steam Big Picture Mode.sh"
