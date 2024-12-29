@@ -6,7 +6,7 @@
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 APPNAME=endlesssky # for installer info
-appname=ENDLESSKY # directory name in /userdata/system/pro/...
+appname=ENDLESSSKY # directory name in /userdata/system/pro/...
 AppName=$appname # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
 #APPLINK=http://PROFORK/app/$appname.AppImage
