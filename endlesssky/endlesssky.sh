@@ -5,7 +5,7 @@
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
-APPNAME=ENDLESSKY # for installer info
+APPNAME=endlesssky # for installer info
 appname=ENDLESSKY # directory name in /userdata/system/pro/...
 AppName=$appname # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
