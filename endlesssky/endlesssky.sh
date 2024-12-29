@@ -118,9 +118,9 @@ sleep 0.33
 echo -e "${X}THIS WILL INSTALL $APPNAME FOR BATOCERA"
 echo -e "${X}USING $ORIGIN"
 echo
-echo -e "${X}$APPNAME WILL BE AVAILABLE IN F1->APPLICATIONS "
+echo -e "${X}$APPNAME WILL BE AVAILABLE IN F1->APPLICATIONS and PORTS "
 echo -e "${X}AND INSTALLED IN /USERDATA/SYSTEM/PRO/$appname"
-echo
+echo -e 
 echo -e "${X}FOLLOW THE BATOCERA DISPLAY"
 echo
 echo -e "${X}. . .${X}" 
@@ -311,6 +311,12 @@ f1shortcut=/usr/share/applications/$appname.desktop
 cp $shortcut $f1shortcut 2>/dev/null
 # //
 #
+# -- prepare Ports file, 
+port=/userdata/system/pro/$appname/EndlessSky.sh 
+cp /userdata/system/pro/$appname/Launcher $port 
+dos2unix $port 
+chmod a+x $port 
+cp $port "/userdata/roms/ports/$appname.sh" 
 # -- prepare prelauncher to avoid overlay,
 pre=/userdata/system/pro/$appname/extra/startup
 rm -rf $pre 2>/dev/null
