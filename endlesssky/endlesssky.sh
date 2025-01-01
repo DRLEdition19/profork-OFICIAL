@@ -289,7 +289,7 @@ echo 'LD_LIBRARY_PATH="/userdata/system/pro/.dep:${LD_LIBRARY_PATH}" DISPLAY=:0.
 ######################################################################
 dos2unix $launcher
 chmod a+x $launcher
-cp $launcher /userdata/roms/ports/Google-Chrome.sh 2>/dev/null
+#cp $launcher /userdata/roms/ports/Google-Chrome.sh 2>/dev/null
 cp $launcher /userdata/system/pro/$appname/Launcher 2>/dev/null
 # //
 # -- get icon for shortcut,
@@ -356,7 +356,7 @@ export -f batocera-pro-installer 2>/dev/null
 # |
   batocera-pro-installer "$APPNAME" "$appname" "$AppName" "$APPPATH" "$APPLINK" "$ORIGIN"
 # --------------------------------------------------------------------
-# PROFORK/CHROME INSTALLER //
+# PROFORK/ENDLESSSKY INSTALLER //
 #################################
 function autostart() {
   csh="/userdata/system/custom.sh"
