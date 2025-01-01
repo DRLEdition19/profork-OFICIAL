@@ -294,7 +294,7 @@ cp $launcher /userdata/system/pro/$appname/Launcher 2>/dev/null
 # //
 # -- get icon for shortcut,
 icon=/userdata/system/pro/$appname/extra/icon.png
-wget -q -O $icon https://github.com/trashbus99/profork/raw/master/$appname/extra/icon.png
+wget -q -O $icon https://github.com/trashbus99/profork/raw/master/endlesssky/extra/icon.png
 # //
 # -- prepare f1 - applications - app shortcut, 
 shortcut=/userdata/system/pro/$appname/extra/$appname.desktop
