@@ -82,6 +82,7 @@ apps=(
     ["CPU-X"]="curl -Ls https://github.com/trashbus99/profork/raw/master/cpux/cpux.sh | bash"
     ["DISCORD"]="curl -Ls https://github.com/trashbus99/profork/raw/master/discord/discord.sh | bash"
     ["EDGE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/edge/edge.sh| bash"
+    ["ENDLESS-SKY"]="curl -Ls https://github.com/trashbus99/profork/raw/master/endlesssky/endlesssky.sh | bash"
     ["FERDIUM"]="curl -Ls https://github.com/trashbus99/profork/raw/master/ferdium/ferdium.sh | bash"
     ["FILEZILLA"]="curl -Ls https://github.com/trashbus99/profork/raw/master/filezilla/filezilla.sh | bash"
     ["FIREFOX"]="curl -Ls https://github.com/trashbus99/profork/raw/master/firefox/ff.sh | bash"
