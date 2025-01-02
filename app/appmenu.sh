@@ -81,7 +81,6 @@ apps=(
     ["CHROME"]="curl -Ls https://github.com/trashbus99/profork/raw/master/chrome/chrome.sh | bash"
     ["CPU-X"]="curl -Ls https://github.com/trashbus99/profork/raw/master/cpux/cpux.sh | bash"
     ["DISCORD"]="curl -Ls https://github.com/trashbus99/profork/raw/master/discord/discord.sh | bash"
-    ["DOUBLE-COMMANDER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/doublecmd/doublecmd.sh | bash"
     ["EDGE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/edge/edge.sh| bash"
     ["FERDIUM"]="curl -Ls https://github.com/trashbus99/profork/raw/master/ferdium/ferdium.sh | bash"
     ["FILEZILLA"]="curl -Ls https://github.com/trashbus99/profork/raw/master/filezilla/filezilla.sh | bash"
