@@ -53,7 +53,7 @@ wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/s
 #  wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/Lutris.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/lutris.keys &
 #     wait
 #            dos2unix /userdata/system/configs/evmapy/*.keys 2>/dev/null
-fi
+# fi
 
 curl http://127.0.0.1:1234/reloadgames
 # Clear dialog (necessary for some terminal environments)
