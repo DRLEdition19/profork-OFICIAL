@@ -32,7 +32,7 @@ apps=(
 "Steam Diagnostic.sh"
 "Steam.sh"
 "SteamTinker Launch (settings).sh"
-"Sudachi.sh"
+"Shadps4.sh"
 "Terminal-Tabby.sh"
 "TigerVNC.sh"
 "VLC.sh"
@@ -88,16 +88,16 @@ btrfs-heatmap meld lynx yq xorg xorg-server-xvfb nodejs npm cairo-dock imagemagi
 tint2 plank lxde mate mate-extra dialog xterm compsize antimicrox qdirstat lutris-git chiaki procs sdl2_ttf \
 protontricks-git chiaki sublime-text-4 fuse2 heroic-games-launcher-bin moonlight-qt zoom ventoy-bin 7-zip crun runc \
 microsoft-edge-stable-bin qdirstat peazip jq steam-rom-manager-git google-chrome steamtinkerlaunch xfwm4 xfwm4-themes \
-screenfetch glances discord jre8-openjdk gcc13 python-pip xfce4 xfce4-goodies lua53"
+screenfetch glances discord jre8-openjdk gcc13 python-pip xfce4 xfce4-goodies lua53 shadps4-git"
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="geforcenow-electron sudachi-bin mcpelauncher-appimage parsec-bin protonup-qt freefilesync-bin sgdboop-bin winegui-bin"
+export aur_packagelist="geforcenow-electron  mcpelauncher-appimage parsec-bin protonup-qt freefilesync-bin sgdboop-bin winegui-bin"
 
 # Concatenate all packages and sort them alphabetically
 all_packages=$(echo "$audio_pkgs $video_pkgs $wine_pkgs $devel_pkgs $packagelist $aur_packagelist" | tr ' ' '\n' | sort | tr '\n' ' ')
 
 # Function to display packages using dialog
 show_packages() {
-    dialog --backtitle "Package List as of Oct. 16, 2024" \
+    dialog --backtitle "Package List" \
     --title "All Packages--Oct 16, 2024" \
     --msgbox "$all_packages" 20 70
 }
