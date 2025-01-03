@@ -25,8 +25,9 @@ OPTIONS=("1" "Install/Update Rolling Arch release/Build from scratch "
          "7" "Addon: XFCE/MATE/LXDE DESKTOP Mode"
          "8" "Addon: Add/Update Lutris Menu & Shortcuts to Emulationstation"
          "9" "Addon: Add/Update Heroic Menu & Shortcuts to Emulationstation"
-         "10" "Addon: Emudeck (experimental)"
-         "11" "Addon: Nativefier (turn websites into apps and add to ES Menu)")
+         "10" "Addon: Add/Update PS4 Menu and Shortcuts to Emulationstation"
+         "11" "Addon: Emudeck (experimental)"
+         "12" "Addon: Nativefier (turn websites into apps and add to ES Menu)")
 
 # Display the dialog and get the user choice
 CHOICE=$(dialog --clear --backtitle "Arch Container Management" \
@@ -110,7 +111,15 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    10)  
+  10)  
+        echo "Add/update PS4 shortcuts to emulationstation..."
+        rm /tmp/runner 2>/dev/null
+        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/addon_ps4.sh
+        dos2unix /tmp/runner 2>/dev/null 
+        chmod 777 /tmp/runner 2>/dev/null
+        bash /tmp/runner
+        ;;
+ 11)  
         echo "Emudeck Menu..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/emudeck/emudeck.sh
@@ -118,7 +127,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    11)  
+    12)  
         echo "Webapps Installer..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/webapps/install.sh
