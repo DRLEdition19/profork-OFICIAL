@@ -76,7 +76,7 @@ batocera-mouse show
     --bind /userdata /userdata \\
     --bind /newroot /newroot \\
     --bind / /batocera \\
-bash -c 'prepare && source /opt/env && dbus-run-session shadps4 -g $game_code -f true'
+bash -c 'dbus-run-session shadps4 -g $game_code -f true'
 #------------------------------------------------
 batocera-mouse hide
 #------------------------------------------------
