@@ -68,7 +68,6 @@ batocera-mouse show
     --bind /userdata/system/flatpak /var/lib/flatpak \\
     --bind /userdata/system/etc/passwd /etc/passwd \\
     --bind /userdata/system/etc/group /etc/group \\
-    --bind /var/run/nvidia /var/run/nvidia \\
     --bind /userdata/system /home/batocera \\
     --bind /sys/fs/cgroup /sys/fs/cgroup \\
     --bind /userdata/system /home/root \\
