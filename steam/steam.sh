@@ -2,7 +2,7 @@
 
 
 # Part 1: Display initial message
-dialog --msgbox "NVIDIA Support is Removed for v41 compatibility.  Only AMD/Intel GPUS are supported." 20 70
+dialog --msgbox "WARNING: NVIDIA Support is Removed for v41 compatibility.  Only AMD/Intel GPUS are supported." 20 70
 
 # Get the machine hardware name
 architecture=$(uname -m)
