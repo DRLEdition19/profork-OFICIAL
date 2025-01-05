@@ -13,18 +13,17 @@ echo
 #				dos2unix /usr/bin/prepare 2>/dev/null 
 #					cp /usr/bin/prepare /usr/bin/preload 2>/dev/null
 #--------------------------------------------------------------------------------------------
-# fix for nvidia lutris
-#	echo -e "\n\n\nfixing lutris"
-#		mkdir -p /opt 2>/dev/null 
-#		rm -rf /opt/lutris 2>/dev/null
-#		cd /opt
-#			git clone https://github.com/lutris/lutris
-#			sed -i 's,os.geteuid() == 0,os.geteuid() == 888,g' /opt/lutris/lutris/gui/application.py 2>/dev/null
-#			cp $(which lutris) /usr/bin/lutris-git 2>/dev/null
-#			rm $(which lutris) 2>/dev/null
-#			  wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /usr/bin/lutris https://github.com/trashbus99/profork/raw/master/steam/build/lutris.sh
-#				  dos2unix /usr/bin/lutris 2>/dev/null
-#				  chmod 777 /usr/bin/lutris 2>/dev/null
+fix for nvidia lutris
+	echo -e "\n\n\nfixing lutris"
+		mkdir -p /opt 2>/dev/null 
+		rm -rf /opt/lutris 2>/dev/null
+		cd /opt
+			git clone https://github.com/lutris/lutris
+			sed -i 's,os.geteuid() == 0,os.geteuid() == 888,g' /opt/lutris/lutris/gui/application.py 2>/dev/null
+			cp $(which lutris) /usr/bin/lutris-git 2>/dev/null
+			rm $(which lutris) 2>/dev/null
+			  wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /usr/bin/lutris https://github.com/trashbus99/profork/raw/master/steam/build/lutris.sh
+				  dos2unix /usr/bin/lutris 2>/dev/null
 #--------------------------------------------------------------------------------------------
 # add ~/.bashrc&profile env
 	echo -e "\n\n\nfixing .bashrc and .profile"
