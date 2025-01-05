@@ -9,7 +9,6 @@ batocera-mouse show
           --bind /userdata/system/flatpak /var/lib/flatpak \
           --bind /userdata/system/etc/passwd /etc/passwd \
           --bind /userdata/system/etc/group /etc/group \
-          --bind /var/run/nvidia /var/run/nvidia \
           --bind /userdata/system /home/batocera \
           --bind /sys/fs/cgroup /sys/fs/cgroup \
           --bind /userdata/system /home/root \
@@ -17,7 +16,7 @@ batocera-mouse show
           --bind /userdata /userdata \
           --bind /newroot /newroot \
           --bind / /batocera \
-  bash -c 'prepare && source /opt/env && dbus-run-session /opt/google/chrome/google-chrome --no-sandbox --test-type --start-fullscreen --force-device-scale-factor=1.25 "play.spotify.com"'
+  bash -c 'dbus-run-session /opt/google/chrome/google-chrome --no-sandbox --test-type --start-fullscreen --force-device-scale-factor=1.25 "play.spotify.com"'
 #------------------------------------------------
 # batocera-mouse hide
 #------------------------------------------------

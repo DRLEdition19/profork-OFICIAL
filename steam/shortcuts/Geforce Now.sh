@@ -9,7 +9,6 @@ batocera-mouse show
           --bind /userdata/system/flatpak /var/lib/flatpak \
           --bind /userdata/system/etc/passwd /etc/passwd \
           --bind /userdata/system/etc/group /etc/group \
-          --bind /var/run/nvidia /var/run/nvidia \
           --bind /userdata/system /home/batocera \
           --bind /sys/fs/cgroup /sys/fs/cgroup \
           --bind /userdata/system /home/root \
@@ -17,7 +16,7 @@ batocera-mouse show
           --bind /userdata /userdata \
           --bind /newroot /newroot \
           --bind / /batocera \
-  bash -c 'prepare && source /opt/env && dbus-run-session /opt/geforcenow-electron/geforcenow-electron --no-sandbox --test-type '"${@}"''
+  bash -c 'dbus-run-session /opt/geforcenow-electron/geforcenow-electron --no-sandbox --test-type '"${@}"''
 #------------------------------------------------
 # batocera-mouse hide
 #------------------------------------------------
