@@ -47,7 +47,7 @@ steam-native-runtime gamemode  lib32-gamemode jre-openjdk lxterminal \
 mangohud thunderbird gimp audacity lib32-mangohud kodi ksysguard ark kate okular breeze breeze-gtk  \
 qt5-wayland xorg-server-xephyr openbox binutils emby-theater \
 xdotool xbindkeys gparted vlc smplayer mpv fish zsh xmlstarlet nvtop duf exa systemsettings dolphin  \
-legendary gamescope  minizip flatpak libreoffice shadps4-git \
+legendary gamescope  minizip flatpak libreoffice  \
 ripgrep i7z sd bandwhich tre zoxide p7zip atop iftop sysstat totem feh krename  \
 bottles bauh flatseal rebuild-detector ccache axel breeze xorg-xdpyinfo dua-cli  \
 handbrake tigervnc remmina  kitty terminator xorg-xkill media-downloader file  noto-fonts ttf-ubuntu-font-family ttf-droid \
@@ -61,7 +61,7 @@ protontricks-git sublime-text-4 fuse2 heroic-games-launcher-bin moonlight-qt ven
 microsoft-edge-stable-bin qdirstat peazip jq steam-rom-manager-git google-chrome steamtinkerlaunch xfwm4 xfwm4-themes \
 screenfetch glances discord jre8-openjdk gcc13 python-pip xfce4 xfce4-goodies obs-studio-git lua53"
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="geforcenow-electron mcpelauncher-appimage parsec-bin protonup-qt  sgdboop-bin winegui-bin"
+export aur_packagelist="geforcenow-electron shadps4-bin mcpelauncher-appimage parsec-bin protonup-qt  sgdboop-bin winegui-bin"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
