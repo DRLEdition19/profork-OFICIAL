@@ -40,7 +40,7 @@ fi
 curl -L "$es_config_url" -o "$es_config_path"
 
 
-wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/emulationstation/es_systems_heroic2.cfg https://github.com/trashbus99/profork/blob/master/steam/shortcuts/es_configs/es_systems_heroic2.cfg &
+wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/emulationstation/es_systems_heroic2.cfg https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/es_systems_heroic2.cfg &
 wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/emulationstation/es_features_heroic2.cfg https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/es_features_heroic2.cfg &
 wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/Heroic2.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/Heroic2.keys &
 wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /userdata/system/configs/evmapy/Heroic2.keys https://github.com/trashbus99/profork/raw/master/steam/shortcuts/es_configs/keys/heroic2.keys &
