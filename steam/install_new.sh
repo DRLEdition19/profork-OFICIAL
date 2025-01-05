@@ -252,7 +252,7 @@ sleep 5
 
 curl -Ls  https://github.com/trashbus99/profork/raw/master/steam/build.sh | bash 
 
-MSG="Install Done. Update Gamelist to see new system(s). You should see a new system in EmulationStation called Linux or Arch Container depending on theme.\n\nNVIDIA Users: Drivers will download on First app start-up & can take a while.\n\nMore apps available in PCMAN-Filemanager"
+MSG="Install Done. Update Gamelist to see new system(s). You should see a new system in EmulationStation called Linux or Arch Container depending on theme.\n\nMore apps available in PCMAN-Filemanager"
 dialog --title "Arch Container Setup Complete" --msgbox "$MSG" 20 70
 
 
