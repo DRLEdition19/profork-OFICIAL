@@ -8,8 +8,9 @@ OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
          "4" "Tools"
          "5" "Windows/Wine Freeware games"
          "6" "Install Portmaster"
-         "7" "Install This Menu to Ports"              
-         "8" "Exit")
+         "7" 'DTJW92/Nightfox Batocera Unoffical Addons Repo"
+         "8" "Install This Menu to Ports"              
+         "9" "Exit")
          
 # Display the dialog and get the user choice
 CHOICE=$(dialog --clear --backtitle "Profork Main Menu" \
@@ -55,13 +56,16 @@ case $CHOICE in
     6)  echo "Portmaster Installer..."
         curl -Ls https://github.com/trashbus99/profork/raw/master/portmaster/install.sh | bash
         ;;
-    7)  echo "Ports Installer..."
+    7)  echo "DTJW92 Nightfox Repo..."
+        curl -Ls  https://github.com/DTJW92/batocera-unofficial-addons/raw/main/app/batocera-unofficial-addons.sh | bash
+        ;;
+    8)  echo "Ports Installer..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/app/install.sh
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    8)
+    9)
         echo "Exiting..."
            exit
         ;;
