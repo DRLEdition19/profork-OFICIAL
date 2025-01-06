@@ -6,7 +6,7 @@
 
 
 app=ps3plus
-url=$(curl -s https://rpcs3.net/download | grep rpcs3-binaries-linux | grep "<a href" | cut -d \" -f 2 | cut -d \" -f 2 | cut -d = -f 2 | tr -d \")
+url=$(curl -s https://api.github.com/repos/RPCS3/rpcs3-binaries-linux/releases/latest | grep "browser_download_url" | cut -d '"' -f 4)
 
 
 #--------------------------------------------------------------------------------------------------------------------------------
