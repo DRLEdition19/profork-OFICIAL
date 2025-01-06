@@ -8,7 +8,7 @@ OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
          "4" "Tools"
          "5" "Windows/Wine Freeware games"
          "6" "Install Portmaster"
-         "7" 'DTJW92/Nightfox Batocera Unoffical Addons Repo"
+         "7" "DTJW92/Nightfox Batocera Unoffical Addons Repo"
          "8" "Install This Menu to Ports"              
          "9" "Exit")
          
