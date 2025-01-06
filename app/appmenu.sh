@@ -128,6 +128,7 @@ apps=(
     ["TABBY"]="curl -Ls https://github.com/trashbus99/profork/raw/master/tabby/tabby.sh | bash"
     ["TELEGRAM"]="curl https://github.com/trashbus99/profork/raw/master/telegram/telegram.sh | bash"
     ["TOTAL-COMMANDER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/totalcmd/totalcmd.sh | bash"
+    ["VIBER"]="curl -Ls  https://github.com/trashbus99/profork/raw/master/viber/viber.sh | bash"
     ["VIRTUALBOX"]="curl -Ls https://github.com/trashbus99/profork/raw/master/virtualbox/vbox.sh | bash"
     ["VIVALDI"]="curl -Ls https://github.com/trashbus99/profork/raw/master/vivaldi/vivaldi.sh | bash"
     ["VLC"]="curl -Ls https://github.com/trashbus99/profork/raw/master/vlc/vlc.sh | bash"
