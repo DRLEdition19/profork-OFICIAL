@@ -6,11 +6,12 @@ OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
          "2" "Standalone Apps (mostly appimages)"
          "3" "Docker & Containers"
          "4" "Tools"
-         "5" "Windows/Wine Freeware games"
-         "6" "Install Portmaster"
-         "7" "DTJW92/Nightfox Batocera Unoffical Addons Repo"
-         "8" "Install This Menu to Ports"              
-         "9" "Exit")
+         "5" "Wine Custom Downloader v40+"
+         "6" "Windows/Wine Freeware games"
+         "7" "Install Portmaster"
+         "8" "DTJW92/Nightfox Batocera Unoffical Addons Repo"
+         "9" "Install This Menu to Ports"              
+         "10" "Exit")
          
 # Display the dialog and get the user choice
 CHOICE=$(dialog --clear --backtitle "Profork Main Menu" \
@@ -50,22 +51,27 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    5)  echo "Windows/Wine Freeware..."
+    5)  echo "Wine Custom...."
+        curl -Ls https://github.com/trashbus99/profork/raw/master/wine-custom/wine.sh | bash
+        ;;              
+    6)  echo "Windows/Wine Freeware..."
         curl -Ls https://github.com/trashbus99/profork/raw/master/app/wquashfs.sh | bash
         ;;              
-    6)  echo "Portmaster Installer..."
+    
+    
+    7)  echo "Portmaster Installer..."
         curl -Ls https://github.com/trashbus99/profork/raw/master/portmaster/install.sh | bash
         ;;
-    7)  echo "DTJW92 Nightfox Repo..."
+    8)  echo "DTJW92 Nightfox Repo..."
         curl -Ls  https://github.com/DTJW92/batocera-unofficial-addons/raw/main/app/batocera-unofficial-addons.sh | bash
         ;;
-    8)  echo "Ports Installer..."
+    9)  echo "Ports Installer..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/app/install.sh
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    9)
+    10)
         echo "Exiting..."
            exit
         ;;
