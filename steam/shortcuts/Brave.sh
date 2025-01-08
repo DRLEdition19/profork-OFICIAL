@@ -17,7 +17,7 @@ batocera-mouse show
           --bind /userdata /userdata \
           --bind /newroot /newroot \
           --bind / /batocera \
-  bash -c 'prepare && source /opt/env && brave --no-sandbox --test-type '"${@}"''
+  bash -c 'brave --no-sandbox --test-type '"${@}"''
 #------------------------------------------------
 # batocera-mouse hide
 #------------------------------------------------
