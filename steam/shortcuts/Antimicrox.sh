@@ -17,7 +17,7 @@ batocera-mouse show
           --bind /userdata /userdata \
           --bind /newroot /newroot \
           --bind / /batocera \
-  bash -c 'prepare && source /opt/env && antimicrox -- show '"${@}"''
+  bash -c 'antimicrox -- show '"${@}"''
 #------------------------------------------------
 # batocera-mouse hide
 #------------------------------------------------
