@@ -17,7 +17,7 @@ batocera-mouse show
           --bind /userdata /userdata \
           --bind /newroot /newroot \
           --bind / /batocera \
-  bash -c 'prepare && source /opt/env && dbus-run-session chiaki '"${@}"''
+  bash -c 'dbus-run-session chiaki '"${@}"''
 #------------------------------------------------
 # batocera-mouse hide
 #------------------------------------------------
