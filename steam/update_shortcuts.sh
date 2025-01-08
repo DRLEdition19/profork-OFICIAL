@@ -25,6 +25,7 @@ sh_files=(
 "OBS Studio.sh"
 "Parsec.sh"
 "Peazip.sh"
+"PCem.sh"
 "Protonup-Qt.sh"
 "ShadPS4.sh"
 "Smplayer.sh"
