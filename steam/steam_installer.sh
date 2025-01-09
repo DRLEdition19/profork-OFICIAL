@@ -96,7 +96,6 @@ echo 'ulimit -H -n 819200 && ulimit -S -n 819200 && sysctl -w fs.inotify.max_use
 chmod +x $launcher
 cp $launcher /userdata/roms/ports/$appname.sh 2>/dev/null
 
-# Install desktop shortcut
 
 # Install desktop shortcut
 icon=/userdata/system/pro/$appname/extra/icon.png
