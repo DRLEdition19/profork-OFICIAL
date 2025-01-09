@@ -1,1 +1,1 @@
-This repo is for personal use and development; not for general public use.
+This batocera pro repo fork is for personal use and development; not for general public use.
