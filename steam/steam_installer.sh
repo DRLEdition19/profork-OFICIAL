@@ -16,7 +16,7 @@ RESET='\033[0m'
 # Clear the screen for dramatic effect
 clear
 
-# Flashy Banner
+# Banner
 echo -e "${MAGENTA}##########################################################${RESET}"
 echo -e "${CYAN}               PROFORK ${RED}STEAM INSTALLER${RESET}${CYAN}               ${RESET}"
 echo -e "${MAGENTA}##########################################################${RESET}"
@@ -27,7 +27,7 @@ echo -e "${YELLOW}"
 echo -e "**********************************************************"
 echo -e "* ${GREEN}This will install Steam to F1 -> Applications.${YELLOW}         *"
 echo -e "* ${GREEN}An additional launcher will also be added to Ports.${YELLOW}    *"
-echo -e "* ${RED}Please wait while the installer prepares...${YELLOW}            *"
+echo -e "* ${RED}Please wait...${YELLOW}                             *"
 echo -e "**********************************************************"
 echo -e "${RESET}"
 
@@ -40,8 +40,6 @@ for i in {1..3}; do
     done
     echo -ne "${RESET}\r"
 done
-echo -e "${CYAN}Preparing the installation...${RESET}"
-sleep 2  # Delay for a couple of seconds
 
 # End of Info Script
 echo -e "${GREEN}Starting the installation process now...${RESET}"
