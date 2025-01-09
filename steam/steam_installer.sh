@@ -13,7 +13,7 @@ CYAN='\033[1;36m'
 WHITE='\033[1;37m'
 RESET='\033[0m'
 
-# Clear the screen for dramatic effect
+# Clear the screen
 clear
 
 # Banner
