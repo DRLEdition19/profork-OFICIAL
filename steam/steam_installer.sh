@@ -27,7 +27,7 @@ echo -e "${YELLOW}"
 echo -e "**********************************************************"
 echo -e "* ${GREEN}This will install Steam to F1 -> Applications.${YELLOW}         *"
 echo -e "* ${GREEN}An additional launcher will also be added to Ports.${YELLOW}    *"
-echo -e "* ${RED}Please wait...${YELLOW}                                           *"
+echo -e "* ${RED}Please wait...${YELLOW}                                         *"
 echo -e "**********************************************************"
 echo -e "${RESET}"
 
