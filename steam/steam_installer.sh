@@ -1,4 +1,28 @@
 #!/usr/bin/env bash
+
+#!/bin/bash
+
+# Get the machine hardware name
+architecture=$(uname -m)
+
+# Check if the architecture is x86_64 (AMD/Intel)
+if [ "$architecture" != "x86_64" ]; then
+    echo "This script only runs on AMD or Intel (x86_64) CPUs, not on $architecture."
+    exit 1
+fi
+
+# GPU Compatibility Warning
+dialog --title "GPU Compatibility Warning" \
+       --yesno "⚠️  Only AMD and Intel GPUs are supported.\n\n❌ NVIDIA is NOT supported.\n\nDo you want to continue?" 10 50
+
+# Check user's response
+response=$?
+if [ $response -ne 0 ]; then
+    clear
+    echo "Installation aborted by the user."
+    exit 1
+fi
+
 ######################################################################
 # Steam Installer Script
 ######################################################################
