@@ -10,7 +10,7 @@ if [ "$architecture" != "x86_64" ]; then
 fi
 
 # GPU Compatibility Warning
-dialog --title "GPU Compatibility Warning" \
+dialog --title "BEDROCK GPU Compatibility Warning" \
        --yesno "⚠️  Only AMD and Intel GPUs are supported.\n\n❌ NVIDIA is NOT supported.\n\nYou must also own the Google Play version of Minecraft Bedrock Edition\n\nDo you want to continue?" 10 50
 
 # Check user's response
