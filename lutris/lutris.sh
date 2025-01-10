@@ -81,7 +81,7 @@ sleep 1
 cd $temp
 curl --progress-bar --remote-name --location "$APPLINK"
 mv $temp/* $APPPATH 2>/dev/null
-chmod +x $APPPATH/steam.sh
+chmod +x $APPPATH/lutris.sh
 rm -rf $temp
 echo -e "${GREEN}> DONE${X}"
 
