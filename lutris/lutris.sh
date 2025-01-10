@@ -90,7 +90,7 @@ launcher=/userdata/system/pro/$appname/Launcher
 rm -rf $launcher
 echo '#!/bin/bash ' >> $launcher
 echo 'export DISPLAY=:0.0; unclutter-remote -s' >> $launcher
-echo 'ulimit -H -n 819200 && ulimit -S -n 819200 && sysctl -w fs.inotify.max_user_watches=8192000 vm.max_map_count=2147483642 fs.file-max=8192000 >/dev/null 2>&1 && ALLOW_ROOT=1  DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus ./lutris.sh lutris' >> $launcher
+echo 'ulimit -H -n 819200 && ulimit -S -n 819200 && sysctl -w fs.inotify.max_user_watches=8192000 vm.max_map_count=2147483642 fs.file-max=8192000 >/dev/null 2>&1 && ALLOW_ROOT=1  DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus /userdata/system/pro/lutris/lutris.sh lutris' >> $launcher
 chmod +x $launcher
 cp $launcher /userdata/roms/ports/$appname.sh 2>/dev/null
 
