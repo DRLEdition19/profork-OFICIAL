@@ -151,8 +151,3 @@ if ! grep -q "/userdata/system/pro/$appname/extra/startup" $customsh; then
 fi
 chmod +x $customsh
 
-echo -e "${GREEN}> $APPNAME INSTALLED OK${X}"
-sleep 4
-echo -e "ATTENTION NVIDIA USERS: Container downloads NVIDIA drivers matching Batocera's in background on first run and can take a while on first start up"
-sleep 5
-echo "DONE"
