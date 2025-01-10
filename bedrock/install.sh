@@ -1,0 +1,150 @@
+#!/usr/bin/env bash
+
+# Get the machine hardware name
+architecture=$(uname -m)
+
+# Check if the architecture is x86_64 (AMD/Intel)
+if [ "$architecture" != "x86_64" ]; then
+    echo "This script only runs on AMD or Intel (x86_64) CPUs, not on $architecture."
+    exit 1
+fi
+
+# GPU Compatibility Warning
+dialog --title "GPU Compatibility Warning" \
+       --yesno "⚠️  Only AMD and Intel GPUs are supported.\n\n❌ NVIDIA is NOT supported.\n\nYou must Also own Google Play version of Minecraft Bedrock Edition\n\nDo you want to continue?" 10 50
+
+# Check user's response
+response=$?
+if [ $response -ne 0 ]; then
+    clear
+    echo "Installation aborted by the user."
+    exit 1
+fi
+
+######################################################################
+# Steam Installer Script
+######################################################################
+
+# Define Colors
+RED='\033[1;31m'
+GREEN='\033[1;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[1;34m'
+MAGENTA='\033[1;35m'
+CYAN='\033[1;36m'
+WHITE='\033[1;37m'
+RESET='\033[0m'
+
+# Clear the screen
+clear
+
+# Banner
+echo -e "${MAGENTA}##########################################################${RESET}"
+echo -e "${CYAN}               PROFORK ${RED}MINECRAFT BEDROCK INSTALLER${RESET}${CYAN}       ${RESET}"
+echo -e "${MAGENTA}##########################################################${RESET}"
+sleep 1
+
+# Display Installation Information
+echo -e "${YELLOW}"
+echo -e "**********************************************************"
+echo -e "* ${GREEN}This will install Bedrock to F1 -> Applications.${YELLOW}       *"
+echo -e "* ${GREEN}An additional launcher will also be added to Ports.${YELLOW}    *"
+echo -e "* ${RED}Please wait...${YELLOW}                                         *"
+echo -e "**********************************************************"
+echo -e "${RESET}"
+
+# Show progress with animation
+for i in {1..3}; do
+    echo -ne "${CYAN}BEDROCK Container made with Conty from Kron4ek"
+    for j in {1..3}; do
+        echo -ne "."
+        sleep 0.5
+    done
+    echo -ne "${RESET}\r"
+done
+
+# End of Info Script
+echo -e "${GREEN}Starting the installation process now...${RESET}"
+sleep 1
+
+
+
+
+
+######################################################################
+# PROFORK INSTALLER
+######################################################################
+# --------------------------------------------------------------------
+APPNAME=BEDROCK # for installer info
+appname=bedrock # directory name in /userdata/system/pro/...
+AppName=bedrock.sh # Shell script name
+APPPATH=/userdata/system/pro/$appname
+APPLINK=https://github.com/trashbus99/profork/releases/download/r1/bedrock.sh
+ORIGIN="PROFORK" # credit & info
+# --------------------------------------------------------------------
+# Output colors:
+X='\033[0m' # reset color
+GREEN='\033[1;32m'
+# --------------------------------------------------------------------
+# Prepare paths and files for installation 
+pro=/userdata/system/pro
+mkdir -p $pro/extra $pro/$appname/extra
+
+# Clean up and prepare installer
+killall wget 2>/dev/null && killall $AppName 2>/dev/null
+rm -rf /userdata/system/pro/$appname/extra/downloads
+mkdir /userdata/system/pro/$appname/extra/downloads
+
+# Download and prepare the main application
+temp=/userdata/system/pro/$appname/extra/downloads
+echo
+echo -e "${GREEN}DOWNLOADING $APPNAME . . .${X}"
+sleep 1
+cd $temp
+curl --progress-bar --remote-name --location "$APPLINK"
+mv $temp/* $APPPATH 2>/dev/null
+chmod +x $APPPATH/bedrock.sh
+rm -rf $temp
+echo -e "${GREEN}> DONE${X}"
+
+# Install launcher script
+launcher=/userdata/system/pro/$appname/Launcher
+rm -rf $launcher
+echo '#!/bin/bash ' >> $launcher
+echo 'export DISPLAY=:0.0; unclutter-remote -s' >> $launcher
+echo 'ulimit -H -n 819200 && ulimit -S -n 819200 && sysctl -w fs.inotify.max_user_watches=8192000 vm.max_map_count=2147483642 fs.file-max=8192000 >/dev/null 2>&1 && ALLOW_ROOT=1 dbus-run-session /userdata/system/pro/bedrock/bedrock.sh mcpelauncher-ui-qt' >> $launcher
+chmod +x $launcher
+cp $launcher /userdata/roms/ports/$appname.sh 2>/dev/null
+
+
+# Install desktop shortcut
+icon=/userdata/system/pro/$appname/extra/icon.png
+mkdir -p /userdata/system/pro/$appname/extra
+wget --tries=3 --timeout=10 --no-check-certificate -q -O $icon https://raw.githubusercontent.com/trashbus99/profork/master/bedrock/bedrock.png
+
+shortcut=/userdata/system/pro/$appname/extra/$appname.desktop
+rm -rf $shortcut
+echo "[Desktop Entry]" >> $shortcut
+echo "Version=1.0" >> $shortcut
+echo "Icon=/userdata/system/pro/$appname/extra/icon.png" >> $shortcut
+echo "Exec=/userdata/system/pro/$appname/Launcher %U" >> $shortcut
+echo "Terminal=false" >> $shortcut
+echo "Type=Application" >> $shortcut
+echo "Categories=Game;batocera.linux;" >> $shortcut
+echo "Name=$appname" >> $shortcut
+cp $shortcut /usr/share/applications/$appname.desktop 2>/dev/null
+
+
+# Prepare prelauncher to avoid overlay
+pre=/userdata/system/pro/$appname/extra/startup
+rm -rf $pre
+echo "#!/usr/bin/env bash" >> $pre
+echo "cp /userdata/system/pro/$appname/extra/$appname.desktop /usr/share/applications/ 2>/dev/null" >> $pre
+chmod +x $pre
+
+# Add prelauncher to custom.sh
+customsh=/userdata/system/custom.sh
+if ! grep -q "/userdata/system/pro/$appname/extra/startup" $customsh; then
+    echo -e "\n/userdata/system/pro/$appname/extra/startup" >> $customsh
+fi
+chmod +x $customsh
