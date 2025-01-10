@@ -33,7 +33,7 @@ echo -e "${RESET}"
 
 # Show progress with animation
 for i in {1..3}; do
-    echo -ne "${CYAN}Loading"
+    echo -ne "${CYAN}Steam Container made with Conty from Kron4ek"
     for j in {1..3}; do
         echo -ne "."
         sleep 0.5
