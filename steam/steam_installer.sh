@@ -182,3 +182,8 @@ if ! grep -q "/userdata/system/pro/$appname/extra/startup" $customsh; then
 fi
 chmod +x $customsh
 
+echo "DONE! -- Update Gamelists to see addition in ports"
+sleep 5
+echo "Exiting.."
+sleep 2
+
