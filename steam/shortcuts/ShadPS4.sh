@@ -10,13 +10,14 @@ batocera-mouse show
           --bind /userdata/system/etc/passwd /etc/passwd \
           --bind /userdata/system/etc/group /etc/group \
           --bind /userdata/system /home/batocera \
+          --bind /var/lib/nvidia /run/nvidia
           --bind /sys/fs/cgroup /sys/fs/cgroup \
           --bind /userdata/system /home/root \
           --bind /etc/fonts /etc/fonts \
           --bind /userdata /userdata \
           --bind /newroot /newroot \
           --bind / /batocera \
-  bash -c 'shadps4 '"${@}"''
+  bash -c 'prepare && source /opt/env && shadps4 '"${@}"''
 #------------------------------------------------
 # batocera-mouse hide
 #------------------------------------------------
