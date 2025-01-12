@@ -13,10 +13,11 @@ batocera-mouse show
           --bind /sys/fs/cgroup /sys/fs/cgroup \
           --bind /userdata/system /home/root \
           --bind /etc/fonts /etc/fonts \
+          --bind /var/run/nvidia /run/nvidia
           --bind /userdata /userdata \
           --bind /newroot /newroot \
           --bind / /batocera \
-  bash -c 'dbus-run-session vlc '"${@}"''
+  bash -c 'prepare && source /opt/env && dbus-run-session vlc '"${@}"''
 #------------------------------------------------
 # batocera-mouse hide
 #------------------------------------------------
