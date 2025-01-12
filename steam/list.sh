@@ -98,7 +98,7 @@ all_packages=$(echo "$audio_pkgs $video_pkgs $wine_pkgs $devel_pkgs $packagelist
 # Function to display packages using dialog
 show_packages() {
     dialog --backtitle "Package List" \
-    --title "All Packages--Oct 16, 2024" \
+    --title "All Packages--Jan 12 2025" \
     --msgbox "$all_packages" 20 70
 }
 
@@ -137,7 +137,7 @@ apps=(
 "Steam Diagnostic.sh"
 "Steam.sh"
 "SteamTinker Launch (settings).sh"
-"Sudachi.sh"
+"Shadps4.sh"
 "Terminal-Tabby.sh"
 "TigerVNC.sh"
 "VLC.sh"
