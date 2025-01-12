@@ -11,12 +11,13 @@ batocera-mouse show
           --bind /userdata/system/etc/group /etc/group \
           --bind /userdata/system /home/batocera \
           --bind /sys/fs/cgroup /sys/fs/cgroup \
+          --bind /var/run/nvidia /run/nvidia
           --bind /userdata/system /home/root \
           --bind /etc/fonts /etc/fonts \
           --bind /userdata /userdata \
           --bind /newroot /newroot \
           --bind / /batocera \
-  bash -c 'dbus-run-session parsecd --no-sandbox '"${@}"''
+  bash -c 'prepare && source /opt/env && dbus-run-session parsecd --no-sandbox '"${@}"''
 #------------------------------------------------
 # batocera-mouse hide
 #------------------------------------------------
