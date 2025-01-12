@@ -11,7 +11,7 @@ batocera-mouse show
           --bind /userdata/system/etc/group /etc/group \
           --bind /userdata/system /home/batocera \
           --bind /sys/fs/cgroup /sys/fs/cgroup \
-          --bind /var/run/nvidia /run/nvidia
+          --bind /var/run/nvidia /run/nvidia \
           --bind /userdata/system /home/root \
           --bind /etc/fonts /etc/fonts \
           --bind /userdata /userdata \
