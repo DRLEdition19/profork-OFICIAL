@@ -13,7 +13,7 @@ batocera-mouse show
           --bind /sys/fs/cgroup /sys/fs/cgroup \
           --bind /userdata/system /home/root \
           --bind /etc/fonts /etc/fonts \
-          --bind /var/run/nvidia /run/nvidia
+          --bind /var/run/nvidia /run/nvidia \
           --bind /userdata /userdata \
           --bind /newroot /newroot \
           --bind / /batocera \
