@@ -10,13 +10,14 @@ batocera-mouse show
           --bind /userdata/system/etc/passwd /etc/passwd \
           --bind /userdata/system/etc/group /etc/group \
           --bind /userdata/system /home/batocera \
+          --bind /var/run/nvidia /run/nvidia
           --bind /sys/fs/cgroup /sys/fs/cgroup \
           --bind /userdata/system /home/root \
           --bind /etc/fonts /etc/fonts \
           --bind /userdata /userdata \
           --bind /newroot /newroot \
           --bind / /batocera \
-  bash -c 'dbus-run-session mcpelauncher-ui-qt '"${@}"''
+  bash -c 'prepare && source /opt/env && dbus-run-session mcpelauncher-ui-qt '"${@}"''
 #------------------------------------------------
 # batocera-mouse hide
 #------------------------------------------------
