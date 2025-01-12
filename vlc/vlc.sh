@@ -9,8 +9,8 @@ APPNAME=VLC # for installer info
 appname=vlc # directory name in /userdata/system/pro/...
 AppName=vlc # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
-APPLINK=APPLINK=https://github.com/cmatomic/VLCplayer-AppImage/releases/download/3.0.11.1/VLC_media_player-3.0.11.1-x86_64.AppImage
-ORIGIN=github.com/cmatomic/VLCplaye # credit & info
+APPLINK=curl -Ls https://api.github.com/repos/ivan-hc/VLC-appimage/releases | grep "browser_download_url.*AppImage" | awk -F '"' '{print $4}' | head -n 1
+ORIGIN=github.com/IVAN-HC/VLC-AppImage # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
