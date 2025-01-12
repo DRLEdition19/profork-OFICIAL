@@ -9,7 +9,7 @@ batocera-mouse show
           --bind /userdata/system/flatpak /var/lib/flatpak \
           --bind /userdata/system/etc/passwd /etc/passwd \
           --bind /userdata/system/etc/group /etc/group \
-          --bind /var/run/nvidia /var/run/nvidia \
+          --bind /var/run/nvidia /run/nvidia \
           --bind /userdata/system /home/batocera \
           --bind /sys/fs/cgroup /sys/fs/cgroup \
           --bind /userdata/system /home/root \
@@ -17,7 +17,7 @@ batocera-mouse show
           --bind /userdata /userdata \
           --bind /newroot /newroot \
           --bind / /batocera \
-  bash -c 'brave --no-sandbox --test-type '"${@}"''
+  bash -c 'prepare && source /opt/env && brave --no-sandbox --test-type '"${@}"''
 #------------------------------------------------
 # batocera-mouse hide
 #------------------------------------------------
