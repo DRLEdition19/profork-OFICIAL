@@ -12,11 +12,12 @@ batocera-mouse show
           --bind /userdata/system /home/batocera \
           --bind /sys/fs/cgroup /sys/fs/cgroup \
           --bind /userdata/system /home/root \
+          --bind /var/run/nvidia /run/nvidia
           --bind /etc/fonts /etc/fonts \
           --bind /userdata /userdata \
           --bind /newroot /newroot \
           --bind / /batocera \
-  bash -c 'dbus-run-session peazip '"${@}"''
+  bash -c 'prepare && source /opt/env && dbus-run-session peazip '"${@}"''
 #------------------------------------------------
 # batocera-mouse hide
 #------------------------------------------------
