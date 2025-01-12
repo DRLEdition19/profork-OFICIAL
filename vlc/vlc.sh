@@ -9,7 +9,7 @@ APPNAME=VLC # for installer info
 appname=vlc # directory name in /userdata/system/pro/...
 AppName=vlc # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
-APPLINK=curl -Ls (https://api.github.com/repos/ivan-hc/VLC-appimage/releases | grep "browser_download_url.*AppImage" | awk -F '"' '{print $4}' | head -n 1)
+APPLINK=https://github.com/trashbus99/profork/releases/download/r1/vlc.AppImage
 ORIGIN=github.com/IVAN-HC/VLC-AppImage # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
