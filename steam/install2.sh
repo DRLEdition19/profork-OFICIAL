@@ -40,7 +40,7 @@ fi
 clear
 
 
-echo "Starting Steam Installer Script..."
+echo "Starting Arch Contaniner Installer Script..."
 
 sleep 2
 
