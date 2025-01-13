@@ -17,17 +17,16 @@ fi
 
 # Define the options
 OPTIONS=("1" "Install Arch Container "
-         "2" "Install Flatpak Steam" 
-         "3" "List all Packages in Container"
-         "4" "Uninstall Arch Container"
-         "5" "Update ES Launcher shortcuts for Arch container"
-         "6" "Addon: Decky Support"
-         "7" "Addon: XFCE/MATE/LXDE DESKTOP Mode"
-         "8" "Addon: Add/Update Lutris Menu & Shortcuts to Emulationstation"
-         "9" "Addon: Add/Update Heroic Menu & Shortcuts to Emulationstation"
-         "10" "Addon: Add/Update PS4 Menu and Shortcuts to Emulationstation"
-         "11" "Addon: Emudeck (experimental)"
-         "12" "Addon: Nativefier (turn websites into apps and add to ES Menu)")
+         "2" "List all Packages in Container"
+         "3" "Uninstall Arch Container"
+         "4" "Update ES Launcher shortcuts for Arch container"
+         "5" "Addon: Decky Support"
+         "6" "Addon: XFCE/MATE/LXDE DESKTOP Mode"
+         "7" "Addon: Add/Update Lutris Menu & Shortcuts to Emulationstation"
+         "8" "Addon: Add/Update Heroic Menu & Shortcuts to Emulationstation"
+         "9" "Addon: Add/Update PS4 Menu and Shortcuts to Emulationstation"
+         "10" "Addon: Emudeck (experimental)"
+         "11" "Addon: Nativefier (turn websites into apps and add to ES Menu)")
 
 # Display the dialog and get the user choice
 CHOICE=$(dialog --clear --backtitle "Arch Container Management" \
@@ -41,7 +40,7 @@ clear
 # Act based on the user choice
 case $CHOICE in
      1)
-        echo "Installing Steam Container..."
+        echo "Installing Arch Container..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runnerhttps://github.com/trashbus99/profork/raw/master/steam/install2.sh
         dos2unix /tmp/runner 2>/dev/null 
@@ -49,13 +48,6 @@ case $CHOICE in
         bash /tmp/runner
         ;;
      2)
-     echo "Installing flatpak steam"
-     clear
-     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo && flatpak install --system -y com.valvesoftware.Steam
-     clear
-     echo "Refresh game list and you should see steam in the system menu"
-       ;;  
-     3)
         echo "Loading Package List..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/list.sh
@@ -63,7 +55,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    4)
+    3)
         echo "Loading Uninstall script..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/uninstall.sh
@@ -71,7 +63,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    5)  
+    4)  
         echo "Update EmulationStation Arch Container Launcher Shortcuts..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/update_shortcuts.sh
@@ -79,7 +71,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;    
-    6)  
+    5)  
         echo "Add Decky Support..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/scripts/decky.sh
@@ -87,7 +79,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-     7)  
+     6)  
         echo "Installing Desktop/Windowed Mode..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/arch-de.sh
@@ -95,7 +87,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    8)  
+    7)  
         echo "Add/Update Lutris shortcuts to emulationstation..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/addon_lutris.sh
@@ -103,7 +95,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    9)  
+    8)  
         echo "Add/update Heroic shortcuts to emulationstation..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/addon_heroic.sh
@@ -111,7 +103,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-  10)  
+   9)  
         echo "Add/update PS4 shortcuts to emulationstation..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/addon_ps4.sh
@@ -119,7 +111,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
- 11)  
+ 10)  
         echo "Emudeck Menu..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/emudeck/emudeck.sh
@@ -127,7 +119,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    12)  
+ 11)  
         echo "Webapps Installer..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/webapps/install.sh
@@ -135,7 +127,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    12)  
+ 12)  
         echo "NVIDIA CUDA Installer..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/build/cuda.sh
