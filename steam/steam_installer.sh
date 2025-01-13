@@ -141,11 +141,37 @@ rm -rf $temp
 echo -e "${GREEN}> DONE${X}"
 
 # Install launcher script
+
+# Install launcher script
 launcher=/userdata/system/pro/$appname/Launcher
 rm -rf $launcher
-echo '#!/bin/bash ' >> $launcher
-echo 'export DISPLAY=:0.0; unclutter-remote -s' >> $launcher
-echo 'ulimit -H -n 819200 && ulimit -S -n 819200 && sysctl -w fs.inotify.max_user_watches=8192000 vm.max_map_count=2147483642 fs.file-max=8192000 >/dev/null 2>&1 && ALLOW_ROOT=1 dbus-run-session /userdata/system/pro/steam/steam.sh steam' >> $launcher
+echo '#!/bin/bash' >> $launcher
+echo '#------------------------------------------------' >> $launcher
+echo 'conty=/userdata/system/pro/steam/steam.sh' >> $launcher
+echo '#------------------------------------------------' >> $launcher
+echo 'batocera-mouse show' >> $launcher
+echo 'killall -9 steam steamfix steamfixer 2>/dev/null' >> $launcher
+echo '#------------------------------------------------' >> $launcher
+echo '"$conty" \\' >> $launcher
+echo '    --bind /userdata/system/containers/storage /var/lib/containers/storage \\' >> $launcher
+echo '    --bind /userdata/system/flatpak /var/lib/flatpak \\' >> $launcher
+echo '    --bind /userdata/system/etc/passwd /etc/passwd \\' >> $launcher
+echo '    --bind /var/run/nvidia /run/nvidia \\' >> $launcher
+echo '    --bind /userdata/system/etc/group /etc/group \\' >> $launcher
+echo '    --bind /userdata/system /home/batocera \\' >> $launcher
+echo '    --bind /sys/fs/cgroup /sys/fs/cgroup \\' >> $launcher
+echo '    --bind /userdata/system /home/root \\' >> $launcher
+echo '    --bind /etc/fonts /etc/fonts \\' >> $launcher
+echo '    --bind /userdata /userdata \\' >> $launcher
+echo '    --bind /newroot /newroot \\' >> $launcher
+echo '    --bind / /batocera \\' >> $launcher
+echo '    bash -c '\''prepare && source /opt/env && \\' >> $launcher
+echo '    ulimit -H -n 819200 && ulimit -S -n 819200 && \\' >> $launcher
+echo '    sysctl -w fs.inotify.max_user_watches=8192000 vm.max_map_count=2147483642 fs.file-max=8192000 >/dev/null 2>&1 && \\' >> $launcher
+echo '    dbus-run-session steam "${@}"'\'' ' >> $launcher
+echo '#------------------------------------------------' >> $launcher
+# Optional: hide mouse after launching
+# echo 'batocera-mouse hide' >> $launcher
 chmod +x $launcher
 cp $launcher /userdata/roms/ports/$appname.sh 2>/dev/null
 
