@@ -108,9 +108,17 @@ mkdir -p /userdata/roms/steam2
 rm /userdata/system/pro/steam/prepare.sh 2>/dev/null
 rm /userdata/system/pro/steam/conty.s* 2>/dev/null
 #curl -L aria2c.batocera.pro | bash && ./aria2c -x 5 -d /userdata/system/pro/steam http://batocera.pro/app/conty.sh && rm aria2c
-echo "Download 3-part zip file then combining....."
-for i in 001 002 003; do curl -L -o batocera-casaos.tar.zip.$i https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos.tar.zip.$i; done && cat batocera-casaos.tar.zip.* > batocera-casaos.tar.zip && rm batocera-casaos.tar.zip.00*
-chmod 777 /userdata/system/pro/steam/conty.sh 2>/dev/null
+echo "Downloading 3-part zip file then combining....."
+
+for i in 001 002 003; do
+  curl -L --progress-bar -o batocera-casaos.tar.zip.$i https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos.tar.zip.$i
+done
+
+echo "Combining parts..."
+cat batocera-casaos.tar.zip.* > batocera-casaos.tar.zip && rm batocera-casaos.tar.zip.00*
+
+echo "Combining Done."
+
 
 ###############
 
