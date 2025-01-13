@@ -11,17 +11,6 @@ if [ "$architecture" != "x86_64" ]; then
     exit 1
 fi
 
-# GPU Compatibility Warning
-dialog --title "GPU Compatibility Warning" \
-       --yesno "⚠️  Only AMD and Intel GPUs are supported.\n\n❌ NVIDIA is NOT supported.\n\nDo you want to continue?" 10 50
-
-# Check user's response
-response=$?
-if [ $response -ne 0 ]; then
-    clear
-    echo "Installation aborted by the user."
-    exit 1
-fi
 
 
 MESSAGE="This container is compatible with EXT4 or BTRFS partitions only!  FAT32/NTFS/exFAT are not supported.  Continue?"
@@ -88,7 +77,7 @@ echo -e "${RESET}"
 
 # Show progress with animation
 for i in {1..3}; do
-    echo -ne "${CYAN}Steam Container made with Conty from Kron4ek"
+    echo -ne "${CYAN}Steam Container made with Conty from Kron4ek & Batocera adaptions by UUREEL"
     for j in {1..3}; do
         echo -ne "."
         sleep 0.5
