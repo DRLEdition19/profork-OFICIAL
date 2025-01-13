@@ -16,7 +16,7 @@ fi
 
 
 # Define the options
-OPTIONS=("1" "Install/Update Rolling Arch release/Build from scratch "
+OPTIONS=("1" "Install Arch Container "
          "2" "Install Flatpak Steam" 
          "3" "List all Packages in Container"
          "4" "Uninstall Arch Container"
@@ -43,7 +43,7 @@ case $CHOICE in
      1)
         echo "Installing Steam Container..."
         rm /tmp/runner 2>/dev/null
-        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/install_new.sh
+        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runnerhttps://github.com/trashbus99/profork/raw/master/steam/install2.sh
         dos2unix /tmp/runner 2>/dev/null 
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
