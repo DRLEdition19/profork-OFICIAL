@@ -113,16 +113,37 @@ echo "Downloading 3-part zip file to /userdata/system/pro/steam and combining...
 mkdir -p /userdata/system/pro/steam
 
 # Download each part with progress messages
+echo "Downloading conty.zip parts..."
+
+# Download the split files with a progress bar
 for i in 001 002 003; do
-  echo "Downloading part $i..."
-  curl -L --progress-bar -o /userdata/system/pro/steam/batocera-casaos.tar.zip.$i https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos.tar.zip.$i
+  curl -L --progress-bar -o conty.zip.$i https://github.com/trashbus99/profork/releases/download/r1/conty.zip.$i
 done
 
-echo "Combining parts..."
-cat /userdata/system/pro/steam/batocera-casaos.tar.zip.* > /userdata/system/pro/steam/batocera-casaos.tar.zip && rm /userdata/system/pro/steam/batocera-casaos.tar.zip.00*
+echo "Combining parts into conty.zip..."
+# Combine the parts
+cat conty.zip.* > conty.zip
 
-echo "Combining Done."
+echo "Cleaning up split files..."
+# Remove the split parts
+rm conty.zip.00*
 
+echo "Extracting conty.zip..."
+# Extract the combined zip
+unzip -o conty.zip
+
+# Check if conty.sh exists after extraction
+if [ -f "conty.sh" ]; then
+  echo "Extraction complete: conty.sh is ready."
+else
+  echo "Error: conty.sh was not found after extraction."
+fi
+
+echo "Cleaning up conty.zip..."
+# Optionally remove the zip file after extraction
+rm conty.zip
+
+echo "Done!"
 
 
 ###############
