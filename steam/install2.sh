@@ -107,17 +107,22 @@ mkdir -p /userdata/roms/steam2
 # Step 3: Download conty.sh with download percentage indicator
 rm /userdata/system/pro/steam/prepare.sh 2>/dev/null
 rm /userdata/system/pro/steam/conty.s* 2>/dev/null
-#curl -L aria2c.batocera.pro | bash && ./aria2c -x 5 -d /userdata/system/pro/steam http://batocera.pro/app/conty.sh && rm aria2c
-echo "Downloading 3-part zip file then combining....."
+echo "Downloading 3-part zip file to /userdata/system/pro/steam and combining....."
 
+# Create the target directory if it doesn't exist
+mkdir -p /userdata/system/pro/steam
+
+# Download each part with progress messages
 for i in 001 002 003; do
-  curl -L --progress-bar -o batocera-casaos.tar.zip.$i https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos.tar.zip.$i
+  echo "Downloading part $i..."
+  curl -L --progress-bar -o /userdata/system/pro/steam/batocera-casaos.tar.zip.$i https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos.tar.zip.$i
 done
 
 echo "Combining parts..."
-cat batocera-casaos.tar.zip.* > batocera-casaos.tar.zip && rm batocera-casaos.tar.zip.00*
+cat /userdata/system/pro/steam/batocera-casaos.tar.zip.* > /userdata/system/pro/steam/batocera-casaos.tar.zip && rm /userdata/system/pro/steam/batocera-casaos.tar.zip.00*
 
 echo "Combining Done."
+
 
 
 ###############
