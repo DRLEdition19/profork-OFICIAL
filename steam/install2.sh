@@ -153,9 +153,7 @@ chmod +x "$DOWNLOAD_FILE"
 
 ###############
 
-echo "Conty files have been downloaded a to $target_directory"
 
-###############
 
 # Update shortcuts
 wget -q --tries=30 --no-check-certificate --no-cache --no-cookies --tries=50 -O /tmp/update_shortcuts.sh https://github.com/trashbus99/profork/raw/master/steam/update_shortcuts.sh
