@@ -19,7 +19,7 @@ while true; do
                     --title "Choose Installation Method" \
                     --menu "Select an option:" 10 80 2 \
                     1 "Download Prebuilt Image (Jan 8, 2025)" \
-                    2 "Build Up-to-Date Container from Scratch (Time Consuming)" \
+                    2 "Build Up-to-Date Container from Scratch (30-90 minutes)" \
                     3>&1 1>&2 2>&3)
 
     clear
