@@ -35,7 +35,7 @@ while true; do
     CHOICE=$(dialog --clear \
                     --backtitle "Install Menu" \
                     --title "Choose Installation Method" \
-                    --menu "Select an option:" 15 80 5 \
+                    --menu "Select an option:" 15 100 5 \
                     1 "NVIDIA/AMD/INTEL GPUS: Download Prebuilt full container (Jan 8, 2025)" \
                     2 "NVIDIA/AMD/INTEL GPUS: Build Up-to-Date full Container from Scratch (30-90 minutes)" \
                     3 "AMD/INTEL GPU ONLY: Steam only mini container" \
