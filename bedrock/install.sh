@@ -52,7 +52,7 @@ fi
 clear
 
 ######################################################################
-# Steam Installer Script
+# Minecreaft Bedrock Installer Script
 ######################################################################
 
 # Define Colors
