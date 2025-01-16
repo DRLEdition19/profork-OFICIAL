@@ -40,7 +40,6 @@ while true; do
                     2 "NVIDIA/AMD/INTEL GPUS: Build Up-to-Date full Container from Scratch (30-90 minutes)" \
                     3 "AMD/INTEL GPU ONLY: Steam only mini container" \
                     4 "AMD/INTEL GPU ONLY: Lutris only mini container" \
-                    5 "AMD/INTEL GPU ONLY: Minecraft Bedrock Edition only mini container" \
                     3>&1 1>&2 2>&3)
 
     clear
@@ -59,10 +58,6 @@ while true; do
             ;;
         4)
             install_lutris_mini
-            break
-            ;;
-        5)
-            install_minecraft_mini
             break
             ;;
         *)
