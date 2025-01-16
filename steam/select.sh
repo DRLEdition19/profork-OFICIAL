@@ -17,7 +17,7 @@ while true; do
     CHOICE=$(dialog --clear \
                     --backtitle "Install Menu" \
                     --title "Choose Installation Method" \
-                    --menu "Select an option:" 30 50 2 \
+                    --menu "Select an option:" 15 80 2 \
                     1 "Download Prebuilt Image (Jan 8, 2025)" \
                     2 "Build Up-to-Date Container from Scratch (Time Consuming)" \
                     3>&1 1>&2 2>&3)
