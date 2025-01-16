@@ -109,12 +109,13 @@ echo "Preparing to download conty.sh parts..."
 
 # Ensure the target directory exists
 mkdir -p /userdata/system/pro/steam
-cd /userdata/system/pro/steam || { echo "Failed to access /userdata/system/add-ons/arch"; exit 1; }
+cd /userdata/system/pro/steam || { echo "Failed to access /userdata/system/pro/steam"; exit 1; }
 
 # Clean any previous downloads
 rm -f conty_part_* conty.sh
-                                                                                                                                                                                                                 echo "Downloading conty.sh parts to /userdata/system/add-ons/arch..."
 
+                                                                                                                                                                                                                 
+echo "Downloading conty.sh parts to /userdata/system/pro/steam..."
 # Download each part with progress messages
 for i in 1 2 3; do
   echo "Downloading conty_part_$i..."
