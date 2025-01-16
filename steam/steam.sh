@@ -16,7 +16,7 @@ fi
 
 
 # Define the options
-OPTIONS=("1" "Install Arch Container "
+OPTIONS=("1" "Install/Update Arch Container "
          "2" "List all Packages in Container"
          "3" "Uninstall Arch Container"
          "4" "Update ES Launcher shortcuts for Arch container"
