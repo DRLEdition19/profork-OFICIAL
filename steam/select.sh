@@ -38,8 +38,8 @@ while true; do
                     --menu "Select an option:" 15 100 5 \
                     1 "NVIDIA/AMD/INTEL GPUS: Download Prebuilt full container (Jan 8, 2025)" \
                     2 "NVIDIA/AMD/INTEL GPUS: Build Up-to-Date full Container from Scratch (30-90 minutes)" \
-                    3 "AMD/INTEL GPU ONLY: Steam only mini container" \
-                    4 "AMD/INTEL GPU ONLY: Lutris only mini container" \
+                    3 "AMD/INTEL GPU ONLY: Download Steam only mini container" \
+                    4 "AMD/INTEL GPU ONLY: Download Lutris only mini container" \
                     3>&1 1>&2 2>&3)
 
     clear
