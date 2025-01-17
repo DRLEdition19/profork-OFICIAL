@@ -16,7 +16,7 @@
 #--------------------------------------------------------------------- 
 #       DEFINE APP INFO >>
 APPNAME="filezilla"; appname=$(echo "$APPNAME" | awk '{print tolower($0)}'); 
-APPLINK=http://PROFORK/app/filezilla.AppImage
+APPLINK=https://github.com/trashbus99/profork/releases/download/r1/filezilla.AppImage
 APPHOME="PROFORK/app"
 #---------------------------------------------------------------------
 #       DEFINE LAUNCHER COMMAND >>
