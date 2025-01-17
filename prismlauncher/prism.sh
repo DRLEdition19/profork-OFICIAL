@@ -16,8 +16,8 @@
 #--------------------------------------------------------------------- 
 #       DEFINE APP INFO >>
 APPNAME=prism-launcher
-APPLINK=$(APPLINK=$(curl -s https://api.github.com/repos/PrismLauncher/PrismLauncher/releases/latest | grep "browser_download_url" | grep "Linux-x86_64.AppImage" | cut -d '"' -f 4)
-)
+APPLINK=(curl -s https://api.github.com/repos/PrismLauncher/PrismLauncher/releases/latest | grep "browser_download_url" | grep "Linux-x86_64.AppImage" | cut -d '"' -f 4)
+
 APPHOME="prismlauncher.org" 
 #---------------------------------------------------------------------
 #       DEFINE LAUNCHER COMMAND >>
