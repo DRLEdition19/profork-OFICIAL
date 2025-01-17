@@ -123,6 +123,7 @@ apps=(
     ["SHEEPSHAVER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sheepshaver/install.sh | bash"
     ["SMPLAYER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/smplayer/smplayer.sh | bash"
     ["STEAM/AMD-INTEL-GPUS-ONLY"]="curl -Ls https://raw.githubusercontent.com/trashbus99/profork/refs/heads/master/steam/steam_installer.sh"
+    ["STRAWBERRY-MUSIC-PLAYER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/strawberry/strawberry.sh | bash"
     ["SUBLIME-TEXT"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sublime/sublime.sh | bash"
     ["SUNSHINE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sunshine/installer.sh | bash"
     ["SYSTEM-MONITORING-CENTER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/system-monitoring-center/system-monitoring-center.sh | bash"
