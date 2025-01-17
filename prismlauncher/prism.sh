@@ -16,7 +16,8 @@
 #--------------------------------------------------------------------- 
 #       DEFINE APP INFO >>
 APPNAME=prism-launcher
-APPLINK=$(curl -s https://api.github.com/repos/PrismLauncher/PrismLauncher/releases/latest | grep "browser_download_url" | grep "Linux-x86_64.AppImage" | cut -d '"' -f 4)
+APPLINK=$(curl -s https://api.github.com/repos/PrismLauncher/PrismLauncher/releases/latest | jq -r '.assets[] | select(.name | endswith("Linux-x86_64.AppImage")).browser_download_url')
+
 
 APPHOME="prismlauncher.org" 
 #---------------------------------------------------------------------
@@ -85,7 +86,7 @@ echo "$COMMAND" >> $command 2>/dev/null
 # --------------------------------------------------------------------
 # -- prepare dependencies for this app and the installer: 
 mkdir -p ~/pro/.dep 2>/dev/null && cd ~/pro/.dep && wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O ~/pro/.dep/dep.zip https://github.com/trashbus99/profork/raw/main/.dep/dep.zip && yes "y" | unzip -oq ~/pro/.dep/dep.zip && cd ~/
-wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O $pro/$appname/extra/icon.png https://github.com/trashbus99/profork/blob/master/prismlauncher/extra/prism.png; chmod a+x $dep/* 2>/dev/null; cd ~/
+wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O $pro/$appname/extra/icon.png https://github.com/trashbus99/profork/raw/master/prismlauncher/extra/prism.png; chmod a+x $dep/* 2>/dev/null; cd ~/
 chmod 777 ~/pro/.dep/* && for file in /userdata/system/pro/.dep/lib*; do sudo ln -s "$file" "/usr/lib/$(basename $file)"; done
 # --------------------------------------------------------------------
 # // end of dependencies 
@@ -430,4 +431,9 @@ function autostart() {
 }
 export -f autostart
 autostart
+
+sleep 2
+echo ""
+echo "****JAVA RUNTIMES ARE ALSO NEEDED BE DOWNLOADED****"
+sleep 5
 exit 0
