@@ -114,4 +114,4 @@ done
 # Reload ES after installations
 killall -9 emulationstation
 
-echo "Exiting."
+curl -L https://github.com/trashbus99/profork/raw/master/app/mainmenu.sh | bash
