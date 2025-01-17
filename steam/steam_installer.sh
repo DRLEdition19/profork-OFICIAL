@@ -51,6 +51,19 @@ else
     exit 1
 fi
 
+MESSAGE="INFO: There is no separate Steam menu in emulationstation on the mini build.  Continue?"
+
+# Use dialog to create a yes/no box
+if dialog --title "Menu Info" --yesno "$MESSAGE" 10 70; then
+    # If the user chooses 'Yes', continue the installation
+    echo "Continuing installation..."
+    # Add your installation commands here
+else
+    # If the user chooses 'No', exit the script
+    echo "Installation aborted by user."
+    exit 1
+fi
+
 # Clear the screen after the dialog is closed
 clear
 
