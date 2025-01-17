@@ -51,32 +51,7 @@ fi
 # Clear the screen after the dialog is closed
 clear
 
-MESSAGE="This container is compatible with EXT4 or BTRFS partitions only!  FAT32/NTFS/exFAT are not supported.  Continue?"
 
-# Use dialog to create a yes/no box
-if dialog --title "Compatibility Warning" --yesno "$MESSAGE" 10 70; then
-    # If the user chooses 'Yes', continue the installation
-    echo "Continuing installation..."
-    # Add your installation commands here
-else
-    # If the user chooses 'No', exit the script
-    echo "Installation aborted by user."
-    exit 1
-fi
-
-
-MESSAGE="WARNING: Batocera's Custom SDL/kernel mods break XINPUT over BLUETOOTH on apps in the Arch container. Xbox One/S/X controllers are verified working via wired USB or the Xbox wireless adapter only. 8bitDO controller users can switch their input mode to d-input or switch input.  Continue?"
-
-# Use dialog to create a yes/no box
-if dialog --title "Compatibility Warning" --yesno "$MESSAGE" 10 70; then
-    # If the user chooses 'Yes', continue the installation
-    echo "Continuing installation..."
-    # Add your installation commands here
-else
-    # If the user chooses 'No', exit the script
-    echo "Installation aborted by user."
-    exit 1
-fi
 MESSAGE="INFO: There is no separate Lutris menu in emulationstation available on the mini build.  Continue?"
 
 # Use dialog to create a yes/no box
