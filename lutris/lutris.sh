@@ -52,7 +52,7 @@ fi
 clear
 
 
-MESSAGE="INFO: There is no separate Lutris menu in emulationstation available on the mini build.  Continue?"
+MESSAGE="INFO: There is no separate Lutris menu for Lutris games in emulationstation available on the mini build.  Continue?"
 
 # Use dialog to create a yes/no box
 if dialog --title "Menu Info" --yesno "$MESSAGE" 10 70; then
