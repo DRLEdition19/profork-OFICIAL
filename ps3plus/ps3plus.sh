@@ -6,7 +6,7 @@
 
 
 app=ps3plus
-url=$(curl -s https://api.github.com/repos/RPCS3/rpcs3-binaries-linux/releases/latest | grep "browser_download_url" | cut -d '"' -f 4)
+url=$(curl -s https://rpcs3.net/download | grep rpcs3-binaries-linux | grep "<a href" | cut -d \" -f 2 | cut -d \" -f 2 | cut -d = -f 2 | tr -d \")
 
 
 #--------------------------------------------------------------------------------------------------------------------------------
@@ -41,7 +41,7 @@ port="" 		# add port (name), none = /extras/port.sh (to $app.sh), or /extras/lau
 # start pro-framework 
 cd /tmp/ ; rm /tmp/pro-framework.sh 2>/dev/null ; 
 wget --no-check-certificate --no-cache --no-cookies -q -O /tmp/pro-framework.sh \
-https://github.com/trashbus99/profork/raw/master/.dep/pro-framework.sh ; 
+https://github.com/trashbus99/profork/raw/main/main/.dep/pro-framework.sh ; 
 dos2unix /tmp/pro-framework.sh ; source /tmp/pro-framework.sh 
 #################################################################################################################################
 #--------------------------------------------------------------------------------------------------------------------------------
@@ -67,4 +67,3 @@ add-autostart
 say-bye
 #################################################################################################################################
 #--------------------------------------------------------------------------------------------------------------------------------
-
