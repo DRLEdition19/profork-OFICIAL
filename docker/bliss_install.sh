@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Display the warning message
-dialog --title "Warning" --yesno "This container is experimental and not supported profork. Audio and GPU acceleration is unavailable. Contact sickcodes github repo or bliss os for support. Proceed?" 15 80
+dialog --title "Warning" --yesno "This container is experimental and not supported by profork. Audio and GPU acceleration is unavailable. Contact sickcodes github repo or bliss os for support. Proceed?" 15 80
 
 # Capture the exit status of the dialog command
 response=$?
