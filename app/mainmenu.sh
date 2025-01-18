@@ -9,7 +9,7 @@ NC='\e[0m' # No Color
 animate_text() {
     local text="$1"
     echo -e "$text"
-    sleep 0.5
+    sleep 0.
 }
 
 clear
@@ -29,7 +29,7 @@ echo -e "${NC}"
 
 
 
-sleep 3
+sleep 6
 
 # Define the options
 OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
