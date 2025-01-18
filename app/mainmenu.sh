@@ -1,15 +1,17 @@
 #!/bin/bash
+#!/bin/bash
+
 # Colors for animation
 RED='\033[0;31m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
-# Function to display animated text
+# Function to display animated text faster
 animate_text() {
     local text="$1"
     for (( i=0; i<${#text}; i++ )); do
         echo -n "${text:$i:1}"
-        sleep 0.05
+        sleep 0.01  # Faster scroll speed
     done
     echo
 }
@@ -18,18 +20,24 @@ clear
 
 # Display Warning Message
 animate_text "${YELLOW}⚠️  Important Notice ⚠️${NC}"
-sleep 1
+sleep 0.5
 animate_text "\n${YELLOW}The apps on this repository are provided AS-IS.${NC}"
-sleep 1
+sleep 0.5
 animate_text "${YELLOW}No support is offered for using this repo.${NC}"
-sleep 1
+sleep 0.5
 
 animate_text "\n${RED}DO NOT ask for help in the Batocera Discord.${NC}"
-sleep 1
+sleep 0.5
 animate_text "${RED}They will NOT help you and will REFUSE support if they are made aware unofficial apps are installed.${NC}"
-sleep 2
+sleep 1
 
 animate_text "\n${YELLOW}Use at your own risk.${NC}"
+sleep 1
+
+# Reset color
+echo -e "${NC}"
+
+exit 0
 
 sleep 3
 
