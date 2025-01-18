@@ -31,6 +31,7 @@ sleep 2
 
 animate_text "\n${YELLOW}Use at your own risk.${NC}"
 
+sleep 3
 
 # Define the options
 OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
