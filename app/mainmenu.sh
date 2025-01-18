@@ -63,7 +63,7 @@ case $CHOICE in
         curl -Ls https://github.com/trashbus99/profork/raw/master/portmaster/install.sh | bash
         ;;
     8)  echo "DTJW92 Nightfox Repo..."
-        curl -Ls https://github.com/trashbus99/raw/blob/master/app/bua.sh | bash
+        curl -Ls https://github.com/trashbus99/raw/master/app/bua.sh | bash
         ;;
     9)  echo "Ports Installer..."
         rm /tmp/runner 2>/dev/null
