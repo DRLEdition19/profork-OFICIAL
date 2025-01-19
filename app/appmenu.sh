@@ -111,7 +111,6 @@ apps=(
     ["OPERA"]="curl -Ls https://github.com/trashbus99/profork/raw/master/opera/opera.sh | bash"
     ["PEAZIP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/peazip/peazip.sh | bash"
     ["PLEXAMP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/plexamp/installer.sh | bash"
-    ["POKEMMO"]="curl -Ls https://github.com/trashbus99/profork/raw/master/pokemmo/pokemmo.sh | bash"
     ["PORTAINER/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/install.sh | bash"
     ["PRISM-LAUNCHER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/prismlauncher/prism.sh | bash"
     ["PROTONUP-QT"]="curl -Ls https://github.com/trashbus99/profork/raw/master/protonup-qt/protonup-qt.sh | bash"
