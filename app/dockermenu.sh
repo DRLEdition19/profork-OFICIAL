@@ -118,4 +118,4 @@ for choice in $choices; do
 done
 
 # Reload ES after installations
-curl -L https://github.com/trashbus99/profork/raw/master/app/mainmenu.sh | bas
+curl -L https://github.com/trashbus99/profork/raw/master/app/mainmenu.sh | bash
