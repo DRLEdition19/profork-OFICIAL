@@ -127,7 +127,6 @@ apps=(
     ["STRAWBERRY-MUSIC-PLAYER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/strawberry/strawberry.sh | bash"
     ["SUBLIME-TEXT"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sublime/sublime.sh | bash"
     ["SUNSHINE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sunshine/installer.sh | bash"
-    ["SYSTEM-MONITORING-CENTER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/system-monitoring-center/system-monitoring-center.sh | bash"
     ["TABBY"]="curl -Ls https://github.com/trashbus99/profork/raw/master/tabby/tabby.sh | bash"
     ["TELEGRAM"]="curl https://github.com/trashbus99/profork/raw/master/telegram/telegram.sh | bash"
     ["TOTAL-COMMANDER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/totalcmd/totalcmd.sh | bash"
