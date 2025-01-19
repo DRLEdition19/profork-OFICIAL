@@ -10,7 +10,7 @@ appname=telegram # directory name in /userdata/system/pro/...
 AppName=Telegram # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$AppName.AppImage
 APPLINK=APPLINK=$(curl -s "https://api.github.com/repos/srevinsaju/Telegram-AppImage/releases/latest" | jq -r '.assets[] | select(.name | endswith(".AppImage")) | .browser_download_url')
-ORIGIN="APPREPO.DE/APPIMAGE/TELEGRAM" # credit & info
+ORIGIN="srevinsaju/Telegram-AppImage" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
