@@ -8,7 +8,7 @@ if [ -f "$filePath" ]; then
     echo "conty.sh exists, continuing the script..."
    
 else
-    echo "It appears the container is not installed. Please install the multi-app conty container first, then retry."
+    echo "It appears the container is not installed. Please install the multi-app Arch container first, then retry."
     sleep 10
     exit 1
 fi
