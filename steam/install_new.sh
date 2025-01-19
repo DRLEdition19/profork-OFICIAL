@@ -255,5 +255,5 @@ curl -Ls  https://github.com/trashbus99/profork/raw/master/steam/build.sh | bash
 MSG="Install Done. Update Gamelist to see new system(s). You should see a new system in EmulationStation called Linux or Arch Container depending on theme.\n\nMore apps available in PCMAN-Filemanager"
 dialog --title "Arch Container Setup Complete" --msgbox "$MSG" 20 70
 
-curl -L https://github.com/trashbus99/profork/raw/master/app/mainmenu.sh | bas
+curl -L https://github.com/trashbus99/profork/raw/master/app/mainmenu.sh | bash
 
