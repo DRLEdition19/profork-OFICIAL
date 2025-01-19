@@ -16,7 +16,9 @@
 #--------------------------------------------------------------------- 
 #       DEFINE APP INFO >>
 APPNAME=vivaldi 
-APPLINK=https://github.com/ivan-hc/Vivaldi-appimage/releases/download/continuous/Vivaldi-snapshot-7.1.3554.3-1-x86_64.AppImage
+APPLINK=APPLINK=$(curl -s "https://api.github.com/repos/ivan-hc/Vivaldi-appimage/releases/latest" | jq -r '.assets[] | select(.name | endswith(".AppImage")) | .browser_download_url')
+echo "APPLINK=$APPLINK"
+
 APPHOME="https://apprepo.de/appimage/vivaldi"
 #---------------------------------------------------------------------
 #       DEFINE LAUNCHER COMMAND >>
