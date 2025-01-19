@@ -29,7 +29,7 @@ echo -e "${NC}"
 
 
 
-sleep 6
+sleep 10
 
 # Define the options
 OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
