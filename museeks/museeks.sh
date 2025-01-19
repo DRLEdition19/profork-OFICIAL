@@ -9,7 +9,7 @@ APPNAME="MUSEEKS" # for installer info
 appname=museeks # directory name in /userdata/system/pro/...
 AppName=Museeks # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$AppName.AppImage
-APPLINK=$(curl https://museeks.io/ | grep AppImage | grep x86_64 | sed 's,^.*href=,,g' | cut -d " " -f1 | sed 's,",,g')
+APPLINK=https://github.com/martpie/museeks/releases/download/0.20.5/Museeks_0.20.5_amd64.AppImage
 ORIGIN="OFFICIAL MUSEEKS.IO APPIMAGE" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
