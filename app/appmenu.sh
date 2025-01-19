@@ -106,7 +106,6 @@ apps=(
     ["MULTIMC-LAUNCHER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/multimc/multimc.sh | bash"
     ["MUSEEKS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/museeks/museeks.sh | bash"
     ["NVTOP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/nvtop/nvtop.sh| bash"   
-    ["NOMACS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/nomacs/nomacs.sh | bash"
     ["ODIO"]="curl -Ls https://github.com/trashbus99/profork/raw/master/odio/odio.sh | bash"
     ["OLIVE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/olive/olive.sh | bash"
     ["OPERA"]="curl -Ls https://github.com/trashbus99/profork/raw/master/opera/opera.sh | bash"
