@@ -9,7 +9,7 @@ APPNAME="TELEGRAM" # for installer info
 appname=telegram # directory name in /userdata/system/pro/...
 AppName=Telegram # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$AppName.AppImage
-APPLINK=APPLINK=$(curl -s "https://api.github.com/repos/srevinsaju/Telegram-AppImage/releases/latest" | jq -r '.assets[] | select(.name | endswith(".AppImage")) | .browser_download_url')
+APPLINK=$(curl -s "https://api.github.com/repos/srevinsaju/Telegram-AppImage/releases/latest" | jq -r '.assets[] | select(.name | endswith(".AppImage")) | .browser_download_url')
 ORIGIN="srevinsaju/Telegram-AppImage" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
