@@ -16,7 +16,7 @@
 #--------------------------------------------------------------------- 
 #       DEFINE APP INFO >>
 APPNAME=vivaldi 
-APPLINK=APPLINK=$(curl -s "https://api.github.com/repos/ivan-hc/Vivaldi-appimage/releases/latest" | jq -r '.assets[] | select(.name | endswith(".AppImage")) | .browser_download_url')
+APPLINK=$(curl -s "https://api.github.com/repos/ivan-hc/Vivaldi-appimage/releases/latest" | jq -r '.assets[] | select(.name | endswith(".AppImage")) | .browser_download_url')
 echo "APPLINK=$APPLINK"
 
 APPHOME="https://apprepo.de/appimage/vivaldi"
