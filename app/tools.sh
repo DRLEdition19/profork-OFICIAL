@@ -117,4 +117,4 @@ fi
 run_installation "$choice"
 
 # Exit after the installation
-curl -L https://github.com/trashbus99/profork/raw/master/app/mainmenu.sh | bas
+curl -L https://github.com/trashbus99/profork/raw/master/app/mainmenu.sh | bash
