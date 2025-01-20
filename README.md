@@ -16,3 +16,4 @@ Please do not ask for support on the Batocera Discord or reddit forums; the mode
 installed.
 
 Thanks to Uureel and Kron4ek
+Also thanks to IVAN-HC for some of the appimage builds.
