@@ -112,7 +112,7 @@ done
 # End of Info Script
 echo -e ""
 echo -e "Steam will be installed to /userdata/system/pro/steam"
-sleel 1
+sleep 1
 echo -e "${GREEN}Starting the installation process now...${RESET}"
 sleep 1
 
