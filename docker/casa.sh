@@ -8,11 +8,9 @@ sleep 5
 # Define the home directory
 HOME_DIR=/userdata/system
 
-# Define URLs for the split zip files
-ZIP_PART_1="https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos.tar.zip.001"
-ZIP_PART_2="https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos.tar.zip.002"
-ZIP_PART_3="https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos.tar.zip.003"
-ZIP_PART_4="https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos.tar.zip.004"
+
+PART_BASE_URL="https://github.com/trashbus99/profork/releases/download/r1/batocera-casaos.part."
+PART_COUNT=4
 
 # Change to home directory
 cd "${HOME_DIR}"
@@ -22,7 +20,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Remove any existing files
-rm -f batocera-casaos.tar.zip.001 batocera-casaos.tar.zip.002 batocera-casaos.tar.zip.003 batocera-casaos.tar.zip.004
+rm -f batocera-casaos.part.*
 
 # Retry count
 RETRIES=5
@@ -50,32 +48,21 @@ download_with_retry() {
 }
 
 # Download the files
-echo "Downloading  4-part split zip file..."
+echo "Downloading split parts..."
+for i in $(seq 0 $((PART_COUNT - 1)))
+do
+    part_number=$(printf "%d" $i)  # Ensures numeric suffix without leading zeros
+    part_file="batocera-casaos.part.${part_number}"
+    download_with_retry "${PART_BASE_URL}${part_number}" "${part_file}"
+done
 
-download_with_retry "${ZIP_PART_1}" "batocera-casaos.tar.zip.001"
-download_with_retry "${ZIP_PART_2}" "batocera-casaos.tar.zip.002"
-download_with_retry "${ZIP_PART_3}" "batocera-casaos.tar.zip.003"
-download_with_retry "${ZIP_PART_4}" "batocera-casaos.tar.zip.004"
-
-
-
-
-# Combine the zip files
-echo "Combining split zip files..."
-cat batocera-casaos.tar.zip.* > batocera-casaos.tar.zip
+# Combine the split parts
+echo "Combining split parts..."
+cat batocera-casaos.part.* > batocera-casaos.tar.gz
 if [ $? -ne 0 ]; then
-    echo "Failed to combine the split zip files. Exiting."
+    echo "Failed to combine the split parts. Exiting."
     exit 1
 fi
-
-# Unzip the combined zip file using 7z
-echo "Unzipping combined zip file using 7z..."
-7z x "batocera-casaos.tar.zip" -o"./" >/dev/null
-if [ $? -ne 0 ]; then
-    echo "Failed to unzip the file using 7z. Exiting."
-    exit 1
-fi
-
 
 # Extract the tar.gz file
 echo "Extracting the tar.gz file..."
@@ -85,6 +72,16 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+echo "Process completed successfully."
+
+
+
+
+
+
+
+
+ 
 # Clean up zip and tar files
 rm batocera-casaos.tar.zip*
 rm batocera-casaos.tar.gz
