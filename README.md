@@ -1,4 +1,4 @@
-I was the previous collaborator of batocera.pro with uureel and did development on that repo. 
+I was the previous main collaborator of batocera.pro (Cliffy/Trashbus99) with uureel and did development on that repo. 
 The current scripts should be up to date and working.
 
 Please note, this batocera pro repo fork is mainly for personal use and development; 
