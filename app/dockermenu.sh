@@ -69,7 +69,7 @@ apps=(
     # ... (populate with your apps as shown before)
     ["ARCH-CONTAINER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/steam/steam.sh | bash"
     ["ANDROID/BLISS-OS/DOCKER/QEMU"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/bliss_install.sh | bash" 
-#    ["CASAOS/CONTAINER/DEBIAN/XFCE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/casa.sh | bash"
+    ["CASAOS/CONTAINER/DEBIAN/XFCE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/casa.sh | bash"
     ["EMBY-SERVER/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/emby.sh | bash"
     ["JELLYFIN-SERVER/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/jellyfin.sh | bash"
     ["LINUX-DESKTOPS-RDP/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/rdesktop.sh | bash | bash"
