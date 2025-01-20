@@ -10,4 +10,6 @@ Apps will be installed in ```/userdata/system/pro```as before and your Batocera 
 Please do not ask for support on the Batocera Discord or reddit forums; the moderators are aggressive about denying support if add-ons are 
 installed.
 
-```curl -L bit.ly/profork3 | bash```
+```
+curl -L bit.ly/profork3 | bash
+```
