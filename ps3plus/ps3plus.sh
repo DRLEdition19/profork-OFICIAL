@@ -6,7 +6,8 @@
 
 
 app=ps3plus
-url=$(curl -s https://rpcs3.net/download | grep rpcs3-binaries-linux | grep "<a href" | cut -d \" -f 2 | cut -d \" -f 2 | cut -d = -f 2 | tr -d \")
+url=url=$(curl -s https://rpcs3.net/download | grep -oP '(?<=<a href=")[^"]*rpcs3-binaries-linux.*x64.*(?=")' | head -n 1)
+
 
 
 #--------------------------------------------------------------------------------------------------------------------------------
