@@ -27,7 +27,7 @@ fi
 
 # Show message using dialog if MESSAGE is set
 if [[ -n "$MESSAGE" ]]; then
-  dialog --msgbox "$MESSAGE" 6 50
+  dialog --msgbox "$MESSAGE" 12 50
 fi
 
 # Clear dialog box after execution
