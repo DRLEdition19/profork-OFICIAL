@@ -15,5 +15,6 @@ Apps will be installed in ```/userdata/system/pro```as before, and your Batocera
 Please do not ask for support on the Batocera Discord or reddit forums; the moderators are aggressive about denying support if add-ons are 
 installed.
 
-Thanks to Uureel for the original scripts and Kron4ek for the conty (Arch) container..
+Thanks to Uureel for the original scripts and Kron4ek for the conty (Arch) container.
+
 Also thanks to IVAN-HC for some of the appimage builds.
