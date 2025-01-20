@@ -68,13 +68,14 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Unzip the combined zip file
-echo "Unzipping combined zip file..."
-unzip -q "batocera-casaos.tar.zip"
+# Unzip the combined zip file using 7z
+echo "Unzipping combined zip file using 7z..."
+7z x "batocera-casaos.tar.zip" -o"./" >/dev/null
 if [ $? -ne 0 ]; then
-    echo "Failed to unzip the file. Exiting."
+    echo "Failed to unzip the file using 7z. Exiting."
     exit 1
 fi
+
 
 # Extract the tar.gz file
 echo "Extracting the tar.gz file..."
