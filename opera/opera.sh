@@ -16,8 +16,8 @@
 #--------------------------------------------------------------------- 
 #       DEFINE APP INFO >>
 APPNAME=opera 
-APPLINK=$(curl -s https://api.github.com/repos/ivan-hc/Opera-appimage/releases | jq -r '.[] | select(.tag_name == "continuous") | .assets[] | select(.name | endswith(".AppImage")) | .browser_download_url')
-APPHOME="apprepo.de/appimage/opera"
+APPLINK=$(curl -s https://api.github.com/repos/ivan-hc/Opera-appimage/releases | jq -r '.[] | select(.tag_name == "continuous") | .assets[] | select(.name | contains("stable") and endswith(".AppImage")) | .browser_download_url')
+APPHOME="GITHUB.COM/IVAN-HC/OPERA-APPIMAGE"
 #---------------------------------------------------------------------
 #       DEFINE LAUNCHER COMMAND >>
 COMMAND='LD_LIBRARY_PATH="/userdata/system/pro/.dep:${LD_LIBRARY_PATH}" DISPLAY=:0.0 /userdata/system/pro/'$APPNAME'/'$APPNAME'.AppImage --no-sandbox --test-type "${@}"'
