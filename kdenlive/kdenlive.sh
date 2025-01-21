@@ -292,7 +292,7 @@ chmod a+x $launcher
 # //
 # -- get icon for shortcut,
 icon=/userdata/system/pro/$appname/extra/icon.png
-wget -q -O $icon https://github.com/trashbus99/profork/raw/master/$appname/extra/icon.png
+wget -q -O $icon https://github.com/trashbus99/profork/raw/master/kdenlive/extra/icon.png
 # //
 # -- prepare f1 - applications - app shortcut, 
 shortcut=/userdata/system/pro/$appname/extra/$appname.desktop
