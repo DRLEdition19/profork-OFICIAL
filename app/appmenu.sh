@@ -76,6 +76,7 @@ apps=(
     ["ATOM"]="curl -Ls https://github.com/trashbus99/profork/raw/master/atom/atom.sh | bash"
     ["BALENA-ETCHER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/balena/balena.sh | bash"
     ["BLENDER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/blender/blender.sh | bash"
+    ["BOTTLES/AMD-INTEL-GPUS-ONLY"]=curl -Ls https://github.com/trashbus99/profork/raw/master/bottles/bottles.sh | bash
     ["BRAVE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/brave/brave.sh | bash"
     ["CHIAKI"]="curl -Ls https://github.com/trashbus99/profork/raw/master/chiaki/chiaki.sh | bash"
     ["CHROME"]="curl -Ls https://github.com/trashbus99/profork/raw/master/chrome/chrome.sh | bash"
