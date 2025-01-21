@@ -16,7 +16,7 @@
 #--------------------------------------------------------------------- 
 #       DEFINE APP INFO >>
 APPNAME=opera 
-APPLINK=https://github.com/ivan-hc/Opera-appimage/releases/download/continuous/Opera-Web-Browser-stable-115.0.5322.119-x86_64.AppImage
+APPLINK=$(curl -s https://api.github.com/repos/ivan-hc/Opera-appimage/releases | jq -r '.[] | select(.tag_name == "continuous") | .assets[] | select(.name | endswith(".AppImage")) | .browser_download_url')
 APPHOME="apprepo.de/appimage/opera"
 #---------------------------------------------------------------------
 #       DEFINE LAUNCHER COMMAND >>
