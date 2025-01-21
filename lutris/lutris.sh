@@ -11,7 +11,7 @@ fi
 
 # GPU Compatibility Warning
 dialog --title "GPU Compatibility Warning" \
-       --yesno "⚠️  Only AMD and Intel GPUs are supported.\n\n❌ NVIDIA is NOT supported.\n\nDo you want to continue?" 10 50
+       --yesno "⚠️  Only AMD and Intel GPUs are supported.\n\n❌ NVIDIA is NOT supported.\n\nUse the multi-app arch container for NVIDIA support.\n\nDo you want to continue?" 20 80
 
 # Check user's response
 response=$?
