@@ -16,7 +16,9 @@
 #--------------------------------------------------------------------- 
 #       DEFINE APP INFO >>
 APPNAME=firefox
-APPLINK="https://github.com/srevinsaju/Firefox-Appimage/releases/download/firefox/firefox-$(curl https://github.com/srevinsaju/Firefox-Appimage/releases/tag/firefox | grep ">Latest Continous build for firefox v" | sed 's,^.*Latest Continous build for firefox v,,g' | cut -d "<" -f1)-x86_64.AppImage"
+APPLINK=$(curl -s https://api.github.com/repos/srevinsaju/Firefox-Appimage/releases/latest | jq -r '.assets[] | select(.name | endswith(".AppImage")).browser_download_url')
+echo $APP
+"
 APPHOME="github.com/srevinsaju/Firefox-Appimage"
 #---------------------------------------------------------------------
 #       DEFINE LAUNCHER COMMAND >>
