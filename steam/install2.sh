@@ -65,7 +65,8 @@ display_controls() {
     echo "and more apps in a multi-App Arch container in /userdata/system/pro/steam with"
     echo "a new system appearing in ES called Arch Container or Linux depending on your theme."
     echo "Additional apps can be found in the Applications section inside PCMANFM Filemanager"  
-    echo 
+    echo "inside the container launched from the Arch/Linux menu in emulationstation"
+    echo""
     sleep 10  # Delay for 10 seconds
 }
 
