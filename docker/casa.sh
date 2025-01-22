@@ -48,7 +48,7 @@ download_with_retry() {
 }
 
 # Download the files
-echo "Downloading split parts..."
+echo "Downloading 4 split parts..."
 for i in $(seq 0 $((PART_COUNT - 1)))
 do
     part_number=$(printf "%d" $i)  # Ensures numeric suffix without leading zeros
