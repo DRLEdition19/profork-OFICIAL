@@ -9,7 +9,7 @@ rm Install.Full.PortMaster.sh
 clear
 echo "Portmaster is installed to ports. Refresh/update gamelist  It will usually launch on the second attempt."
 echo "Game compatibility varies"
-sleep 5
+sleep 10
 echo""
 echo ""
 echo "Done.."
