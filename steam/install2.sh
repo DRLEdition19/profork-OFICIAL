@@ -63,8 +63,8 @@ display_controls() {
     echo 
     echo "This will install a container containing Steam, Heroic-Games Launcher, Lutris,"
     echo "and more apps in a multi-App Arch container in /userdata/system/pro/steam with"
-    echo "a new system appearing in ES called Arch Container"
-    echo "Linux depending on your theme. More apps can be found in the Applications section inside PCMANFM Filemanager"  
+    echo "a new system appearing in ES called Arch Container or Linux depending on your theme."
+    echo "Additional apps can be found in the Applications section inside PCMANFM Filemanager"  
     echo 
     sleep 10  # Delay for 10 seconds
 }
