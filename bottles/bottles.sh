@@ -10,7 +10,7 @@ if [ "$architecture" != "x86_64" ]; then
 fi
 
 # GPU Compatibility Warning
-dialog --title "GPU Compatibility Warning" \
+dialog --title "Bottles GPU Compatibility Warning" \
        --yesno "⚠️  Only AMD and Intel GPUs are supported.\n\n❌ NVIDIA is NOT supported.\n\nUse the multi-app arch container for NVIDIA support.\n\nDo you want to continue?" 20 80
 
 # Check user's response
