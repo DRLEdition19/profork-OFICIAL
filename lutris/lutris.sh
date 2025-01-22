@@ -113,6 +113,7 @@ done
 
 # End of Info Script
 echo -e ""
+echo -e "Lutris will be installed to /userdata/system/pro/lutris"
 echo -e "${GREEN}Starting the installation process now...${RESET}"
 sleep 1
 
