@@ -61,7 +61,7 @@ animate_title() {
 
 display_controls() {
     echo 
-    echo "This Will install Steam, Heroic-Games Launcher, Lutris,"
+    echo "This will install Steam, Heroic-Games Launcher, Lutris,"
     echo "and more apps in an Arch container in /userdata/system/pro/steam with"
     echo "a new system appearing in ES called Arch Container or"
     echo "Linux depending on your theme."  
