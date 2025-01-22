@@ -21,7 +21,7 @@ OPTIONS=("1" "Install/Update Arch Container "
          "6" "Addon: XFCE/MATE/LXDE DESKTOP Mode"
          "7" "Addon: Add/Update Lutris Menu & Shortcuts to Emulationstation"
          "8" "Addon: Add/Update Heroic Menu & Shortcuts to Emulationstation"
-         "9" "Addon: Add/Update PS4 Menu and Shortcuts to Emulationstation"
+         "9" "Addon: Add/Update PS4 Menu & Shortcuts to Emulationstation"
          "10" "Addon: Emudeck (experimental)"
          "11" "Addon: Nativefier (turn websites into apps and add to ES Menu)")
 
