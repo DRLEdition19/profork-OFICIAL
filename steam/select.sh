@@ -29,7 +29,13 @@ install_minecraft_mini() {
     echo "Installing Minecraft Bedrock Edition Mini Container..."
     curl -L https://github.com/trashbus99/profork/raw/master/bedrock/install.sh | bash
 }
+# Function to install Bottles mini container (AMD/INTEL GPU ONLY)
+install_bottles_mini() {
+    echo "Installing Bottles Mini Container..."
+    curl -L https://github.com/trashbus99/profork/raw/master/bottles/bottles.sh | bash
+}
 
+https://github.com/trashbus99/profork/blob/master/bottles/bottles.sh
 # Display the menu
 while true; do
     CHOICE=$(dialog --clear \
@@ -40,6 +46,7 @@ while true; do
                     2 "NVIDIA/AMD/INTEL GPUS: Build Up-to-Date multi-app full container from scratch (30-90 minutes)" \
                     3 "AMD/INTEL GPU ONLY: Download Steam only mini container (no separate Steam System menu available)" \
                     4 "AMD/INTEL GPU ONLY: Download Lutris only mini container (no separate Lutris System menu available)" \
+                    5 "AMD/INTEL GPU ONLY: Download Bottles only mini container" \
                     3>&1 1>&2 2>&3)
 
     clear
@@ -58,6 +65,10 @@ while true; do
             ;;
         4)
             install_lutris_mini
+            break
+            ;;
+        5)
+            install_bottles_mini
             break
             ;;
         *)
