@@ -35,7 +35,6 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **Filezilla**                  | FTP, FTPS, and SFTP client                |
 | **Firefox**                    | Open-source web browser                   |
 | **Flatpak-Config**             | Configure and manage Flatpak              |
-| **GameHub**                    | Game manager for various platforms        |
 | **Geforce Now**                | Nvidia's cloud gaming platform            |
 | **Google-Chrome**              | Popular web browser by Google             |
 | **Gparted**                    | Partition editor for Linux                |
