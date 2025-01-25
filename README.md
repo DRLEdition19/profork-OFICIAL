@@ -37,7 +37,6 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **Flatpak-Config**             | Configure and manage Flatpak              |
 | **Geforce Now**                | Nvidia's cloud gaming platform            |
 | **Google-Chrome**              | Popular web browser by Google             |
-| **Gparted**                    | Partition editor for Linux                |
 | **Greenlight**                 | Xbox Remote Play/Xcloud client            |
 | **Heroic Game Launcher**       | Alternative Epic Games Store, GOG, Amazon Games, launcher     |
 | **Lutris**                     | Open-source gaming platform               |
