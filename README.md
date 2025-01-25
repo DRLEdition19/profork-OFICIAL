@@ -133,7 +133,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **VLC**                               | Open-source media player                                   |
 | **WHATSAPP**                          | Messaging app                                              |
 | **WIIUPLUS/NEWEST-CEMU**              | Wii U emulator                                            |
-| **XCLOUD**                            | Electron Xcloud (Gamepad Navigatable)                     |
+| **XCLOUD**                            | Electron based Xcloud client (Gamepad Navigatable)        |
 | **WPS-OFFICE**                        | Office suite                                              |
 | **YOUTUBE-MUSIC**                     | Streaming app for YouTube Music                           |
 | **YOUTUBE-TV**                        | Streaming app for YouTube TV                              |
