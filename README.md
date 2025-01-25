@@ -30,7 +30,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **Boilr**                      | Steam third-party app add tool            |
 | **Bottles**                    | Wine/Proton GUI Launcher                  |
 | **Brave**                      | Privacy-focused web browser               |
-| **Chiaki**                     | Open-source PS4 Remote Play client        |
+| **Chiaki**                     | Open-source PS4/5 Remote Play client        |
 | **FileManager-PCManFM**        | Lightweight file manager                  |
 | **Filezilla**                  | FTP, FTPS, and SFTP client                |
 | **Firefox**                    | Open-source web browser                   |
