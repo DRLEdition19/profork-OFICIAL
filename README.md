@@ -156,3 +156,13 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **DOCKER/PODMAN/PORTAINER**                | Tools for managing containers, including Docker, Podman, and Portainer |
 | **WINDOWS-VMS/DOCKER**                     | Docker-based Windows virtual machines accessible via RDP and VNC    |
 | **SYSTEMTOOLS-WETTY-GLANCES-FILEMANAGER**  | System tools container including Wetty, Glances, and a file manager |
+
+
+
+# How to Remove:  
+1. Arch container - Run the uninstaller in the arch menu
+2. Standalone Apps; delete the corresponding folder in `/userdata/system/pro` and .sh file in ports folder if applicable.
+3. CasaOS  delete the batocera-casos folder in `/userdata/system` and remove launcher editing out from `/userdata/system/custom.sh`
+4. Docker apps: Delete the `/userdata/system/batocera-containers` folder and edit out corresponding launcher in `/userdata/system/custom.sh` to remove entirely.
+   or just use portainer gui or docker cli to remove individual docker containers.
+
