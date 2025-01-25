@@ -43,7 +43,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **Heroic Game Launcher**       | Alternative Epic Games Store, GOG, Amazon Games, launcher     |
 | **Lutris**                     | Open-source gaming platform               |
 | **Microsoft-Edge**             | Web browser by Microsoft                  |
-| **Moonlight**                  | Game streaming client for Nvidia GPUs     |
+| **Moonlight**                  | Game streaming client      |
 | **Minecraft-Bedrock**          | Cross-platform Minecraft version          |
 | **OBS Studio**                 | Open-source streaming and recording tool  |
 | **Parsec**                     | Game streaming client                     |
