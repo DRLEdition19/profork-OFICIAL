@@ -38,8 +38,8 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **Geforce Now**                | Nvidia's cloud gaming platform            |
 | **Google-Chrome**              | Popular web browser by Google             |
 | **Gparted**                    | Partition editor for Linux                |
-| **Greenlight**                 | Open-source virtual classroom software    |
-| **Heroic Game Launcher**       | Alternative Epic Games Store launcher     |
+| **Greenlight**                 | Xbox Remote Play/Xcloud client            |
+| **Heroic Game Launcher**       | Alternative Epic Games Store, GOG, Amazon Games, launcher     |
 | **Lutris**                     | Open-source gaming platform               |
 | **Microsoft-Edge**             | Web browser by Microsoft                  |
 | **Moonlight**                  | Game streaming client for Nvidia GPUs     |
