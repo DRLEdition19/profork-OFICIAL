@@ -134,7 +134,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **XCLOUD**                            | Electron based Xcloud client (Gamepad Navigatable)        |
 | **WPS-OFFICE**                        | Office suite                                              |
 | **YOUTUBE-MUSIC**                     | Streaming app for YouTube Music                           |
-| **YOUTUBE-TV**                        | Streaming app for YouTube TV                              |
+| **YOUTUBE-TV**                        | Streaming app for Youtube with TV UI                             |
 
 
 
