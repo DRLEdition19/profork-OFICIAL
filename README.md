@@ -63,7 +63,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 
 
 
-# Standalone Apps (Note: NVIDIA users can Use multiapp arch container for AMD/Intel only apps listed below)
+# Standalone Apps (Note: NVIDIA users can Use multiapp arch container for Steam, Lutris, Bottles, Minecraft-Bedrock)
 
 | Application                           | Description                                                   |
 |---------------------------------------|---------------------------------------------------------------|
