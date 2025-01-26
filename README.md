@@ -116,6 +116,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **PS2MINUS/PCSX2-v1.6-OLDER-COMPUTERS** | Older version of the PCSX2 emulator                        |
 | **PS2PLUS/NEWEST-PCSX2**              | Latest version of the PCSX2 emulator                       |
 | **PS3PLUS/NEWEST-RPCS3**              | PlayStation 3 emulator                                      |
+| **QBITTORRENT**                       | Torrent Client                                             |
 | **SAYONARA**                          | Lightweight music player                                   |
 | **SHIP-OF-HARKINIAN**                 | Open-source port of Ocarina of Time                        |
 | **SHEEPSHAVER**                       | PowerPC Mac emulator                                       |
