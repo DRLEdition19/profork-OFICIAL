@@ -73,6 +73,7 @@ apps=(
     ["AMAZON-LUNA"]="curl -Ls https://github.com/trashbus99/profork/raw/master/amazonluna/amazonluna.sh"
     ["ANTIMICROX"]="curl -Ls https://github.com/trashbus99/profork/raw/master/antimicrox/antimicrox.sh | bash"
     ["APPLEWIN/WINE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/applewin/applewin.sh | bash"
+    ["ARCADE-MANAGER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/arcade-manager/arcade.sh | bash"
     ["ATOM"]="curl -Ls https://github.com/trashbus99/profork/raw/master/atom/atom.sh | bash"
     ["BALENA-ETCHER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/balena/balena.sh | bash"
     ["BLENDER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/blender/blender.sh | bash"
