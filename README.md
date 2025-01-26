@@ -34,7 +34,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **FileManager-PCManFM**        | Lightweight file manager                  |
 | **Filezilla**                  | FTP, FTPS, and SFTP client                |
 | **Firefox**                    | Open-source web browser                   |
-| **Flatpak-Config**             | Configure and manage Flatpak              |
+| **Flatpak-Config**             | Configure and manage Flatpak inside container  |
 | **Geforce Now**                | Nvidia's cloud gaming platform            |
 | **Google-Chrome**              | Popular web browser by Google             |
 | **Greenlight**                 | Xbox Remote Play/Xcloud client            |
