@@ -101,7 +101,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **MEDIAELCH**                         | Media manager for movies and TV shows                       |
 | **MINECRAFT-BEDROCK-EDITION**         | Cross-platform version of Minecraft                         |
 | **MINECRAFT-JAVA-EDITION**            | Java-based version of Minecraft                             |
-| **MOONLIGHT**                         | Open-source game strearming client for Sunshine/Geforce stremaing  |
+| **MOONLIGHT**                         | Open-source game streaming client for Sunshine/Geforce streaming  |
 | **MPV**                               | Lightweight media player                                     |
 | **MULTIMC-LAUNCHER**                  | Custom launcher for Minecraft mod versions                   |
 | **MUSEEKS**                           | Lightweight and cross-platform music player                 |
