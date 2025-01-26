@@ -79,7 +79,7 @@ apps=(
     ["NEXTCLOUD-SERVER/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/nextcloud.sh | bash" 
     ["PLEX-SERVER/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/plex.sh | bash"
     ["DOCKER/PODMAN/PORTAINER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/install.sh | bash"
-    ["UMBREL-OS/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/umbrel.sh | bash
+    ["UMBREL-OS/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/umbrel.sh | bash"
     ["WINDOWS-VMS/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/win.sh | bash"
     ["SYSTEMTOOLS-WETTY-GLANCES-FILEMANAGER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/systools.sh | bash"
 
