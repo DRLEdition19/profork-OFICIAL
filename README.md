@@ -159,7 +159,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **DOCKER/PODMAN/PORTAINER**                | Tools for managing containers, including Docker, Podman, and Portainer |
 | **WINDOWS-VMS/DOCKER**                     | Docker-based Windows virtual machines accessible via RDP and VNC    |
 | **SYSTEMTOOLS-WETTY-GLANCES-FILEMANAGER**  | System tools container including Wetty, Glances, and a file manager |
-| **UMBRELOS/Docker**                        | UmbrelOS (Docker App GUI Front-End * installer) in Docker|
+| **UMBRELOS/DOCKER**                        | UmbrelOS (Docker App GUI Front-End * installer) in Docker|
 
 
 # How to Remove:  
