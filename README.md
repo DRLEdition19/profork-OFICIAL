@@ -71,6 +71,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **AMAZON-LUNA**                       | Amazon's cloud gaming service                                |
 | **ANTIMICROX**                        | Gamepad mapping and customization tool                       |
 | **APPLEWIN/WINE**                     | Apple II emulator                                            |
+| **ARCADE-MANAGER**                    | ROM management Tool                                          |
 | **ATOM**                              | Hackable text editor for developers                          |
 | **BALENA-ETCHER**                     | Flash OS images to USB drives and SD cards                   |
 | **BLENDER**                           | Open-source 3D modeling and animation tool                   |
