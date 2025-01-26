@@ -81,6 +81,7 @@ apps=(
     ["BRAVE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/brave/brave.sh | bash"
     ["CHIAKI"]="curl -Ls https://github.com/trashbus99/profork/raw/master/chiaki/chiaki.sh | bash"
     ["CHROME"]="curl -Ls https://github.com/trashbus99/profork/raw/master/chrome/chrome.sh | bash"
+    ["CLONE-HERO"]="curl -LS https://github.com/trashbus99/profork/raw/master/clonehero/clonehero.sh | bash"
     ["CPU-X"]="curl -Ls https://github.com/trashbus99/profork/raw/master/cpux/cpux.sh | bash"
     ["DISCORD"]="curl -Ls https://github.com/trashbus99/profork/raw/master/discord/discord.sh | bash"
     ["EDGE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/edge/edge.sh | bash"
