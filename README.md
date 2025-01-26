@@ -147,7 +147,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | Application                                | Description                                                   |
 |--------------------------------------------|---------------------------------------------------------------|
 | **ANDROID/BLISS-OS/DOCKER/QEMU**           | Android-based Bliss OS running in Docker (no audio/GPU support)|
-| **CASAOS/DOCKER**                          | CasaOS in docker (Recommended Version)                        |
+| **CASAOS/DOCKER**                          | CasaOS (Docker App GUI Installer in docker (Recommended Version)|                        |
 | **CASAOS/CONTAINER/DEBIAN/XFCE**           | CasaOS container with a Debian XFCE desktop environment       |
 | **EMBY-SERVER/DOCKER**                     | Media server for managing and streaming personal media        |
 | **JELLYFIN-SERVER/DOCKER**                 | Open-source media server for streaming and organizing media   |
@@ -159,7 +159,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **DOCKER/PODMAN/PORTAINER**                | Tools for managing containers, including Docker, Podman, and Portainer |
 | **WINDOWS-VMS/DOCKER**                     | Docker-based Windows virtual machines accessible via RDP and VNC    |
 | **SYSTEMTOOLS-WETTY-GLANCES-FILEMANAGER**  | System tools container including Wetty, Glances, and a file manager |
-
+| **UmbrelOS/Docker**                        | UmbrelOS (Docker App GUI installer) in Docker|
 
 
 # How to Remove:  
