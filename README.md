@@ -147,6 +147,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | Application                                | Description                                                   |
 |--------------------------------------------|---------------------------------------------------------------|
 | **ANDROID/BLISS-OS/DOCKER/QEMU**           | Android-based Bliss OS running in Docker (no audio/GPU support)|
+| **CASAOS/DOCKER**                          | CasaOS in docker (Recommended Version)                        |
 | **CASAOS/CONTAINER/DEBIAN/XFCE**           | CasaOS container with a Debian XFCE desktop environment       |
 | **EMBY-SERVER/DOCKER**                     | Media server for managing and streaming personal media        |
 | **JELLYFIN-SERVER/DOCKER**                 | Open-source media server for streaming and organizing media   |
