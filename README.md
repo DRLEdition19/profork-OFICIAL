@@ -101,12 +101,12 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **MEDIAELCH**                         | Media manager for movies and TV shows                       |
 | **MINECRAFT-BEDROCK-EDITION**         | Cross-platform version of Minecraft                         |
 | **MINECRAFT-JAVA-EDITION**            | Java-based version of Minecraft                             |
-| **MOONLIGHT**                         | Open-source game streaming client for Sunshine/Geforce stremaing  |
+| **MOONLIGHT**                         | Open-source game strearming client for Sunshine/Geforce stremaing  |
 | **MPV**                               | Lightweight media player                                     |
 | **MULTIMC-LAUNCHER**                  | Custom launcher for Minecraft mod versions                   |
 | **MUSEEKS**                           | Lightweight and cross-platform music player                 |
 | **NVTOP**                             | Real-time GPU usage monitoring tool                         |
-| **ODIO**                              | Free streaming music app                                    |
+| **ODIO**                              | Free streamimg music app                                    |
 | **OLIVE**                             | Open-source video editing tool                              |
 | **OPERA**                             | Web browser with integrated VPN and ad blocker              |
 | **PEAZIP**                            | File archiver and compression utility                       |
