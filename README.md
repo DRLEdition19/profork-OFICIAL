@@ -135,6 +135,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **WIIUPLUS/NEWEST-CEMU**              | Wii U emulator                                            |
 | **XCLOUD**                            | Electron based Xcloud client (Gamepad Navigatable)        |
 | **WPS-OFFICE**                        | Office suite                                              |
+| **YARG**                              | Yet Another Rhythm Game                                   |
 | **YOUTUBE-MUSIC**                     | Streaming app for YouTube Music                           |
 | **YOUTUBE-TV**                        | Streaming app for Youtube with TV UI                             |
 
