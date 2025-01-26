@@ -1,4 +1,10 @@
 #!/usr/bin/env bash 
+clear
+echo "DISCLAIMER:"
+echo "Profork does not condone piracy"
+echo "Please use this tool responsibly and in accordance with all applicable laws."
+
+sleep 8
 ######################################################################
 # PROFORK INSTALLER
 ######################################################################
