@@ -79,6 +79,7 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | **BRAVE**                             | Privacy-focused web browser                                  |
 | **CHIAKI**                            | Open-source PS4 Remote Play client                           |
 | **CHROME**                            | Popular web browser by Google                                |
+| **CLONE HERO**                        | Guitar/Music Game                                            |
 | **CPU-X**                             | System profiling and monitoring application                  |
 | **DISCORD**                           | Voice, video, and text chat app                              |
 | **EDGE**                              | Web browser by Microsoft                                     |
