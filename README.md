@@ -66,7 +66,6 @@ Also thanks to IVAN-HC for some of the appimage builds.
 | Application                           | Description                                                   |
 |---------------------------------------|---------------------------------------------------------------|
 | **7ZIP**                              | File archiver with a high compression ratio                   |
-| **86BOX**                             | Emulator for retro x86 hardware                              |
 | **ALTUS**                             | Desktop client for Google Meet and messaging services        |
 | **AMAZON-LUNA**                       | Amazon's cloud gaming service                                |
 | **ANTIMICROX**                        | Gamepad mapping and customization tool                       |
