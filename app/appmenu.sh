@@ -139,6 +139,7 @@ apps=(
     ["WIIUPLUS/NEWEST-CEMU"]="curl -Ls https://github.com/uureel/batocera.pro/raw/main/wiiuplus/installer.sh | bash"
     ["XCLOUD"]="curl -Ls https://github.com/trashbus99/profork/raw/master/xcloud/xcloud.sh | bash"
     ["WPS-OFFICE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/wps-office/wps.sh | bash"
+    ["YARG"]="curl -Ls https://github.com/trashbus99/profork/raw/master/yarg/yarg.sh | bash"
     ["YOUTUBE-MUSIC"]="curl -Ls https://github.com/trashbus99/profork/raw/master/youtube-music/ytm.sh | bash" 
     ["YOUTUBE-TV"]="curl -Ls https://github.com/trashbus99/profork/raw/master/youtubetv/yttv.sh | bash"
 
