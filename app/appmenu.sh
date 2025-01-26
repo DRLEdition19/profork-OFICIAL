@@ -119,6 +119,7 @@ apps=(
     ["PS2MINUS/PCSX2-v1.6-OLDER-COMPUTERS"]="curl -Ls https://github.com/uureel/batocera.pro/raw/main/ps2minus/installer.sh | bash"
     ["PS2PLUS/NEWEST-PCSX2"]="curl -Ls https://github.com/uureel/batocera.pro/raw/main/ps2plus/installer.sh | bash"
     ["PS3PLUS/NEWEST-RPCS3"]="curl -Ls https://github.com/trashbus99/profork/raw/master/ps3plus/installer.sh | bash"
+    ["QBITTORRENT"]="curl -Ls https://github.com/trashbus99/profork/raw/master/qbittorrent/qbittorrent.sh | bash"
     ["SAK"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sak/sak.sh | bash"
     ["SAYONARA"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sayonara/sayonara.sh | bash"
     ["SHIP-OF-HARKINIAN"]="curl -Ls https://github.com/trashbus99/profork/raw/master/soh/install.sh | bash"
