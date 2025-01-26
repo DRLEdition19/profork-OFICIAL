@@ -68,7 +68,6 @@ declare -A apps
 apps=(
     # ... (populate with your apps as shown before)
     ["7ZIP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/7zip/7zip.sh | bash"
-    ["86BOX"]="curl -Ls https://github.com/trashbus99/profork/raw/master/86box/86box.sh | bash"
     ["ALTUS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/altus/altus.sh | bash"
     ["AMAZON-LUNA"]="curl -Ls https://github.com/trashbus99/profork/raw/master/amazonluna/amazonluna.sh"
     ["ANTIMICROX"]="curl -Ls https://github.com/trashbus99/profork/raw/master/antimicrox/antimicrox.sh | bash"
