@@ -23,18 +23,19 @@ is_port_in_use() {
     fi
 }
 
-# Check for Docker
-if ! command -v docker &> /dev/null; then
-    dialog --title "Docker Installation" --infobox "Docker could not be found. Installing Docker..." 10 50
+# Check for Docker binary and functional service
+if ! command -v docker &> /dev/null || ! docker info &> /dev/null; then
+    dialog --title "Docker Installation" --infobox "Docker is not installed or the service is not running. Installing Docker..." 10 50
     sleep 2 # Gives user time to read the message
     curl -L https://github.com/trashbus99/profork/raw/master/docker/install.sh | bash
-    # Check if Docker was successfully installed
-    if ! command -v docker &> /dev/null; then
-        dialog --title "Docker Installation Error" --msgbox "Docker installation failed. Please install Docker manually." 10 50
+    # Verify Docker installation and service
+    if ! command -v docker &> /dev/null || ! docker info &> /dev/null; then
+        dialog --title "Docker Installation Error" --msgbox "Docker installation failed or the service did not start. Please install and configure Docker manually." 10 50
         clear
         exit 1
     fi
 fi
+
 
 # Create directories if they don't exist and download necessary scripts
 clear
