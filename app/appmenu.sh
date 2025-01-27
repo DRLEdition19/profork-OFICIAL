@@ -1,6 +1,6 @@
 #!/bin/bash
 
-clear 
+clear
 
 # Function to display animated title with colors
 animate_title() {
@@ -8,12 +8,14 @@ animate_title() {
     local delay=0.03
     local length=${#text}
 
-    echo -ne "\e[1;36m"  # Set color to cyan
+    echo -ne "\e[1;36m" # Set color to cyan
+
     for (( i=0; i<length; i++ )); do
         echo -n "${text:i:1}"
         sleep $delay
     done
-    echo -e "\e[0m"  # Reset color
+
+    echo -e "\e[0m" # Reset color
 }
 
 # Function to display animated border
@@ -30,11 +32,11 @@ animate_border() {
 
 # Function to display controls
 display_controls() {
-    echo -e "\e[1;32m"  # Set color to green
+    echo -e "\e[1;32m" # Set color to green
     echo "K/B Controls + Gamepad Controls when launched from ports:"
     echo "  Navigate with up-down-left-right"
     echo "  Select app with A/B/SPACE and execute with Start/X/Y/ENTER"
-    echo -e "\e[0m"  # Reset color
+    echo -e "\e[0m" # Reset color
     sleep 4
 }
 
@@ -66,7 +68,6 @@ display_controls
 # Define an associative array for app names and their install commands
 declare -A apps
 apps=(
-    # ... (populate with your apps as shown before)
     ["7ZIP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/7zip/7zip.sh | bash"
     ["ALTUS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/altus/altus.sh | bash"
     ["AMAZON-LUNA"]="curl -Ls https://github.com/trashbus99/profork/raw/master/amazonluna/amazonluna.sh"
@@ -107,7 +108,7 @@ apps=(
     ["MPV"]="curl -Ls https://github.com/trashbus99/profork/raw/master/mpv/mpv.sh | bash"
     ["MULTIMC-LAUNCHER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/multimc/multimc.sh | bash"
     ["MUSEEKS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/museeks/museeks.sh | bash"
-    ["NVTOP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/nvtop/nvtop.sh| bash"   
+    ["NVTOP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/nvtop/nvtop.sh| bash"
     ["ODIO"]="curl -Ls https://github.com/trashbus99/profork/raw/master/odio/odio.sh | bash"
     ["OLIVE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/olive/olive.sh | bash"
     ["OPERA"]="curl -Ls https://github.com/trashbus99/profork/raw/master/opera/opera.sh | bash"
@@ -119,7 +120,6 @@ apps=(
     ["PS2PLUS/NEWEST-PCSX2"]="curl -Ls https://github.com/uureel/batocera.pro/raw/main/ps2plus/installer.sh | bash"
     ["PS3PLUS/NEWEST-RPCS3"]="curl -Ls https://github.com/trashbus99/profork/raw/master/ps3plus/installer.sh | bash"
     ["QBITTORRENT"]="curl -Ls https://github.com/trashbus99/profork/raw/master/qbittorrent/qbittorrent.sh | bash"
-    ["SAK"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sak/sak.sh | bash"
     ["SAYONARA"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sayonara/sayonara.sh | bash"
     ["SHIP-OF-HARKINIAN"]="curl -Ls https://github.com/trashbus99/profork/raw/master/soh/install.sh | bash"
     ["SHEEPSHAVER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/sheepshaver/install.sh | bash"
@@ -139,20 +139,99 @@ apps=(
     ["XCLOUD"]="curl -Ls https://github.com/trashbus99/profork/raw/master/xcloud/xcloud.sh | bash"
     ["WPS-OFFICE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/wps-office/wps.sh | bash"
     ["YARG"]="curl -Ls https://github.com/trashbus99/profork/raw/master/yarg/yarg.sh | bash"
-    ["YOUTUBE-MUSIC"]="curl -Ls https://github.com/trashbus99/profork/raw/master/youtube-music/ytm.sh | bash" 
+    ["YOUTUBE-MUSIC"]="curl -Ls https://github.com/trashbus99/profork/raw/master/youtube-music/ytm.sh | bash"
     ["YOUTUBE-TV"]="curl -Ls https://github.com/trashbus99/profork/raw/master/youtubetv/yttv.sh | bash"
+)
 
-    # Add other apps here
+# Define an associative array for app descriptions (generated from your table)
+declare -A app_desc
+app_desc=(
+    ["7ZIP"]="File archiver with a high compression ratio"
+    ["ALTUS"]="Desktop client for Google Meet and messaging services"
+    ["AMAZON-LUNA"]="Amazon's cloud gaming service"
+    ["ANTIMICROX"]="Gamepad mapping and customization tool"
+    ["APPLEWIN/WINE"]="Apple II emulator"
+    ["ARCADE-MANAGER"]="ROM management Tool"
+    ["ATOM"]="Hackable text editor for developers"
+    ["BALENA-ETCHER"]="Flash OS images to USB drives and SD cards"
+    ["BLENDER"]="Open-source 3D modeling and animation tool"
+    ["BOTTLES/AMD-INTEL-GPUS-ONLY"]="Manage and run Windows apps using Wine/proton"
+    ["BRAVE"]="Privacy-focused web browser"
+    ["CHIAKI"]="Open-source PS4 Remote Play client"
+    ["CHROME"]="Popular web browser by Google"
+    ["CLONE-HERO"]="Guitar/Music Game"
+    ["CPU-X"]="System profiling and monitoring application"
+    ["DISCORD"]="Voice, video, and text chat app"
+    ["EDGE"]="Web browser by Microsoft"
+    ["ENDLESS-SKY"]="Free open-world space exploration game"
+    ["FERDIUM"]="Messaging app with support for multiple platforms"
+    ["FILEZILLA"]="FTP, FTPS, and SFTP client"
+    ["FIREFOX"]="Open-source web browser"
+    ["FOOBAR2000"]="Lightweight and customizable audio player"
+    ["GEFORCENOW"]="Nvidia's cloud gaming service"
+    ["GREENLIGHT"]="Xbox and Xcloud Remote Play Streamer"
+    ["HARD-INFO"]="System information and benchmark tool"
+    ["HYPER"]="Modern, extensible terminal emulator"
+    ["JAVA-RUNTIME"]="Java runtime environment"
+    ["KDENLIVE"]="Open-source video editing software"
+    ["KITTY"]="Fast and feature-rich terminal emulator"
+    ["KSNIP"]="Screenshot tool with annotation features"
+    ["KRITA"]="Professional digital painting and illustration software"
+    ["LUDUSAVI"]="Save game manager and backup tool"
+    ["LUTRIS/AMD-INTEL-GPUS-ONLY"]="Open-source gaming platform"
+    ["MEDIAELCH"]="Media manager for movies and TV shows"
+    ["MINECRAFT-BEDROCK-EDITION"]="Cross-platform version of Minecraft"
+    ["MINECRAFT-JAVA-EDITION"]="Java-based version of Minecraft"
+    ["MOONLIGHT"]="Open-source game streaming client for Sunshine/Geforce streaming"
+    ["MPV"]="Lightweight media player"
+    ["MULTIMC-LAUNCHER"]="Custom launcher for Minecraft mod versions"
+    ["MUSEEKS"]="Lightweight and cross-platform music player"
+    ["NVTOP"]="Real-time GPU usage monitoring tool"
+    ["ODIO"]="Free streamimg music app"
+    ["OLIVE"]="Open-source video editing tool"
+    ["OPERA"]="Web browser with integrated VPN and ad blocker"
+    ["PEAZIP"]="File archiver and compression utility"
+    ["PLEXAMP"]="Music player for Plex users"
+    ["PRISM-LAUNCHER"]="Custom Minecraft launcher for mod versions"
+    y["PROTONUP-QT"]="Manage Proton-GE builds for Linux gaming"
+    ["PS2MINUS/PCSX2-v1.6-OLDER-COMPUTERS"]="Older version of the PCSX2 emulator"
+    ["PS2PLUS/NEWEST-PCSX2"]="Latest version of the PCSX2 emulator"
+    ["PS3PLUS/NEWEST-RPCS3"]="PlayStation 3 emulator"
+    ["QBITTORRENT"]="Torrent Client"
+    ["SAYONARA"]="Lightweight music player"
+    ["SHIP-OF-HARKINIAN"]="Open-source port of Ocarina of Time"
+    ["SHEEPSHAVER"]="PowerPC Mac emulator"
+    ["SMPLAYER"]="Media player with built-in codecs"
+    ["STEAM/AMD-INTEL-GPUS-ONLY"]="Popular gaming platform"
+    ["STRAWBERRY-MUSIC-PLAYER"]="Music player with support for large libraries"
+    ["SUBLIME-TEXT"]="Text editor for code, markup, and prose"
+    ["SUNSHINE"]="Open-source game streaming software"
+    ["TABBY"]="Modern, highly configurable terminal emulator"
+    ["TELEGRAM"]="Messaging app"
+    ["TOTAL-COMMANDER"]="File manager with advanced features"
+    ["VIBER"]="Messaging and calling app"
+    ["VIVALDI"]="Customizable web browser"
+    ["VLC"]="Open-source media player"
+    ["WHATSAPP"]="Messaging app"
+    ["WIIUPLUS/NEWEST-CEMU"]="Wii U emulator"
+    ["XCLOUD"]="Electron based Xcloud client (Gamepad Navigatable)"
+    ["WPS-OFFICE"]="Office suite"
+    ["YARG"]="Yet Another Rhythm Game"
+    ["YOUTUBE-MUSIC"]="Streaming app for YouTube Music"
+    ["YOUTUBE-TV"]="Streaming app for Youtube with TV UI"
 )
 
 # Prepare array for dialog command, sorted by app name
 app_list=()
 for app in $(printf "%s\n" "${!apps[@]}" | sort); do
-    app_list+=("$app" "" OFF)
+    # Use the modified app names (without spaces) to look up the description
+    app_key="${app// /}"
+    app_key="${app_key//[^[:alnum:]\/-]/_}" # Replace non-alphanumeric characters (except / and -) with _
+    app_list+=("$app" "${app_desc[$app_key]}" OFF)
 done
 
-# Show dialog checklist
-cmd=(dialog --separate-output --checklist "Select applications to install or update:" 22 76 16)
+# Adjust dialog command for wider output
+cmd=(dialog --separate-output --checklist "Select applications to install or update:" 22 90 25) # Adjust width and height here
 choices=$("${cmd[@]}" "${app_list[@]}" 2>&1 >/dev/tty)
 
 # Check if Cancel was pressed
@@ -166,15 +245,21 @@ for choice in $choices; do
     applink="$(echo "${apps[$choice]}" | awk '{print $3}')"
     rm /tmp/.app 2>/dev/null
     wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O "/tmp/.app" "$applink"
-    if [[ -s "/tmp/.app" ]]; then 
+    if [[ -s "/tmp/.app" ]]; then
         dos2unix /tmp/.app 2>/dev/null
         chmod 777 /tmp/.app 2>/dev/null
         clear
         loading_animation
-        sed 's,:1234,,g' /tmp/.app | bash
-        echo -e "\n\n$choice DONE.\n\n"
-    else 
-        echo "Error: couldn't download installer for ${apps[$choice]}"
+
+        # Capture the exit code of the installer
+        if sed 's,:1234,,g' /tmp/.app | bash; then
+            echo -e "\n\n$choice installed successfully.\n\n"
+        else
+            echo -e "\n\nError: Installation of $choice failed.\n\n"
+            # Optionally, display the error output of the installer for debugging
+        fi
+    else
+        echo "Error: Couldn't download installer for ${apps[$choice]}"
     fi
 done
 
