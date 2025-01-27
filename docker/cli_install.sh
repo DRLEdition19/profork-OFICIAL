@@ -1,10 +1,6 @@
 #!/bin/bash
 
-# Check if Docker is running and inform the user if it is
-if pgrep -x "dockerd" >/dev/null; then
-    dialog --title "Error" --msgbox "Docker is currently running. Please remove Docker as Batocera-CLI has its own Docker implementation." 8 60
-    exit 1
-fi
+
 
 # Display available CLI tools using dialog
 cli_apps="zsh + ohmyzsh + plugins + p10k + ~/.zshrc + ~/p10k.zsh\n\
@@ -51,6 +47,13 @@ response=$?
 
 if [ $response -eq 0 ]; then
     # User selected "Yes"
+
+# Check if Docker is running and inform the user if it is
+if pgrep -x "dockerd" >/dev/null; then
+    dialog --title "Error" --msgbox "Docker is currently running. Please remove Docker as Batocera-CLI has its own Docker implementation." 8 60
+    exit 1
+fi
+    
     dialog --title "Batocera-CLI Downloader" --msgbox "Batocera-CLI Downloader is starting. This will download and set up the Batocera-CLI package for you." 8 60
     
     # Download and extract the Batocera-CLI package
