@@ -343,7 +343,7 @@ function batocera-pro-installer {
     sleep 3
     
     # Reload for ports file
-    curl http://127.0.0.1:1234/reloadgames
+    s
 }
 export -f batocera-pro-installer 2>/dev/null
 
