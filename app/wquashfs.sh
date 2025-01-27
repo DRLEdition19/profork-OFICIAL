@@ -113,6 +113,4 @@ for choice in $choices; do
 done
 
 # Reload ES after installations
-killall -9 emulationstation
-
-curl -L https://github.com/trashbus99/profork/raw/master/app/mainmenu.sh | bash
+echo "refresh gamelist after instalation"
