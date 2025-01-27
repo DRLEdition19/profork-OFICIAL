@@ -105,7 +105,7 @@ line $cols '-'
 echo
 echo
 echo -e "PROFORK/$APPNAME INSTALLER"
-line $cols '-'
+# line $cols '-'
 echo
 echo
 sleep 0.33
