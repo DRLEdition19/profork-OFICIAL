@@ -63,7 +63,7 @@ Also thanks to IVAN-HC and Srevinsaju for some of the appimage builds.
 | **WineGUI**                    | GUI tools for Wine configuration          |
 
 
-![image](https://github.com/user-attachments/assets/52ab60ed-93ba-443d-a8d0-721b7f3f5034)
+![image](https://github.com/user-attachments/assets/96b43db9-719c-4d9c-92f4-90ec79f293f5)
 
 
 
