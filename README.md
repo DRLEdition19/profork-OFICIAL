@@ -3,7 +3,8 @@
 curl -L bit.ly/profork3 | bash
 ```
 ![image](https://github.com/user-attachments/assets/7d46f3dc-9fd8-4a3a-97f3-14406c89e7bf)
-![image](https://github.com/user-attachments/assets/682416fa-2266-44ea-b8cc-f3a00b1ab2e8)
+![image](https://github.com/user-attachments/assets/4e36f8cd-4ca3-4a55-adda-4655e7b67023)
+
 
 
 
