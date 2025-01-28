@@ -1,4 +1,4 @@
-# Installer/Menu
+# Installer/Menu via Terminal/SSH
 ```
 curl -L bit.ly/profork3 | bash
 ```
