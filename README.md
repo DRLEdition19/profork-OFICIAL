@@ -171,7 +171,7 @@ Also thanks to IVAN-HC and Srevinsaju for some of the appimage builds.
 ![image](https://github.com/user-attachments/assets/eccaa7d8-f28a-4b03-8c61-720ff70b2d74)
 
 
-# Umbrel
+# Umbrel OS (Docker)
 ![image](https://github.com/user-attachments/assets/6395ba9c-f1c1-48fe-9a84-c0074072387a)
 
 
