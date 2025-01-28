@@ -175,6 +175,13 @@ Also thanks to IVAN-HC and Srevinsaju for some of the appimage builds.
 ![image](https://github.com/user-attachments/assets/6395ba9c-f1c1-48fe-9a84-c0074072387a)
 
 
+# Custom Wine Installer (for v40+)
+![image](https://github.com/user-attachments/assets/4507131e-0942-4247-8da5-1000efaa99ff)
+
+# Portmaster (works on x86_64 [AMD/INTEL] and ARM64 [aarch64] like Raspberry PIs)
+![image](https://github.com/user-attachments/assets/0c4864da-764b-4cb5-8f2a-3ed3abe1b549)
+
+
 # How to Remove:  
 1. Arch container - Run the uninstaller in the arch menu
 2. Standalone Apps - delete the corresponding folder in `/userdata/system/pro` and .sh file in ports folder if applicable. The F1 icon should disappear after rebooting.
