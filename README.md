@@ -179,6 +179,6 @@ Also thanks to IVAN-HC and Srevinsaju for some of the appimage builds.
 1. Arch container - Run the uninstaller in the arch menu
 2. Standalone Apps - delete the corresponding folder in `/userdata/system/pro` and .sh file in ports folder if applicable. The F1 icon should disappear after rebooting.
 3. CasaOS XFCE Debian container - delete the batocera-casaos file and casaos folder in `/userdata/system` and remove launcher editing out from `/userdata/system/custom.sh`
-4. Docker apps - just use portainer gui or docker cli to remove individual docker containers or to remove completely: Remove batocera-containers by editing out from custom.sh in `/userdata/system`. Reboot.  Delete the `/userdata/system/batocera-containers` `/userdata/system/container` and `/userdata/system/var/lib/containers (d)`.
+4. Docker apps - just use portainer gui or docker cli to remove individual docker containers or to remove completely: Remove batocera-containers by editing out from custom.sh in `/userdata/system`. Reboot.  Delete the `/userdata/system/batocera-containers` `/userdata/system/container` and `/userdata/system/var/lib/containers` and `conatinerd`.
 
 
