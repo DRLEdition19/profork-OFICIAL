@@ -3,7 +3,7 @@
 curl -L bit.ly/profork3 | bash
 ```
 ![image](https://github.com/user-attachments/assets/7d46f3dc-9fd8-4a3a-97f3-14406c89e7bf)
-![image](https://github.com/user-attachments/assets/4e36f8cd-4ca3-4a55-adda-4655e7b67023)
+
 
 
 
@@ -62,6 +62,7 @@ Also thanks to IVAN-HC and Srevinsaju for some of the appimage builds.
 | **VLC**                        | Open-source media player                  |
 | **WineGUI**                    | GUI tools for Wine configuration          |
 
+![Uploading image.png…]()
 
 
 
@@ -143,7 +144,7 @@ Also thanks to IVAN-HC and Srevinsaju for some of the appimage builds.
 | **YOUTUBE-MUSIC**                     | Streaming app for YouTube Music                           |
 | **YOUTUBE-TV**                        | Streaming app for Youtube with TV UI                             |
 
-
+![image](https://github.com/user-attachments/assets/4e36f8cd-4ca3-4a55-adda-4655e7b67023)
 
 # Docker Applications
 
