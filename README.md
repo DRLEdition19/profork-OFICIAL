@@ -62,7 +62,8 @@ Also thanks to IVAN-HC and Srevinsaju for some of the appimage builds.
 | **VLC**                        | Open-source media player                  |
 | **WineGUI**                    | GUI tools for Wine configuration          |
 
-![Uploading image.png…]()
+
+![image](https://github.com/user-attachments/assets/52ab60ed-93ba-443d-a8d0-721b7f3f5034)
 
 
 
