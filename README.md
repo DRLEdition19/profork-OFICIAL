@@ -178,7 +178,9 @@ Also thanks to IVAN-HC and Srevinsaju for some of the appimage builds.
 # Custom Wine Installer (for v40+)
 ![image](https://github.com/user-attachments/assets/4507131e-0942-4247-8da5-1000efaa99ff)
 
-# Portmaster (works on x86_64 [AMD/INTEL] and ARM64 [aarch64] like Raspberry PIs)
+# Portmaster 
+*(works on x86_64 [AMD/INTEL] and ARM64 [aarch64] like Raspberry Pis )
+*(aarch64 has more apps available than x86_64, but are lacking 32-bit app support due to batocera missing 32 bit libs unlike rocknix, knulli firefly, and muOS)
 ![image](https://github.com/user-attachments/assets/0c4864da-764b-4cb5-8f2a-3ed3abe1b549)
 
 
