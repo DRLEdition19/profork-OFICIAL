@@ -166,6 +166,14 @@ Also thanks to IVAN-HC and Srevinsaju for some of the appimage builds.
 | **SYSTEMTOOLS-WETTY-GLANCES-FILEMANAGER**  | System tools container including Wetty, Glances, and a file manager |
 | **UMBRELOS/DOCKER**                        | UmbrelOS (Docker App GUI Front-End installer) in Docker|
 
+# CasaOS (Docker):
+![image](https://github.com/user-attachments/assets/419b5dc0-e881-431c-875a-292cff30bcc9)
+![image](https://github.com/user-attachments/assets/eccaa7d8-f28a-4b03-8c61-720ff70b2d74)
+
+
+# Umbrel
+![image](https://github.com/user-attachments/assets/6395ba9c-f1c1-48fe-9a84-c0074072387a)
+
 
 # How to Remove:  
 1. Arch container - Run the uninstaller in the arch menu
