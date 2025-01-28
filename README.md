@@ -2,6 +2,7 @@
 ```
 curl -L bit.ly/profork3 | bash
 ```
+![image](https://github.com/user-attachments/assets/7d46f3dc-9fd8-4a3a-97f3-14406c89e7bf)
 
 
 I was the previous main collaborator of batocera.pro (Cliffy/Trashbus99) with uureel and did development on that repo--especially with the arch container and 
