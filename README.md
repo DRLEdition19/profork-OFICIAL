@@ -195,11 +195,11 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 **While customization has always been part of open-source philosophy, users should be aware of these changes in how Batocera handles third-party modifications.**  
 This repository is designed to provide additional functionality for those who wish to expand their system beyond Batocera's default setup.  
 
-### **🤔 Is This Really Open-Source?**
+### **🤔 Is This Really the Spirit of Open-Source?**
 - **Batocera claims to support open-source principles, yet actively discourages third-party add-ons.**  
 - **They provide modding guides, yet track and penalize users for actually customizing their systems.**  
 - **Issues that existed long before add-ons are now conveniently blamed on third-party modifications.**
-- 
+ 
 💡 **If you experience an issue, consider testing on a clean Batocera install. If the issue persists, it is likely unrelated to add-ons.**  
 
 ## Thanks
