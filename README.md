@@ -14,15 +14,6 @@ docker scripts.
 The current scripts here, that were tested mainly in Dec '24/Jan '25--those that are available in the menu system--should be up to date and working as of Jan '25.
 
 
-Apps (except some containers) will be installed in ```/userdata/system/pro```as before, and your Batocera version will be flagged with a "p" (pro folder) and probably "c" (custom.sh) and possibly "u" (es addon system) if used. 
-
-Please do not ask for support on the Batocera Discord or reddit forums; the moderators are aggressive about denying support if add-ons are 
-installed.
-
-Thanks to Uureel for many of the original scripts and Kron4ek for the conty (Arch) container.
-
-Also thanks to IVAN-HC and Srevinsaju for some of the appimage builds.
-
 # Arch Multi-App Container via ES
 
 
@@ -189,4 +180,23 @@ Also thanks to IVAN-HC and Srevinsaju for some of the appimage builds.
 3. CasaOS XFCE Debian container - delete the batocera-casaos file and casaos folder in `/userdata/system` and remove launcher editing out from `/userdata/system/custom.sh`
 4. Docker apps - just use portainer gui or docker cli to remove individual docker containers or to remove completely: Remove batocera-containers by editing out from custom.sh in `/userdata/system`. Reboot.  Delete the `/userdata/system/batocera-containers` `/userdata/system/container` and `/userdata/system/var/lib/containers` and `conatinerd`  Data folders can also be deleted manually like the casaos or umbrel folder in `/userdata/system`.
 
+## 📌 Batocera and Third-Party Add-ons: What You Should Know  
 
+> Batocera’s own **wiki provides guides on system customization**, yet **recent versions now detect and flag users who install third-party add-ons**.  
+>  
+> If you use this repo, **your Batocera version may display additional markers in the version string**:  
+> - **"P"** – If the `/userdata/system/pro` folder exists (this repo).  
+> - **"C"** – If `custom.sh` is modified.  
+> - **"U"** – If third-party EmulationStation add-ons are installed.  
+
+⚠️ **This may affect support** – Batocera developers have stated they "cannot support modified systems," even if an issue is unrelated to add-ons.  
+
+**While customization has always been part of open-source philosophy, users should be aware of these changes in how Batocera handles third-party modifications.**  
+This repository is designed to provide additional functionality for those who wish to expand their system beyond Batocera's default setup.  
+
+💡 **If you experience an issue, consider testing on a clean Batocera install. If the issue persists, it is likely unrelated to add-ons.**  
+
+## Thanks
+Thanks to Uureel for many of the original scripts and Kron4ek for the conty (Arch) container.
+
+Also thanks to IVAN-HC and Srevinsaju for some of the appimage builds.
