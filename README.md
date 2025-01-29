@@ -71,7 +71,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 | **BLENDER**                           | Open-source 3D modeling and animation tool                   |
 | **BOTTLES/AMD-INTEL-GPUS-ONLY**       | Manage and run Windows apps using Wine/proton                |
 | **BRAVE**                             | Privacy-focused web browser                                  |
-| **CHIAKI**                            | Open-source PS4 Remote Play client                           |
+| **CHIAKI**                            | Open-source PS4/PS5 Remote Play client                       |
 | **CHROME**                            | Popular web browser by Google                                |
 | **CLONE HERO**                        | Guitar/Music Game                                            |
 | **CPU-X**                             | System profiling and monitoring application                  |
@@ -140,7 +140,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 
 | Application                                | Description                                                   |
 |--------------------------------------------|---------------------------------------------------------------|
-| **ANDROID/BLISS-OS/DOCKER/QEMU**           | Android-based Bliss OS running in Docker (no audio/GPU support)|
+| **ANDROID/BLISS-OS/DOCKER/QEMU**           | Android-based Bliss OS running in Docker (no audio/GPU acceleration support)|
 | **CASAOS/DOCKER**                          | CasaOS (Docker App GUI Front-End & Installer in docker (Recommended Version)|                       
 | **CASAOS/CONTAINER/DEBIAN/XFCE**           | CasaOS container with a Debian XFCE desktop environment       |
 | **EMBY-SERVER/DOCKER**                     | Media server for managing and streaming personal media        |
