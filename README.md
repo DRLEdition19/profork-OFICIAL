@@ -13,8 +13,6 @@ docker scripts.
 
 The current scripts here, that were tested mainly in Dec '24/Jan '25--those that are available in the menu system--should be up to date and working as of Jan '25.
 
-Please note, this batocera pro repo fork is mainly for personal use and development; 
-use at your own risk. Support is not available. 
 
 Apps (except some containers) will be installed in ```/userdata/system/pro```as before, and your Batocera version will be flagged with a "p" (pro folder) and probably "c" (custom.sh) and possibly "u" (es addon system) if used. 
 
