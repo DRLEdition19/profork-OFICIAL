@@ -189,7 +189,7 @@ If you use this repo, **your Batocera version may display additional markers in 
 - **"C"** – If `custom.sh` is modified.  
 - **"U"** – If third-party EmulationStation add-on custom systems are installed.  
 - **"O"** – If the Overlay is modified.
-- ![image](https://github.com/user-attachments/assets/16936973-a6a6-422c-b816-88174182e609)
+ ![image](https://github.com/user-attachments/assets/16936973-a6a6-422c-b816-88174182e609)
 
 
 
