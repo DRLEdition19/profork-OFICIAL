@@ -177,15 +177,15 @@ Also thanks to IVAN-HC and Srevinsaju for some of the appimage builds.
 ![image](https://github.com/user-attachments/assets/4507131e-0942-4247-8da5-1000efaa99ff)
 
 # Portmaster 
-*(works on x86_64 [AMD/INTEL] and ARM64 [aarch64] like Raspberry Pis )
+*(works on x86_64 [AMD/INTEL] and aarch64 [ARM64] like Raspberry Pis )
 
-*(aarch64 has more apps available than x86_64, but are lacking 32-bit app support due to batocera missing 32 bit libs unlike Rocknix, Knulli Firefly, and muOS)
+*(aarch64 has more apps available than x86_64, but are lacking 32-bit app support due to batocera missing 32-bit libs unlike Rocknix, Knulli Firefly, and muOS)
 ![image](https://github.com/user-attachments/assets/0c4864da-764b-4cb5-8f2a-3ed3abe1b549)
 
 
 # How to Remove:  
 1. Arch container - Run the uninstaller in the arch menu.  Data folders like `/userdata/system/.local/share/Steam` are not deleted and need to be done separately. Their locations vary.
-2. Standalone Apps - delete the corresponding folder in `/userdata/system/pro` and .sh file in ports folder if applicable. The F1 icon should disappear after rebooting.
+2. Standalone Apps - delete the corresponding folder in `/userdata/system/pro` and .sh file in ports folder if applicable. The F1 icon should disappear after rebooting. App Data folder locations in `/userdata/system` vary.
 3. CasaOS XFCE Debian container - delete the batocera-casaos file and casaos folder in `/userdata/system` and remove launcher editing out from `/userdata/system/custom.sh`
 4. Docker apps - just use portainer gui or docker cli to remove individual docker containers or to remove completely: Remove batocera-containers by editing out from custom.sh in `/userdata/system`. Reboot.  Delete the `/userdata/system/batocera-containers` `/userdata/system/container` and `/userdata/system/var/lib/containers` and `conatinerd`  Data folders can also be deleted manually like the casaos or umbrel folder in `/userdata/system`.
 
