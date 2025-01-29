@@ -188,6 +188,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 > - **"P"** – If the `/userdata/system/pro` folder exists (this repo).  
 > - **"C"** – If `custom.sh` is modified.  
 > - **"U"** – If third-party EmulationStation add-ons are installed.  
+> - **"O"**   If the Overlay is modified
 
 ⚠️ **This may affect support** – Batocera developers have stated they "cannot support modified systems," even if an issue is unrelated to add-ons.  
 
