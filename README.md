@@ -217,4 +217,3 @@ Thanks to **Uureel** for many of the original scripts and **Kron4ek** for the **
 
 Also thanks to **IVAN-HC** and **Srevinsaju** for some of the AppImage builds.  
 
-.
