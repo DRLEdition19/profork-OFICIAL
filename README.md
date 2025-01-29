@@ -211,6 +211,20 @@ Issues that **existed long before add-ons** are now **conveniently blamed on thi
 
 ---
 
+### 🤔 What About Security?  
+
+This repository follows standard open-source principles—**all scripts are fully accessible, modifiable, and auditable by users.**  
+
+- **Transparency:** Every script is available for review before running.  
+- **Customization:** Users have full control over modifications to their system.  
+- **Fixes:** Some scripts exist to address long-standing Batocera issues that would otherwise remain unresolved.  
+
+While Batocera developers have **expressed concerns about third-party scripts**, open-source software is about **choice, not restriction.**  
+
+If Batocera were truly concerned about security, they would **engage with third-party contributions instead of discouraging all external improvements.**  
+
+---
+
 ## 🙌 Thanks  
 
 Thanks to **Uureel** for many of the original scripts and **Kron4ek** for the **Conty (Arch) container**.  
