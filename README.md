@@ -182,29 +182,39 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 
 ## 📌 Batocera and Third-Party Add-ons: What You Should Know  
 
-> Batocera’s own **wiki provides guides on system customization**, yet **recent versions now detect and flag users who install third-party add-ons**.  
->  
-> If you use this repo, **your Batocera version may display additional markers in the version string**:  
-> - **"P"** – If the `/userdata/system/pro` folder exists (this repo).  
-> - **"C"** – If `custom.sh` is modified.  
-> - **"U"** – If third-party EmulationStation add-on custom systems are installed.  
-> - **"O"**   If the Overlay is modified
+Batocera’s own wiki provides guides on system customization, yet **recent versions now detect and flag users who install third-party add-ons.**  
 
-⚠️ **This may affect support** – Batocera developers have stated they "cannot support modified systems," even if an issue is unrelated to add-ons.  
+If you use this repo, **your Batocera version may display additional markers in the version string**:  
+- **"P"** – If the `/userdata/system/pro` folder exists (this repo).  
+- **"C"** – If `custom.sh` is modified.  
+- **"U"** – If third-party EmulationStation add-on custom systems are installed.  
+- **"O"** – If the Overlay is modified.  
 
-**While customization has always been part of open-source philosophy, users should be aware of these changes in how Batocera handles third-party modifications.**  
-This repository is designed to provide additional functionality for those who wish to expand their system beyond Batocera's default setup.  
+⚠️ **This may affect support** – Batocera developers have stated they "cannot support modified systems," **even if an issue is unrelated to add-ons.**  
 
-### **🤔 Is This Really the Spirit of Open-Source?**
-- **Batocera claims to support open-source principles, yet actively discourages third-party add-ons.**  
-- **They provide modding guides in their wiki, yet track and penalize users for actually customizing their systems.**  
-- **Issues that existed long before add-ons are now conveniently blamed on third-party modifications.**
+While customization has always been part of open-source philosophy, **users should be aware of these changes in how Batocera handles third-party modifications.**  
+This repository is designed to **provide additional functionality for those who wish to expand their system beyond Batocera's default setup.**  
 
- 👉 **Batocera’s focus on retro gaming is understandable, and maintaining that vision is their choice. However, restricting third-party add-ons that enhance the retro gaming experience is not in the spirit of open-source. True open-source projects allow the community to expand functionality—without arbitrary limitations.**
+---
+
+## 🤔 Is This Really the Spirit of Open-Source?  
+
+Batocera **claims to support open-source principles, yet actively discourages third-party add-ons.**  
+They **provide modding guides in their wiki**, yet **track and penalize users for actually customizing their systems.**  
+Issues that **existed long before add-ons** are now **conveniently blamed on third-party modifications.**  
+
+👉 **Batocera’s focus on retro gaming is understandable, and maintaining that vision is their choice.**  
+**However, restricting third-party add-ons that enhance the retro gaming experience is not in the spirit of open-source.**  
+**True open-source projects allow the community to expand functionality—without arbitrary limitations.**  
 
 💡 **If you experience an issue, consider testing on a clean Batocera install. If the issue persists, it is likely unrelated to add-ons.**  
 
-## Thanks
-Thanks to Uureel for many of the original scripts and Kron4ek for the conty (Arch) container.
+---
 
-Also thanks to IVAN-HC and Srevinsaju for some of the appimage builds.
+## 🙌 Thanks  
+
+Thanks to **Uureel** for many of the original scripts and **Kron4ek** for the **Conty (Arch) container**.  
+
+Also thanks to **IVAN-HC** and **Srevinsaju** for some of the AppImage builds.  
+
+.
