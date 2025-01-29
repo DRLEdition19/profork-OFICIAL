@@ -209,7 +209,7 @@ They **provide modding guides in their wiki**, yet **version flag and penalize u
 Issues that **existed long before add-ons** are now **conveniently blamed on third-party modifications.**  
 
 👉 **Batocera’s focus on retro gaming is understandable, and maintaining that vision is their choice.**  
-**However, restricting third-party add-ons that enhance the retro gaming experience is not in the spirit of open-source.**  
+**However, denouncing third-party add-ons that enhance the retro gaming experience is not in the spirit of open-source.**  
 **True open-source projects allow the community to expand functionality—without arbitrary limitations.**  
 
 💡 **If you experience an issue, consider testing on a clean Batocera install. If the issue persists, it is likely unrelated to add-ons.**  
