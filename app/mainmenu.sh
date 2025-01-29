@@ -17,7 +17,6 @@ clear
 # Display Warning Message
 animate_text "${YELLOW}⚠️  Important Notice ⚠️${NC}"
 animate_text "${YELLOW}The apps on this repository are provided AS-IS.${NC}"
-animate_text "${YELLOW}No support is offered for using this repo.${NC}"
 
 animate_text "${RED}DO NOT ask for help in the Batocera Discord.${NC}"
 animate_text "${RED}They will NOT help you and will REFUSE support if they are made aware unofficial apps are installed.${NC}"
