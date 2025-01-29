@@ -199,6 +199,7 @@ This repository is designed to provide additional functionality for those who wi
 - **Batocera claims to support open-source principles, yet actively discourages third-party add-ons.**  
 - **They provide modding guides in their wiki, yet track and penalize users for actually customizing their systems.**  
 - **Issues that existed long before add-ons are now conveniently blamed on third-party modifications.**
+
  👉 **Batocera’s focus on retro gaming is understandable, and maintaining that vision is their choice. However, restricting third-party add-ons that enhance the retro gaming experience is not in the spirit of open-source. True open-source projects allow the community to expand functionality—without arbitrary limitations.**
 
 💡 **If you experience an issue, consider testing on a clean Batocera install. If the issue persists, it is likely unrelated to add-ons.**  
