@@ -200,7 +200,7 @@ This repository is designed to **provide additional functionality for those who 
 ## 🤔 Is This Really the Spirit of Open-Source?  
 
 Batocera **claims to support open-source principles, yet actively discourages third-party add-ons.**  
-They **provide modding guides in their wiki**, yet **track and penalize users for actually customizing their systems.**  
+They **provide modding guides in their wiki**, yet **version flag and penalize users for actually customizing their systems.**  
 Issues that **existed long before add-ons** are now **conveniently blamed on third-party modifications.**  
 
 👉 **Batocera’s focus on retro gaming is understandable, and maintaining that vision is their choice.**  
@@ -231,3 +231,6 @@ Thanks to **Uureel** for many of the original scripts and **Kron4ek** for the **
 
 Also thanks to **IVAN-HC** and **Srevinsaju** for some of the AppImage builds.  
 
+---
+
+**Disclaimer:** This repository is an independent project and is not affiliated with or endorsed by Batocera. All opinions expressed here are based on publicly available information and personal experience.
