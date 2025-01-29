@@ -197,7 +197,7 @@ This repository is designed to provide additional functionality for those who wi
 
 ### **🤔 Is This Really the Spirit of Open-Source?**
 - **Batocera claims to support open-source principles, yet actively discourages third-party add-ons.**  
-- **They provide modding guides, yet track and penalize users for actually customizing their systems.**  
+- **They provide modding guides in their wiki, yet track and penalize users for actually customizing their systems.**  
 - **Issues that existed long before add-ons are now conveniently blamed on third-party modifications.**
  
 💡 **If you experience an issue, consider testing on a clean Batocera install. If the issue persists, it is likely unrelated to add-ons.**  
