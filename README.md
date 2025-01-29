@@ -225,8 +225,7 @@ This repository follows standard open-source principles—**all scripts are full
 - **Fixes:** Some scripts exist to address long-standing Batocera issues that would otherwise remain unresolved.  
 
 While Batocera developers have **expressed concerns about third-party scripts**, open-source software is about **choice, not restriction.**  
-
-If Batocera were truly concerned about security, they would **engage with third-party contributions instead of discouraging all external improvements.**  
+  
 
 ---
 
