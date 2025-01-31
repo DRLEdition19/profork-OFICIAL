@@ -1,5 +1,10 @@
 #!/bin/bash
 
+echo "This script will restore MAME 2010 (.0139) to Batocera v41 (and should work on newer builds too)"
+echo "A separate MAME 0139 system will be added adjacent to MAME"
+
+sleep 5
+
 # MAME 0.139 Setup and Installation Script for Batocera
 # This script installs the required MAME 2010 files, places them in the correct directory,
 # and ensures symlinks are managed via pro-custom.sh.
