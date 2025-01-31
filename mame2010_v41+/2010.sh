@@ -43,6 +43,7 @@ chmod 755 "$CORE_DEST" "$CORE_2010_DEST"
 # Ask user if they want to symlink ROMs
 dialog --yesno "Do you want to link your existing /userdata/roms/mame folder to mame0139?\n\nYes: Link existing ROMs\nNo: Keep separate mame0139 folder" 12 60
 if [ $? -eq 0 ]; then
+    mkdir -p /userdata/roms/mame0139
     echo "ln -sf /userdata/roms/mame /userdata/roms/mame0139" >> "$STARTUP_SCRIPT"
 else
     mkdir -p /userdata/roms/mame0139
