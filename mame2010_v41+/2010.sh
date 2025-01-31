@@ -1,5 +1,12 @@
 #!/bin/bash
 
+
+# Check if the architecture is x86_64 (AMD/Intel)
+if [ "$architecture" != "x86_64" ]; then
+    echo "This script only runs on AMD or Intel (x86_64) CPUs, not on $architecture."
+    exit 1
+fi
+
 echo "This script will restore MAME 2010 (.0139) to Batocera v41 (and should work on newer builds too)"
 echo "A separate MAME 0139 system will be added adjacent to MAME"
 
