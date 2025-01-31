@@ -40,6 +40,14 @@ wget -O "$CORE_2010_DEST" "$CORE_FILE_2010_URL" || { echo "Failed to download $C
 chmod 644 "$ES_CFG_PATH" "$INFO_DEST"
 chmod 755 "$CORE_DEST" "$CORE_2010_DEST"
 
+
+
+# Write the startup script dynamically
+echo "#!/usr/bin/env bash" > "$STARTUP_SCRIPT"
+echo "ln -sf $INFO_DEST /usr/share/libretro/info/mame0139_libretro.info" >> "$STARTUP_SCRIPT"
+echo "ln -sf $CORE_DEST /usr/lib/libretro/mame0139_libretro.so" >> "$STARTUP_SCRIPT"
+echo "ln -sf $CORE_2010_DEST /usr/lib/libretro/mame2010_libretro.so" >> "$STARTUP_SCRIPT"
+
 # Ask user if they want to symlink ROMs
 dialog --yesno "Do you want to link your existing /userdata/roms/mame folder to mame0139?\n\nYes: Link existing ROMs\nNo: Keep separate mame0139 folder" 12 60
 if [ $? -eq 0 ]; then
@@ -48,13 +56,6 @@ if [ $? -eq 0 ]; then
 else
     mkdir -p /userdata/roms/mame0139
 fi
-
-# Write the startup script dynamically
-echo "#!/usr/bin/env bash" > "$STARTUP_SCRIPT"
-echo "ln -sf $INFO_DEST /usr/share/libretro/info/mame0139_libretro.info" >> "$STARTUP_SCRIPT"
-echo "ln -sf $CORE_DEST /usr/lib/libretro/mame0139_libretro.so" >> "$STARTUP_SCRIPT"
-echo "ln -sf $CORE_2010_DEST /usr/lib/libretro/mame2010_libretro.so" >> "$STARTUP_SCRIPT"
-
 # Make the startup script executable
 chmod +x "$STARTUP_SCRIPT"
 
