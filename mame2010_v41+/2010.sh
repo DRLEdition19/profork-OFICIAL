@@ -77,6 +77,5 @@ elif ! grep -q "$PRO_CUSTOM_SH" "$CUSTOM_SH"; then
     chmod +x "$CUSTOM_SH"
 fi
 
-#!/bin/bash
 
 dialog --title "Install Done" --msgbox "Setup complete! MAME 0.139 is installed, and the MAME 2010 startup script will run at next boot.\n\nPlease reboot Batocera for changes to take effect.\n\nAfter rebooting, update gamelists." 10 60
