@@ -75,5 +75,7 @@ elif ! grep -q "$PRO_CUSTOM_SH" "$CUSTOM_SH"; then
     chmod +x "$CUSTOM_SH"
 fi
 
-echo "Setup complete! MAME 0.139 is installed, and the startup script will run at boot."
+echo "Setup complete! MAME 0.139 is installed, and the mame 2010 startup script will run at next boot."
+echo "Please reboot Batocera for effects to take effect"
+sleep 8
 
