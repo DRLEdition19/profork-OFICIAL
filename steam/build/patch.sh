@@ -168,31 +168,6 @@ fix for nvidia lutris
 					ln -sf /usr/bin/greenlight-beta /usr/bin/greenlight 2>/dev/null
 #--------------------------------------------------------------------------------------------
 
-#Fetch Latest shadps4 appimage
-
-echo "Fetching the latest ShadPS4 release..."
-latest_release_url=$(curl -s https://api.github.com/repos/shadps4-emu/shadPS4/releases/latest | grep "browser_download_url" | grep "shadps4-linux-qt-.*\.zip" | cut -d '"' -f 4)
-
-if [[ -z "$latest_release_url" ]]; then
-    echo "Failed to retrieve the latest release URL. Exiting."
-    exit 1
-fi
-
-echo "Downloading ShadPS4..."
-wget --tries=50 --no-check-certificate --no-cache --no-cookies -O "/usr/bin/shadps4.zip" "$latest_release_url"
-
-echo "Extracting ShadPS4..."
-unzip -o "/usr/bin/shadps4.zip" -d "/usr/bin/shadps4"
-
-echo "Setting permissions..."
-chmod -R 755 "/usr/bin/shadps4"
-
-echo "Creating symbolic link..."
-ln -sf "/usr/bin/shadps4/shadps4-linux-qt" "/usr/bin/shadps4-emu"
-
-echo "ShadPS4 installation complete."
-#--------------------------------
-
 
 #--------------------------------------------------------------------------------------------
 # Add basic Pacman support in Conty Autobuild
