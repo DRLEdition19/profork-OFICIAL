@@ -167,22 +167,64 @@ fix for nvidia lutris
 				chmod 777 /usr/bin/greenlight-beta 2>/dev/null
 					ln -sf /usr/bin/greenlight-beta /usr/bin/greenlight 2>/dev/null
 #--------------------------------------------------------------------------------------------
-# add basic pacman support
-	echo -e "\n\n\nadding basic pacman support"
-		mkdir -p /opt/pacman/lib /opt/pacman/cache 2>/dev/null
-	 	cp -r /etc/pacman* /opt/pacman/ 2>/dev/null
-	 	cp -r /var/lib/pacman/* /opt/pacman/lib/ 2>/dev/null
-		cp -r /var/cache/pacman/* /opt/pacman/cache/ 2>/dev/null  
-			p=/usr/bin/pacman
-			mv "$(which pacman)" "/usr/bin/realpacman" 2>/dev/null
-				echo '#!/bin/bash' >> $p
-				echo 'if [[ "$(echo "${@}" | grep overwrite)" = "" ]]; then' >> $p
-				echo '  realpacman "${@}" ' >> $p
-				echo 'else' >> $p
-				echo '  realpacman "${@}" ' >> $p
-				echo 'fi' >> $p
-				echo 'exit 0' >> $p
-					dos2unix $p 2>/dev/null && chmod 777 $p 2>/dev/null
+
+#Fetch Latest shadps4 appimage
+
+echo "Fetching the latest ShadPS4 release..."
+latest_release_url=$(curl -s https://api.github.com/repos/shadps4-emu/shadPS4/releases/latest | grep "browser_download_url" | grep "shadps4-linux-qt-.*\.zip" | cut -d '"' -f 4)
+
+if [[ -z "$latest_release_url" ]]; then
+    echo "Failed to retrieve the latest release URL. Exiting."
+    exit 1
+fi
+
+echo "Downloading ShadPS4..."
+wget --tries=50 --no-check-certificate --no-cache --no-cookies -O "/usr/bin/shadps4.zip" "$latest_release_url"
+
+echo "Extracting ShadPS4..."
+unzip -o "/usr/bin/shadps4.zip" -d "/usr/bin/shadps4"
+
+echo "Setting permissions..."
+chmod -R 755 "/usr/bin/shadps4"
+
+echo "Creating symbolic link..."
+ln -sf "/usr/bin/shadps4/shadps4-linux-qt" "/usr/bin/shadps4-emu"
+
+echo "ShadPS4 installation complete."
+#--------------------------------
+
+
+#--------------------------------------------------------------------------------------------
+# Add basic Pacman support in Conty Autobuild
+echo -e "\n\n\nAdding basic Pacman support"
+
+# Ensure directories exist
+mkdir -p /opt/pacman/lib /opt/pacman/cache 2>/dev/null
+
+# Copy necessary Pacman configuration and data
+cp -r /etc/pacman* /opt/pacman/ 2>/dev/null
+cp -r /var/lib/pacman/* /opt/pacman/lib/ 2>/dev/null
+cp -r /var/cache/pacman/* /opt/pacman/cache/ 2>/dev/null  
+
+# Move original Pacman binary if it hasn't been moved already
+if [ ! -f /usr/bin/realpacman ]; then
+    mv "$(which pacman)" "/usr/bin/realpacman" 2>/dev/null
+fi
+
+# Create a wrapper script for Pacman to ensure proper paths are used
+p=/usr/bin/pacman
+cat <<EOF > "$p"
+#!/bin/bash
+exec realpacman --dbpath /opt/pacman/lib --cachedir /opt/pacman/cache "\$@"
+EOF
+
+# Ensure the script is executable
+chmod +x "$p"
+dos2unix "$p" 2>/dev/null
+
+echo "Pacman patch applied successfully."
+#--------------------------------------------------------------------------------------------
+
 #--------------------------------------------------------------------# --------------------------------------------------------------------------------------------
 
 #------------------------
