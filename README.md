@@ -114,6 +114,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 | **PS2MINUS/PCSX2-v1.6-OLDER-COMPUTERS** | Older version of the PCSX2 emulator                        |
 | **PS2PLUS/NEWEST-PCSX2**              | Latest version of the PCSX2 emulator                       |
 | **PS3PLUS/NEWEST-RPCS3**              | PlayStation 3 emulator                                      |
+| **PS4**                               | ShadPS4 Emulator for v40+                                  |
 | **QBITTORRENT**                       | Torrent Client                                             |
 | **SAYONARA**                          | Lightweight music player                                   |
 | **SHIP-OF-HARKINIAN**                 | Open-source port of Ocarina of Time                        |
