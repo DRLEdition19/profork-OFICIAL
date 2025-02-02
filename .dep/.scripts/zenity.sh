@@ -61,6 +61,6 @@ echo "No reboot is required! You can use Zenity right away."
 echo "---------------------------------------------"
 
 # Test if Zenity works immediately
-zenity --info --text="Zenity is now installed and working on Batocera!" &
+DISPLAY=:0.0 zenity --info --text="Zenity is now installed and working on Batocera!" &
 
 exit 0
