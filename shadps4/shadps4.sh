@@ -50,8 +50,8 @@ clear
 # -----------------------------------------------------------------------------
 #  Message
 # -----------------------------------------------------------------------------
-echo -e "${W}THIS WILL INSTALL SHADPS4 FOR BATOCERA"
-echo -e "${W}USING SHADPS4-EMU/SHADPS4"
+echo -e "THIS WILL INSTALL SHADPS4 FOR BATOCERA"
+echo -e "USING SHADPS4-EMU/SHADPS4"
 echo
 echo -e "SHADPS4 WILL BE AVAILABLE IN F1->APPLICATIONS"
 echo -e "AND INSTALLED IN /USERDATA/SYSTEM/PRO/SHADPS4"
