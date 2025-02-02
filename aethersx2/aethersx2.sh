@@ -273,7 +273,7 @@ echo -e "${G}INSTALLING ${W}. . ."
 launcher=/userdata/system/pro/$appname/$appname
 rm -rf $launcher
 echo '#!/bin/bash ' >> $launcher
-echo 'export DISPLAY=:0.0; unclutter-remote -s' >> $launcher
+echo 'export DISPLAY=:0.0; batocera-mouse show' >> $launcher
 ## -- APP SPECIFIC LAUNCHER COMMAND: 
 ######################################################################
 ######################################################################
@@ -281,7 +281,7 @@ echo 'export DISPLAY=:0.0; unclutter-remote -s' >> $launcher
 ######################################################################
 ######################################################################
 #echo 'mkdir /userdata/system/pro/'$appname'/home 2>/dev/null; mkdir /userdata/system/pro/'$appname'/config 2>/dev/null; DISPLAY=:0.0 HOME=/userdata/system/pro/'$appname'/home XDG_CONFIG_HOME=/userdata/system/pro/'$appname'/config /userdata/system/pro/'$appname'/'$AppName'.AppImage --no-sandbox --disable-gpu --test-type "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9"' >> $launcher
-echo 'aethersx2.AppImage --appimage-extract-and-run' >> $launcher
+echo '/userdata/system/pro/aethersx2/aethersx2.AppImage --appimage-extract-and-run' >> $launcher
 ######################################################################
 ######################################################################
 ######################################################################
