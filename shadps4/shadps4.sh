@@ -48,7 +48,6 @@ sleep 1
 # -----------------------------------------------------------------------------
 # Define Variables & Paths
 # -----------------------------------------------------------------------------
-# Installation target directory for ShadPS4
 INSTALL_DIR="/userdata/system/pro/shadps4"
 
 # GitHub API URL to fetch the latest ShadPS4 release from the original ShadPS4 repo
@@ -67,7 +66,7 @@ STARTUP_SCRIPT="$RESTORE_DIR/startup"
 PRO_CUSTOM_SH="/userdata/system/pro-custom.sh"
 CUSTOM_SH="/userdata/system/custom.sh"
 
-# Create required directories
+# Ensure required directories exist
 mkdir -p "$INSTALL_DIR" "$IMAGE_DIR" "$ROMS_DIR" "$RESTORE_DIR"
 
 # -----------------------------------------------------------------------------
@@ -95,141 +94,8 @@ if [ $? -ne 0 ]; then
 fi
 
 rm -f "$INSTALL_DIR/shadps4.zip"
-# IMPORTANT: Use the correct filename as extracted (with lowercase "p"):
 chmod a+x "$INSTALL_DIR/Shadps4-qt.AppImage"
 echo -e "${GREEN}ShadPS4 installed and AppImage marked executable.${RESET}"
-
-# -----------------------------------------------------------------------------
-# Generate Update Script: +UPDATE-PS4-SHORTCUTS.sh in /userdata/roms/ps4
-# -----------------------------------------------------------------------------
-
-cat << 'EOF' > "$ROMS_DIR/+UPDATE-PS4-SHORTCUTS.sh"
-#!/bin/bash
-
-# Directory paths
-desktop_dir="/userdata/system/Desktop"
-output_dir="/userdata/roms/ps4"
-mkdir -p "$output_dir"
-
-# Default .keys content
-keys_content='{
-    "actions_player1": [
-        {
-            "trigger": [
-                "hotkey",
-                "start"
-            ],
-            "type": "key",
-            "target": [
-                "KEY_LEFTALT",
-                "KEY_F4"
-            ],
-            "description": "Press Alt+F4"
-        },
-        {
-            "trigger": [
-                "hotkey",
-                "l2"
-            ],
-            "type": "key",
-            "target": "KEY_ESC",
-            "description": "Press Esc"
-        },
-        {
-            "trigger": [
-                "hotkey",
-                "r2"
-            ],
-            "type": "key",
-            "target": "KEY_ENTER",
-            "description": "Press Enter"
-        }
-    ]
-}'
-
-# Iterate through .desktop files in the Desktop directory
-for file_path in "/userdata/system/Desktop"/*.desktop; do
-    if [ -f "$file_path" ]; then
-        # Check for 'shadps4' in the Exec line
-        if grep -q '^Exec=.*shadps4.*' "$file_path"; then
-            # Extract game name from the desktop file
-            game_name=`grep '^Name=' "$file_path" | sed 's/^Name=//'`
-            # Extract the ROM path (assumed to be the quoted path ending with eboot.bin)
-            game_path=`grep '^Exec=' "$file_path" | sed -n 's/.*"\([^"]*\/eboot\.bin\)".*/\1/p'`
-            # Use the parent folder of the ROM path as the game code
-            game_code=`basename "$(dirname "$game_path")"`
-            
-            # Sanitize game name for use in a filename
-            sanitized_name=`echo "$game_name" | sed 's/ /_/g' | sed 's/[^a-zA-Z0-9_]//g'`
-            script_path="${output_dir}/${sanitized_name}.sh"
-            keys_path="${output_dir}/${sanitized_name}.sh.keys"
-            
-            # Generate script content using ulimit commands and the AppImage call with DISPLAY set
-            script_content="#!/bin/bash
-# Set high file descriptor limits
-ulimit -H -n 819200 && ulimit -S -n 819200
-# Show the Batocera mouse cursor
-batocera-mouse show
-# Launch ShadPS4 using its AppImage with the specified game code
-DISPLAY=:0.0 \"/userdata/system/pro/shadps4/Shadps4-qt.AppImage\" -g $game_code -f true
-# Hide the mouse cursor when done
-batocera-mouse hide
-"
-            
-            # Write script and keys file to respective locations
-            echo "$script_content" > "$script_path"
-            chmod +x "$script_path"
-            echo "$keys_content" > "$keys_path"
-            
-            echo "Script created: $script_path"
-            echo "Keys file created: $keys_path"
-        fi
-    fi
-done
-
-
-echo "Script execution completed."
-EOF
-
-chmod +x "$ROMS_DIR/+UPDATE-PS4-SHORTCUTS.sh"
-echo -e "${GREEN}Update shortcuts script (+UPDATE-PS4-SHORTCUTS.sh) installed in /userdata/roms/ps4.${RESET}"
-
-# -----------------------------------------------------------------------------
-# Generate Restore–Shortcut Script (startup) in /userdata/system/pro/shadps4/extra
-# -----------------------------------------------------------------------------
-
-# Ensure startup script exists and is executable
-RESTORE_SCRIPT="$INSTALL_DIR/extra/startup"
-echo -e "${CYAN}Creating startup script to persist the desktop entry...${RESET}"
-
-cat << EOF > "$RESTORE_SCRIPT"
-#!/bin/bash
-ln -sf "$DESKTOP_ENTRY" /usr/share/applications/shadps4.desktop
-EOF
-
-chmod +x "$RESTORE_SCRIPT"
-
-
-# Ensure that pro-custom.sh calls the restore–shortcut (startup) script.
-PRO_CUSTOM_SH="/userdata/system/pro-custom.sh"
-if [ ! -f "$PRO_CUSTOM_SH" ]; then
-    echo "#!/bin/bash" > "$PRO_CUSTOM_SH"
-fi
-if ! grep -q "$RESTORE_SCRIPT" "$PRO_CUSTOM_SH"; then
-    echo "bash $RESTORE_SCRIPT &" >> "$PRO_CUSTOM_SH"
-    chmod +x "$PRO_CUSTOM_SH"
-fi
-
-# Ensure that custom.sh exists and calls pro-custom.sh.
-CUSTOM_SH="/userdata/system/custom.sh"
-if [ ! -f "$CUSTOM_SH" ]; then
-    echo "#!/bin/bash" > "$CUSTOM_SH"
-    echo "bash $PRO_CUSTOM_SH &" >> "$CUSTOM_SH"
-    chmod +x "$CUSTOM_SH"
-elif ! grep -q "$PRO_CUSTOM_SH" "$CUSTOM_SH"; then
-    echo "bash $PRO_CUSTOM_SH &" >> "$CUSTOM_SH"
-    chmod +x "$CUSTOM_SH"
-fi
 
 # -----------------------------------------------------------------------------
 # Create Desktop Entry & Launcher Script
@@ -239,23 +105,21 @@ LAUNCHER_SCRIPT="$INSTALL_DIR/launch_shadps4.sh"
 ICON_DIR="$INSTALL_DIR/extra"
 mkdir -p "$ICON_DIR"
 
-# Use the icon from  the repository's shadps4/extra folder
+# Download icon
 ICON_URL="https://raw.githubusercontent.com/trashbus99/profork/master/shadps4/extra/shadps4.png"
 ICON_PATH="$ICON_DIR/shadps4.png"
-
 echo -e "${CYAN}Downloading icon...${RESET}"
 curl -# -L -o "$ICON_PATH" "$ICON_URL"
 
-# Create the launcher script.
-
+# Create launcher script
 cat << EOF > "$LAUNCHER_SCRIPT"
 #!/bin/bash
-# Launch ShadPS4
 cd /userdata/system/pro/shadps4
 DISPLAY=:0.0 ./Shadps4-qt.AppImage "\$@"
 EOF
 chmod +x "$LAUNCHER_SCRIPT"
 
+# Create desktop entry
 cat << EOF > "$DESKTOP_ENTRY"
 [Desktop Entry]
 Version=1.0
@@ -272,60 +136,44 @@ ln -sf "$DESKTOP_ENTRY" /usr/share/applications/shadps4.desktop
 echo -e "${GREEN}Desktop entry and launcher created successfully.${RESET}"
 
 # -----------------------------------------------------------------------------
-# Install ES Features & System Configurations for PS4
+# Generate Restore–Shortcut Script (startup) in /userdata/system/pro/shadps4/extra
 # -----------------------------------------------------------------------------
-echo -e "${CYAN}Installing ES features and system configurations for PS4...${RESET}"
-ES_CONFIG_DIR="/userdata/system/configs/emulationstation"
-mkdir -p "$ES_CONFIG_DIR"
-
-# Write es_features.ps4.cfg
-cat << EOF > "$ES_CONFIG_DIR/es_features.ps4.cfg"
-<?xml version="1.0" encoding="UTF-8" ?>
-<features>
-    <emulator name="ps4" features="videomode,padtokeyboard,powermode,tdp">
-    </emulator>
-</features>
+echo -e "${CYAN}Creating startup script to persist the desktop entry...${RESET}"
+cat << EOF > "$STARTUP_SCRIPT"
+#!/bin/bash
+ln -sf "$DESKTOP_ENTRY" /usr/share/applications/shadps4.desktop
 EOF
+chmod +x "$STARTUP_SCRIPT"
 
-# Write es_systems_ps4.cfg
-cat << EOF > "$ES_CONFIG_DIR/es_systems_ps4.cfg"
-<?xml version="1.0"?>
-<systemList>
-  <system>
-        <fullname>PlayStation 4</fullname>
-        <name>ps4</name>
-        <manufacturer>Sony</manufacturer>
-        <release>2013</release>
-        <hardware>port</hardware>
-        <path>/userdata/roms/ps4</path>
-        <extension>.sh</extension>
-        <command>emulatorlauncher %CONTROLLERSCONFIG% -system ports -rom %ROM% -gameinfoxml %GAMEINFOXML% -systemname ports</command>
-        <platform>ps4</platform>
-        <theme>ps4</theme>
-        <emulators>
-            <emulator name="ps4">
-                <cores>
-                    <core default="ps4">shadps4</core>
-                </cores>
-            </emulator>
-        </emulators>
-  </system>
-</systemList>
-EOF
+# Ensure pro-custom.sh calls startup
+if [ ! -f "$PRO_CUSTOM_SH" ]; then
+    echo "#!/bin/bash" > "$PRO_CUSTOM_SH"
+fi
+if ! grep -q "$STARTUP_SCRIPT" "$PRO_CUSTOM_SH"; then
+    echo "bash $STARTUP_SCRIPT &" >> "$PRO_CUSTOM_SH"
+    chmod +x "$PRO_CUSTOM_SH"
+fi
 
-echo -e "${GREEN}ES system configuration for PS4 installed.${RESET}"
+# Ensure custom.sh calls pro-custom.sh
+if [ ! -f "$CUSTOM_SH" ]; then
+    echo "#!/bin/bash" > "$CUSTOM_SH"
+    echo "bash $PRO_CUSTOM_SH &" >> "$CUSTOM_SH"
+    chmod +x "$CUSTOM_SH"
+elif ! grep -q "$PRO_CUSTOM_SH" "$CUSTOM_SH"; then
+    echo "bash $PRO_CUSTOM_SH &" >> "$CUSTOM_SH"
+    chmod +x "$CUSTOM_SH"
+fi
 
 # -----------------------------------------------------------------------------
 # Inform the User about Shortcut Creation
 # -----------------------------------------------------------------------------
-dialog --title "Manual Shortcut Update Required" --msgbox "IMPORTANT: For each game installed, you need to create a shortcut in the ShadPS4 GUI. Then update these shortcuts manually by running the update script in the es ps4 menu (+UPDATE-PS4-SHORTCUTS.sh)." 12 60
+dialog --title "Manual Shortcut Update Required" --msgbox "IMPORTANT: For each game installed, you need to create a shortcut in the ShadPS4 GUI. Then update these shortcuts manually by running the update script in the PS4 menu (+UPDATE-PS4-SHORTCUTS.sh)." 12 60
 
 # -----------------------------------------------------------------------------
 # Final Steps & Cleanup
 # -----------------------------------------------------------------------------
 echo -e "${GREEN}Installation complete!${RESET}"
 echo -e "${YELLOW}A desktop entry has been created and will persist across reboots.${RESET}"
-
 
 sleep 2
 clear
