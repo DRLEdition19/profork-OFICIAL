@@ -2,27 +2,7 @@
 # =============================================================================
 #  profork SHADPS4 INSTALLER
 # =============================================================================
-# This installer downloads and installs ShadPS4 into:
-#   /userdata/system/pro/shadps4
-# It generates an update script (+UPDATE-PS4-SHORTCUTS.sh) for managing game shortcuts,
-# creates a desktop shortcut to launch ShadPS4, writes ES configuration files for PS4,#!/usr/bin/env bash
-# =============================================================================
-#  profork SHADPS4 INSTALLER
-# =============================================================================
-# This installer downloads and installs ShadPS4 into 
-#   /userdata/system/pro/shadps4,
-# generates an update script (+UPDATE-PS4-SHORTCUTS.sh) in /userdata/roms/ps4 for
-# manually updating game shortcuts, creates a desktop shortcut to launch ShadPS4,
-# writes out ES configuration files for PS4, and installs a restore–shortcut
-# (named "startup") in /userdata/system/pro/shadps4/extra which is then invoked via
-# pro-custom.sh and custom.sh at boot.
-#
-# IMPORTANT: After installation, you must update shortcuts for each game by running
-# the update script (+UPDATE-PS4-SHORTCUTS.sh) in /userdata/roms/ps4.
-#
-# Repository: https://github.com/trashbus99/profork/tree/master/shadps4
-# Icon:       https://raw.githubusercontent.com/trashbus99/profork/master/shadps4/extra/shadps4.png
-# =============================================================================
+
 
 # -----------------------------------------------------------------------------
 # Define Colors for output
@@ -507,7 +487,7 @@ echo -e "${GREEN}Startup script for ShadPS4 desktop entry persistence has been c
 # -------------------------------------------------------------------
 # Final Instructions for Users
 # -------------------------------------------------------------------
-dialog --title "Install Complete" --msgbox "ShadPS4 installation is complete!\n\nA desktop entry has been created and will persist across reboots.\n\nTo create/update game shortcuts, run +UPDATE-PS4-SHORTCUTS.sh in /userdata/roms/ps4.\n\nEnjoy!" 12 60
+dialog --title "Install Complete" --msgbox "ShadPS4 installation is complete!\n\nA desktop entry has been created and will persist across reboots.\n\nTo create/update game shortcuts:\n\nFirst add shortcut in shadps4 GUI for each game. \n\nSecond run +UPDATE-PS4-SHORTCUTS.sh in ES PS4 System menu\n\nEnjoy!" 12 60
 
 clear
 echo -e "SHADPS4 INSTALLATION COMPLETED SUCCESSFULLY!"
