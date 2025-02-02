@@ -194,7 +194,7 @@ chmod +x "$ROMS_DIR/+UPDATE-PS4-SHORTCUTS.sh"
 # -----------------------------------------------------------------------------
 # Inform the User about Shortcut Creation
 # -----------------------------------------------------------------------------
-dialog --title "Manual Shortcut Update Required" --msgbox "IMPORTANT:\n1️⃣ Open the **ShadPS4 GUI** and manually create game shortcuts.\n2️⃣ Then, **run the PS4 menu update script**: \n   *+UPDATE-PS4-SHORTCUTS.sh* (in the PS4 menu).\n\nPress OK to finish installation." 12 60
+dialog --title "Manual Shortcut Update Required" --msgbox "IMPORTANT:\n1️⃣ Open the **ShadPS4 GUI** and manually create game shortcuts from each game installed.\n2️⃣ Then, **run the PS4 menu update script**: \n   *+UPDATE-PS4-SHORTCUTS.sh* (in the es PS4 menu).\n\nPress OK to finish installation." 12 60
 
 # -----------------------------------------------------------------------------
 # Final Steps & Cleanup
