@@ -198,6 +198,17 @@ echo -e "${GREEN}Update shortcuts script (+UPDATE-PS4-SHORTCUTS.sh) installed in
 # Generate Restore–Shortcut Script (startup) in /userdata/system/pro/shadps4/extra
 # -----------------------------------------------------------------------------
 
+# Ensure startup script exists and is executable
+RESTORE_SCRIPT="$INSTALL_DIR/extra/startup"
+echo -e "${CYAN}Creating startup script to persist the desktop entry...${RESET}"
+
+cat << EOF > "$RESTORE_SCRIPT"
+#!/bin/bash
+ln -sf "$DESKTOP_ENTRY" /usr/share/applications/shadps4.desktop
+EOF
+
+chmod +x "$RESTORE_SCRIPT"
+
 
 # Ensure that pro-custom.sh calls the restore–shortcut (startup) script.
 PRO_CUSTOM_SH="/userdata/system/pro-custom.sh"
