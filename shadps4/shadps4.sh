@@ -102,7 +102,7 @@ echo -e "${GREEN}ShadPS4 installed and AppImage marked executable.${RESET}"
 # -----------------------------------------------------------------------------
 # Generate Update Script: +UPDATE-PS4-SHORTCUTS.sh in /userdata/roms/ps4
 # -----------------------------------------------------------------------------
-# This update script uses your manual method.
+
 cat << 'EOF' > "$ROMS_DIR/+UPDATE-PS4-SHORTCUTS.sh"
 #!/bin/bash
 
@@ -237,7 +237,7 @@ LAUNCHER_SCRIPT="$INSTALL_DIR/launch_shadps4.sh"
 ICON_DIR="$INSTALL_DIR/extra"
 mkdir -p "$ICON_DIR"
 
-# Use the icon from your repository's shadps4/extra folder
+# Use the icon from  the repository's shadps4/extra folder
 ICON_URL="https://raw.githubusercontent.com/trashbus99/profork/master/shadps4/extra/shadps4.png"
 ICON_PATH="$ICON_DIR/shadps4.png"
 
@@ -316,7 +316,7 @@ echo -e "${GREEN}ES system configuration for PS4 installed.${RESET}"
 # -----------------------------------------------------------------------------
 # Inform the User about Shortcut Creation
 # -----------------------------------------------------------------------------
-dialog --title "Manual Shortcut Update Required" --msgbox "IMPORTANT: For each game installed, you need to create a shortcut in ShadPS4. Then update these shortcuts manually by running the update script in the es ps4 menu (+UPDATE-PS4-SHORTCUTS.sh)." 12 60
+dialog --title "Manual Shortcut Update Required" --msgbox "IMPORTANT: For each game installed, you need to create a shortcut in the ShadPS4 GUI. Then update these shortcuts manually by running the update script in the es ps4 menu (+UPDATE-PS4-SHORTCUTS.sh)." 12 60
 
 # -----------------------------------------------------------------------------
 # Final Steps & Cleanup
