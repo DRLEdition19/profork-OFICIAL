@@ -48,22 +48,15 @@ fi
 clear
 
 # -----------------------------------------------------------------------------
-# Animated Message
+#  Message
 # -----------------------------------------------------------------------------
-MESSAGE="This Application, ShadPS4 will be installed to F1 -> Applications and a new menu will be installed in EmulationStation for PS4."
-echo -e "${CYAN}${MESSAGE}${RESET}"
-for i in {1..3}; do
-    echo -ne "${YELLOW}Installing"
-    for j in {1..3}; do
-        echo -ne "."
-        sleep 0.5
-    done
-    echo -ne "\r"
-    echo -ne "${YELLOW}Installing            \r"
-done
-echo -e "\n${GREEN}Please wait while the installation proceeds...${RESET}"
-sleep 1
-
+echo -e "${W}THIS WILL INSTALL SHADPS4 FOR BATOCERA"
+echo -e "${W}USING SHADPS4-EMU/SHADPS4"
+echo
+echo -e "SHADPS4 WILL BE AVAILABLE IN F1->APPLICATIONS"
+echo -e "AND INSTALLED IN /USERDATA/SYSTEM/PRO/SHADPS4"
+echo -e "A SEPARATE PS4 MENU WILL BE ADDED TO EMULATIONSTATION"
+sleep 5
 # -----------------------------------------------------------------------------
 # Define Variables & Paths
 # -----------------------------------------------------------------------------
