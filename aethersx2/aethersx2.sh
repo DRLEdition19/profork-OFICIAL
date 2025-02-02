@@ -228,12 +228,12 @@ echo -e "${W}AND INSTALLED IN /USERDATA/SYSTEM/PRO/$APPNAME"
 echo
 echo -e "${L}- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 # -- check system before proceeding
-if [[ "$(uname -a | grep "x86_64")" != "" ]]; then 
+if [[ "$(uname -a | grep "aarch64")" != "" ]]; then 
 :
 else
 echo
 echo -e "${RED}ERROR: SYSTEM NOT SUPPORTED"
-echo -e "${RED}YOU NEED BATOCERA X86_64${X}"
+echo -e "${RED}YOU NEED BATOCERA AARCH64${X}"
 echo
 sleep 5
 exit 0
