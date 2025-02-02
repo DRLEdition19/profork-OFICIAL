@@ -96,6 +96,7 @@ apps=(
     ["WINE-CUSTOM-DOWNLOADER/v40+"]="curl -Ls https://github.com/trashbus99/profork/raw/master/wine-custom/wine.sh | bash"
     ["ADD-EMULATOR-CONFIGS-TO-EMULATIONSTATION"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/emgen/emgen.sh | bash"
     ["SYSTEM-SPLASH-VIDEOS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/logos.sh | bash"
+    ["ZENITY"]="curl -Ls  https://github.com/trashbus99/profork/raw/master/.dep/.scripts/zenity.sh | bash"
 )
 
 # Prepare array for dialog command, sorted by app name
@@ -117,5 +118,4 @@ fi
 # Install the selected app
 run_installation "$choice"
 
-# Exit after the installation
-curl -L https://github.com/trashbus99/profork/raw/master/app/mainmenu.sh | bash
+
