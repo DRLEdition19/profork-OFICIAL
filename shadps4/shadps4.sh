@@ -487,7 +487,7 @@ echo -e "${GREEN}Startup script for ShadPS4 desktop entry persistence has been c
 # -------------------------------------------------------------------
 # Final Instructions for Users
 # -------------------------------------------------------------------
-dialog --title "Install Complete" --msgbox "ShadPS4 installation is complete!\n\nA desktop entry has been created and will persist across reboots.\n\nTo create/update game shortcuts:\n\nFirst add shortcut in shadps4 GUI for each game. \n\nSecond run +UPDATE-PS4-SHORTCUTS.sh in ES PS4 System menu\n\nEnjoy!" 12 60
+dialog --title "Install Complete" --msgbox "ShadPS4 installation is complete!\n\nA desktop entry has been created and will persist across reboots.\n\nTo create/update game shortcuts:\n\nFirst add shortcut in shadps4 GUI for each game.\n\nSecond run +UPDATE-PS4-SHORTCUTS.sh in ES PS4 System menu\n\nEnjoy!" 12 60
 
 clear
 echo -e "SHADPS4 INSTALLATION COMPLETED SUCCESSFULLY!"
