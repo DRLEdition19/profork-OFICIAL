@@ -189,7 +189,7 @@ batocera-mouse hide
     fi
 done
 
-killall -9 emulationstation
+
 echo "Script execution completed."
 EOF
 
@@ -325,10 +325,9 @@ dialog --title "Manual Shortcut Update Required" --msgbox "IMPORTANT: For each g
 # -----------------------------------------------------------------------------
 echo -e "${GREEN}Installation complete!${RESET}"
 echo -e "${YELLOW}A desktop entry has been created and will persist across reboots.${RESET}"
-echo -e "${CYAN}Restarting EmulationStation...${RESET}"
-killall -9 emulationstation 2>/dev/null
+
 
 sleep 2
 clear
-echo -e "${GREEN}ShadPS4 installation finished. Enjoy!${RESET}"
+echo -e "${GREEN}ShadPS4 installation finished.${RESET}"
 exit 0
