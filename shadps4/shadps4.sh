@@ -90,7 +90,7 @@ if [ $? -ne 0 ]; then
 fi
 
 echo -e "${CYAN}Unzipping ShadPS4...${RESET}"
-unzip -q "$INSTALL_DIR/shadps4.zip" -d "$INSTALL_DIR"
+unzip -o -q "$INSTALL_DIR/shadps4.zip" -d "$INSTALL_DIR"
 if [ $? -ne 0 ]; then
     echo -e "${RED}Unzip failed. Exiting.${RESET}"
     exit 1
