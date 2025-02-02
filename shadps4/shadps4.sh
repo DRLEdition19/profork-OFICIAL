@@ -69,8 +69,6 @@ ZIP_REGEX="shadps4-linux-qt-.*\.zip"
 
 # Directories for additional resources
 ROMS_DIR="/userdata/roms/ps4"
-GAMELIST_PATH="$ROMS_DIR/gamelist.xml"      # For ES configuration and manual shortcut updates.
-PROCESSED_LIST="/userdata/system/.local/share/shadps4/processed_games.txt"
 IMAGE_DIR="$INSTALL_DIR/images"
 
 # Create required directories
