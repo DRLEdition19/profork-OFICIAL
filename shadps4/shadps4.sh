@@ -312,7 +312,7 @@ echo -e "${GREEN}ES system configuration for PS4 installed.${RESET}"
 # -----------------------------------------------------------------------------
 # Inform the User about Shortcut Creation
 # -----------------------------------------------------------------------------
-dialog --title "Manual Shortcut Update Required" --msgbox "IMPORTANT: For each game installed, you need to create a shortcut in ShadPS4. Please update these shortcuts manually by running the update script (+UPDATE-PS4-SHORTCUTS.sh) in /userdata/roms/ps4." 12 60
+dialog --title "Manual Shortcut Update Required" --msgbox "IMPORTANT: For each game installed, you need to create a shortcut in ShadPS4. After creating the shortcut in the ShadPS4 GUI, Please update these shortcuts manually by running the update script (+UPDATE-PS4-SHORTCUTS.sh) the ps4 system in emulationstation" 12 60
 
 # -----------------------------------------------------------------------------
 # Final Steps & Cleanup
