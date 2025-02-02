@@ -1,5 +1,5 @@
-### 🚀 NEW! EXPERIMENRTAL AETHERSX2 (PS2) support for fast ARM devices like ODIN 2, Retroid Pocket 5/mini, Orange Pi 5 
-###    Launch from ports or F1 / No seperate PS2 menu launcher yet in ES
+### 🚀 NEW! EXPERIMENTAL AETHERSX2 (PS2) support for fast ARM devices like ODIN 2, Retroid Pocket 5/mini, Orange Pi 5 
+###    Launch from ports or F1 / No seperate PS2 menu launcher yet in ES -- Option 8 main menu
 
 ### 🚀 NEW! MAME 2010/.0139 for v41 Added to Tools Menu
 
