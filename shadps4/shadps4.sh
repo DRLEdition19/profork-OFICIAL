@@ -197,16 +197,7 @@ echo -e "${GREEN}Update shortcuts script (+UPDATE-PS4-SHORTCUTS.sh) installed in
 # -----------------------------------------------------------------------------
 # Generate Restore–Shortcut Script (startup) in /userdata/system/pro/shadps4/extra
 # -----------------------------------------------------------------------------
-# This script is named "startup" (without an extension) to follow the MAME2010 pattern.
-RESTORE_SCRIPT="$RESTORE_DIR/startup"
-cat << 'EOF' > "$RESTORE_SCRIPT"
-#!/bin/bash
-desktop_file="/usr/share/applications/shadps4.desktop"
-if [ ! -L "$desktop_file" ]; then
-    ln -sf "/userdata/system/pro/shadps4/shadps4.desktop" "$desktop_file"
-fi
-EOF
-chmod +x "$RESTORE_SCRIPT"
+
 
 # Ensure that pro-custom.sh calls the restore–shortcut (startup) script.
 PRO_CUSTOM_SH="/userdata/system/pro-custom.sh"
@@ -245,7 +236,7 @@ echo -e "${CYAN}Downloading icon...${RESET}"
 curl -# -L -o "$ICON_PATH" "$ICON_URL"
 
 # Create the launcher script.
-# This version simply launches the AppImage in its installation directory.
+
 cat << EOF > "$LAUNCHER_SCRIPT"
 #!/bin/bash
 # Launch ShadPS4
