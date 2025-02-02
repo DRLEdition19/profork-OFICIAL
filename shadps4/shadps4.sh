@@ -276,8 +276,8 @@ cat << EOF > "$ES_CONFIG_DIR/es_features.ps4.cfg"
 </features>
 EOF
 
-# Write es_system_ps4.cfg
-cat << EOF > "$ES_CONFIG_DIR/es_system_ps4.cfg"
+# Write es_systems_ps4.cfg
+cat << EOF > "$ES_CONFIG_DIR/es_systems_ps4.cfg"
 <?xml version="1.0"?>
 <systemList>
   <system>
