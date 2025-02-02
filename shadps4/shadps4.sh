@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+echo "Profork SHADPS4 Installer..."
+echo "This waill install SHADPS4 to /userdata/system/pro/shadps4"
+echo""
+echo "A Launcher will be added to F1->Applications"
+echo "and a New menu will be added to Emulationstation for PS4" 
+sleep 7
+
 RED='\033[1;31m'
 GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
