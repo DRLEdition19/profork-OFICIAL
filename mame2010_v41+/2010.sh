@@ -1,11 +1,28 @@
 #!/bin/bash
 
+# Detect system architecture
+ARCH=$(uname -m)
 
-# Check if the architecture is x86_64 (AMD/Intel)
-if [ "$architecture" != "x86_64" ]; then
-    echo "This script only runs on AMD or Intel (x86_64) CPUs, not on $architecture."
+# If the system is ARM64 (aarch64), execute the ARM script
+if [ "$ARCH" = "aarch64" ]; then
+    echo "ARM64 (aarch64) detected. Running the ARM setup script..."
+    sleep 2
+    curl -L https://github.com/trashbus99/profork/raw/master/mame2010_v41%2B/2010_arm64.sh | bash
+    exit 0
+fi
+
+# If the system is x86_64, continue with the normal setup
+if [ "$ARCH" != "x86_64" ]; then
+    echo "This script only runs on x86_64 (AMD/Intel) or aarch64 (ARM64)."
     exit 1
 fi
+echo "x86_64 (AMD/INTEL) detected. Running x86_64 setup script....."
+sleep 2
+
+echo "This script will restore MAME 2010 (.0139) to Batocera v41 (and should work on newer builds too)"
+echo "A separate MAME 0139 system will be added adjacent to MAME"
+
+
 
 echo "This script will restore MAME 2010 (.0139) to Batocera v41 (and should work on newer builds too)"
 echo "A separate MAME 0139 system will be added adjacent to MAME"
