@@ -293,7 +293,7 @@ wget -q --tries=50 --no-check-certificate --no-cache --no-cookies -O /userdata/r
   chmod 777 /userdata/roms/PS2/+UPDATE-PS2-SHORTCUTS.sh 2>/dev/null
 
 # Show final dialog message
-dialog --msgbox "✅ AetherSX2 installation complete!\n\n⚙️ Configure AetherSX2 via its GUI including controller mappings.\n📜 After configuring, generate launch shortcuts by running:\n\n🕹️ UPDATE-PS2-SHORTCUTS parser in the AetherSX2 PS2 menu in EmulationStation." 20 50
+dialog --msgbox "✅ AetherSX2 installation nearly complete!\n\n⚙️ Configure AetherSX2 via its GUI including controller mappings.\n📜 After configuring, generate launch shortcuts by running:\n\n🕹️ UPDATE-PS2-SHORTCUTS parser in the AetherSX2 PS2 menu in EmulationStation." 20 50
 
 
 
