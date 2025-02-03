@@ -1,4 +1,4 @@
-### 🚀 NEW! EXPERIMENTAL AETHERSX2 (PS2) support for fast ARM devices like ODIN 2, Retroid Pocket 5/mini, Orange Pi 5 
+### 🚀 NEW! EXPERIMENTAL AETHERSX2 (PS2) support for fast ARM devices like ODIN 2, Retroid Pocket 5/mini. (RK3588 Orange Pi5 does not work drivers out of date). 
 ###     Installer --> Option 8 main menu.  -- Launch from ports or F1. ES PS2 AetherSX2 menu added. (Dumb Launcher).  All configs must be done via Aethersx2 GUI.
 
 
