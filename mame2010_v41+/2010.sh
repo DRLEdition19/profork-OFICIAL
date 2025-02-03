@@ -22,11 +22,6 @@ sleep 2
 echo "This script will restore MAME 2010 (.0139) to Batocera v41 (and should work on newer builds too)"
 echo "A separate MAME 0139 system will be added adjacent to MAME"
 
-
-
-echo "This script will restore MAME 2010 (.0139) to Batocera v41 (and should work on newer builds too)"
-echo "A separate MAME 0139 system will be added adjacent to MAME"
-
 sleep 5
 
 # MAME 0.139 Setup and Installation Script for Batocera
