@@ -287,77 +287,10 @@ echo -e "${GREEN}✅ Downloaded: es_features_aethersx2.cfg${X}"
 curl -# -o "$ES_CONFIG_DIR/es_systems_aethersx2.cfg" "https://raw.githubusercontent.com/trashbus99/profork/master/aethersx2/es_systems_aethersx2.cfg"
 echo -e "${GREEN}✅ Downloaded: es_systems_aethersx2.cfg${X}"
 
-# --------------------------------------------------------------------
-# Create +UPDATE-PS2-SHORTCUTS.sh directly
-# --------------------------------------------------------------------
-UPDATE_SCRIPT="/userdata/roms/ps2/+UPDATE-PS2-SHORTCUTS.sh"
-
-echo -e "${G}✍️ Writing AetherSX2 shortcut generator script...${X}"
-cat << 'EOF' > "$UPDATE_SCRIPT"
-#!/bin/bash
-
-# Directory where PS2 ROMs are stored
-roms_dir="/userdata/roms/ps2"
-
-# Enable extended globbing for safer filename handling
-shopt -s nullglob nocaseglob
-
-# Default .keys content for `pad2key`
-keys_content='{
-    "actions_player1": [
-        {
-            "trigger": [
-                "hotkey",
-                "start"
-            ],
-            "type": "key",
-            "target": [
-                "KEY_LEFTALT",
-                "KEY_F4"
-            ],
-            "description": "Press Alt+F4"
-        }
-    ]
-}'
-
-# Find all supported ROM files in the PS2 ROMs directory
-find "$roms_dir" -type f \( -iname "*.iso" -o -iname "*.mdf" -o -iname "*.nrg" -o -iname "*.bin" -o -iname "*.img" -o -iname "*.dump" -o -iname "*.gz" -o -iname "*.cso" -o -iname "*.chd" -o -iname "*.m3u" \) | while read -r file_path; do
-    # Get base filename without extension
-    file_name=$(basename "$file_path")
-    base_name="\${file_name%.*}"
-
-    # Sanitize the filename
-    sanitized_name=$(echo "\$base_name" | tr ' ' '_' | tr -cd '[:alnum:]_-')
-
-    # Path for shortcut script and keys file (inside the same PS2 ROMs folder)
-    script_path="\$roms_dir/\${sanitized_name}.sh"
-    keys_path="\$roms_dir/\${sanitized_name}.sh.keys"
-
-    # Create the shortcut script
-    cat << EOL > "\$script_path"
-#!/bin/bash
-batocera-mouse show
-DISPLAY=:0.0 "/userdata/system/pro/aethersx2/aethersx2.AppImage" --appimage-extract-and-run "\$file_path"
-batocera-mouse hide
-EOL
-
-    # Make the script executable
-    chmod +x "\$script_path"
-
-    # Create the .keys file for pad2key
-    echo "\$keys_content" > "\$keys_path"
-
-    echo "Shortcut created: \$script_path"
-    echo "Keys file created: \$keys_path"
-done
-
-# Restart EmulationStation to apply changes
-killall -9 emulationstation
-EOF
-
-# Ensure the script is executable
-chmod +x "$UPDATE_SCRIPT"
-echo -e "${GREEN}✅ Script created and made executable: $UPDATE_SCRIPT${X}"
+# Download PS2 Parser
+wget -q --tries=50 --no-check-certificate --no-cache --no-cookies -O /userdata/roms/ps2/+UPDATE-PS2-SHORTCUTS.sh https://github.com/trashbus99/profork/raw/master/aethersx2/%2BUPDATE-PS2-SHORTCUTS.sh
+  dos2unix /userdata/roms/PS2/+UPDATE-PS2-SHORTCUTS.sh 2>/dev/null
+  chmod 777 /userdata/roms/PS2/+UPDATE-PS2-SHORTCUTS.sh 2>/dev/null
 
 # Show final dialog message
 dialog --msgbox "✅ AetherSX2 installation complete!\n\n⚙️ Configure AetherSX2 via its GUI including controller mappings.\n📜 After configuring, generate launch shortcuts by running:\n\n🕹️ UPDATE-PS2-SHORTCUTS parser in the AetherSX2 PS2 menu in EmulationStation." 20 50
