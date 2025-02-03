@@ -360,7 +360,7 @@ chmod +x "$UPDATE_SCRIPT"
 echo -e "${GREEN}✅ Script created and made executable: $UPDATE_SCRIPT${X}"
 
 # Show final dialog message
-dialog --msgbox "✅ AetherSX2 installation complete!\n\n⚙️ Configure AetherSX2 via its GUI including controller mappings.\n📜 After configuring, generate launch shortcuts by running:\n\n🕹️ UPDATE-PS2-SHORTCUTS parser in the AetherSX2 PS2 menu in EmulationStation." 10 50
+dialog --msgbox "✅ AetherSX2 installation complete!\n\n⚙️ Configure AetherSX2 via its GUI including controller mappings.\n📜 After configuring, generate launch shortcuts by running:\n\n🕹️ UPDATE-PS2-SHORTCUTS parser in the AetherSX2 PS2 menu in EmulationStation." 20 50
 
 
 
