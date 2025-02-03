@@ -4,7 +4,7 @@
 
 -----------
 
-### 🚀 NEW! MAME 2010/.0139 for v41 Added to Tools Menu - Both x86_64 (AMD/INTEL) and aarch64(ARM64) compatible.
+### 🚀 NEW! MAME 2010/.0139 for v41 Added to Tools Menu - Both x86_64 (AMD/INTEL) and aarch64 (ARM64) compatible.
        
 ----------
 
