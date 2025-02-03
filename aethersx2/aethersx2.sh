@@ -267,6 +267,43 @@ chmod a+x $APPPATH 2>/dev/null
 rm -rf $temp/*.AppImage
 SIZE=$(($(wc -c $APPPATH | awk '{print $1}')/1048576)) 2>/dev/null
 echo -e "${T}$APPPATH ${T}$SIZE( )MB ${G}OK${W}" | sed 's/( )//g'
+
+#----ES CONFIGS and PARSER----------
+
+echo -e "${G}📁 Setting up EmulationStation configurations...${X}"
+ES_CONFIG_DIR="/userdata/system/configs/emulationstation"
+PS2_ROM_DIR="/userdata/roms/ps2"
+UPDATE_SCRIPT="$PS2_ROM_DIR/+UPDATE-PS2-SHORTCUTS.sh"
+
+# Ensure required directories exist
+mkdir -p "$ES_CONFIG_DIR"
+mkdir -p "$PS2_ROM_DIR"
+
+# Download ES config files with progress bar
+echo -e "${G}⬇️ Downloading EmulationStation configuration files...${X}"
+curl -# -o "$ES_CONFIG_DIR/es_features_aethersx2.cfg" "https://raw.githubusercontent.com/trashbus99/profork/master/aethersx2/es_features_aethersx2.cfg"
+echo -e "${GREEN}✅ Downloaded: es_features_aethersx2.cfg${X}"
+
+curl -# -o "$ES_CONFIG_DIR/es_systems_aethersx2.cfg" "https://raw.githubusercontent.com/trashbus99/profork/master/aethersx2/es_systems_aethersx2.cfg"
+echo -e "${GREEN}✅ Downloaded: es_systems_aethersx2.cfg${X}"
+
+# Download and set up update script
+echo -e "${G}⬇️ Downloading AetherSX2 shortcut update script...${X}"
+curl -# -o "$UPDATE_SCRIPT" "https://github.com/trashbus99/profork/raw/master/aethersx2/%2BUPDATE-PS2-SHORTCUTS.sh"
+echo -e "${GREEN}✅ Downloaded: +UPDATE-PS2-SHORTCUTS.sh${X}"
+
+# Ensure script is executable
+echo -e "${G}🔧 Making shortcut update script executable...${X}"
+chmod +x "$UPDATE_SCRIPT"
+echo -e "${GREEN}✅ Script is now executable: $UPDATE_SCRIPT${X}"
+
+# Show installation completion message
+dialog --msgbox "✅ AetherSX2 installation complete!\n\n⚙️ Configure AetherSX2 via its GUI.\n📜 After configuring, generate launch shortcuts by running:\n\n🕹️ UPDATE-PS2-SHORTCUTS parser in the AetherSX2 PS2 menu in EmulationStation." 10 50
+
+
+
+
+#-----------------------------------
 echo -e "${G}> ${W}DONE"
 echo
 echo -e "${L}- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
