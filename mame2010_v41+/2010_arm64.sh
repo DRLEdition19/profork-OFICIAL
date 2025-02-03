@@ -36,7 +36,7 @@ echo "Downloading necessary files..."
 wget -O "$ES_CFG_PATH" "$ES_CFG_URL" || { echo "Failed to download $ES_CFG_URL"; exit 1; }
 wget -O "$INFO_DEST" "$INFO_FILE_URL" || { echo "Failed to download $INFO_FILE_URL"; exit 1; }
 wget -O "$CORE_DEST" "$CORE_FILE_URL" || { echo "Failed to download $CORE_FILE_URL"; exit 1; }
-wget -O "$CORE_2010_DEST" "$CORE_FILE_2010_URL" || { echo "Failed to download $CORE_2010_URL"; exit 1; }
+
 
 # Set correct permissions
 chmod 644 "$ES_CFG_PATH" "$INFO_DEST"
