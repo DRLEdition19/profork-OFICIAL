@@ -182,7 +182,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 # Portmaster 
 *(works on x86_64 [AMD/INTEL] and aarch64 [ARM64] like Raspberry Pis )
 
-*(aarch64 has more apps available than x86_64, but are lacking 32-bit app support due to batocera missing 32-bit libs unlike Rocknix, Knulli Firefly, and muOS)
+*(aarch64 has more apps available than x86_64, but is lacking 32-bit app support due to batocera missing 32-bit libs unlike Rocknix, Knulli Firefly, and muOS)
 ![image](https://github.com/user-attachments/assets/0c4864da-764b-4cb5-8f2a-3ed3abe1b549)
 
 
