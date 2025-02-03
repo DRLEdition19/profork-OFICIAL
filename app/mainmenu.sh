@@ -37,7 +37,7 @@ OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
          "4" "Tools"
          "5" "Wine Custom Downloader v40+"
          "6" "Windows/Wine Freeware games"
-         "7" "Install Portmaster (x86_64 AMD/INTEL and aarch64 (ARM64)"
+         "7" "Install Portmaster (x86_64 (AMD/INTEL) and aarch64 (ARM64))"
          "8" "AetherSX2 for ARM devices (Experimental)"
          "9" "Install This Menu to Ports"              
          "10" "Exit")
