@@ -289,7 +289,8 @@ echo -e "${GREEN}✅ Downloaded: es_systems_aethersx2.cfg${X}"
 
 # Download and set up update script
 echo -e "${G}⬇️ Downloading AetherSX2 shortcut update script...${X}"
-curl -# -o "$UPDATE_SCRIPT" "https://github.com/trashbus99/profork/raw/master/aethersx2/%2BUPDATE-PS2-SHORTCUTS.sh"
+curl -# -L --remote-name --output "$UPDATE_SCRIPT" "https://raw.githubusercontent.com/trashbus99/profork/master/aethersx2/+UPDATE-PS2-SHORTCUTS.sh"
+
 echo -e "${GREEN}✅ Downloaded: +UPDATE-PS2-SHORTCUTS.sh${X}"
 
 # Ensure script is executable
