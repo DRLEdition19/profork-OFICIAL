@@ -35,7 +35,7 @@ mkdir -p "$EXTRA_DIR"
 echo "Downloading necessary files..."
 wget -O "$ES_CFG_PATH" "$ES_CFG_URL" || { echo "Failed to download $ES_CFG_URL"; exit 1; }
 wget -O "$INFO_DEST" "$INFO_FILE_URL" || { echo "Failed to download $INFO_FILE_URL"; exit 1; }
-wget -O "$CORE_DEST" "$CORE_FILE_URL" || { echo "Failed to download $CORE_FILE_URL"; exit 1; }
+wget -O "$CORE_DEST" "$CORE_DEST_URL" || { echo "Failed to download $CORE_DEST_URL"; exit 1; }
 
 
 # Set correct permissions
