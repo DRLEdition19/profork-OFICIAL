@@ -66,7 +66,8 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 
 
 
-# Standalone Apps (Note: NVIDIA users can Use multiapp arch container for Steam, Lutris, Bottles, Minecraft-Bedrock)
+# Standalone Apps 
+*(Note: NVIDIA users can Use multiapp arch container for Steam, Lutris, Bottles, Minecraft-Bedrock)
 
 | Application                           | Description                                                   |
 |---------------------------------------|---------------------------------------------------------------|
