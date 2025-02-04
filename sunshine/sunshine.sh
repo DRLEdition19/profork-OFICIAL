@@ -10,7 +10,7 @@ app=sunshine
 #nightly
 #url=https://github.com/LizardByte/Sunshine/releases/download/v0.19.1/sunshine.AppImage
 #url=https://github.com/LizardByte/Sunshine/releases/download/v0.20.0/sunshine.AppImage
-url=https://github.com/LizardByte/Sunshine/releases/download/v0.23.1/sunshine.AppImage
+url=https://github.com/LizardByte/Sunshine/releases/download/v2025.122.141614/sunshine.AppImage
 url2=https://github.com/trashbus99/profork/releases/download/r1/batocera-sunshine.AppImage
 
 #--------------------------------------------------------------------------------------------------------------------------------
