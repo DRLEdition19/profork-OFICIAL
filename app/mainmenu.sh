@@ -56,10 +56,9 @@ OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
          "4" "Tools"
          "5" "Wine Custom Downloader v40+"
          "6" "Windows/Wine Freeware games"
-         "7" "Install Portmaster (x86_64 (AMD/INTEL) and aarch64 (ARM64))"
-         "8" "AetherSX2 for ARM devices (Experimental)"
-         "9" "Install This Menu to Ports"              
-         "10" "Exit")
+         "7" "Install Portmaster"
+         "8" "Install This Menu to Ports"              
+         "9" "Exit")
          
 # Display the dialog and get the user choice
 CHOICE=$(dialog --clear --backtitle "Profork Main Menu" \
@@ -108,16 +107,13 @@ case $CHOICE in
     7)  echo "Portmaster Installer..."
         curl -Ls https://github.com/trashbus99/profork/raw/master/portmaster/install.sh | bash
         ;;
-    8)  echo "AetherSx2 Testing..."
-        curl -Ls https://raw.githubusercontent.com/trashbus99/profork/refs/heads/master/aethersx2/aethersx2.sh | bash
-        ;;    
-    9)  echo "Ports Installer..."
+    8)  echo "Ports Installer..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/app/install.sh
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    10)
+    9)
         echo "Exiting..."
            exit
         ;;
