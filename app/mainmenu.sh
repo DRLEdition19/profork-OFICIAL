@@ -17,6 +17,7 @@ if [ "$ARCH" != "x86_64" ]; then
     exit 1
 fi
 echo "x86_64 (AMD/INTEL) detected. Loading Main Menu....."
+sleep 2
 
 # Colors for animation
 RED='\e[0;31m'
