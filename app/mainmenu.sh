@@ -1,5 +1,23 @@
 #!/bin/bash
 
+# Detect system architecture
+ARCH=$(uname -m)
+
+# If the system is ARM64 (aarch64), execute the ARM script
+if [ "$ARCH" = "aarch64" ]; then
+    echo "ARM64 (aarch64) detected. Loading ARM Menu..."
+    sleep 2
+    curl -Ls https://github.com/trashbus99/profork/blob/master/app/arm_menu.sh | bash
+    exit 0
+fi
+
+# If the system is x86_64, continue with the normal setup
+if [ "$ARCH" != "x86_64" ]; then
+    echo "This script only runs on x86_64 (AMD/Intel) or aarch64 (ARM64)."
+    exit 1
+fi
+echo "x86_64 (AMD/INTEL) detected. Loading Main Menu....."
+
 # Colors for animation
 RED='\e[0;31m'
 YELLOW='\e[1;33m'
