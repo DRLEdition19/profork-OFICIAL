@@ -34,9 +34,8 @@ sleep 10
 OPTIONS=("1" "Install Portmaster"
          "2" "Install Aethersx2 (Experimental/High-end devices only)"
          "3" "Restore Mame .0139 to v41+"
-         "4" "Dark Mode/F1"
-         "5" "Add Emulator Configs Menu to Emulationstation"             
-         "6" "Exit")
+         "4" "Dark Mode/F1"         
+         "5" "Exit")
          
 # Display the dialog and get the user choice
 CHOICE=$(dialog --clear --backtitle "Profork Main Menu" \
@@ -64,9 +63,6 @@ case $CHOICE in
     4)
         echo "Dark Mode / F1"
         curl -Ls https://github.com/trashbus99/profork/raw/master/dark/dark.sh | bash
-        ;;
-    5)  echo "Emulator Configs..."
-        curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/emgen/emgen.sh | bash
         ;;                           
     6)
         echo "Exiting..."
