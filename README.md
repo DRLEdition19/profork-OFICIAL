@@ -66,7 +66,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 
 
 
-# Standalone Apps 
+# Standalone Apps*
 *(Note: NVIDIA users can Use multiapp arch container for Steam, Lutris, Bottles, Minecraft-Bedrock)
 
 | Application                           | Description                                                   |
@@ -179,7 +179,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 # Custom Wine Installer (for v40+)
 ![image](https://github.com/user-attachments/assets/4507131e-0942-4247-8da5-1000efaa99ff)
 
-# Portmaster 
+# Portmaster*
 *(works on x86_64 [AMD/INTEL] and aarch64 [ARM64] like Raspberry Pis )
 
 *(aarch64 has more apps available than x86_64, but is lacking 32-bit app support due to batocera missing 32-bit libs unlike Rocknix, Knulli Firefly, and muOS)
