@@ -59,7 +59,7 @@ case $CHOICE in
         ;;    
     3)
         echo "Mame 0139 for v41+..."
-        curl -Ld https://github.com/trashbus99/profork/raw/master/mame2010_v41%2B/2010_arm64.sh | bash
+        curl -Ls https://github.com/trashbus99/profork/raw/master/mame2010_v41%2B/2010_arm64.sh | bash
         ;;
     4)
         echo "Dark Mode / F1"
