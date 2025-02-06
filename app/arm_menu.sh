@@ -63,7 +63,7 @@ case $CHOICE in
         ;;
     4)
         echo "Dark Mode / F1"
-        curl -Ls https://github.com/trashbus99/profork/raw/master/dark/dark.sh | bashsh
+        curl -Ls https://github.com/trashbus99/profork/raw/master/dark/dark.sh | bash
         ;;
     5)  echo "Emulator Configs..."
         curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/emgen/emgen.sh | bash
