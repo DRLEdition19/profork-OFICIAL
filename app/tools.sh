@@ -96,6 +96,7 @@ apps=(
     ["SUNSHINE-FLATPAK"]="curl -Ls https://github.com/trashbus99/profork/raw/master/flatpak/install_sunshine.sh| bash"
     ["WINE-CUSTOM-DOWNLOADER/v40+"]="curl -Ls https://github.com/trashbus99/profork/raw/master/wine-custom/wine.sh | bash"
     ["ADD-EMULATOR-CONFIGS-TO-EMULATIONSTATION"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/emgen/emgen.sh | bash"
+    ["Tesseract"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/tesseract.sh | bash"
     ["SYSTEM-SPLASH-VIDEOS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/logos.sh | bash"
     ["WINE-GE-8-26"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/ge.sh | bash"
     ["ZENITY"]="curl -Ls  https://github.com/trashbus99/profork/raw/master/.dep/.scripts/zenity.sh | bash"
