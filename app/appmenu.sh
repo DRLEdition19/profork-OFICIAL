@@ -119,6 +119,7 @@ apps=(
     ["NVTOP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/nvtop/nvtop.sh| bash"
     ["ODIO"]="curl -Ls https://github.com/trashbus99/profork/raw/master/odio/odio.sh | bash"
     ["OLIVE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/olive/olive.sh | bash"
+    ["OPEN-RA-TIBERIAN-DAWN"]="curl -Ls https://github.com/trashbus99/profork/raw/master/openra/td.sh | bash"
     ["OPERA"]="curl -Ls https://github.com/trashbus99/profork/raw/master/opera/opera.sh | bash"
     ["PEAZIP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/peazip/peazip.sh | bash"
     ["PLEXAMP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/plexamp/installer.sh | bash"
