@@ -288,7 +288,7 @@ echo 'LD_LIBRARY_PATH="/userdata/system/pro/.dep:${LD_LIBRARY_PATH}" DISPLAY=:0.
 ######################################################################
 dos2unix $launcher
 chmod a+x $launcher
-cp $launcher /userdata/roms/ports/OpenRA-Tiberium-Dawn.sh 2>/dev/null
+cp $launcher /userdata/roms/ports/OpenRA-Tiberian-Dawn.sh 2>/dev/null
 cp $launcher /userdata/system/pro/$appname/Launcher 2>/dev/null
 # //
 # -- get icon for shortcut,
