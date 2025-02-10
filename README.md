@@ -1,13 +1,3 @@
-### 🚀 NEW! EXPERIMENTAL AETHERSX2 (PS2) support for fast ARM devices like ODIN 2, Retroid Pocket 5/mini. (RK3588 Orange Pi5 does not work -- drivers out of date). 
-###   Launch from ports or F1. ES PS2 AetherSX2 menu added. (Dumb Launcher).  All configs must be done via Aethersx2 GUI.
-
-
------------
-
-### 🚀 NEW! MAME 2010/.0139 for v41 Added - Both x86_64 (AMD/INTEL) and aarch64 (ARM64) compatible.
-       
-----------
-
 # Installer/Menu via Terminal/SSH
 ```
 curl -L bit.ly/profork3 | bash
