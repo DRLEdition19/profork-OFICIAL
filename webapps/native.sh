@@ -5,45 +5,30 @@ webappsDir=~/webapps
 
 # Function to check if the website is reachable
 isWebsiteReachable() {
-    response=$(curl -o /dev/null -s -w "%{http_code}\n" $1)
-    if [ "$response" -eq 200 ] || [ "$response" -eq 301 ] || [ "$response" -eq 302 ]; then
+    response=$(curl -o /dev/null -s -w "%{http_code}" "$1")
+    if [[ "$response" =~ ^(200|301|302)$ ]]; then
         return 0 # Reachable
     else
         return 1 # Not reachable
     fi
 }
 
-attempt=0
-max_attempts=5
-url=""
+# Prompt for URL
+url=$(dialog --title "Enter URL" --inputbox "Enter a URL including http/s:" 8 40 3>&1 1>&2 2>&3 3>&-)
 
-while [ $attempt -lt $max_attempts ]; do
-    # Increment the attempt counter
-    ((attempt++))
-    
-    # Prompt for URL
-    url=$(dialog --title "Enter URL (Attempt $attempt of $max_attempts)" --inputbox "Enter a URL including http/s:" 8 40 3>&1 1>&2 2>&3 3>&-)
-    
-    # Check if the website is reachable
-    if isWebsiteReachable "$url"; then
-        break
-    else
-        if [ $attempt -eq $max_attempts ]; then
-            dialog --title "Website Unreachable" --msgbox "Website unreachable after $max_attempts attempts. Exiting." 6 50
-            exit 1
-        else
-            dialog --title "Website Unreachable" --msgbox "Website unreachable. Please enter a reachable URL. Attempt $attempt of $max_attempts." 8 50
-        fi
+# Check if the website is reachable
+if ! isWebsiteReachable "$url"; then
+    dialog --title "Website Unreachable" --yesno "The website is unreachable. Do you want to continue anyway?" 7 50
+    if [ $? -ne 0 ]; then
+        exit 1
     fi
-done
+fi
 
 # Ensure the webapps directory exists
 mkdir -p "$webappsDir"
 
-# Name the web app based on the domain
+# Extract domain name for app name
 appName=$(echo "$url" | awk -F/ '{print $3}' | sed 's/www\.//')
-
-
 
 # Prompt the user to choose a user agent
 userAgentChoice=$(dialog --title "Choose User Agent" --menu "Choose a user agent:" 15 50 4 \
@@ -53,7 +38,6 @@ userAgentChoice=$(dialog --title "Choose User Agent" --menu "Choose a user agent
 4 "Google TV" 3>&1 1>&2 2>&3 3>&-)
 
 # Set the user agent string based on the choice
-userAgent=""
 case $userAgentChoice in
     1) userAgent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" ;;
     2) userAgent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0" ;;
@@ -62,21 +46,15 @@ case $userAgentChoice in
     *) echo "Invalid choice"; exit 1 ;;
 esac
 
-# Modify the Nativefier command to include the user agent option
+# Create web app with Nativefier
 nativefier "$url" -n "$appName" --user-agent "$userAgent" --electron-version $(npm show electron version) "$webappsDir"
-
-
-
-
-
-
-
 
 # Choose where to save the launcher script
 choice=$(dialog --title "Save Location" --menu "Choose where to save the launcher script:" 15 50 4 \
 1 "Ports (PAD2KEY Available)" \
 2 "Webapps" 3>&1 1>&2 2>&3 3>&-)
 
+# Determine save directory
 saveDir=""
 case $choice in
     1) saveDir="/userdata/roms/ports" ;;
@@ -84,13 +62,13 @@ case $choice in
     *) echo "Invalid choice"; exit 1 ;;
 esac
 
-# Ensure the save directory exists
+# Ensure save directory exists
 mkdir -p "$saveDir"
 
 # Launcher script path
 launcherPath="$saveDir/$appName.sh"
 
-# Create the launcher script
+# Create launcher script
 cat > "$launcherPath" <<EOF
 #!/bin/bash
 #------------------------------------------------
