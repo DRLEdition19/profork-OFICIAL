@@ -22,8 +22,7 @@ OPTIONS=("1" "Install/Update Arch Container "
          "7" "Addon: Add/Update Lutris Menu & Shortcuts to Emulationstation"
          "8" "Addon: Add/Update Heroic Menu & Shortcuts to Emulationstation"
          "9" "Addon: Add/Update PS4 Menu & Shortcuts to Emulationstation"
-         "10" "Addon: Emudeck (experimental)"
-         "11" "Addon: Nativefier (turn websites into apps and add to ES Menu)")
+         "10" "Addon: Emudeck (experimental)")
 
 # Display the dialog and get the user choice
 CHOICE=$(dialog --clear --backtitle "Arch Container Management" \
