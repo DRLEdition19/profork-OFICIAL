@@ -199,6 +199,7 @@ app_desc=(
     ["NVTOP"]="Real-time GPU usage monitoring tool"
     ["ODIO"]="Free streamimg music app"
     ["OLIVE"]="Open-source video editing tool"
+    ["OPEN-RA-TIBERIAN-DAWN"]="Freeware version of Original CNC"
     ["OPERA"]="Web browser with integrated VPN and ad blocker"
     ["PEAZIP"]="File archiver and compression utility"
     ["PLEXAMP"]="Music player for Plex users"
