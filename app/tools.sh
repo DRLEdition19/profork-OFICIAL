@@ -99,6 +99,7 @@ apps=(
     ["TESSERACT"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/tesseract.sh | bash"
     ["SYSTEM-SPLASH-VIDEOS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/logos.sh | bash"
     ["WINE-GE-8-26"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/ge.sh | bash"
+    ["XMLSTARLET"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/xmlstarlet.sh | bash"
     ["ZENITY"]="curl -Ls  https://github.com/trashbus99/profork/raw/master/.dep/.scripts/zenity.sh | bash"
 )
 
