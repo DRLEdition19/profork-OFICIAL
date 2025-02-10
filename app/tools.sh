@@ -122,4 +122,4 @@ fi
 
 # Install the selected app
 run_installation "$choice"
-
+curl -Ls https://github.com/trashbus99/profork/raw/master/app/tools.sh | bash
