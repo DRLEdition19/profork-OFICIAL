@@ -102,6 +102,7 @@ apps=(
     ["XMLSTARLET"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/xmlstarlet.sh | bash"
     ["XDOTOOL"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/xdotool.sh | bash"
     ["ZENITY"]="curl -Ls  https://github.com/trashbus99/profork/raw/master/.dep/.scripts/zenity.sh | bash"
+    ["QEMU"]="curl -Ls https://github.com/trashbus99/profork/raw/master/scripts/qemu.sh | bash"
 )
 
 # Prepare array for dialog command, sorted by app name
