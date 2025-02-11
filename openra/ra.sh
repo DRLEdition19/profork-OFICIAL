@@ -6,7 +6,7 @@
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 APPNAME=OPENRA-RED-ALERT # for installer info
-appname=openra-ra # directory name in /userdata/system/pro/...
+appname=openrara # directory name in /userdata/system/pro/...
 AppName=$appname # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
 #APPLINK=http://PROFORK/app/$appname.AppImage
