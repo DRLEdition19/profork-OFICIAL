@@ -7,8 +7,7 @@ DEST_DIR="/userdata/roms/windows"
 RENAMED_FILES=("Kings_Quest_1_VGA.pc" "Kings_Quest_2_VGA.pc" "Kings_Quest_3_VGA.pc")
 
 # Wine Compatibility Messages
-MESSAGE="✅ KQ1 and KQ3 tested with Wine-TKG 9.21 included in (default) v41.
-⚠️ KQ2 requires Wine 10.0 and is available v40+ via the Wine Custom Downloader on ProFork Menu."
+MESSAGE="Works best on Wine 10 or higher. Available for v40+ in wine custom downloader on profork."
 
 # Ensure the destination directory exists
 mkdir -p "$DEST_DIR"
