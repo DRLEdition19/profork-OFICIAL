@@ -6,7 +6,7 @@
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 APPNAME=OPENRA-RED-ALERT # for installer info
-appname=openratd # directory name in /userdata/system/pro/...
+appname=openra-ra # directory name in /userdata/system/pro/...
 AppName=$appname # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
 #APPLINK=http://PROFORK/app/$appname.AppImage
@@ -223,7 +223,7 @@ sleep 0.33
 echo -e "${W}THIS WILL INSTALL $APPNAME FOR BATOCERA"
 echo -e "${W}USING $ORIGIN"
 echo
-echo -e "${W}$APPNAME WILL BE AVAILABLE IN F1->APPLICATIONS "
+echo -e "${W}$APPNAME WILL BE AVAILABLE IN F1->APPLICATIONS AND IN PORTS "
 echo -e "${W}AND INSTALLED IN /USERDATA/SYSTEM/PRO/$APPNAME"
 echo
 echo -e "${L}- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
@@ -293,7 +293,7 @@ cp $launcher /userdata/system/pro/$appname/Launcher 2>/dev/null
 # //
 # -- get icon for shortcut,
 icon=/userdata/system/pro/$appname/extra/icon.png
-wget -q -O $icon https://github.com/trashbus99/profork/raw/master/openra/extra/cncra.pngg
+wget -q -O $icon https://github.com/trashbus99/profork/raw/master/openra/extra/cncra.png
 # //
 # -- prepare f1 - applications - app shortcut, 
 shortcut=/userdata/system/pro/$appname/extra/$appname.desktop
