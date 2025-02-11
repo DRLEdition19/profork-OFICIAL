@@ -104,7 +104,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 | **NVTOP**                             | Real-time GPU usage monitoring tool                         |
 | **ODIO**                              | Free streamimg music app                                    |
 | **OLIVE**                             | Open-source video editing tool                              |
-| **OPENRA-Tiberian-Dawn**              | Open-source Command and Conquer original                    |
+| **OPENRA** |                          | Open-source original Command and Conquer Tib. Dawn / Red Alert / Dune 2000  |
 | **OPERA**                             | Web browser with integrated VPN and ad blocker              |
 | **PEAZIP**                            | File archiver and compression utility                       |
 | **PLEXAMP**                           | Music player for Plex users                                 |
