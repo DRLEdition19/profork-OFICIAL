@@ -5,7 +5,7 @@ URL="https://github.com/trashbus99/profork/releases/download/r1/Quest_For_Glory_
 DEST_DIR="/userdata/roms/windows"
 FILENAME="Quest_for_Glory_2_Vga.pc"
 TEMP_ARCHIVE="$DEST_DIR/Quest_For_Glory_2.tar.gz"
-MESSAGE="QFG2 -Tested Successfully on Wine 9.21TKG on v41"
+MESSAGE="QFG2 - Works best on Wine 10 or higher. Available for v40+ in wine custom downloader on profork"
 
 # Ensure the destination directory exists
 mkdir -p "$DEST_DIR"
