@@ -7,7 +7,7 @@ DEST_DIR="/userdata/roms/windows"
 RENAMED_FILES=("Kings_Quest_1_VGA.pc" "Kings_Quest_2_VGA.pc" "Kings_Quest_3_VGA.pc")
 
 # Wine Compatibility Messages
-MESSAGE="Works best on Wine 10 or higher. Available for v40+ in wine custom downloader on profork."
+MESSAGE="Works best on Wine 10.1 or higher. Available for v40+ in wine custom downloader on profork."
 
 # Ensure the destination directory exists
 mkdir -p "$DEST_DIR"
