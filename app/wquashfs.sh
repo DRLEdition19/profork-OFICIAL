@@ -74,7 +74,8 @@ apps=(
     ["Donkey-Kong-Advanced"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/dka.sh | bash"
     ["The-Ur-Quan-Masters"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/uqm.sh | bash"       
     ["SPACE-QUEST-3D/SQ3-REMAKE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/sq3d.sh | bash"
-    ["Quest-For-Glory-2-VGA"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/qfg2.sh | bash"
+    ["Quest-For-Glory-2-VGA-REMAKE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/qfg2.sh | bash"
+    ["KQ1-2-3-VGA-AGDI-REMAKES"]=curl -Ls https://github.com/trashbus99/profork/raw/master/windows/kq.sh | bash"
     # Add other apps here
 )
 
