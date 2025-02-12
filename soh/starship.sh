@@ -4,7 +4,7 @@
 STARSHIP_DIR="/userdata/roms/ports/starship"
 LAUNCH_SCRIPT="/userdata/roms/ports/launch_starship.sh"
 KEYS_FILE="/userdata/roms/ports/launch_starship.sh.keys"
-STARSHIP_ZIP_URL="https://github.com/HarbourMasters/Starship/releases/download/v1.0.0/Starship-Centauri-Alfa-Windows.zip"
+STARSHIP_ZIP_URL="TBA"
 STARSHIP_APPIMAGE="starship.appimage"  # Assuming an AppImage exists inside the ZIP
 KEYS_URL="https://raw.githubusercontent.com/trashbus99/profork/refs/heads/master/starship/launch_starship.sh.keys"
 
