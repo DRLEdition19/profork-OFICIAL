@@ -11,7 +11,7 @@ AppName=$appname # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.flatimage
 #APPLINK=http://PROFORK/app/$appname.AppImage
 APPLINK=https://github.com/trashbus99/profork/releases/download/r1/Hydorah.flatimage
-ORIGIN="LOCOMALITIO.COM" # credit & info
+ORIGIN="LOCOMALITO.COM" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
