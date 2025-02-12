@@ -110,9 +110,9 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 | **PLEXAMP**                           | Music player for Plex users                                 |
 | **PRISM-LAUNCHER**                    | Custom Minecraft launcher for mod versions                  |
 | **PROTONUP-QT**                       | Manage Proton-GE builds for Linux gaming                    |
-| **PS2MINUS**                          | Older v1.6 (wx) version of the PCSX2 emulator for older machines  |
-| **PS2PLUS**                           | Latest version of the PCSX2 emulator                        |
-| **PS3PLUS**                           | Latest version of RPCS3 PlayStation 3 emulator              |
+| **PS2MINUS/Works Up to v40**          | Older v1.6 (wx) version of the PCSX2 emulator for older machines  |
+| **PS2PLUS/Works Up to v40**           | Latest version of the PCSX2 emulator                        |
+| **PS3PLUS/Works Up to v40**           | Latest version of RPCS3 PlayStation 3 emulator              |
 | **PS4**                               | ShadPS4 Emulator for v40+                                  |
 | **QBITTORRENT**                       | Torrent Client                                             |
 | **SAYONARA**                          | Lightweight music player                                   |
@@ -130,7 +130,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 | **VIVALDI**                           | Customizable web browser                                   |
 | **VLC**                               | Open-source media player                                   |
 | **WHATSAPP**                          | Messaging app                                              |
-| **WIIUPLUS/NEWEST-CEMU**              | Wii U emulator                                            |
+| **WIIUPLUS/NEWEST-CEMU/Works Up to v40**     | Wii U emulator                                            |
 | **XCLOUD**                            | Electron based Xcloud client (Gamepad Navigatable)        |
 | **WPS-OFFICE**                        | Office suite                                              |
 | **YARG**                              | Yet Another Rhythm Game                                   |
