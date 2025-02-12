@@ -87,7 +87,6 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 | **GREENLIGHT**                        | Xbox and Xcloud Remote Play Streamer                          |
 | **HARD-INFO**                         | System information and benchmark tool                        |
 | **HYPER**                             | Modern, extensible terminal emulator                        |
-| **HYPORA**                            | 2010 Windows Shmup game                                     |
 | **JAVA-RUNTIME**                      | Java runtime environment                                     |
 | **KDENLIVE**                          | Open-source video editing software                           |
 | **KITTY**                             | Fast and feature-rich terminal emulator                     |
