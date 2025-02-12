@@ -1,6 +1,6 @@
 #!/usr/bin/env bash 
 ######################################################################
-# PROFORK/OPENRA/DUNE 2000 INSTALLER
+# PROFORK/HYDORAH INSTALLER
 ######################################################################
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
@@ -349,7 +349,7 @@ export -f batocera-pro-installer 2>/dev/null
 # |
   batocera-pro-installer "$APPNAME" "$appname" "$AppName" "$APPPATH" "$APPLINK" "$ORIGIN"
 # --------------------------------------------------------------------
-# PROFORK/Hydorah INSTALLER //
+# PROFORK/HYDORAH INSTALLER //
 #################################
 function autostart() {
   csh="/userdata/system/custom.sh"
