@@ -18,7 +18,7 @@
 APPNAME="chiaki"; appname=$(echo "$APPNAME" | awk '{print tolower($0)}'); 
 #APPLINK=https://git.sr.ht/~thestr4ng3r/chiaki/refs/download/v2.1.1/Chiaki-v2.1.1-Linux-x86_64.AppImage
 #APPLINK=https://github.com/trashbus99/profork/raw/master/chiaki/extra/chiaki.AppImage
-APPLINK=https://git.sr.ht/~thestr4ng3r/chiaki/refs/download/v2.2.0/Chiaki-v2.2.0-Linux-x86_64.AppImage
+APPLINK=$(APPLINK=$(curl -s https://api.github.com/repos/streetpea/chiaki-ng/releases/latest | jq -r '.assets[] | select(.name | endswith("AppImage_x86_64")) | .browser_download_url')
 APPHOME="git.sr.ht/~thestr4ng3r/chiaki v2.2.0"
 #---------------------------------------------------------------------
 # DEFINE LAUNCHER COMMAND >>
