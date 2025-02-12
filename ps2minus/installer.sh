@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/bin/bash
 
 dialog --backtitle "Batocera v41+" \
        --title "PS2- Support Removed" \
