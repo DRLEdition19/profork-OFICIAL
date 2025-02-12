@@ -1,4 +1,21 @@
 #!/bin/bash
+#!/bin/bash
+
+dialog --backtitle "Batocera v41+" \
+       --title "PS2- Support Removed" \
+       --yes-label "Continue" \
+       --no-label "Cancel" \
+       --extra-button --extra-label "Exit" \
+       --yesno "Batocera v41+ no longer supports PS2-. Do you want to continue?" 7 50
+
+response=$?
+
+case $response in
+  0) echo "User chose to continue." ;;
+  1) echo "User chose to cancel." ;;
+  3) echo "User chose to exit." ;;
+esac
+
 ##################################################################################################################################
 #---------------------------------------------------------------------------------------------------------------------------------
 
