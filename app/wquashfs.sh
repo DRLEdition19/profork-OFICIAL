@@ -77,7 +77,7 @@ apps=(
     ["Quest-For-Glory-2-VGA-REMAKE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/qfg2.sh | bash"
     ["Kings-Quest-1-2-3-VGA-AGDI-REMAKES"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/kq.sh | bash"
     ["STARFIGHTER-MOVIE-ARCADE-GAME"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/starfighter.sh | bash"
-    ["Hydora"]="curl -Ls https://github.com/trashbus99/profork/raw/master/hydorah/hydorah.sh | bash"
+#    ["Hydora"]="curl -Ls https://github.com/trashbus99/profork/raw/master/hydorah/hydorah.sh | bash"
     # Add other apps here
 )
 
