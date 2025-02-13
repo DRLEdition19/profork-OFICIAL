@@ -4,7 +4,7 @@ clear
 
 # Function to display animated title with colors
 animate_title() {
-    local text="Windows/Wine Freeware games"
+    local text="Linux & Windows/Wine Freeware games"
     local delay=0.03
     local length=${#text}
 
@@ -79,9 +79,9 @@ apps=(
     ["Kings-Quest-1-2-3-VGA-AGDI-REMAKES/WINDOWS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/kq.sh | bash"
     ["STARFIGHTER-MOVIE-ARCADE-GAME/WINDOWS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/starfighter.sh | bash"
     ["OPENRA-CNC-TIBERIAN-DAWN/LINUX"]="curl -Ls https://github.com/trashbus99/profork/raw/master/openra/td.sh | bash"
-    ["OPENRA-CNC-RED-ALERT/LINUX"]="curl -Ls https://github.com/trashbus99/profork/raw/master/openra/RA.sh | bash"
+    ["OPENRA-CNC-RED-ALERT/LINUX"]="curl -Ls https://github.com/trashbus99/profork/raw/master/openra/ra.sh | bash"
     ["OPENRA-DUNE-2000/LINUX"]="curl -Ls https://github.com/trashbus99/profork/raw/master/openra/d2k.sh | bash"
-    ["ENDLESS-SKY"]="curl -Ls https://github.com/trashbus99/profork/raw/master/endlesssky/endlesssky.sh | bash"
+    ["ENDLESS-SKY/LINUX"]="curl -Ls https://github.com/trashbus99/profork/raw/master/endlesssky/endlesssky.sh | bash"
 #   ["Hydora"]="curl -Ls https://github.com/trashbus99/profork/raw/master/hydorah/hydorah.sh | bash"
     # Add other apps here
 )
