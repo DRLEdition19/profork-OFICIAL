@@ -55,7 +55,7 @@ OPTIONS=("1" "Arch Container (Steam, Heroic, Lutris & More apps)"
          "3" "Docker & Containers"
          "4" "Tools"
          "5" "Wine Custom Downloader v40+"
-         "6" "Windows/Wine Freeware games"
+         "6" "Linux & Windows/Wine Freeware games"
          "7" "Install Portmaster"
          "8" "Install This Menu to Ports"              
          "9" "Exit")
