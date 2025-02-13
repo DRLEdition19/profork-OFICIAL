@@ -76,6 +76,7 @@ display_controls
 # Define an associative array for app names and their install commands
 declare -A apps
 apps=(
+    ["2SHIP2HARKINIAN"]="curl -Ls https://github.com/trashbus99/profork/raw/master/soh/2s2h.sh | bash"
     ["7ZIP"]="curl -Ls https://github.com/trashbus99/profork/raw/master/7zip/7zip.sh | bash"
     ["ALTUS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/altus/altus.sh | bash"
     ["AMAZON-LUNA"]="curl -Ls https://github.com/trashbus99/profork/raw/master/amazonluna/amazonluna.sh"
@@ -159,6 +160,7 @@ apps=(
 # Define an associative array for app descriptions (generated from your table)
 declare -A app_desc
 app_desc=(
+    ["2SHIP2HARKINIAN"]="Open Source Port of Majora's Mask Engine"
     ["7ZIP"]="File archiver with a high compression ratio"
     ["ALTUS"]="Desktop client for Google Meet and messaging services"
     ["AMAZON-LUNA"]="Amazon's cloud gaming service"
@@ -217,7 +219,7 @@ app_desc=(
     ["PS4"]="ShadPS4 Emulator/Batocera v40+ only"
     ["QBITTORRENT"]="Torrent Client"
     ["SAYONARA"]="Lightweight music player"
-    ["SHIP-OF-HARKINIAN"]="Open-source port of Ocarina of Time"
+    ["SHIP-OF-HARKINIAN"]="Open-source port of Ocarina of Time Engine"
     ["SHEEPSHAVER"]="PowerPC Mac emulator"
     ["SMPLAYER"]="Media player with built-in codecs"
     ["STEAM/AMD-INTEL-GPUS-ONLY"]="Popular gaming platform"
