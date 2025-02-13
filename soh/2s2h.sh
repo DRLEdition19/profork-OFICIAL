@@ -5,7 +5,7 @@ SOH_DIR="/userdata/roms/ports/2s2h"
 LAUNCH_SCRIPT="/userdata/roms/ports/launch_2s2h.sh"
 KEYS_FILE="/userdata/roms/ports/launch_2s2h.sh.keys"
 SOH_ZIP_URL="https://github.com/HarbourMasters/2ship2harkinian/releases/download/1.1.2/2Ship-Satoko-Charlie-Linux.zip"
-SOH_APPIMAGE="2s2h.appimage"  # Assuming the extracted file is an AppImage
+SOH_APPIMAGE="2ship.appimage"  # Assuming the extracted file is an AppImage
 KEYS_URL="https://raw.githubusercontent.com/trashbus99/profork/refs/heads/master/soh/launch_soh.sh.keys"
 
 # Ensure the directory exists
