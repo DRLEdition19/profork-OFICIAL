@@ -17,12 +17,11 @@ OPTIONS=("1" "Install/Update Arch Container "
          "2" "List all Packages in Multi-App Container"
          "3" "Uninstall Arch Container"
          "4" "Update ES Launcher shortcuts for Arch container"
-         "5" "Addon: Decky Support"
-         "6" "Addon: XFCE/MATE/LXDE DESKTOP Mode"
-         "7" "Addon: Add/Update Lutris Menu & Shortcuts to Emulationstation"
-         "8" "Addon: Add/Update Heroic Menu & Shortcuts to Emulationstation"
-         "9" "Addon: Add/Update PS4 Menu & Shortcuts to Emulationstation"
-         "10" "Addon: Emudeck (experimental)")
+         "5" "Addon: XFCE/MATE/LXDE DESKTOP Mode"
+         "6" "Addon: Add/Update Lutris Menu & Shortcuts to Emulationstation"
+         "7" "Addon: Add/Update Heroic Menu & Shortcuts to Emulationstation"
+         "8" "Addon: Add/Update PS4 Menu & Shortcuts to Emulationstation"
+         "9" "Addon: Emudeck (experimental)")
 
 # Display the dialog and get the user choice
 CHOICE=$(dialog --clear --backtitle "Arch Container Management" \
@@ -67,15 +66,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;    
-    5)  
-        echo "Add Decky Support..."
-        rm /tmp/runner 2>/dev/null
-        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/scripts/decky.sh
-        dos2unix /tmp/runner 2>/dev/null 
-        chmod 777 /tmp/runner 2>/dev/null
-        bash /tmp/runner
-        ;;
-     6)  
+     5)  
         echo "Installing Desktop/Windowed Mode..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/arch-de.sh
@@ -83,7 +74,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    7)  
+    6)  
         echo "Add/Update Lutris shortcuts to emulationstation..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/addon_lutris.sh
@@ -91,7 +82,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-    8)  
+    7)  
         echo "Add/update Heroic shortcuts to emulationstation..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/addon_heroic.sh
@@ -99,7 +90,7 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
-   9)  
+   8)  
         echo "Add/update PS4 shortcuts to emulationstation..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/addon_ps4.sh
@@ -107,26 +98,10 @@ case $CHOICE in
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
         ;;
- 10)  
+  9)  
         echo "Emudeck Menu..."
         rm /tmp/runner 2>/dev/null
         wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/emudeck/emudeck.sh
-        dos2unix /tmp/runner 2>/dev/null 
-        chmod 777 /tmp/runner 2>/dev/null
-        bash /tmp/runner
-        ;;
- 11)  
-        echo "Webapps Installer..."
-        rm /tmp/runner 2>/dev/null
-        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/webapps/install.sh
-        dos2unix /tmp/runner 2>/dev/null 
-        chmod 777 /tmp/runner 2>/dev/null
-        bash /tmp/runner
-        ;;
- 12)  
-        echo "NVIDIA CUDA Installer..."
-        rm /tmp/runner 2>/dev/null
-        wget -q --tries=30 --no-check-certificate --no-cache --no-cookies -O /tmp/runner https://github.com/trashbus99/profork/raw/master/steam/build/cuda.sh
         dos2unix /tmp/runner 2>/dev/null 
         chmod 777 /tmp/runner 2>/dev/null
         bash /tmp/runner
