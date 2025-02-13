@@ -67,16 +67,17 @@ display_controls
 declare -A apps
 apps=(
     # ... (populate with your apps as shown before)
-    ["Celeste-Classic"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/celeste.sh | bash" 
-    ["Apotris"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/apotris.sh | bash"
-    ["Maldita-Castilla"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/maldita_castilla.sh | bash"
-    ["Spelunky-Classic"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/spelunky.sh | bash"
-    ["Donkey-Kong-Advanced"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/dka.sh | bash"
-    ["The-Ur-Quan-Masters"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/uqm.sh | bash"       
-    ["SPACE-QUEST-3D/SQ3-REMAKE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/sq3d.sh | bash"
-    ["Quest-For-Glory-2-VGA-REMAKE"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/qfg2.sh | bash"
-    ["Kings-Quest-1-2-3-VGA-AGDI-REMAKES"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/kq.sh | bash"
-    ["STARFIGHTER-MOVIE-ARCADE-GAME"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/starfighter.sh | bash"
+    ["Celeste-Classic/WINDOWS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/celeste.sh | bash" 
+    ["Celeste-64/LINUX"]="curl -Ls https://github.com/trashbus99/profork/blob/master/celeste64/c64.sh | bash"
+    ["Apotris/WINDOWS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/apotris.sh | bash"
+    ["Maldita-Castilla/WINDOWS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/maldita_castilla.sh | bash"
+    ["Spelunky-Classic/WINDOWS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/spelunky.sh | bash"
+    ["Donkey-Kong-Advanced/WINDOWS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/dka.sh | bash"
+    ["The-Ur-Quan-Masters/WINDOWS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/uqm.sh | bash"       
+    ["SPACE-QUEST-3D/SQ3-REMAKE/WINDOWS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/sq3d.sh | bash"
+    ["Quest-For-Glory-2-VGA-REMAKE/WINDOWS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/qfg2.sh | bash"
+    ["Kings-Quest-1-2-3-VGA-AGDI-REMAKES/WINDOWS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/kq.sh | bash"
+    ["STARFIGHTER-MOVIE-ARCADE-GAME/WINDOWS"]="curl -Ls https://github.com/trashbus99/profork/raw/master/windows/starfighter.sh | bash"
 #    ["Hydora"]="curl -Ls https://github.com/trashbus99/profork/raw/master/hydorah/hydorah.sh | bash"
     # Add other apps here
 )
