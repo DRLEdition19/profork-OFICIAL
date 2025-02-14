@@ -117,7 +117,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 | **PS4**                               | ShadPS4 Emulator for v40+                                  |
 | **QBITTORRENT**                       | Torrent Client                                             |
 | **SAYONARA**                          | Lightweight music player                                   |
-| **SHIP-OF-HARKINIAN**                 | Open-source port of Ocarina of Time                        |
+| **SHIP-OF-HARKINIAN**                 | Open-source port of Ocarina of Time Engine                 |
 | **SHEEPSHAVER**                       | PowerPC Mac emulator                                       |
 | **SMPLAYER**                          | Media player with built-in codecs                          |
 | **STEAM/AMD-INTEL-GPUS-ONLY**         | Popular gaming platform                                    |
