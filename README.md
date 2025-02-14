@@ -150,7 +150,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 | **EMBY-SERVER/DOCKER**                     | Media server for managing and streaming personal media        |
 | **JELLYFIN-SERVER/DOCKER**                 | Open-source media server for streaming and organizing media   |
 | **LINUX-DESKTOPS-RDP/DOCKER**              | Dockerized Linux desktops with RDP access                    |
-| **LINUX-VMS-ON-QEMU/DOCKER**               | Docker-based Linux virtual machines running on QEMU          |
+| **LINUX-VMS-ON-QEMU/DOCKER**               | Docker-based Linux virtual machines running on QEMU with VNC access   |
 | **NETBOOT-XYZ-SERVER/DOCKER**              | Netboot.xyz server for network-based booting                 |
 | **NEXTCLOUD-SERVER/DOCKER**                | Private cloud server for file storage and sharing            |
 | **PLEX-SERVER/DOCKER**                     | Popular media server for streaming and managing personal media |
