@@ -16,7 +16,8 @@
 #--------------------------------------------------------------------- 
 #       DEFINE APP INFO >>
 APPNAME=vivaldi 
-APPLINK=$(curl -s "https://api.github.com/repos/ivan-hc/Vivaldi-appimage/releases/latest" | jq -r '.assets[] | select(.name | contains("stable") and endswith(".AppImage")) | .browser_download_url')
+APPLINK=$(curl -s "https://api.github.com/repos/ivan-hc/Vivaldi-appimage/releases/latest" | jq -r '.assets[] | select(.name | contains("stable") and contains("x86_64") and endswith(".AppImage")) | .browser_download_url')
+
 APPHOME="GITHUB.COM/IVAN-HC/VIVALDI-APPIMAGE"
 #---------------------------------------------------------------------
 #       DEFINE LAUNCHER COMMAND >>
