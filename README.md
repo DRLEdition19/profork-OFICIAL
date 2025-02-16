@@ -226,5 +226,7 @@ Thanks to **Uureel** for many of the original scripts and **Kron4ek** for the **
 Also thanks to **IVAN-HC** and **Srevinsaju** for some of the AppImage builds.  
 
 ---
+BatoceraNation Discord: https://discord.gg/SWBvBkmn9P
+---
 
 **Disclaimer:** This repository is an independent project and is not affiliated with or endorsed by Batocera. All opinions expressed here are based on publicly available information and personal experience.
