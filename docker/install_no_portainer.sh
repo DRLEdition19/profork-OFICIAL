@@ -1,4 +1,3 @@
-#!/bin/bash
 # Get the machine hardware name
 architecture=$(uname -m)
 
@@ -70,6 +69,6 @@ chmod a+x ~/custom.sh 2>/dev/null
 cd ~/batocera-containers
 
 clear
-echo "loading libraries..."
+echo "Starting Docker..."
 echo ""
 ~/batocera-containers/batocera-containers
