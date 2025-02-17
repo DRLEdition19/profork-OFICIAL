@@ -1,4 +1,12 @@
 #!/usr/bin/env bash 
+
+echo "ADDING FUSE LIBRARIES FOR CONTAINER..PLEASE WAIT.."
+sleep 3
+curl -Ls https://github.com/trashbus99/profork/raw/master/docker/install_no_portainer.sh | bash
+clear 
+echo LOADING MAIN INSTALLER..."
+sleep 4
+
 ######################################################################
 # PROFORK/HYDORAH INSTALLER
 ######################################################################
