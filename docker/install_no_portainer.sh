@@ -70,18 +70,6 @@ chmod a+x ~/custom.sh 2>/dev/null
 cd ~/batocera-containers
 
 clear
-echo "Starting Docker..."
+echo "loading libraries..."
 echo ""
 ~/batocera-containers/batocera-containers
-
-# Install Portainer
-echo "Installing portainer.."
-echo ""
-docker volume create portainer_data
-#docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /media:/media -v portainer_data:/data portainer/portainer-ce:latest
-docker run --device /dev/dri:/dev/dri --privileged --net host --ipc host -d --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /media:/media -v portainer_data:/data portainer/portainer-ce:latest
-
-echo "Done." 
-echo "Access portainer gui via https://<batoceraipaddress>:9443"
-sleep 10
-exit
