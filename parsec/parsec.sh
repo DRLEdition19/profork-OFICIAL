@@ -1,4 +1,10 @@
 #!/usr/bin/env bash 
+echo "ADDING FUSE LIBRARIES FOR CONTAINER..PLEASE WAIT.."
+sleep 3
+curl -Ls https://github.com/trashbus99/profork/raw/master/docker/install_no_portainer.sh | bash
+clear 
+echo "LOADING MAIN INSTALLER..."
+sleep 4
 ######################################################################
 # PROFORK/PARSEC INSTALLER
 ######################################################################
@@ -56,7 +62,7 @@ mkdir $pro/$appname/extra 2>/dev/null
 # --------------------------------------------------------------------
 # -- prepare dependencies for this app and the installer: 
 mkdir -p ~/pro/.dep 2>/dev/null && cd ~/pro/.dep && wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O ~/pro/.dep/dep.zip https://github.com/trashbus99/profork/raw/master/.dep/dep.zip && yes "y" | unzip -oq ~/pro/.dep/dep.zip && cd ~/
-wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O $pro/$appname/extra/icon.png https://github.com/trashbus99/profork/raw/master/hydorah/extra/Hydorah.jpg; chmod a+x $dep/* 2>/dev/null; cd ~/
+wget --tries=10 --no-check-certificate --no-cache --no-cookies -q -O $pro/$appname/extra/icon.png https://github.com/trashbus99/profork/raw/master/parsec/extra/parsec.png; chmod a+x $dep/* 2>/dev/null; cd ~/
 chmod 777 ~/pro/.dep/* && for file in /userdata/system/pro/.dep/lib*; do sudo ln -s "$file" "/usr/lib/$(basename $file)"; done
 # --------------------------------------------------------------------
 # // end of dependencies 
@@ -293,7 +299,7 @@ cp $launcher /userdata/system/pro/$appname/Launcher 2>/dev/null
 # //
 # -- get icon for shortcut,
 icon=/userdata/system/pro/$appname/extra/icon.png
-wget -q -O $icon https://github.com/trashbus99/profork/raw/master/hydorah/extra/Hydorah.jpg
+wget -q -O $icon https://github.com/trashbus99/profork/raw/master/parsec/extra/parsec.png
 # //
 # -- prepare f1 - applications - app shortcut, 
 shortcut=/userdata/system/pro/$appname/extra/$appname.desktop
