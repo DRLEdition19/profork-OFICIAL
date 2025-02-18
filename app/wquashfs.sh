@@ -80,7 +80,7 @@ apps=(
     ["OPENRA-CNC-RED-ALERT/LINUX"]="curl -Ls https://github.com/trashbus99/profork/raw/master/openra/ra.sh | bash"
     ["OPENRA-DUNE-2000/LINUX"]="curl -Ls https://github.com/trashbus99/profork/raw/master/openra/d2k.sh | bash"
     ["ENDLESS-SKY/LINUX"]="curl -Ls https://github.com/trashbus99/profork/raw/master/endlesssky/endlesssky.sh | bash"
-    ["Hydora"]="curl -Ls https://github.com/trashbus99/profork/raw/master/hydorah/hydorah.sh | bash"
+    ["HYDORA/CONTAINER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/hydorah/hydorah.sh | bash"
     # Add other apps here
 )
 
