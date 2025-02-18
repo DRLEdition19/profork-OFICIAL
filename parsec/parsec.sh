@@ -294,7 +294,7 @@ echo 'DISPLAY=:0.0 /userdata/system/pro/'$appname'/'$appname'.flatimage fim-exec
 ######################################################################
 dos2unix $launcher
 chmod a+x $launcher
-cp $launcher /userdata/roms/ports/Hydorah.sh 2>/dev/null
+cp $launcher /userdata/roms/ports/parsec.sh 2>/dev/null
 cp $launcher /userdata/system/pro/$appname/Launcher 2>/dev/null
 # //
 # -- get icon for shortcut,
