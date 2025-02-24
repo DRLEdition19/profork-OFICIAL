@@ -6,6 +6,6 @@ Recents:
 * 2ship2Harkinian (Majora's Mask Engine) added
 * Parsec streaming client Flatimage added
 * Aethersx2 added (ARM) - High end devices
-* Mame 2010 restoration for v41 added (ARM and x86 (tools section)
+* Mame 2010 restoration for v41 added (ARM and x86 (tools section))
 * More tools added
 * Some more Games added
