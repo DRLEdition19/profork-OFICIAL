@@ -16,7 +16,7 @@
 #--------------------------------------------------------------------- 
 #       DEFINE APP INFO >>
 APPNAME=greenlight 
-APPLINK=https://github.com/trashbus99/profork/raw/master/greenlight/extra/Greenlight-2.0.0-beta4.AppImage
+APPLINK=https://github.com/unknownskl/greenlight/releases/download/v2.3.1/Greenlight-2.3.1.AppImage
   if [[ -e "/usr/bin/batocera-version" ]]; then 
     if [[ "$(batocera-version | cut -c1-2)" > "36" ]]; then
       #APPLINK=https://github.com/unknownskl/greenlight/releases/download/v2.0.0-beta12/Greenlight-2.0.0-beta12.AppImage
