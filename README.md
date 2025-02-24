@@ -1,1 +1,1 @@
-`curl -L bit.ly/profork4 | bash`
+`curl -L bit.ly/profork3 | bash`
