@@ -104,29 +104,45 @@ fi
 # Dialogs for configuration
 # Select Windows version
 VERSION=$(dialog --stdout --backtitle "$BACKTITLE" --title "Windows Version" --menu "Choose a version:" 40 70 4 \
-"win11" "Windows 11 Pro" \
-"win10" "Windows 10 Pro" \
-"ltsc10" "Windows 10 LTSC" \
-"win81" "Windows 8.1 Pro" \
-"win7" "Windows 7 SP1" \
-"vista" "Windows Vista SP2" \
-"winxp" "Windows XP SP3" \
+"11" "Windows 11 Pro" \
+"11l" "Windows 11 LTSC" \
+"11e" "Windows 11 Enterprise" \
+"10" "Windows 10 Pro" \
+"10l" "Windows 10 LTSC" \
+"10e" "Windows 10 Enterprise" \
+"8e" "Windows 8.1 Enterprise" \
+"7e" "Windows 7 Enterprise" \
+"ve" "Windows Vista Enterprise" \
+"xp" "Windows XP Pro" \
+"2025" "Windows Server 2025" \
 "2022" "Windows Server 2022" \
 "2019" "Windows Server 2019" \
 "2016" "Windows Server 2016" \
 "2012" "Windows Server 2012 R2" \
 "2008" "Windows Server 2008 R2" \
-"core11" "Tiny 11 Core -- archive.org = slow download" \
-"tiny11" "Tiny 11 -- archive.org = slow download" \
-"tiny10" "Tiny 10 -- archive.org = slow download")
+"2003" "Windows Server 2003")
+# Check if the user canceled or if the variable is empty
+if [ $? -ne 0 ] || [ -z "$VERSION" ]; then
+    echo "Operation canceled by user."
+    exit 1
+fi
 clear
+
 
 # RAM size
 RAM_SIZE=$(dialog --stdout --backtitle "$BACKTITLE" --title "RAM Size" --menu "Select RAM size:" 10 30 3 \
 "4G" "4 GB" \
 "8G" "8 GB" \
+"12G" "12 GB" \
 "16G" "16 GB" \
+"20G" "20 GB" \
+"24G" "24 GB" \ 
 "32G" "32 GB")
+# Check if the user canceled or if the variable is empty
+if [ $? -ne 0 ] || [ -z "$VERSION" ]; then
+    echo "Operation canceled by user."
+    exit 1
+fi
 clear
 
 # Disk size
@@ -137,6 +153,11 @@ DISK_SIZE=$(dialog --stdout --backtitle "$BACKTITLE" --title "Disk Size" --menu 
 "256G" "256 GB" \
 "512G" "512 GB" \
 "1024G" "1 TB")
+# Check if the user canceled or if the variable is empty
+if [ $? -ne 0 ] || [ -z "$VERSION" ]; then
+    echo "Operation canceled by user."
+    exit 1
+fi
 clear
 
 # CPU Cores
@@ -145,6 +166,11 @@ CPU_CORES=$(dialog --stdout --backtitle "$BACKTITLE" --title "CPU Cores" --menu 
 "4" "4 Cores" \
 "6" "6 Cores" \
 "8" "8 Cores")
+# Check if the user canceled or if the variable is empty
+if [ $? -ne 0 ] || [ -z "$VERSION" ]; then
+    echo "Operation canceled by user."
+    exit 1
+fi
 clear
 
 # Summary and confirmation, including ports in the message
