@@ -3,7 +3,7 @@
 Recents:
 * Hydorah Game Flatimage Added (big/needs 32bit missing libs in batocera for music)
 * OpenGoal Launcher (jak engine) added.
-* Parsec flatimage added
+* Parsec streaming client Flatimage added
 * Aethersx2 added (ARM) - High end devices
 * Mame 2010 retoration for v41 added
 * Some more Games added
