@@ -5,5 +5,5 @@ Recents:
 * OpenGoal Launcher (jak engine) added.
 * Parsec streaming client Flatimage added
 * Aethersx2 added (ARM) - High end devices
-* Mame 2010 retoration for v41 added
+* Mame 2010 restoration for v41 added
 * Some more Games added
