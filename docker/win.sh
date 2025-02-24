@@ -121,11 +121,7 @@ VERSION=$(dialog --stdout --backtitle "$BACKTITLE" --title "Windows Version" --m
 "2012" "Windows Server 2012 R2" \
 "2008" "Windows Server 2008 R2" \
 "2003" "Windows Server 2003")
-# Check if the user canceled or if the variable is empty
-if [ $? -ne 0 ] || [ -z "$VERSION" ]; then
-    echo "Operation canceled by user."
-    exit 1
-fi
+
 clear
 
 
@@ -138,11 +134,8 @@ RAM_SIZE=$(dialog --stdout --backtitle "$BACKTITLE" --title "RAM Size" --menu "S
 "20G" "20 GB" \
 "24G" "24 GB" \ 
 "32G" "32 GB")
-# Check if the user canceled or if the variable is empty
-if [ $? -ne 0 ] || [ -z "$VERSION" ]; then
-    echo "Operation canceled by user."
-    exit 1
-fi
+
+
 clear
 
 # Disk size
@@ -153,11 +146,7 @@ DISK_SIZE=$(dialog --stdout --backtitle "$BACKTITLE" --title "Disk Size" --menu 
 "256G" "256 GB" \
 "512G" "512 GB" \
 "1024G" "1 TB")
-# Check if the user canceled or if the variable is empty
-if [ $? -ne 0 ] || [ -z "$VERSION" ]; then
-    echo "Operation canceled by user."
-    exit 1
-fi
+
 clear
 
 # CPU Cores
@@ -166,11 +155,7 @@ CPU_CORES=$(dialog --stdout --backtitle "$BACKTITLE" --title "CPU Cores" --menu 
 "4" "4 Cores" \
 "6" "6 Cores" \
 "8" "8 Cores")
-# Check if the user canceled or if the variable is empty
-if [ $? -ne 0 ] || [ -z "$VERSION" ]; then
-    echo "Operation canceled by user."
-    exit 1
-fi
+
 clear
 
 # Summary and confirmation, including ports in the message
