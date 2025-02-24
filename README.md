@@ -7,6 +7,6 @@ Recents:
 * Parsec streaming client Flatimage added
 * Aethersx2 added (ARM) - High end devices
 * Mame 2010 restoration for v41 added (ARM and x86 (tools section))
-* Mini container builds for AMD/Intel GPUS for Steam, Lutris, Bottles, Minecraft-Bedrock (NVidia users need full container for NV drivers handler) 
+* Mini container builds for AMD/Intel GPUS for Steam, Lutris, Bottles, Minecraft-Bedrock, (NVidia users need full container for NV drivers handler) 
 * More tools added
 * Some more Games added
