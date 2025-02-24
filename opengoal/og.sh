@@ -5,7 +5,7 @@
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 APPNAME=OPEN-GOAL-LAUNCHER # for installer info
-appname=Opengoal # directory name in /userdata/system/pro/...
+appname=opengoal # directory name in /userdata/system/pro/...
 AppName=$appname # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.appimage
 APPLINK=$(curl -s https://api.github.com/repos/open-goal/launcher/releases/latest | jq -r ".assets[] | select(.name | endswith(\".AppImage\")) | .browser_download_url")
