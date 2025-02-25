@@ -1,11 +1,5 @@
 #!/usr/bin/env bash 
-clear
-echo "NVIDIA USERS -- THIS APP PULLS NVIDIA DRIVERS IN THE BACKGROUND AND CAN DELAY FIRST STARTUP"
-sleep 10
-clear
-echo "Launching Install script.."
-sleep 2
-clear
+
 # VIRTUALBOX APPIMAGE INSTALLER
 ######################################################################
 #--------------------------------------------------------------------- 
@@ -15,7 +9,7 @@ APPHOME="github.com/ivan-hc/VirtualBox-appimage"
 #---------------------------------------------------------------------
 
 # Fetch the latest AppImage download URL from the GitHub API
-APPLINK=$(curl -Ls https://api.github.com/repos/ivan-hc/VirtualBox-appimage/releases | grep "browser_download_url.*AppImage" | awk -F '"' '{print $4}' | head -n 1)
+APPLINK=https://github.com/ivan-hc/VirtualBox-appimage/releases/download/7.1.6/VirtualBox-KVM_7.1.6-archimage4.3-x86_64.AppImage
 
 # Validate if APPLINK was found
 if [ -z "$APPLINK" ]; then
