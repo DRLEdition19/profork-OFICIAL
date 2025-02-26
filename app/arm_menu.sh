@@ -32,10 +32,11 @@ sleep 10
 
 # Define the options
 OPTIONS=("1" "Install Portmaster"
-         "2" "Install Aethersx2 (Experimental/High-end devices only)"
-         "3" "Restore Mame .0139 to v41+"
-         "4" "Dark Mode/F1"         
-         "5" "Exit")
+         "2" "Install Librewolf Web Browser (VIA F1 MENU ONLY!!)
+         "3" "Install Aethersx2 (Experimental/High-end devices only)"
+         "4" "Restore Mame .0139 to v41+"
+         "5" "Dark Mode/F1"         
+         "6" "Exit")
          
 # Display the dialog and get the user choice
 CHOICE=$(dialog --clear --backtitle "Profork Main Menu" \
@@ -52,15 +53,20 @@ case $CHOICE in
         echo "Portmaster Installer..."
         curl -Ls https://github.com/trashbus99/profork/raw/master/portmaster/install.sh | bash
         ;;
+        https://github.com/trashbus99/profork/blob/master/librewolf/install_arm64.sh
     2)
+        echo "Librewolf Web Browser Installer..."
+        curl -Ls https://github.com/trashbus99/profork/raw/master/librewolf/install_arm64.sh | bash
+        ;;   
+    3)
         echo "AetherSX2 Experimental..."
         curl -Ls https://raw.githubusercontent.com/trashbus99/profork/refs/heads/master/aethersx2/aethersx2.sh | bash
         ;;    
-    3)
+    4)
         echo "Mame 0139 for v41+..."
         curl -Ls https://github.com/trashbus99/profork/raw/master/mame2010_v41%2B/2010_arm64.sh | bash
         ;;
-    4)
+    5)
         echo "Dark Mode / F1"
         curl -Ls https://github.com/trashbus99/profork/raw/master/dark/dark.sh | bash
         ;;                           
