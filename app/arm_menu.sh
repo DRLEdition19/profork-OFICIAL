@@ -34,9 +34,8 @@ sleep 10
 OPTIONS=("1" "Install Portmaster"
          "2" "Install Librewolf Web Browser (VIA F1 MENU ONLY!!)"
          "3" "Install Aethersx2 (Experimental/High-end devices only)"
-         "4" "Restore Mame .0139 to v41+"
-         "5" "Dark Mode/F1"         
-         "6" "Exit")
+         "4" "Restore Mame .0139 to v41+"         
+         "5" "Exit")
          
 # Display the dialog and get the user choice
 CHOICE=$(dialog --clear --backtitle "Profork Main Menu" \
@@ -64,12 +63,8 @@ case $CHOICE in
     4)
         echo "Mame 0139 for v41+..."
         curl -Ls https://github.com/trashbus99/profork/raw/master/mame2010_v41%2B/2010_arm64.sh | bash
-        ;;
+        ;;                
     5)
-        echo "Dark Mode / F1"
-        curl -Ls https://github.com/trashbus99/profork/raw/master/dark/dark.sh | bash
-        ;;                           
-    6)
         echo "Exiting..."
            exit
         ;;
