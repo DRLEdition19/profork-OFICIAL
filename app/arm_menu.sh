@@ -53,7 +53,6 @@ case $CHOICE in
         echo "Portmaster Installer..."
         curl -Ls https://github.com/trashbus99/profork/raw/master/portmaster/install.sh | bash
         ;;
-        https://github.com/trashbus99/profork/blob/master/librewolf/install_arm64.sh
     2)
         echo "Librewolf Web Browser Installer..."
         curl -Ls https://github.com/trashbus99/profork/raw/master/librewolf/install_arm64.sh | bash
