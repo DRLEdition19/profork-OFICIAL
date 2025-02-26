@@ -10,12 +10,12 @@ clear
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 APPNAME=LIBREWOLF # for installer info
-appname=librewold2 # directory name in /userdata/system/pro/...
+appname=librewolf # directory name in /userdata/system/pro/...
 AppName=$appname # App.AppImage name
 APPPATH=/userdata/system/pro/$appname/$appname.AppImage
 #APPLINK=http://PROFORK/app/$appname.AppImage
 APPLINK=https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/135.0-1/LibreWolf.aarch64.AppImage
-ORIGIN="github.com/trashbus99/profork" # credit & info
+ORIGIN="LIBREWOLF.NET" # credit & info
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
@@ -124,7 +124,6 @@ echo -e "${X}USING $ORIGIN"
 echo
 echo -e "${X}$APPNAME WILL BE AVAILABLE IN F1->APPLICATIONS "
 echo -e "${X}AND INSTALLED IN /USERDATA/SYSTEM/PRO/$appname"
-echo -e "${X}AND A SEPARATE LAUNCHER WILL BE ADDED TO PORTS"
 echo
 echo -e "${X}FOLLOW THE BATOCERA DISPLAY"
 echo
@@ -230,7 +229,6 @@ echo -e "${W}USING $ORIGIN"
 echo
 echo -e "${W}$APPNAME WILL BE AVAILABLE IN F1->APPLICATIONS "
 echo -e "${W}AND INSTALLED IN /USERDATA/SYSTEM/PRO/$APPNAME"
-echo -e "${X}AND A SEPARATE LAUNCHER WILL BE ADDED TO PORTS"
 echo
 echo -e "${L}- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 # -- check system before proceeding
