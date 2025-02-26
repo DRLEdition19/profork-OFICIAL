@@ -32,7 +32,7 @@ sleep 10
 
 # Define the options
 OPTIONS=("1" "Install Portmaster"
-         "2" "Install Librewolf Web Browser (VIA F1 MENU ONLY!!)
+         "2" "Install Librewolf Web Browser (VIA F1 MENU ONLY!!)"
          "3" "Install Aethersx2 (Experimental/High-end devices only)"
          "4" "Restore Mame .0139 to v41+"
          "5" "Dark Mode/F1"         
