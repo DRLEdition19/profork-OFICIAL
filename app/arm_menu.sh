@@ -35,7 +35,8 @@ OPTIONS=("1" "Install Portmaster"
          "2" "Install Librewolf Web Browser (VIA F1 MENU ONLY!!)"
          "3" "Install Aethersx2 (Experimental/High-end devices only)"
          "4" "Restore Mame .0139 to v41+"         
-         "5" "Exit")
+         "5" "Youtube TV UI"
+         "6" "Exit")
          
 # Display the dialog and get the user choice
 CHOICE=$(dialog --clear --backtitle "Profork Main Menu" \
@@ -65,6 +66,10 @@ case $CHOICE in
         curl -Ls https://github.com/trashbus99/profork/raw/master/mame2010_v41%2B/2010_arm64.sh | bash
         ;;                
     5)
+        echo "Youtube on TV..."
+        curl -Ls  | ttps://github.com/trashbus99/profork/blob/master/youtubetv/yttv-arm64.sh | bash
+        ;;   
+    6)
         echo "Exiting..."
            exit
         ;;
