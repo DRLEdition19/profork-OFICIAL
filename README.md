@@ -1,6 +1,7 @@
 `curl -L bit.ly/profork3 | bash`
 
 Recents:
+* Added Youtube TV-UI for ARM64 (aarch64) devices
 * Added Librewolf Web Browser for ARM64 (aarch64) devices
 * Hydorah Game Flatimage Added (big/needs 32bit missing libs in batocera for music)
 * OpenGoal Launcher (Jak and Daxter/2/3 Engine) added.
