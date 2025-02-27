@@ -83,7 +83,6 @@ apps=(
     ["EMBY-SERVER/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/emby.sh | bash"
     ["JELLYFIN-SERVER/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/jellyfin.sh | bash"
     ["LINUX-DESKTOPS-RDP/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/rdesktop.sh | bash | bash"
-    ["LINUX-VMS-ON-QEMU/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/qemu.sh | bash | bash"
     ["NETBOOT-XYZ-SERVER/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/netboot.sh | bash"
     ["NEXTCLOUD-SERVER/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/nextcloud.sh | bash" 
     ["PLEX-SERVER/DOCKER"]="curl -Ls https://github.com/trashbus99/profork/raw/master/docker/plex.sh | bash"
