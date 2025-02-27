@@ -1,4 +1,13 @@
 #!/usr/bin/env bash 
+# Check if Xwayland is running
+if ! pgrep -x "Xwayland" > /dev/null; then
+    echo "❌ Xwayland is not running. Exiting."
+    exit 1
+fi
+
+echo "✅ Xwayland detected. Continuing..."
+sleep 2
+
 ######################################################################
 # PROFORK/AETHERSX2 INSTALLER
 ######################################################################
