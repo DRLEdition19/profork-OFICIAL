@@ -1,10 +1,11 @@
 
 
 Recents:
+* Removed Docker Linux on Qemu (no longer working)
 * Added Youtube TV-UI for ARM64 (aarch64) devices
 * Added Librewolf Web Browser for ARM64 (aarch64) devices
 * Hydorah Game Flatimage Added (big/needs 32bit missing libs in batocera for music)
-* OpenGoal Launcher (Jak and Daxter/2/3 Engine) added.
+* OpenGoal Launcher (Jak and Daxter/2/3 Engine) added 
 * 2ship2Harkinian (Majora's Mask Engine) added
 * Parsec streaming client Flatimage added
 * Aethersx2 added (ARM) - High end devices
