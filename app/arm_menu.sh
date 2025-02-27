@@ -67,7 +67,7 @@ case $CHOICE in
         ;;                
     5)
         echo "Youtube on TV..."
-        curl -Ls  | ttps://github.com/trashbus99/profork/blob/master/youtubetv/yttv-arm64.sh | bash
+        curl -Ls  https://github.com/trashbus99/profork/raw/master/youtubetv/yttv-arm64.sh | bash
         ;;   
     6)
         echo "Exiting..."
