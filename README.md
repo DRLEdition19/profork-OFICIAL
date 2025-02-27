@@ -153,7 +153,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 | **WPS-OFFICE**                        | Office suite                                              |
 | **YARG**                              | Yet Another Rhythm Game                                   |
 | **YOUTUBE-MUSIC**                     | Streaming app for YouTube Music                           |
-| **YOUTUBE-TV**                        | Streaming app for Youtube with TV UI (ARM64 also available  |
+| **YOUTUBE-TV**                        | Streaming app for Youtube with TV UI (ARM64 also available)  |
 
 ![image](https://github.com/user-attachments/assets/4e36f8cd-4ca3-4a55-adda-4655e7b67023)
 
