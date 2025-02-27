@@ -35,7 +35,7 @@ OPTIONS=("1" "Install Portmaster"
          "2" "Install Librewolf Web Browser (VIA F1 MENU ONLY!!)"
          "3" "Install Aethersx2 (Experimental/High-end devices only)"
          "4" "Restore Mame .0139 to v41+"         
-         "5" "Youtube TV UI (NEWER DEVICES THAT F1 MENU ONLY!!"
+         "5" "Youtube TV UI (NEWER DEVICES THAT HAVE F1 MENU ONLY!!"
          "6" "Exit")
          
 # Display the dialog and get the user choice
