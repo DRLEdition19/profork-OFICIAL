@@ -3,7 +3,7 @@
 Recents:
 * Removed Docker Linux on Qemu (no longer working)
 * Added Youtube TV-UI for ARM64 (aarch64) devices
-* Added Librewolf Web Browser for ARM64 (aarch64) devices
+* Added Librewolf Web Browser for x86_64 and ARM64 (aarch64) devices
 * Hydorah Game Flatimage Added (big/needs 32bit missing libs in batocera for music)
 * OpenGoal Launcher (Jak and Daxter/2/3 Engine) added 
 * 2ship2Harkinian (Majora's Mask Engine) added
@@ -108,7 +108,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 | **KITTY**                             | Fast and feature-rich terminal emulator                     |
 | **KSNIP**                             | Screenshot tool with annotation features                     |
 | **KRITA**                             | Professional digital painting and illustration software      |
-| **LIBREWOLF**                         | Web Browser (ARM64)                                         |
+| **LIBREWOLF**                         | Librewolf Web Browser (ARM64 Also Available)                           |
 | **LUDUSAVI**                          | Save game manager and backup tool                           |
 | **LUTRIS/AMD-INTEL-GPUS-ONLY**        | Open-source gaming platform                                  |
 | **MEDIAELCH**                         | Media manager for movies and TV shows                       |
