@@ -107,6 +107,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 | **KITTY**                             | Fast and feature-rich terminal emulator                     |
 | **KSNIP**                             | Screenshot tool with annotation features                     |
 | **KRITA**                             | Professional digital painting and illustration software      |
+| **LIBREWOLF**                         | Web Browser (ARM64)                                         |
 | **LUDUSAVI**                          | Save game manager and backup tool                           |
 | **LUTRIS/AMD-INTEL-GPUS-ONLY**        | Open-source gaming platform                                  |
 | **MEDIAELCH**                         | Media manager for movies and TV shows                       |
@@ -119,6 +120,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 | **NVTOP**                             | Real-time GPU usage monitoring tool                         |
 | **ODIO**                              | Free streamimg music app                                    |
 | **OLIVE**                             | Open-source video editing tool                              |
+| **OPENGOAL Launcher**                 | PC Engine for Jax n' Daxter/Jak2/Jak3   
 | **OPERA**                             | Web browser with integrated VPN and ad blocker              |
 | **PARSEC**                            | Parsec Streaming
 | **PEAZIP**                            | File archiver and compression utility                       |
@@ -150,7 +152,7 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 | **WPS-OFFICE**                        | Office suite                                              |
 | **YARG**                              | Yet Another Rhythm Game                                   |
 | **YOUTUBE-MUSIC**                     | Streaming app for YouTube Music                           |
-| **YOUTUBE-TV**                        | Streaming app for Youtube with TV UI                             |
+| **YOUTUBE-TV**                        | Streaming app for Youtube with TV UI (ARM64 also available  |
 
 ![image](https://github.com/user-attachments/assets/4e36f8cd-4ca3-4a55-adda-4655e7b67023)
 
@@ -164,7 +166,6 @@ The current scripts here, that were tested mainly in Dec '24/Jan '25--those that
 | **EMBY-SERVER/DOCKER**                     | Media server for managing and streaming personal media        |
 | **JELLYFIN-SERVER/DOCKER**                 | Open-source media server for streaming and organizing media   |
 | **LINUX-DESKTOPS-RDP/DOCKER**              | Dockerized Linux desktops with RDP access                    |
-| **LINUX-VMS-ON-QEMU/DOCKER**               | Docker-based Linux virtual machines running on QEMU with VNC access   |
 | **NETBOOT-XYZ-SERVER/DOCKER**              | Netboot.xyz server for network-based booting                 |
 | **NEXTCLOUD-SERVER/DOCKER**                | Private cloud server for file storage and sharing            |
 | **PLEX-SERVER/DOCKER**                     | Popular media server for streaming and managing personal media |
